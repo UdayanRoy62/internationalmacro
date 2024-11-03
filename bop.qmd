@@ -1,0 +1,115 @@
+# Balance of Payments Accounts {#sec-bopacc}
+
+A country's balance of payments\index{balance of payments} account for, say, 2003 summarizes all economic transactions that took place between its residents and foreign residents during 2003.
+
+The balance of payments accounts consist of the **current account**, the **capital account**, and the **financial account**.
+
+## The Current Account {#sec-curacc}
+
+To keep things simple, let's assume that in every transaction there is one person who hands over some goods, services or assets and another person who pays (for those goods, services or assets) with cash.[^assets]
+
+[^assets]: By assets I mean *non-cash* assets. It is possible that a US resident might buy some Swedish kroner, which is a cash asset, and just hang on to it. But I will keep things simple by assuming that a US resident who buys some Swedish kroner would immediately spend it on some goods, services or non-cash assets (such as stocks, bonds, the title to a house, etc.) perhaps because she has no use for Swedish kroner in the US. As a result, it makes sense to assume that when cash is offered as payment, it is to buy some non-cash asset. Moreover, although it is possible for Alan to hand over some IBM shares to Betty and get some Google shares in return, not much realism is lost by assuming that Alan gets cash for his IBM shares and then uses the cash to buy Google shares from Betty.
+
+Transactions in which *goods or services* are traded between *residents* of America and *residents* of other countries are summarized in America's current account\index{balance of payments!current account}.
+
+## The Capital Account {#sec-capacc}
+
+The balance of payments accounts also includes the capital account\index{balance of payments!capital account}. But I will ignore it because it usually involves small sums of money and is not important for my purposes. According to @gerber2002, page 176, "The capital account includes transfers of specific types of capital, such as debt forgiveness, the personal assets that migrants take with them when they cross international boundaries, and the transfer of real estate and other fixed assets, such as the transfer of ownership of a military base or an embassy." 
+
+Prior to 1996 what we now call the financial account used to be called the capital account and used to include what we now call the capital account.
+
+To repeat, I will ignore the capital account. That is, unless I make an explicit statement to the contrary, I will assume that none of the types of international transactions that are formally classified under the capital account are actually taking place.
+
+## The Financial Account {#sec-finacc}
+
+Transactions in which *assets* are traded between residents of America and residents of other countries are summarized in America's financial account\index{balance of payments!financial account}.
+
+An **asset**\index{asset} is pretty much anything that you can buy today (if you have some surplus cash) and sell later (if you need some extra cash). If your asset provides some service to someone while you are its owner, you can earn an *income* from your asset. For example, if an American buys a house in Germany, she would be buying an *asset*. And the rental income she earns by renting out the house is her *asset income*. If an American buys a German company's stock, she would be buying an *asset*. And the dividend income she earns (as long as she owns the stock) is her *asset income*.  If an American puts money in a German bank, that bank account is an *asset* that will periodically yield interest *income*. 
+
+Interestingly, while *international asset trades are recorded in the financial account* of a nation's balance of payments, the *income earned from those assets are considered to be payments for services rendered by the assets and are, therefore, recorded in the current account*. So, an American's purchase of a house in Germany will be recorded in the financial account and any subsequent rental income from that house will be recorded in the current account.
+
+The financial account includes the **Official Reserve Transactions Account**\index{balance of payments!financial account!Official Reserve Transactions Account}. Most countries have **central banks**\index{central banks} that design and carry out their monetary policies. For example, America's central bank is the Federal Reserve (or, simply, the Fed\index{central banks!Fed, the}). Central banks often buy and/or sell assets. For example, the Bank of Japan\index{central banks!Japan, Bank of} (i.e., Japan's central bank) may buy U.S. Treasury bonds. It may then sell those bonds at a later date if it needs dollars. The assets that central banks typically buy and sell are called **reserve assets**\index{reserve assets}. *International trade in reserve assets conducted by central banks is recorded in the official reserve transactions account*.
+
+## Credits, Debits, and Balances {#sec-credits-debits-balances}
+
+Recall that all economic transactions that take place between a country's residents and the residents of other countries are recorded in the country's current, capital, and financial accounts. The recording of these transactions follows strict rules. This section presents a simplified look at the rules of balance of payments accounting.
+
+### Which Transactions Are Recorded as Credits? {#sec-credits}
+
+Recall from  @sec-curacc that I have assumed that in every transaction there is one person who hands over goods, services or non-cash assets (such as stocks and bonds) and another person who pays with cash or check (i.e., money; to economists, both currency and checks count as money). Any transaction resulting in a receipt of money from foreigners is entered in the balance of payments accounts as a credit\index{balance of payments!credits} and is given a positive ($+$) sign. In other words, any transaction in which we sell (i.e., *export*) goods, services or assets to foreigners is recorded as a *credit*.
+
+### Which Transactions Are Recorded as Debits? {#sec-debits}
+
+Any transaction in which we pay money to foreigners is entered in the balance of payments accounts as a debit\index{balance of payments!debits} and is given a negative ($-$) sign. In other words, *imports* of goods, services and assets are recorded as *debits*.
+
+## Accounting Rules: Examples {#sec-accex}
+
+Here are some examples that illustrate the rules of balance of payments accounting that I have  discussed above:
+ 
+*  The sale (i.e., export) of a U.S. car to Germany is a *credit* in the U.S. *current* account.
+*  An American's purchase (i.e., import) of a house in Germany is a *debit* in America's *capital* account.
+*  The rental income earned by an American from her house in Germany is seen as the *export* of housing services from America to Germany and is, therefore, a *credit* in America's *current* account.
+*  When a German deposits some extra cash in his New York bank account, it is seen as the purchase by the German (and, therefore, an *export* by America) of an American asset (in this case, the increased value of the bank account) and is recorded as a *credit* in America's *financial* account.
+
+
+Note again that *credits are always exports* of goods, services or assets and *debits are always imports*.
+
+### What Is the *Balance* on an Account? {#sec-balance}
+
+*The total of all credits minus the total of all debits in an account or sub-account is called its balance*\index{balance of payments!balance}. The balance could be positive, zero, or negative.
+
+Since credits are exports and debits are imports, 
+$$
+\text{Balance} = \text{Credits} - \text{Debits} = \text{Exports} - \text{Imports} = \text{Net Exports}.
+$$ {#eq-balancedef}
+In particular, *our current account balance is our net export of goods and services* and *our financial account balance is our net export of assets*. 
+
+Most internationally traded assets are paper assets such as stocks and bonds. Unlike the purchase of, say, a house, the purchase of a stock or a bond does not involve the exchange of some tangible commodity. The purchase of stocks and bonds simply entitle the buyer to future income. If you buy Microsoft stock, Microsoft will get your money *today* and you will receive a share of Microsoft's *future* profits (as long as you keep the stock). If you buy a bond from AT\&T, AT\&T will get your money *today* and you will get regular  *future* payments of some amount specified on the bond. Notice that in both of these last two cases, what you are really doing is *lending* some of your money to others *today* in the expectation that they will pay you in the *future*. When you buy Microsoft stock, you are lending money to Microsoft. When you buy AT\&T bonds, you are lending money to AT\&T. Similarly, the sale of stocks (by, say, Microsoft) and bonds (by, say, AT\&T) is simply a way for these companies to borrow money. 
+
+Applying this idea to international asset trades, *America's sale (or, export) of stocks and bonds to foreigners during 1999 is equal to the amount America borrowed from foreigners during 1999 and America's purchase (or, import) of stocks and bonds from foreigners during 1999 is equal to the amount America loaned to foreigners during 1999. Therefore, our financial account balance for 1999 is equal to the increase in our net indebtedness to foreigners during 1999*. 
+
+$$
+\begin{eqnarray}
+{\text{Financial Account Balance in 1999}}\\
+&=&\text{Financial Account Credits}-\text{Financial Account Debits}\nonumber\\
+&=&\text{Assets Exports}-\text{Assets Imports}\nonumber\\
+&=&\text{Borrowing from foreigners in 1999}-\text{Lending to foreigners in 1999}\nonumber\\
+&=&\text{Increase in our net indebtedness in 1999.}\nonumber
+\end{eqnarray}
+$$ {#eq-intdebt}
+
+If, for example, our financial account balance during 1999 was +\$100 billion, then we borrowed \$100 billion more from foreigners than we lent them, and, so, our indebtedness to foreigners increased in 1999 by \$100 billion. 
+
+And, by the way, that increase of \$100 billion in our foreign debt could have happened in several different ways: For example, the amount we owe them could have gone up from \$500 billion to \$600 billion or the amount they owe us could have gone down from \$300 billion to \$200 billion or their debt to us of \$25 billion may have turned into our debt to them of \$75 billion during 1999. 
+
+If, on the other hand, our financial account balance was -\$150 billion, then our net indebtedness to foreigners decreased by \$150 billion. *Therefore, a positive financial account balance means an increase in our international indebtedness and a negative financial account balance means a decrease in our international indebtedness*.
+
+## Balance of Payments Identity {#sec-curcap}
+
+Now that we have seen how the balances in the current, capital, and financial accounts are defined, it is necessary to see how the three balances are related. It turns out that *the balances of the current, capital, and financial accounts must always sum to zero*:
+
+$$
+\text{current account balance} + \text{capital account balance} + \text{financial account balance} \equiv 0.
+$$ {#eq-balancedpayments}
+
+So, if we ignore the typically tiny capital account, if the current account balance is $-$\$5000, then the financial account balance would have to be +\$5000, and vice versa.
+
+To see the logic behind @eq-balancedpayments, let the current account balance be $-$\$5000. In other words, our net export of goods and services is $-$\$5000. That is, we bought \$5000 more goods and services from foreigners than we sold to them. This raises a question: How could it have happened? Are we living on the charity of foreigners? Why would they give us \$5000 more stuff than we gave them? The answer is that the foreigners will let us have an additional \$5000 worth of *goods and services* as long as we give them an additional \$5000 of *assets*. That is, our net export of goods and services may be $-$\$5000 as long as our net export of assets is $+$\$5000. Therefore, recalling from  @eq-balancedef that "net export" is also called "balance", our current account balance can be $-$\$5000 as long as our financial account balance is $+$\$5000. 
+
+We saw in  @sec-balance that a positive financial account balance reflects an increase in our net indebtedness to foreigners. Therefore,  @eq-balancedpayments means that we can import more goods and services than we export, as long as we understand that there will be an increase in our net indebtedness.
+
+Another way to see this is to recognize that every international transaction will necessarily involve a credit in one of the two accounts---i.e., in either the current account or the financial account---and a debit of equal size in the other account. 
+
+Consider an example. Suppose a German buys an American car for \$50,000. This is a credit in the current account and, therefore, our current account balance increases by \$50,000. Now, where would the German buyer get those dollars? There are several possibilities: 
+
+*  He has a bank account in New York from which he pays the \$50,000. In this case, following example 4 in  @sec-accex above, we can see that this is a debit of \$50,000 in our financial account. So, our financial account balance decreases by \$50,000.
+*  He sells some of his U.S. assets (such as real estate or stocks or bonds) and uses that money to buy his car. Again, a glance at examples 2 and 4 in @sec-accex will show you that this has the same effect as in the previous case: our financial account balance decreases by \$50,000.
+*  He buys \$50,000 from an American who needed Euros to open a bank account in Germany. As you can tell from example 4 in @sec-accex, this is a \$50,000 debit in our financial account. So, again, our financial account balance decreases by \$50,000.
+
+The point of these examples is that if a transaction causes our current account balance to *increase* by \$50,000, then it must simultaneously involve another transaction that causes our financial account balance to *decrease* by the same amount, irrespective of the gory details of the transaction.
+
+Similarly, it can be shown that any transaction that *decreases* our current account balance by \$40,000 will simultaneously be accompanied by other transactions that will *increase* our financial account balance by \$40,000.
+
+More generally, any transaction that changes the balance on any of these two accounts will be accompanied by other transactions that change the balance on the other account by the same amount but in the opposite direction. Hence, the current account balance plus the financial account balance must always be zero.
+
+In other words---using the idea that the balance on an account is equal to the net exports on that account; see equation @eq-balancedef --- the net exports of goods and services must equal the net imports of assets, and vice versa.

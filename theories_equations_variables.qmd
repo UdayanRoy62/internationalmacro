@@ -1,0 +1,132 @@
+# Theories, Equations and Variables {#sec-theqvar}
+
+## What Is a Theory? {#sec-theory}
+
+For my purposes, a theory\index{theory} is anything that consists of 
+
+*  a list of exogenous variables, 
+*  a list of endogenous variables, and 
+*  a bunch of equations that show how the variables are related to each other. 
+
+If a theory is to be useful, its equations will help us predict how the **endogenous variables** \index{variables!endogenous} are affected by changes in the **exogenous variables** \index{variables!exogenous}.
+
+### What Are Exogenous Variables? {#sec-exovar}
+
+*A variable is said to be exogenous to a theory if the theory does not seek to explain the ups and downs of the variable.*
+
+Consider a theory of, say, the crime rate that says that a city's crime rate goes up (respectively, down) when it has less (respectively, more) rain, but is totally silent about why the amount of rain itself might go up or down. For such a  theory, the amount of rain is an exogenous variable.^[Lest you think that such a theory is too far fetched, see "In New York City, Fewer Murders on Rainy Days," by ANDREW W. LEHREN and CHRISTINE HAUSER, The New York Times, July 2, 2009, <https://www.nytimes.com/2009/07/03/nyregion/03murder.html>.]
+
+Exogenous variables are basically of two types: **policy variables** \index{variables!exogenous!policy variables} and **shocks** \index{variables!exogenous!shocks}. Policy variables are those exogenous variables whose values can be raised or lowered by policy makers or administrators in the government. All other exogenous variables are called shocks.
+
+### What Are Endogenous Variables? {#sec-endovar}
+
+*A variable is endogenous to a theory if the theory aims to explain why that variable might increase or decrease*.
+
+In the example that was just considered, the crime rate is the endogenous variable.
+
+### How Many Equations Are Enough? {#sec-howmanyeq}
+
+Recall that a theory must have a set of equations that show how the various exogenous and endogenous variables are related to each other. The question now is: How many equations should a theory have? And the short answer is: as many equations as are necessary to enable the theory to do what it is supposed to do, which is to predict the up/down movements of the theory's endogenous variables. 
+
+To predict whether a particular endogenous variable would increase or decrease if some exogenous variable, say, increases from a low value to a high value, we would need to be able to pin down the values taken by the endogenous variable at the low and high values of the exogenous variable. Once that is done it would become clear whether the increase in the exogenous variable causes the endogenous variable to increase or decrease or stay unchanged. To illustrate with the theory of crime that we discussed earlier, if the equations in that theory of crime allow us to pin down the value of the crime rate both when the amount of rain is high and when the amount of rain is low, then we would know how an increase (or decrease) in the amount of rain would affect crime.
+
+::: {#thm-eqnno}
+
+## Solving Equations
+
+To pin down the values of the various endogenous variables of a theory we in general need exactly as many equations as there are endogenous variables: not more, not less. If there are more endogenous variables than there are equations, we would generally get many possible solutions, and that would make it impossible to say anything definite. If there are fewer endogenous variables than there are equations we would generally get no solutions at all.
+
+:::
+
+
+<!--
+See @thm-eqnno.
+
+\begin{mathres} To pin down the values of the various endogenous variables of a theory we in general need exactly as many equations as there are endogenous variables: not more, not less. If there are more endogenous variables than there are equations, we would generally get many possible solutions, and that would make it impossible to say anything definite. If there are fewer endogenous variables than there are equations we would generally get no solutions at all. \label{math:eqnno}\end{mathres}
+-->
+
+To see this idea in action, let us try some numbers. Let's say a theory has 
+
+*  two endogenous variables, $x$ and $y$, and
+*  three exogenous variables $a$, $b$ and $c$.
+
+
+**Case 1** Let's suppose that the theory consists of just *one* equation: 
+$$
+x + y = a + \frac{b}{c}.
+$$ {#eq-first}
+Assume that $a = 3$ and $b = c = 6$. It should then be clear that it is impossible to pin down a unique set of values for $x$ and $y$. For example, ($x = 2$ and $y = 2$), ($x = 3$ and $y = 1$), and ($x = 1$ and $y = 3$) are only three of infinitely many sets of values for $x$ and $y$ that are solutions to @eq-first in this case.
+
+Now, the whole point of a theory is to predict how changes in the exogenous variables affect the endogenous variables. For example, one might ask what would happen to $x$ if $b$ increased from 6 to 12. Answering this question would be easy if there existed a unique value of $x$ when $a=3$, $b=6$ and $c=6$ and a unique value of $x$ when $a=3$, $b=12$ and $c=6$. Unfortunately, @eq-first can't tell us what $x$ is when $a = 3$, $b = 6$ and $c = 6$ and or what $x$ is when $a = 3$, $b = 12$ and $c = 6$. We, therefore, see that if a theory's equations can't give us unique solutions for the theory's endogenous variables, then that theory is useless.
+
+**Case 2** Let's now suppose that the theory consists of *three* equations---@eq-first above and the two equations below:
+$$
+x - y = a - \frac{b}{c}
+$$ {#eq-second}
+
+$$
+x  = a -c
+$$ {#eq-third}
+
+It should be clear that it is impossible, in general, to find *any* values of the endogenous variables $x$ and $y$ that would satisfy all three equations. For $a=3$ and $b=c=6$, the equations become
+$$
+\begin{eqnarray*}
+x + y &=& 4\\
+x - y &=& 2\\
+x &=& -3
+\end{eqnarray*}
+$$
+respectively. If you try a few numbers, you will soon see that not all three equations can simultaneously be satisfied. If you substitute $x = -3$, which is the third equation, into the first equation, you'll get $y = 7$. But in that case the second equation cannot be satisfied because $x - y$ would be -10, not 2, which is what the second equation requires.
+
+**Case 3** If, however, the theory has two equations---the same number as the number of endogenous variables---a unique set of solutions for the endogenous variables can usually be found. Let's say the theory's equations are @eq-first and @eq-second above, but not @eq-third. Then it is clear that $x = 3$ and $y =1$ solve @eq-first and @eq-second when $a=3$, and $b=c=6$.^[Those of you who have taken linear algebra may recall the distinction between dependent and independent sets of linear equations. For a set of linear equations to have unique solutions for its endogenous variables, the number of independent equations must equal the number of endogenous variables. Although I have not been explicit, @thm-eqnno really holds when the equations that we are talking about are linear and independent of each other.]
+
+## What Can We Do With a Theory? {#sec-whytheory}
+
+Let us consider further the theory that consists of @eq-first and @eq-second. I have shown that this theory can tell us the numerical values of its endogenous variables, $x$ and $y$, whenever the numerical values of its exogenous variables, $a$, $b$, and $c$, are known. The question now is: What can we *do* with this theory?
+
+The short answer is that we can predict the **ceteris paribus effects** of the exogenous variables on the endogenous variables. A change in an exogenous variable is called a **ceteris paribus change** if all other exogenous variables are unchanged. A theory enables us to predict how a ceteris paribus change in an exogenous variable affects all the endogenous variables. 
+
+It is straightforward to check that if $b$ increases from 6 to 12 and $a$ and $c$ remain unchanged at 3 and 6 respectively, $x$ would remain unchanged at 3 and $y$ would increase from 1 to 2. (As an exercise, work out the values of $x$ and $y$ from @eq-first and @eq-second for $a = 3$, $b = 12$ and $c = 6$.) Thus, our theory is able to predict how the endogenous variables, $x$ and $y$, would behave if the exogenous variables---$a$, $b$ and $c$---change in some specified manner.
+
+To see this in another way, note that @eq-first and @eq-second can be solved in terms of $a$, $b$ and $c$. In other words, one can write down the values of $x$ and $y$ that solve @eq-first and @eq-second as expressions involving $a$, $b$ and $c$. Specifically, it is straightforward to check that @eq-first and @eq-second imply:
+$$
+\begin{eqnarray}
+x &=& a \\
+y &=& \frac{b}{c}
+\end{eqnarray}
+$$ {#eq-y}
+
+As an exercise, substitute $x=a$ and $y=b/c$ in @eq-first and @eq-second and show that the two sides of each equation become the same. This would verify my claim that these values of $x$ and $y$ do indeed solve @eq-first and @eq-second.
+
+We can now complete our discussion of the utility of theories by noting that the solutions $x=a$ and $y=b/c$ imply that:
+
+*  $x$ is directly related to $a$ and unrelated to $b$ and $c$, and^[There is a **direct relation** between an exogenous variable $a$ and an endogenous variable $x$ if a ceteris paribus increase (respectively, decrease) in $a$ causes an increase (respectively, a decrease) in $x$. Conversely, there is an **inverse relation** between an exogenous variable $a$ and an endogenous variable $x$ if a ceteris paribus increase (respectively, decrease) in $a$ causes a decrease (respectively, an increase) in $x$.]
+*  $y$ is directly related to $b$, inversely related to $c$---that is, a ceteris paribus increase (respectively, decrease) in $c$ causes a decrease (respectively, an increase) in $y$---and unrelated to $a$.
+
+
+@tbl-xyabc reports these ceteris paribus effects in another format. This tabular format will be used frequently in future lectures.
+
+
+|         | $x$  | $y$   |
+|:-------:|:----:|:-----:|
+| $a$     | +    |    0  |
+| $b$     | 0    |   +   |
+| $c$     | 0    |     - |
+
+: **Predictions of the theory consisting of** @eq-first and @eq-second. All variables named in the first column are exogenous and all variables listed in the first row are endogenous. Each cell in the table shows the relation between the exogenous variable and the endogenous variable aligned with the cell. The +/- symbols denote a direct/inverse relation and a zero denotes that there is no relation. {#tbl-xyabc}
+
+<!--
+\begin{table}
+\begin{tabular}{*{3}{|c}|}
+\hline
+	&$x$	&$y$	\\ \hline
+$a$	&+	&	\\ \hline
+$b$	&	&+	\\ \hline
+$c$	&	&-	\\ \hline
+\end{tabular}
+\caption[Predictions from a theory]{**Predictions of the theory consisting of equations (\ref{eq:first}) and (\ref{eq:second}).** All variables named in the first column are exogenous and all variables listed in the first row are endogenous. Each cell in the table shows the relation between the exogenous variable and the endogenous variable aligned with the cell. The +/- symbols denote a direct/inverse relation. A blank cell denotes that there is no relation.}
+\label{table:xyabc}
+\end{table}
+-->
+
+We see that the theory we've been considering provides a full set of testable predictions about how its endogenous variables would behave for any given change in its exogenous variables. Once we have a theory that provides testable predictions, that's when the hard work of actually testing those predictions begins. You'll have to find historical data on $x$, $y$, $a$, $b$ and $c$---this may require long hours in the library!---and check whether the data support the predictions in @tbl-xyabc. If they don't, you need to get cracking on a new theory with new variables and/or equations. On the other hand, if the data support the predictions in @tbl-xyabc, you may have a publishable paper. At that point, you would need to be careful not to let the associated fame and fortune go to your head.

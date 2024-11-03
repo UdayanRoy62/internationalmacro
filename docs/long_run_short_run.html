@@ -6,10 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Udayan Roy">
-<meta name="dcterms.date" content="2024-07-22">
 
-<title>International Macroeconomics: Lecture Notes</title>
+<title>International Macroeconomics: Lecture Notes - 7&nbsp; The Long Run and the Short Run</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -52,7 +50,8 @@ div.csl-indent {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./preliminaries.html" rel="next">
+<link href="./exchange_rate_systems.html" rel="next">
+<link href="./theories_equations_variables.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -90,6 +89,35 @@ div.csl-indent {
   }
 }</script>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -102,7 +130,7 @@ div.csl-indent {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Preface</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./long_run_short_run.html"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">The Long Run and the Short Run</span></a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -132,7 +160,7 @@ div.csl-indent {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Preface</span></a>
   </div>
 </li>
@@ -174,7 +202,7 @@ div.csl-indent {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./long_run_short_run.html" class="sidebar-item-text sidebar-link">
+  <a href="./long_run_short_run.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">The Long Run and the Short Run</span></span></a>
   </div>
 </li>
@@ -242,35 +270,28 @@ div.csl-indent {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#preface" id="toc-preface" class="nav-link active" data-scroll-target="#preface">Preface</a></li>
+  <li><a href="#sec-exoendo" id="toc-sec-exoendo" class="nav-link active" data-scroll-target="#sec-exoendo"><span class="header-section-number">7.1</span> In Our Three Basic Equations, Which Variables Are Exogenous and Which Are Endogenous?</a></li>
+  <li><a href="#sec-longana" id="toc-sec-longana" class="nav-link" data-scroll-target="#sec-longana"><span class="header-section-number">7.2</span> What Is Long-Run Analysis?</a>
+  <ul class="collapse">
+  <li><a href="#sec-pgdp" id="toc-sec-pgdp" class="nav-link" data-scroll-target="#sec-pgdp"><span class="header-section-number">7.2.1</span> Potential Real Gross Domestic Product</a></li>
+  </ul></li>
+  <li><a href="#sec-shortana" id="toc-sec-shortana" class="nav-link" data-scroll-target="#sec-shortana"><span class="header-section-number">7.3</span> What Is Short-Run Analysis?</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/UdayanRoy62/internationalmacro/edit/main/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/UdayanRoy62/internationalmacro/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/UdayanRoy62/internationalmacro/edit/main/long_run_short_run.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/UdayanRoy62/internationalmacro/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">International Macroeconomics: Lecture Notes</h1>
+<h1 class="title"><span id="sec-shortlong" class="quarto-section-identifier"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">The Long Run and the Short Run</span></span></h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Udayan Roy </p>
-          </div>
-  </div>
     
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">July 22, 2024</p>
-    </div>
-  </div>
   
     
   </div>
@@ -280,35 +301,70 @@ div.csl-indent {
 </header>
 
 
-<section id="preface" class="level1 unnumbered">
-<h1 class="unnumbered">Preface</h1>
-<p>These lecture notes are for a very short course—roughly twelve 75-minute lectures—on international macroeconomics that I have taught to junior and senior undergraduates. Although no prior knowledge of economics is assumed, students typically come to the course after completing courses on introductory microeconomics and macroeconomics.</p>
-<p>This course is the second half of a one-semester course on international economics, with the first half on international trade. The course’s textbook is <span class="citation" data-cites="krugman2022international">Krugman, Obstfeld, and Melitz (<a href="references.html#ref-krugman2022international" role="doc-biblioref">2022</a>)</span>. My goal here is simply to present a concise version of chapters 13 through 18 of that book.</p>
-<p>I had to grapple with some tough trade-offs because of the severe time constraint. The core of the course is the theoretical framework originally proposed by Robert A. Mundell and J. Marcus Fleming. I assume perfect capital mobility throughout and, thereby, avoid all discussion of wealth effects and portfolio theory.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> I also assume a “small” country and, thereby, avoid the complex interactions of two-country models. The perfect capital mobility and small country assumptions keep this course very similar to the undergraduate macroeconomics course that most of my students would have also taken. This simplicity, I think, allows students to focus on the special aspects of <em>international</em> macroeconomics without having to learn a new kind of macroeconomics.</p>
-<p>However, the discussion of expectations here may surprise even students who have taken intermediate macroeconomics courses. I have broken up the discussion of short-run analysis into separate chapters on permanent and temporary changes in exogenous variables. Expectations are assumed to be anchored to the long-run equilibrium outcome. This assumption is at the root of the need to distinguish between temporary and permanent changes in, say, fiscal policy. A temporary change affects neither the long-run equilibrium outcome nor people’s expectations, which are, after all, assumed to be tied to the long-run equilibrium outcome. On the other hand, a permanent change in, say, government spending affects the long-run equilibrium level of the future value of the exchange rate and, consequently, people’s expectations about the future value of the exchange rate. This change in expectations has short-run ramifications that are absent in the analysis of temporary changes in government spending.</p>
-<p>These notions are present in <span class="citation" data-cites="krugman2022international">Krugman, Obstfeld, and Melitz (<a href="references.html#ref-krugman2022international" role="doc-biblioref">2022</a>)</span>, but are not developed in a way that is clear enough and leisurely enough for most students to grasp.<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> Other international macroeconomics textbooks are no better in this respect, and usually a lot worse.<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a></p>
-<p>The role of the long-run outcome in anchoring expectations is also my reason to discuss the long run before the short run. It would be essentially impossible to do short-run analysis without some notion of how expectations are formed, and the formation of expectations would be impossible to explain without a discussion of long-run equilibrium.</p>
-<p>These lecture notes are a work in progress. Please let me know if you see any errors or if you see a way to make the book better. My mailing address is Udayan Roy, College of Management, Long Island University, Brookville, NY 11548, USA. My email address is <a href="mailto:udayan.roy@liu.edu" class="email">udayan.roy@liu.edu</a>.</p>
+<section id="sec-exoendo" class="level2" data-number="7.1">
+<h2 data-number="7.1" class="anchored" data-anchor-id="sec-exoendo"><span class="header-section-number">7.1</span> In Our Three Basic Equations, Which Variables Are Exogenous and Which Are Endogenous?</h2>
+<p>My discussion of international macroeconomic theory has, so far, described three equations that represent equilibrium in the goods, money, and foreign exchange markets.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> So, for the theory to work, there would have to be exactly three endogenous variables.<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> So, we need to start figuring out which variables in those three equations are exogenous and which are endogenous and check how many endogenous ones there are.</p>
+<p>The list of variables that you have seen so far is already pretty long: <span class="math inline">\(G\)</span>, <span class="math inline">\(T\)</span>, <span class="math inline">\(M\)</span>, <span class="math inline">\(q\)</span>, <span class="math inline">\(Y\)</span>, <span class="math inline">\(C\)</span>, <span class="math inline">\(I\)</span>, <span class="math inline">\(NX\)</span>, <span class="math inline">\(EX\)</span>, <span class="math inline">\(IM\)</span>, <span class="math inline">\(E\)</span>, <span class="math inline">\(E^e_f\)</span>, <span class="math inline">\(R\)</span>, <span class="math inline">\(R^*\)</span>, <span class="math inline">\(P\)</span>, and <span class="math inline">\(P^*\)</span>. The question is: Which of these are endogenous and which are exogenous?<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a></p>
+<p>The <em>variables that will always be exogenous in these lectures</em> are <span class="math inline">\(I\)</span>, <span class="math inline">\(G\)</span>, and <span class="math inline">\(T\)</span>. Moreover, all variables that describe the foreign country (<span class="math inline">\(R^*\)</span> and <span class="math inline">\(P^*\)</span>) will also be regarded as exogenous.</p>
+<p>The <em>variables that will always be endogenous in these lectures</em> are <span class="math inline">\(Y\)</span>, <span class="math inline">\(C\)</span>, <span class="math inline">\(I\)</span>, <span class="math inline">\(NX\)</span>, <span class="math inline">\(EX\)</span>, <span class="math inline">\(IM\)</span>, <span class="math inline">\(q\)</span>, and <span class="math inline">\(R\)</span>.</p>
+<p>As for the other variables, whether they are exogenous or endogenous will depend on two issues:</p>
+<ul>
+<li>Do we want to do long-run analysis or short-run analysis? and</li>
+<li>Does the domestic economy have a fixed exchange rate system or a flexible exchange rate system?</li>
+</ul>
+<p>In this chapter, I will discuss the distinction between long-run and short-run analysis. The next chapter looks at the distinction between flexible and fixed exchange rate systems.</p>
+</section>
+<section id="sec-longana" class="level2" data-number="7.2">
+<h2 data-number="7.2" class="anchored" data-anchor-id="sec-longana"><span class="header-section-number">7.2</span> What Is Long-Run Analysis?</h2>
+<p>In the long-run analysis of equilibrium in the markets for goods, foreign exchange, and money, the following simplifying assumptions are made:</p>
+<ul>
+<li><strong>Full Employment</strong> : all productive resources of the economy are assumed to be fully employed in the long run. That is, an economy’s real GDP (<span class="math inline">\(Y\)</span>) is assumed to be equal to its <em>potential</em> real GDP (<span class="math inline">\(Y^p\)</span>).<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a></li>
+<li><strong>Perfect Foresight</strong> : people’s expectations are assumed to be accurate. Specifically, it is assumed that the <em>actual</em> future value of the foreign country’s currency (<span class="math inline">\(E_f\)</span>) will be equal to the <em>expected</em> future value of the foreign country’s currency (<span class="math inline">\(E^e_f\)</span>). Equivalently, it is assumed that the <em>actual</em> rate of growth of the value of the foreign country’s currency (<span class="math inline">\(E_g\equiv(E_f-E)/E\)</span>) is equal to the <em>expected</em> rate of growth of the value of the foreign country’s currency (<span class="math inline">\(E^e_g\equiv(E^e_f-E)/E\)</span>).<a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a></li>
+</ul>
+<p>Perfect foresight is a simpler form of a common assumption in economics called <strong>rational expectations</strong> . Economists are aware of the fallibility of their forecasts.<a href="#fn6" class="footnote-ref" id="fnref6" role="doc-noteref"><sup>6</sup></a> Nevertheless, it makes sense to assume that although expectations about the future value of a variable will at times exceed the actual outcome and at times be less than the actual outcome, they will on average be reasonably accurate. There is no <em>a priori</em> reason to believe that we will consistently overestimate (or, consistently underestimate) what the exchange value of the dollar will be in the future.</p>
+<section id="sec-pgdp" class="level3" data-number="7.2.1">
+<h3 data-number="7.2.1" class="anchored" data-anchor-id="sec-pgdp"><span class="header-section-number">7.2.1</span> Potential Real Gross Domestic Product</h3>
+<div id="fig-chart-pgdp" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-chart-pgdp-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/GDP-POT-fredgraph.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-chart-pgdp-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;7.1: <strong>Potential Output</strong> The red graph represents the U.S. Congressional Budget Office’s estimates of potential real GDP (in billions of chained 2000 dollars). The blue graph represents actual real GDP. The excess of potential GDP over actual GDP is referred to as the <strong>GDP gap</strong>. The gray bars in the figure represent the periods of <strong>recession</strong> in the U.S. economy. Actual GDP is typically less than potential GDP during recessions. Source: Data on real GDP was downloaded from <a href="https://fred.stlouisfed.org/series/GDPC1" class="uri">https://fred.stlouisfed.org/series/GDPC1</a> and data on potential real GDP was downloaded from <a href="https://fred.stlouisfed.org/series/GDPPOT" class="uri">https://fred.stlouisfed.org/series/GDPPOT</a>, both on November 25, 2012.
+</figcaption>
+</figure>
+</div>
+<p>As was just mentioned, a country’s real GDP is assumed to be equal to its real potential GDP in the long run. <em>Potential Real GDP is the real GDP that would be produced if the utilization of the resources of the economy were at normal levels</em>. Actual real GDP, <span class="math inline">\(Y\)</span>, is less than potential real GDP when resources are under-utilized, as in a recession. On the other hand, if resource utilization is at abnormally high levels, as in a booming economy, actual real GDP could exceed potential real GDP.</p>
+<p>An economy’s potential GDP depends on several factors. Potential GDP will be high if (a) the quantity and quality of the productive resources that the country is endowed with are high, (b) it can purchase from other countries at a low price the resources it does not have, (c) it has access to advanced technology, and (d) it has the economic policies and cultural institutions that encourage the efficient utilization of all resources. However, for the purposes of this book, <span class="math inline">\(Y^p\)</span> will be regarded as exogenous, something as inscrutable as the weather.</p>
+<p>The Congressional Budget Office, an arm of the United States Congress, publishes estimates of America’s potential real GDP.<a href="#fn7" class="footnote-ref" id="fnref7" role="doc-noteref"><sup>7</sup></a> Potential GDP is a conceptual notion that cannot be directly observed. But that does not mean that it cannot be reliably estimated. See figure <a href="#fig-chart-pgdp" class="quarto-xref">Figure&nbsp;<span>7.1</span></a> for a look at the CBO’s estimates of America’s potential real GDP.</p>
+</section>
+</section>
+<section id="sec-shortana" class="level2" data-number="7.3">
+<h2 data-number="7.3" class="anchored" data-anchor-id="sec-shortana"><span class="header-section-number">7.3</span> What Is Short-Run Analysis?</h2>
+<p>In short-run analysis I make the following simplifying assumptions:</p>
+<ul>
+<li><strong>Fixed Prices</strong> : The variables <span class="math inline">\(P\)</span>, <span class="math inline">\(P^*\)</span> are assumed to be exogenous and constant.</li>
+<li><strong>Long-Run Expectations</strong> : People’s expectations about the future value of a variable (that is, variables such as <span class="math inline">\(E^e_f\)</span> and <span class="math inline">\(E^e_g\)</span>) are assumed to be equal to its long-run value. For example, if <span class="math inline">\(E_{fLR}\)</span> represents the value of the foreign country’s currency in long-run equilibrium, then <span class="math inline">\(E^e_f=E_{fLR}\)</span> is assumed true in the short run.</li>
+</ul>
+<p>The assumptions about expectations formation for the long and short runs can, therefore, be combined into one simple statement: <span class="math inline">\(E^e_f=E_{fLR}\)</span> irrespective of whether we are doing long-run analysis or short-run analysis.</p>
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
-<div id="ref-feenstra2008international" class="csl-entry" role="listitem">
-Feenstra, Robert C, and Alan M Taylor. 2008. <em>International Trade</em>. Macmillan.
-</div>
-<div id="ref-krugman2022international" class="csl-entry" role="listitem">
-Krugman, Paul R, Maurice Obstfeld, and Marc Melitz. 2022. <em>International Economics: Theory and Policy</em>. Pearson Education.
-</div>
-<div id="ref-rodseth2000open" class="csl-entry" role="listitem">
-Rødseth, Asbjørn. 2000. <em>Open Economy Macroeconomics</em>. Cambridge University Press.
+<div id="ref-shackleton2018estimating" class="csl-entry" role="listitem">
+Shackleton, Robert. 2018. <em>Estimating and Projecting Potential Output Using CBO’s Forecasting Growth Model</em>. Congressional Budget Office.
 </div>
 </div>
 </section>
 <section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
 <hr>
 <ol>
-<li id="fn1"><p>On these issues, see <span class="citation" data-cites="rodseth2000open">Rødseth (<a href="references.html#ref-rodseth2000open" role="doc-biblioref">2000</a>)</span>. By perfect capital mobility I mean a world in which (a) people who buy assets care only about the expected returns of those assets, and (b) they all have the same expectations about future changes in exchange rates. See section XXX.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn2"><p>On page 442 of <span class="citation" data-cites="krugman2022international">Krugman, Obstfeld, and Melitz (<a href="references.html#ref-krugman2022international" role="doc-biblioref">2022</a>)</span> the authors address the issue as follows: “A permanent policy shift affects not only the current value of the government’s policy instrument (the money supply, government spending, or taxes) but also the <em>long-run</em> exchange rate. This in turn affects expectations about future exchange rates. Because these changes in expectations have a major influence on the exchange rate prevailing in the short run, the effects of permanent policy shifts differ from those of temporary shifts.”<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn3"><p>Consider <span class="citation" data-cites="feenstra2008international">Feenstra and Taylor (<a href="references.html#ref-feenstra2008international" role="doc-biblioref">2008</a>)</span>. On page 551 of their excellent textbook, the authors write, “[W]e can form expectations of the future exchange rate using the long-run monetary approach …” This easy-to-miss mention of the idea that expectations are based on the long-run equilibrium outcome is not adequately developed, as far as I am concerned. And the consequent need to distinguish between temporary and permanent policy changes is not as clearly developed as I would like.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn1"><p>See <a href="markets_equilibrium.html#sec-summary-basiceq" class="quarto-xref"><span>Section 5.10</span></a>.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>See <a href="theories_equations_variables.html#thm-eqnno" class="quarto-xref">Theorem&nbsp;<span>6.1</span></a> in <a href="theories_equations_variables.html#sec-howmanyeq" class="quarto-xref"><span>Section 6.1.3</span></a>.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>Recall from <a href="theories_equations_variables.html#sec-exovar" class="quarto-xref"><span>Section 6.1.1</span></a> and <a href="theories_equations_variables.html#sec-endovar" class="quarto-xref"><span>Section 6.1.2</span></a> that endogenous variables are the variables whose ups and downs are explained by the theory and exogenous variables are the variables that the theory does not consider to be any of its business.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn4"><p>I realize that I haven’t discussed potential real GDP so far, but I will do so shortly. But the key point here is that potential real income will be assumed exogenous throughout this book. So, the <span class="math inline">\(Y=Y^p\)</span> assumption of long-run analysis can be used to replace the endogenous variable <span class="math inline">\(Y\)</span> by the exogenous variable <span class="math inline">\(Y^p\)</span>. As you will see in <a href="long_real.html" class="quarto-xref"><span>Chapter 9</span></a>, this replacement of an endogenous variable by an exogenous variable will greatly simplify the analysis.<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn5"><p>Recall from <a href="natincome.html#sec-notngrowth" class="quarto-xref"><span>Section 2.3.1</span></a> that the current value of any variable <span class="math inline">\(x\)</span> is also denoted <span class="math inline">\(x\)</span>, the future value of <span class="math inline">\(x\)</span> is denoted <span class="math inline">\(x_f\)</span>, and the growth rate of <span class="math inline">\(x\)</span> is denoted <span class="math inline">\(x_g=(x_f-x)/x\)</span>. The expected appreciation of the foreign country’s currency was defined in <a href="markets_equilibrium.html#eq-eeg" class="quarto-xref">Equation&nbsp;<span>5.11</span></a> of <a href="markets_equilibrium.html#sec-UIP" class="quarto-xref"><span>Section 5.9.2</span></a>.<a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn6"><p>Partly because non-economists won’t stop reminding them.<a href="#fnref6" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn7"><p>For details, see <em>CBO’s Method for Estimating Potential Output: An Update</em>, Congressional Budget Office, August 2001, <a href="https://www.cbo.gov/sites/default/files/107th-congress-2001-2002/reports/potentialoutput.pdf" class="uri">https://www.cbo.gov/sites/default/files/107th-congress-2001-2002/reports/potentialoutput.pdf</a> and <span class="citation" data-cites="shackleton2018estimating">Shackleton (<a href="references.html#ref-shackleton2018estimating" role="doc-biblioref">2018</a>)</span> (<a href="https://www.cbo.gov/publication/53558">online</a>).<a href="#fnref7" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section>
 
@@ -729,10 +785,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="./theories_equations_variables.html" class="pagination-link" aria-label="Theories, Equations and Variables">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Theories, Equations and Variables</span></span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./preliminaries.html" class="pagination-link" aria-label="Preliminaries">
-        <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Preliminaries</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./exchange_rate_systems.html" class="pagination-link" aria-label="Exchange Rate Systems: Fixed and Flexible">
+        <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Exchange Rate Systems: Fixed and Flexible</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -744,7 +803,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/UdayanRoy62/internationalmacro/edit/main/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/UdayanRoy62/internationalmacro/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/UdayanRoy62/internationalmacro/edit/main/long_run_short_run.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/UdayanRoy62/internationalmacro/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>This book was built with <a href="https://quarto.org/">Quarto</a>.</p>
 </div>

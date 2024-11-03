@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>International Macroeconomics: Lecture Notes - 4&nbsp; Interactive graph</title>
+<title>International Macroeconomics: Lecture Notes - 1&nbsp; Preliminaries</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./conclusion.html" rel="next">
-<link href="./results.html" rel="prev">
+<link href="./natincome.html" rel="next">
+<link href="./index.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -69,6 +69,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -81,7 +110,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./d3graph.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Interactive graph</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./preliminaries.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Preliminaries</span></a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -112,31 +141,103 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
+ <span class="menu-text">Preface</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./data.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Data</span></span></a>
+  <a href="./preliminaries.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Preliminaries</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./results.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Results</span></span></a>
+  <a href="./natincome.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">National Income Accounts, Prices, and Inflation</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./d3graph.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Interactive graph</span></span></a>
+  <a href="./bop.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Balance of Payments Accounts</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./conclusion.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Conclusion</span></span></a>
+  <a href="./exchange_rates.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Exchange Rates</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./markets_equilibrium.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Markets and Equilibrium</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./theories_equations_variables.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Theories, Equations and Variables</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./long_run_short_run.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">The Long Run and the Short Run</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./exchange_rate_systems.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Exchange Rate Systems: Fixed and Flexible</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./long_real.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Long-Run Predictions: The Real World</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./long_nominal.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Long-Run Predictions: The Nominal World</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./short_fixed.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Short-Run Predictions: Fixed Exchange Rates</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./short_flex.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Short-Run Predictions: Flexible Exchange Rates</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./short_flex_permanent.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Short-Run Predictions: Expectations and Flexible Exchange Rates</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./crises.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Special Topic: Currency Crises</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./summary.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">International Macroeconomics: Summary</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
   </div>
 </li>
     </ul>
@@ -145,14 +246,28 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#sec-economics" id="toc-sec-economics" class="nav-link active" data-scroll-target="#sec-economics"><span class="header-section-number">1.1</span> Economics</a></li>
+  <li><a href="#sec-macro" id="toc-sec-macro" class="nav-link" data-scroll-target="#sec-macro"><span class="header-section-number">1.2</span> Macroeconomics</a></li>
+  <li><a href="#sec-intmac" id="toc-sec-intmac" class="nav-link" data-scroll-target="#sec-intmac"><span class="header-section-number">1.3</span> International Macroeconomics</a></li>
+  <li><a href="#sec-whyintmac" id="toc-sec-whyintmac" class="nav-link" data-scroll-target="#sec-whyintmac"><span class="header-section-number">1.4</span> Why Study International Macroeconomics?</a>
+  <ul class="collapse">
+  <li><a href="#sec-fiscal" id="toc-sec-fiscal" class="nav-link" data-scroll-target="#sec-fiscal"><span class="header-section-number">1.4.1</span> What Is Fiscal Policy?</a></li>
+  <li><a href="#sec-monetary" id="toc-sec-monetary" class="nav-link" data-scroll-target="#sec-monetary"><span class="header-section-number">1.4.2</span> What Is Monetary Policy?</a></li>
+  <li><a href="#sec-monetary-unions" id="toc-sec-monetary-unions" class="nav-link" data-scroll-target="#sec-monetary-unions"><span class="header-section-number">1.4.3</span> Monetary Unions</a></li>
+  </ul></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/UdayanRoy62/internationalmacro/edit/main/preliminaries.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/UdayanRoy62/internationalmacro/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Interactive graph</span></h1>
+<h1 class="title"><span id="sec-preliminaries" class="quarto-section-identifier"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Preliminaries</span></span></h1>
 </div>
 
 
@@ -169,18 +284,55 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<style>
-  * {
-    font-family: sans-serif;
-  }
-</style>
-<div id="plot">
+<section id="sec-economics" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="sec-economics"><span class="header-section-number">1.1</span> Economics</h2>
+<p>Economics is the study of how we—as individuals and as societies—deal with the inescapable reality that “we can’t always get what we want”. This fact of life, which economists call <em>scarcity</em>, makes it important for us to know how the many economic variables that are important to us—such as the gross domestic product, the unemployment rate, the consumer price index, etc.—can be made to increase or decrease as needed. For example, scarcity makes it important to understand whether our gross domestic product would increase or decrease if we imposed tariffs on imported goods.</p>
+<p>Economics consists of:</p>
+<ul>
+<li><strong>theories</strong>, which are explanations—not necessarily proven—for the observed up and down movements of the economic variables that matter to us, and of</li>
+<li><strong>statistical studies</strong> that seek to test the reliability of economic theories.</li>
+</ul>
+</section>
+<section id="sec-macro" class="level2" data-number="1.2">
+<h2 data-number="1.2" class="anchored" data-anchor-id="sec-macro"><span class="header-section-number">1.2</span> Macroeconomics</h2>
+<p>Macroeconomics is the part of economics that deals with economic variables that describe a country. When describing the economy of the United States, an economist will probably mention the gross domestic product, the unemployment rate, the inflation rate, the trade deficit, etc., of the United States. These variables that describe an entire country are at the heart of macroeconomics. Macroeconomics consists of (a) theories that derive predictions about the likely changes in such economic variables and (b) statistical studies that scour history to check the predictive accuracy of the theories.</p>
+</section>
+<section id="sec-intmac" class="level2" data-number="1.3">
+<h2 data-number="1.3" class="anchored" data-anchor-id="sec-intmac"><span class="header-section-number">1.3</span> International Macroeconomics</h2>
+<p>The macroeconomic behavior of a country that is economically isolated from other countries—a <strong>closed economy</strong>, in the jargon of economics—will not necessarily be the same as the macroeconomic behavior of a highly globalized country—an <strong>open economy</strong>. International macroeconomics is the part of macroeconomics that deals with countries for which international economic links are important. Such links may include international trade in goods and services, cross-border migration of people, and cross-border borrowing and lending.</p>
+</section>
+<section id="sec-whyintmac" class="level2" data-number="1.4">
+<h2 data-number="1.4" class="anchored" data-anchor-id="sec-whyintmac"><span class="header-section-number">1.4</span> Why Study International Macroeconomics?</h2>
+<p>The point of studying international macroeconomics is to be able to <em>evaluate alternative macroeconomic policies</em> and choose the one that’s best. If we have a reliable theory that explains the reasons why a certain variable goes up or down, we might be able to figure out policies that will move that variable in the desired direction. For example, if we can figure out the reasons for the up and down movements of a nation’s trade deficit, we might be able to design economic policies that drive the trade deficit in the desired direction, be it up or down.</p>
+<p>In discussing macroeconomic policy I will focus on <strong>fiscal policy</strong> and <strong>monetary policy</strong>.</p>
+<section id="sec-fiscal" class="level3" data-number="1.4.1">
+<h3 data-number="1.4.1" class="anchored" data-anchor-id="sec-fiscal"><span class="header-section-number">1.4.1</span> What Is Fiscal Policy?</h3>
+<p>Fiscal policy consists of all the methods of controlling an economy by making changes to the government’s budget. A government’s <strong>budget</strong> is a description of its spending and revenue-raising plans. So, for my purposes, fiscal policy essentially consists of changes in total <strong>government spending</strong>, <span class="math inline">\(G\)</span>, and <strong>total tax revenue</strong>, <span class="math inline">\(T\)</span>.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
+<p>Second, to be more precise, <span class="math inline">\(T\)</span> represents total <em>net</em> tax revenue, which equals the tax revenues of the government less <strong>transfer payments</strong> made by the government. Transfer payments are gifts, such as cash grants to the poor.</p>
+<p>Third, <span class="math inline">\(G\)</span> represents government <em>purchases</em> rather than government spending. The latter includes the former plus transfer payments, which, as I said in the previous paragraph, are gifts, not payments made for purchases. <span class="math inline">\(G\)</span> represents only what the government spends for its purchases of goods and services.</p>
+</section>
+<section id="sec-monetary" class="level3" data-number="1.4.2">
+<h3 data-number="1.4.2" class="anchored" data-anchor-id="sec-monetary"><span class="header-section-number">1.4.2</span> What Is Monetary Policy?</h3>
+<p>Monetary policy consists of all the methods of controlling an economy by making changes to the economic variables that are directly controlled by the country’s monetary authorities, such as the Federal Reserve in the United States. For my purposes, monetary policy consists of changes in a country’s <strong>money supply</strong>, <span class="math inline">\(M\)</span>. A central bank may print money and lend it to financial institutions such as banks. If and when these financial institutions in turn lend the money to people or to businesses, the newly printed money begins to affect actual economic activity. This, of course, is why the central bank printed the money in the first place. <!--^[As we will see in chapter \ref{exchsys}, the list of the variables that are directly controlled by the monetary authorities depends on whether the country has a fixed or flexible exchange rate system.]--></p>
+</section>
+<section id="sec-monetary-unions" class="level3" data-number="1.4.3">
+<h3 data-number="1.4.3" class="anchored" data-anchor-id="sec-monetary-unions"><span class="header-section-number">1.4.3</span> Monetary Unions</h3>
+<p>In the case of the 24 European countries that all use the same currency, the euro, there is no monetary policy at all to conduct!<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> These countries have willingly given up their individual currencies and formed a <strong>monetary union</strong>. The monetary policy of the entire eurozone is determined by the European Central Bank in Frankfurt.<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a></p>
+<p>It is important to understand the pros and cons of the formation of a monetary union so that countries considering joining a monetary union may make smart choices.</p>
+<p>Just as multiple countries may choose to use a common currency, they may also choose to adopt a common fiscal policy whereby a central budget sets expenditure and revenue-raising rules for all members of the club. For example, the USA may be thought of as a union of fifty states with a common currency and a unified fiscal policy decided in Washington, D.C. In fact, we will see that it may be difficult for a group of countries to share a common currency and retain independent national fiscal policies. During the economic crises that cascaded through several eurozone countries—such as Ireland, Greece, and Spain—during 2009–2012, some commentators argued that the eurozone countries needed to unify their budgets—and become something like a United States of Europe—if they were to have a stable monetary union.</p>
+<p>In any case, countries considering a monetary and/or fiscal union need to be able to make their choices with their eyes wide open. It is, therefore, necessary for international economics to have something useful to say on the issue.</p>
 
-</div>
-<script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
-<script src="scripts/myscript.js"></script>
 
-
+</section>
+</section>
+<section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn1"><p>First, note that I have begun to introduce symbols to denote economic variables. As you will see, the good part of the use of symbols is that it speeds up the discussion considerably. The bad part is that you will need to remember which symbol denotes which variable.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>As of October 2023, the eurozone consists of 20 members who are European Union (EU) members and use the euro. They are Austria, Belgium, Croatia, Cyprus, Estonia, Finland, France, Germany, Greece, Ireland, Italy, Latvia, Lithuania, Luxembourg, Malta, the Netherlands, Portugal, Slovakia, Slovenia and Spain. The non-EU countries that use the euro are Andorra, Vatican City, and Monaco and San Marino.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>This lack of the ability to use monetary policy is also true of a handful of countries that have “dollarized”. These are countries that have decided to use another country’s currency as their own currency. For example, East Timor, Ecuador, El Salvador, and Panama use the U.S. dollar as their currency.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -278,6 +430,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         if (link.dataset.originalHref !== undefined) {
           link.href = link.dataset.originalHref;
         }
+          // target, if specified
+          link.setAttribute("target", "_blank");
+          if (link.getAttribute("rel") === null) {
+            link.setAttribute("rel", "noopener");
+          }
       }
     }
   function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
@@ -594,13 +751,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./results.html" class="pagination-link" aria-label="Results">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Results</span></span>
+      <a href="./index.html" class="pagination-link" aria-label="Preface">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Preface</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./conclusion.html" class="pagination-link" aria-label="Conclusion">
-        <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Conclusion</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./natincome.html" class="pagination-link" aria-label="National Income Accounts, Prices, and Inflation">
+        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">National Income Accounts, Prices, and Inflation</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -612,7 +769,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions"><ul><li><a href="https://github.com/UdayanRoy62/internationalmacro/edit/main/d3graph.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/UdayanRoy62/internationalmacro/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/UdayanRoy62/internationalmacro/edit/main/preliminaries.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/UdayanRoy62/internationalmacro/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>This book was built with <a href="https://quarto.org/">Quarto</a>.</p>
 </div>

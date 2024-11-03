@@ -6,10 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Udayan Roy">
-<meta name="dcterms.date" content="2024-07-22">
 
-<title>International Macroeconomics: Lecture Notes</title>
+<title>International Macroeconomics: Lecture Notes - 4&nbsp; Exchange Rates</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -22,27 +20,7 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for citations */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-  margin-bottom: 0em;
-}
-.hanging-indent div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}</style>
+</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -52,7 +30,8 @@ div.csl-indent {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./preliminaries.html" rel="next">
+<link href="./markets_equilibrium.html" rel="next">
+<link href="./bop.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -90,6 +69,35 @@ div.csl-indent {
   }
 }</script>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -102,7 +110,7 @@ div.csl-indent {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Preface</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./exchange_rates.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Exchange Rates</span></a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -132,7 +140,7 @@ div.csl-indent {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Preface</span></a>
   </div>
 </li>
@@ -156,7 +164,7 @@ div.csl-indent {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./exchange_rates.html" class="sidebar-item-text sidebar-link">
+  <a href="./exchange_rates.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Exchange Rates</span></span></a>
   </div>
 </li>
@@ -242,35 +250,32 @@ div.csl-indent {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#preface" id="toc-preface" class="nav-link active" data-scroll-target="#preface">Preface</a></li>
+  <li><a href="#sec-nomexrates" id="toc-sec-nomexrates" class="nav-link active" data-scroll-target="#sec-nomexrates"><span class="header-section-number">4.1</span> Nominal Exchange Rates</a></li>
+  <li><a href="#sec-realexrates" id="toc-sec-realexrates" class="nav-link" data-scroll-target="#sec-realexrates"><span class="header-section-number">4.2</span> Real Exchange Rates</a>
+  <ul class="collapse">
+  <li><a href="#sec-notnfornvar" id="toc-sec-notnfornvar" class="nav-link" data-scroll-target="#sec-notnfornvar"><span class="header-section-number">4.2.1</span> Notation: Foreign Country Variables</a></li>
+  </ul></li>
+  <li><a href="#sec-spotexrates" id="toc-sec-spotexrates" class="nav-link" data-scroll-target="#sec-spotexrates"><span class="header-section-number">4.3</span> What Are Spot Exchange Rates?</a></li>
+  <li><a href="#sec-forwardexrates" id="toc-sec-forwardexrates" class="nav-link" data-scroll-target="#sec-forwardexrates"><span class="header-section-number">4.4</span> What Are Forward Exchange Rates?</a>
+  <ul class="collapse">
+  <li><a href="#sec-forward-exp" id="toc-sec-forward-exp" class="nav-link" data-scroll-target="#sec-forward-exp"><span class="header-section-number">4.4.1</span> Forward Exchange Rates and Expectations</a></li>
+  </ul></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/UdayanRoy62/internationalmacro/edit/main/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/UdayanRoy62/internationalmacro/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/UdayanRoy62/internationalmacro/edit/main/exchange_rates.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/UdayanRoy62/internationalmacro/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">International Macroeconomics: Lecture Notes</h1>
+<h1 class="title"><span id="sec-exrates" class="quarto-section-identifier"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Exchange Rates</span></span></h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Udayan Roy </p>
-          </div>
-  </div>
     
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">July 22, 2024</p>
-    </div>
-  </div>
   
     
   </div>
@@ -280,35 +285,53 @@ div.csl-indent {
 </header>
 
 
-<section id="preface" class="level1 unnumbered">
-<h1 class="unnumbered">Preface</h1>
-<p>These lecture notes are for a very short course—roughly twelve 75-minute lectures—on international macroeconomics that I have taught to junior and senior undergraduates. Although no prior knowledge of economics is assumed, students typically come to the course after completing courses on introductory microeconomics and macroeconomics.</p>
-<p>This course is the second half of a one-semester course on international economics, with the first half on international trade. The course’s textbook is <span class="citation" data-cites="krugman2022international">Krugman, Obstfeld, and Melitz (<a href="references.html#ref-krugman2022international" role="doc-biblioref">2022</a>)</span>. My goal here is simply to present a concise version of chapters 13 through 18 of that book.</p>
-<p>I had to grapple with some tough trade-offs because of the severe time constraint. The core of the course is the theoretical framework originally proposed by Robert A. Mundell and J. Marcus Fleming. I assume perfect capital mobility throughout and, thereby, avoid all discussion of wealth effects and portfolio theory.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> I also assume a “small” country and, thereby, avoid the complex interactions of two-country models. The perfect capital mobility and small country assumptions keep this course very similar to the undergraduate macroeconomics course that most of my students would have also taken. This simplicity, I think, allows students to focus on the special aspects of <em>international</em> macroeconomics without having to learn a new kind of macroeconomics.</p>
-<p>However, the discussion of expectations here may surprise even students who have taken intermediate macroeconomics courses. I have broken up the discussion of short-run analysis into separate chapters on permanent and temporary changes in exogenous variables. Expectations are assumed to be anchored to the long-run equilibrium outcome. This assumption is at the root of the need to distinguish between temporary and permanent changes in, say, fiscal policy. A temporary change affects neither the long-run equilibrium outcome nor people’s expectations, which are, after all, assumed to be tied to the long-run equilibrium outcome. On the other hand, a permanent change in, say, government spending affects the long-run equilibrium level of the future value of the exchange rate and, consequently, people’s expectations about the future value of the exchange rate. This change in expectations has short-run ramifications that are absent in the analysis of temporary changes in government spending.</p>
-<p>These notions are present in <span class="citation" data-cites="krugman2022international">Krugman, Obstfeld, and Melitz (<a href="references.html#ref-krugman2022international" role="doc-biblioref">2022</a>)</span>, but are not developed in a way that is clear enough and leisurely enough for most students to grasp.<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> Other international macroeconomics textbooks are no better in this respect, and usually a lot worse.<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a></p>
-<p>The role of the long-run outcome in anchoring expectations is also my reason to discuss the long run before the short run. It would be essentially impossible to do short-run analysis without some notion of how expectations are formed, and the formation of expectations would be impossible to explain without a discussion of long-run equilibrium.</p>
-<p>These lecture notes are a work in progress. Please let me know if you see any errors or if you see a way to make the book better. My mailing address is Udayan Roy, College of Management, Long Island University, Brookville, NY 11548, USA. My email address is <a href="mailto:udayan.roy@liu.edu" class="email">udayan.roy@liu.edu</a>.</p>
+<!--sec-exrates, sec-nomexrates, sec-realexrates, eq-q, sec-notnfornvar, sec-spotexrates, sec-forwardexrates, sec-forward-exp,  
+-->
+<p>The currency of a country is valuable, even to residents of other countries. Non-Americans may wish to buy dollars (with their own respective currencies), in order to buy American goods, services or assets.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> Similarly, Americans may be willing to pay dollars to buy foreign currencies. The institutions that enable people to trade one currency for another are called <strong>foreign exchange markets</strong>. The amount of currency <span class="math inline">\(A\)</span> (say, the US dollar) that will have to be paid as the price of one unit of currency <span class="math inline">\(B\)</span> (say, the euro) in the foreign exchange market is the <strong>exchange rate</strong> of currency <span class="math inline">\(B\)</span> in terms of currency <span class="math inline">\(A\)</span>.</p>
+<section id="sec-nomexrates" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="sec-nomexrates"><span class="header-section-number">4.1</span> Nominal Exchange Rates</h2>
+<p>The answer to the question “What are <em>nominal</em> exchange rates?” is actually the same as the answer to the question “What are exchange rates?”. The nominal exchange rate of the euro in terms of, say, the US dollar is the price of a euro in dollars. The word “nominal” is sometimes added simply to serve as a reminder that there exists another kind of exchange rate: the real exchange rate.</p>
+<p>In this lecture, I will typically consider two currencies: the <em>domestic</em> currency and the <em>foreign</em> currency. I will use the symbol <span class="math inline">\(E\)</span> to denote <strong>the price of the foreign currency measured in units of the domestic currency</strong>. So, if the domestic currency is the US dollar and the foreign currency is the British pound, and if one pound is worth $2.00, then <span class="math inline">\(E = 2.00\)</span>. If one US dollar is worth 100 Japanese yen, then <span class="math inline">\(E=0.01\)</span>. (Why?)</p>
+</section>
+<section id="sec-realexrates" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="sec-realexrates"><span class="header-section-number">4.2</span> Real Exchange Rates</h2>
+<p>The real exchange rate is <em>the (average) price of foreign-made goods and services measured in units of domestically produced goods and services</em>. It is denoted by the symbol, <span class="math inline">\(q\)</span>, of the lower case Greek letter “epsilon”, and it is computed by the following equation: <span id="eq-q"><span class="math display">\[
+q=\frac{E\cdot P^*}{P}
+\tag{4.1}\]</span></span></p>
+<p>Here, <span class="math inline">\(P\)</span> (respectively, <span class="math inline">\(P^*\)</span>) represents <strong>the average level of prices</strong> of goods and services made in the domestic (respectively, foreign) economy. By “average level of prices” I mean some sort of price index such as the implicit price deflator for GDP or the consumer price index.<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></p>
+<p>To see why <a href="#eq-q" class="quarto-xref">Equation&nbsp;<span>4.1</span></a> does measure the relative price of foreign goods in units of domestic goods, consider a world in which wheat is the only traded good. Consider “Made in USA” wheat and “Made in France” wheat. Let the price of “Made in USA” wheat be $2.00 per pound; that is, let <span class="math inline">\(P=2\)</span>. Let the price of “Made in France” wheat be per pound; that is, let <span class="math inline">\(P^*=6\)</span>. Let the price of one euro be $2.00; that is, let <span class="math inline">\(E=2.00\)</span>. Note that the price of “Made in France” wheat is which is worth $12.00. Note also that $12.00 would buy you six pounds of “Made in USA” wheat. Therefore, one pound of “Made in France” wheat has the same market value as six pounds of “Made in USA” wheat. That is, the real exchange rate of “Made in France” wheat is six pounds of “Made in USA” wheat. In symbols, <span class="math inline">\(q=6\)</span>.</p>
+<p>Let us now see if the formula in <a href="#eq-q" class="quarto-xref">Equation&nbsp;<span>4.1</span></a> gives the same answer. If we substitute <span class="math inline">\(P=2\)</span>, <span class="math inline">\(P^*=6\)</span> and <span class="math inline">\(E=2.00\)</span> in <a href="#eq-q" class="quarto-xref">Equation&nbsp;<span>4.1</span></a>, we get <span class="math inline">\(q=(2.00\times 6)/2 =6\)</span>, which is exactly the real exchange rate we got in the last paragraph.</p>
+<p>Note that the real exchange rate, being the price of foreign-made goods (measured in units of domestically produced goods), is a measure of the foreign economy’s competitiveness. The higher the value of <span class="math inline">\(q\)</span>, the less attractive foreign-made goods would be (to domestic buyers) and the more attractive domestically produced goods would be (to foreign buyers).</p>
+<section id="sec-notnfornvar" class="level3" data-number="4.2.1">
+<h3 data-number="4.2.1" class="anchored" data-anchor-id="sec-notnfornvar"><span class="header-section-number">4.2.1</span> Notation: Foreign Country Variables</h3>
+<p>As I did in the case of <span class="math inline">\(P^*\)</span> in <a href="#sec-realexrates" class="quarto-xref"><span>Section 4.2</span></a>, I will use an asterisk (*) as a superscript to mark all foreign variables; i.e., all variables describing the rest of the world.</p>
+</section>
+</section>
+<section id="sec-spotexrates" class="level2" data-number="4.3">
+<h2 data-number="4.3" class="anchored" data-anchor-id="sec-spotexrates"><span class="header-section-number">4.3</span> What Are Spot Exchange Rates?</h2>
+<p>The spot exchange rate is just another way of refering to the exchange rate that I discussed earlier in <a href="#sec-exrates" class="quarto-xref"><span>Chapter 4</span></a>. Today’s spot exchange rate of, say, the Japanese yen in terms of the US dollar is the price—of a yen, in dollars—at which any dollar-yen exchange would take place today. This is, therefore, just another, fancier name for the <span class="math inline">\(E\)</span> that was defined earlier. The word “spot” is sometimes added simply to serve as a reminder that there exists another kind of exchange rate: the Forward Exchange Rate.</p>
+</section>
+<section id="sec-forwardexrates" class="level2" data-number="4.4">
+<h2 data-number="4.4" class="anchored" data-anchor-id="sec-forwardexrates"><span class="header-section-number">4.4</span> What Are Forward Exchange Rates?</h2>
+<p>Today’s “30-day forward exchange rate” of the yen in terms of the US dollar is the price—of a yen, in dollars—that you would have to pay for any dollar-yen exchange you agree <em>today</em> to do <em>30 days later</em>. Only the agreement is signed today; the actual exchange of currencies takes place 30 days later. Let us denote the 30-day forward exchange rate of the foreign currency in terms of the domestic currency by <span class="math inline">\(f_{30}\)</span>. So, if <span class="math inline">\(f_{30} = 0.095\)</span> US dollars today, you can sign an agreement today to sell $9.50 thirty days later in exchange for 100 yen.</p>
+<p>But why would anyone do such a thing? That is, why would one sign an agreement <em>today</em> to make a currency exchange <em>thirty days later?</em> Well, by trading currencies on the forward exchange market, one can <em>avoid exchange rate uncertainty</em>. Suppose you will have to pay someone 100 yen thirty days from today. If you sign a forward-market agreement today and if <span class="math inline">\(f_{30}=0.095\)</span>, you’ll know that you’ll need exactly $9.50 thirty days later to make your 100 yen payment. You could instead wait 30 days, go to the foreign exchange spot market and buy 100 yen at whatever spot-market exchange rate prevails at that date. But that would be a gamble: you could end up paying $9.50 or more than $9.50 or less than $9.50 depending on what the spot rate is at that date.</p>
+<section id="sec-forward-exp" class="level3" data-number="4.4.1">
+<h3 data-number="4.4.1" class="anchored" data-anchor-id="sec-forward-exp"><span class="header-section-number">4.4.1</span> Forward Exchange Rates and Expectations</h3>
+<p>It can be shown that the 30-day forward exchange rate of the yen is a proxy measure of what people currently expect the spot-market value of the yen will be 30 days in the future. That is, if <span class="math inline">\(f_{30} = 0.095\)</span> US dollars per yen today, then it is a safe bet that people today expect that one yen will be worth $0.095 thirty days later in the spot market. Why?</p>
+<p>Recall that the nominal exchange rate (<span class="math inline">\(E\)</span>) is the current spot-market value of one unit of the foreign currency. Using the notational rule set out in <a href="natincome.html#sec-notngrowth" class="quarto-xref"><span>Section 2.3.1</span></a>, let <span class="math inline">\(E_f\)</span> denote the <em>future</em> spot-market value of one unit of the foreign currency. And, finally, let <span class="math inline">\(E_f^e\)</span> denote the <strong>current expectation of the future value of the nominal exchange rate</strong>. My claim is that <span class="math inline">\(f_{30}\)</span> is a good estimate of <span class="math inline">\(E_f^e\)</span> when the future is 30 days ahead.</p>
+<p>To see why this is, suppose, to the contrary, that <span class="math inline">\(f_{30} = 0.095\)</span> US dollars per yen today, but that people today think that thirty days later one yen will be worth <span class="math inline">\(E_f^e =0.080\)</span> US dollars in the spot market. Now, if people are more or less convinced that thirty days later they would be able to buy one yen in the spot market for $0.080, why would they rush to the forward market today and pay $0.095 for every yen that they must pledge to buy thirty days later? It doesn’t make sense. If instead we had <span class="math inline">\(f_{30} = 0.095\)</span> and <span class="math inline">\(E_f^e =0.099\)</span>, then people would indeed want to buy yen in the forward market.</p>
+<p>But now nobody would want to <em>sell</em> yen in the forward market. To see why, suppose you are an American exporter and you are expecting a Japanese client to pay you in yen thirty days in the future. You could wait till you receive the yen payment and then sell your yen on the spot market to get dollars, or you could sell the expected receipt of yen on the forward market <em>today</em>. Which would you rather do? As the forward value of a yen is <span class="math inline">\(f_{30} = 0.095\)</span> and you expect that the spot-market value will be <span class="math inline">\(E_f^e =0.099\)</span>, you will surely choose to avoid the forward market.</p>
+<p>To summarize, I have established that if <span class="math inline">\(f_{30} &gt; E_f^e\)</span> then nobody would want to buy the foreign currency in the forward market. I have also established that if <span class="math inline">\(f_{30} &lt; E_f^e\)</span> then nobody would want to sell the foreign currency in the forward market. Therefore, the only reasonable outcome is <span class="math inline">\(f_{30} = E_f^e\)</span>. That is, today’s forward-market price of a currency is a good estimate of what people today expect that currency’s spot-market value will be in the future.</p>
+<p>Typically, you can’t tell what people expect the future to be. But in the case of foreign exchange rates at least, there is a way to do so!</p>
 
 
-<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
-<div id="ref-feenstra2008international" class="csl-entry" role="listitem">
-Feenstra, Robert C, and Alan M Taylor. 2008. <em>International Trade</em>. Macmillan.
-</div>
-<div id="ref-krugman2022international" class="csl-entry" role="listitem">
-Krugman, Paul R, Maurice Obstfeld, and Marc Melitz. 2022. <em>International Economics: Theory and Policy</em>. Pearson Education.
-</div>
-<div id="ref-rodseth2000open" class="csl-entry" role="listitem">
-Rødseth, Asbjørn. 2000. <em>Open Economy Macroeconomics</em>. Cambridge University Press.
-</div>
-</div>
+</section>
 </section>
 <section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
 <hr>
 <ol>
-<li id="fn1"><p>On these issues, see <span class="citation" data-cites="rodseth2000open">Rødseth (<a href="references.html#ref-rodseth2000open" role="doc-biblioref">2000</a>)</span>. By perfect capital mobility I mean a world in which (a) people who buy assets care only about the expected returns of those assets, and (b) they all have the same expectations about future changes in exchange rates. See section XXX.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn2"><p>On page 442 of <span class="citation" data-cites="krugman2022international">Krugman, Obstfeld, and Melitz (<a href="references.html#ref-krugman2022international" role="doc-biblioref">2022</a>)</span> the authors address the issue as follows: “A permanent policy shift affects not only the current value of the government’s policy instrument (the money supply, government spending, or taxes) but also the <em>long-run</em> exchange rate. This in turn affects expectations about future exchange rates. Because these changes in expectations have a major influence on the exchange rate prevailing in the short run, the effects of permanent policy shifts differ from those of temporary shifts.”<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn3"><p>Consider <span class="citation" data-cites="feenstra2008international">Feenstra and Taylor (<a href="references.html#ref-feenstra2008international" role="doc-biblioref">2008</a>)</span>. On page 551 of their excellent textbook, the authors write, “[W]e can form expectations of the future exchange rate using the long-run monetary approach …” This easy-to-miss mention of the idea that expectations are based on the long-run equilibrium outcome is not adequately developed, as far as I am concerned. And the consequent need to distinguish between temporary and permanent policy changes is not as clearly developed as I would like.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn1"><p>By “non-Americans” I mean residents of countries other than the United States. Similarly, by “Americans” I mean residents of the United States, citizens or not.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>These variables were discussed in <a href="natincome.html#sec-p-pi" class="quarto-xref"><span>Section 2.6</span></a>. See in particular <a href="natincome.html#eq-P" class="quarto-xref">Equation&nbsp;<span>2.11</span></a>.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section>
 
@@ -729,10 +752,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="./bop.html" class="pagination-link" aria-label="Balance of Payments Accounts">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Balance of Payments Accounts</span></span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./preliminaries.html" class="pagination-link" aria-label="Preliminaries">
-        <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Preliminaries</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./markets_equilibrium.html" class="pagination-link" aria-label="Markets and Equilibrium">
+        <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Markets and Equilibrium</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -744,7 +770,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/UdayanRoy62/internationalmacro/edit/main/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/UdayanRoy62/internationalmacro/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/UdayanRoy62/internationalmacro/edit/main/exchange_rates.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/UdayanRoy62/internationalmacro/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>This book was built with <a href="https://quarto.org/">Quarto</a>.</p>
 </div>

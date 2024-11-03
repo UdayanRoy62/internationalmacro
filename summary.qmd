@@ -1,0 +1,147 @@
+# International Macroeconomics: Summary {#sec-intmac_summary_tables}
+
+\section{Short-Run Equations}
+
+$$
+1=c\cdot (1-t)+IN(i^*-e_g^e-\pi^e)+\frac{G}{Y}+EX\left(\frac{e\cdot P}{P^*}\right)\cdot \frac{Y^p}{Y}-IM\left(\frac{e\cdot P}{P^*},\theta\right)
+$$
+
+$$
+\frac{M}{P}=L(i^*-e_g^e)\cdot Y
+$$
+
+\section{Short-Run Predictions for Flexible Exchange Rates}
+
+
+\begin{table}
+\begin{tabular}{*{11}{|c}|}
+\hline
+%\multicolumn{11}{|c|}{\textbf{Flexible Exchange Rates and Short Run}}\\ \hline
+	&$Y$	&$C$	&$I$	&$NXP$ &$EXP$ 	&IMP	&$i$	&$r^e$	&$e$	&$\epsilon$  \\ \hline
+$G$	&	&	&	&-	&-		&+	&	&	&+				&+\\ \hline
+$t$	&	&-	&	&+	&+		&-	&	&	&-				&-\\ \hline
+$c$	&	&+	&	&-	&-		&+	&	&	&+				&+\\ \hline
+$i^*$	&+	&+	&?	&?	&+		&?	&+	&+	&-				&-\\ \hline
+$\theta$ &	&	&	&	&-		&-	&	&	&+				&+\\ \hline
+$Y^p$	&	&	&	&	&+		&+	&	&	&+				&+\\ \hline
+$P^*$	&	&	&	&	&		&	&	&	&+				& \\ \hline
+$P$	&-	&-	&-	&?	&-		&?	&	&	&?				&+\\ \hline
+$\pi^e$ &	&	&+	&-	&-		&+	&	&-	&+				&+\\ \hline
+$e^e_g$ &-	&-	&?	&?	&-		&?	&-	&-	&+				&+\\ \hline
+$M$	&+	&+	&+	&?	&+		&?	& 	&  	&-				&- \\ \hline
+
+\end{tabular}
+
+\caption{Short-Run Predictions for Flexible Exchange Rates}
+
+\end{table}
+
+\section{Short-Run Predictions for Fixed Exchange Rates}
+
+\begin{table}
+
+\begin{tabular}
+{*{10}{|c}|}
+\hline
+%\multicolumn{10}{c}{\textbf{Fixed Exchange Rates and Short Run}}\\ \hline
+
+		&$Y$	&$C$	&$I$	&$NXP$	&$EXP$	&$IMP$	&$i$	&$r^e$ &$M$\\ \hline
+$G$		&+	&+	&+	&-	&	&+	&	&	&+\\ \hline
+$t$		&-	&-	&-	&+	&	&-	&	&	&-\\ \hline
+$c$		&+	&+	&+	&-	&	&+	&	&	&+\\ \hline
+$i^*$		&-	&-	&-	&+	&	&-	&+	&+	&-\\ \hline
+$\theta$	&+	&+	&+	&?	&	&?	&	&	&+\\ \hline
+$Y^p$		&+	&+	&+	&?	&+	&+	&	&	&+\\ \hline
+$P^*$		&+	&+	&+	&?	&+	&?	&	&	&+\\ \hline
+$P$		&-	&-	&-	&?	&-	&?	&	&	&?\\ \hline
+$\pi^e$	&+	&+	&+	&-	&	&+	&	&-	&+\\ \hline
+$e_g^e$ 	&+	&+	&+	&-	&	&+	&-	&-	&+\\ \hline
+$e$		&-	&-	&-	&?	&-	&?	& 	& 	&- \\ \hline
+
+\end{tabular}
+\caption{Short-Run Predictions for Fixed Exchange Rates}
+\end{table}
+
+\section{Long-Run Equation for Real Variables}
+
+$$
+1=c\cdot (1-t)+IN(i^*-\pi^*)+\frac{G}{Y^p}+EX(\epsilon)-IM(\epsilon,\theta)
+$$
+
+\begin{table}
+\begin{tabular}
+{*{9}{|c}|}
+\hline
+
+	&$Y$	&$C$	&$I$	&$NXP$	&$EXP$	&$IMP$	&$r$	&$\epsilon$\\ \hline
+$G$	&	&	&	&-	&-	&+	&	&+	\\ \hline
+$t$	&	&-	&	&+	&+	&-	&	&-	\\ \hline
+$c$	&	&+	&	&-	&-	&+	&	&+	\\ \hline
+$r^*$	&	&	&-	&+	&+	&-	&+	&-	\\ \hline
+$\theta$	&	&	&	&	&-	&-	&	&+	\\ \hline
+$Y^p$	&+	&+	&+	&?	&+	&?	&	&-	\\ \hline
+
+\end{tabular}
+\caption{Long-Run Behavior of Real Variables.}
+\end{table}
+
+
+\section{Long-Run Equation for Nominal Variables: Flexible Exchange Rates}
+
+$$
+\frac{M}{P}=L(i^*-\pi^*+M_g-Y_g^p)\cdot Y^p
+$$
+
+\begin{table}
+
+\begin{tabular}
+{*{6}{|c}|}
+\hline
+%\multicolumn{13}{|c|}{\textbf{Flexible Exchange Rates and Long Run}}\\ \hline
+
+	&$i$	&$\pi$	&$P$	&$e$	&$e_g^e$\\ \hline
+$G$	&	&	&	&+	&		\\ \hline
+$t$	&	&	&	&-	&		\\ \hline
+$c$	&	&	&	&+	&		\\ \hline
+$i^*$	&+	&	&+	&-	&		\\ \hline
+$\theta$	&	&	&	&+	&	\\ \hline
+$Y^p$	&	&	&-	&?	&		\\ \hline
+$P^*$	&	&	&	&+	&		\\ \hline
+$\pi^*$	&-	&	&-	&+	&+		\\ \hline
+$Y^p_g$ &-	&-	&-	&+	&+		\\ \hline
+$M$	&	&	&+	&-	&		\\ \hline
+$M_g$	&+	&+	&+	&-	&-		\\ \hline
+
+\end{tabular}
+\caption{Long-Run Behavior of Nominal Variables Under Flexible Exchange Rates.}
+\end{table}
+
+\section{Long-Run Equation for Nominal Variables: Fixed Exchange Rates}
+
+$$
+\frac{M}{P}=L(i^*)\cdot Y^p.
+$$
+
+\begin{table}
+
+\begin{tabular}
+{*{6}{|c}|}
+\hline
+%\multicolumn{13}{|c|}{\textbf{Fixed Exchange Rates and Long Run}}\\ \hline
+
+
+	&$i$ 	&$\pi$ 	&$P$ 	&$M$ 	&$M_g$		\\ \hline
+$G$	&	&	&+	&+	&		\\ \hline
+$t$	&	&	&-	&-	&		\\ \hline
+$c$	&	&	&+	&+	&		\\ \hline
+$i^*$	&+	&	&-	&-	&		\\ \hline
+$\theta$	&	&	&+	&+	&	\\ \hline
+$Y^p$	&	&	&-	&?	&		\\ \hline
+$P^*$	&	&	&+	&+	&		\\ \hline
+$\pi^*$	&	&+	&+	&+	&+		\\ \hline
+$Y^p_g$ &	&	&	&	&+		\\ \hline
+$e$	&	& 	&-	&-	&		\\ \hline
+
+\end{tabular}
+\caption{Long-Run Behavior of Nominal Variables Under Fixed Exchange Rates.}
+\end{table}

@@ -6,10 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Udayan Roy">
-<meta name="dcterms.date" content="2024-07-22">
 
-<title>International Macroeconomics: Lecture Notes</title>
+<title>International Macroeconomics: Lecture Notes - 14&nbsp; Special Topic: Currency Crises</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -22,27 +20,7 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for citations */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-  margin-bottom: 0em;
-}
-.hanging-indent div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}</style>
+</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -52,7 +30,8 @@ div.csl-indent {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./preliminaries.html" rel="next">
+<link href="./summary.html" rel="next">
+<link href="./short_flex_permanent.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -90,6 +69,35 @@ div.csl-indent {
   }
 }</script>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -102,7 +110,7 @@ div.csl-indent {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Preface</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./crises.html"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Special Topic: Currency Crises</span></a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -132,7 +140,7 @@ div.csl-indent {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Preface</span></a>
   </div>
 </li>
@@ -216,7 +224,7 @@ div.csl-indent {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./crises.html" class="sidebar-item-text sidebar-link">
+  <a href="./crises.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Special Topic: Currency Crises</span></span></a>
   </div>
 </li>
@@ -242,35 +250,26 @@ div.csl-indent {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#preface" id="toc-preface" class="nav-link active" data-scroll-target="#preface">Preface</a></li>
+  <li><a href="#sec-lowreserves" id="toc-sec-lowreserves" class="nav-link active" data-scroll-target="#sec-lowreserves"><span class="header-section-number">14.1</span> Inadequate Foreign Currency Reserves</a></li>
+  <li><a href="#sec-currboard" id="toc-sec-currboard" class="nav-link" data-scroll-target="#sec-currboard"><span class="header-section-number">14.2</span> Currency Boards</a></li>
+  <li><a href="#sec-cure" id="toc-sec-cure" class="nav-link" data-scroll-target="#sec-cure"><span class="header-section-number">14.3</span> Dealing with a Currency Crisis</a></li>
+  <li><a href="#sec-preven" id="toc-sec-preven" class="nav-link" data-scroll-target="#sec-preven"><span class="header-section-number">14.4</span> Preventing a Currency Crisis</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/UdayanRoy62/internationalmacro/edit/main/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/UdayanRoy62/internationalmacro/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/UdayanRoy62/internationalmacro/edit/main/crises.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/UdayanRoy62/internationalmacro/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">International Macroeconomics: Lecture Notes</h1>
+<h1 class="title"><span id="sec-crises" class="quarto-section-identifier"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Special Topic: Currency Crises</span></span></h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Udayan Roy </p>
-          </div>
-  </div>
     
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">July 22, 2024</p>
-    </div>
-  </div>
   
     
   </div>
@@ -280,35 +279,72 @@ div.csl-indent {
 </header>
 
 
-<section id="preface" class="level1 unnumbered">
-<h1 class="unnumbered">Preface</h1>
-<p>These lecture notes are for a very short course—roughly twelve 75-minute lectures—on international macroeconomics that I have taught to junior and senior undergraduates. Although no prior knowledge of economics is assumed, students typically come to the course after completing courses on introductory microeconomics and macroeconomics.</p>
-<p>This course is the second half of a one-semester course on international economics, with the first half on international trade. The course’s textbook is <span class="citation" data-cites="krugman2022international">Krugman, Obstfeld, and Melitz (<a href="references.html#ref-krugman2022international" role="doc-biblioref">2022</a>)</span>. My goal here is simply to present a concise version of chapters 13 through 18 of that book.</p>
-<p>I had to grapple with some tough trade-offs because of the severe time constraint. The core of the course is the theoretical framework originally proposed by Robert A. Mundell and J. Marcus Fleming. I assume perfect capital mobility throughout and, thereby, avoid all discussion of wealth effects and portfolio theory.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> I also assume a “small” country and, thereby, avoid the complex interactions of two-country models. The perfect capital mobility and small country assumptions keep this course very similar to the undergraduate macroeconomics course that most of my students would have also taken. This simplicity, I think, allows students to focus on the special aspects of <em>international</em> macroeconomics without having to learn a new kind of macroeconomics.</p>
-<p>However, the discussion of expectations here may surprise even students who have taken intermediate macroeconomics courses. I have broken up the discussion of short-run analysis into separate chapters on permanent and temporary changes in exogenous variables. Expectations are assumed to be anchored to the long-run equilibrium outcome. This assumption is at the root of the need to distinguish between temporary and permanent changes in, say, fiscal policy. A temporary change affects neither the long-run equilibrium outcome nor people’s expectations, which are, after all, assumed to be tied to the long-run equilibrium outcome. On the other hand, a permanent change in, say, government spending affects the long-run equilibrium level of the future value of the exchange rate and, consequently, people’s expectations about the future value of the exchange rate. This change in expectations has short-run ramifications that are absent in the analysis of temporary changes in government spending.</p>
-<p>These notions are present in <span class="citation" data-cites="krugman2022international">Krugman, Obstfeld, and Melitz (<a href="references.html#ref-krugman2022international" role="doc-biblioref">2022</a>)</span>, but are not developed in a way that is clear enough and leisurely enough for most students to grasp.<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> Other international macroeconomics textbooks are no better in this respect, and usually a lot worse.<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a></p>
-<p>The role of the long-run outcome in anchoring expectations is also my reason to discuss the long run before the short run. It would be essentially impossible to do short-run analysis without some notion of how expectations are formed, and the formation of expectations would be impossible to explain without a discussion of long-run equilibrium.</p>
-<p>These lecture notes are a work in progress. Please let me know if you see any errors or if you see a way to make the book better. My mailing address is Udayan Roy, College of Management, Long Island University, Brookville, NY 11548, USA. My email address is <a href="mailto:udayan.roy@liu.edu" class="email">udayan.roy@liu.edu</a>.</p>
+<!--
+sec-crises
+sec-lowreserves
+sec-currboard
+sec-cure
+sec-preven
+-->
+<p>My earlier discussion of the short-run macroeconomic behavior of an open economy under fixed exchange rates sidestepped the issue of currency crises. A currency crisis is quite possibly one of the most dramatic, headline grabbing events in economics. In this lecture I will discuss why currency crises happen and what can be done about them.</p>
+<section id="sec-lowreserves" class="level2" data-number="14.1">
+<h2 data-number="14.1" class="anchored" data-anchor-id="sec-lowreserves"><span class="header-section-number">14.1</span> Inadequate Foreign Currency Reserves</h2>
+<p>In a fixed exchange rate system, the nation’s central bank stands ready to buy and/or sell any amount of the domestic currency at a specified rate called the peg. For example, the U.S. Federal Reserve may announce that it will buy and sell U.S. dollars at the pegged rate of 1.50 British pounds per dollar. If such an announcement is in fact made, the market value of the U.S. dollar would immediately become 1.50 pounds per dollar.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
+<p>If, following such an announcement, people turn up at the Fed’s offices to buy dollars with the pounds they are carrying, the Fed will simply (i) add those pounds to its reserves of foreign currencies and (ii) print new dollar bills to pay the people. So, two things happen: the Fed’s <strong>foreign currency reserves</strong> , <span class="math inline">\(R\)</span>, increase and the U.S. money supply, <span class="math inline">\(M\)</span>, increases.</p>
+<p>When people appear at the Fed to <em>sell</em> dollars for pounds, the opposite happens: the Fed’s pound reserves and the U.S. money supply both decrease.</p>
+<p>So, if exchange rates are fixed, a country’s reserves of foreign currencies, <span class="math inline">\(R\)</span>, and its money supply, <span class="math inline">\(M\)</span>, will either increase together or decrease together or stay unchanged.</p>
+<p>Now, under fixed exchange rates, what are the circumstances in which <span class="math inline">\(M\)</span> might decrease? If you look at my earlier discussion of the short-run behavior of a fixed exchange rate system—especially <a href="short_fixed.html#tbl-short_fixed" class="quarto-xref">Table&nbsp;<span>11.1</span></a>, which summarizes the main results—you will notice that <span class="math inline">\(M\)</span> will decrease if:</p>
+<ol type="1">
+<li>Either <span class="math inline">\(i^*\)</span>, <span class="math inline">\(e\)</span> or <span class="math inline">\(t\)</span> increases</li>
+<li>Or if <span class="math inline">\(P^*\)</span>, <span class="math inline">\(Y^p\)</span>, <span class="math inline">\(\pi^e\)</span>, <span class="math inline">\(e_g^e\)</span>, <span class="math inline">\(G\)</span>, <span class="math inline">\(c\)</span> or <span class="math inline">\(\theta\)</span> decreases.</li>
+</ol>
+<p>When any of these events occur, <span class="math inline">\(M\)</span> will decline and, as was just explained, the decline in <span class="math inline">\(M\)</span> will be accompanied by a decline in <span class="math inline">\(R\)</span>. (By the way, you can check that many of these effects are also true in the long run; see <a href="long_nominal.html#tbl-nominal_long_fix" class="quarto-xref">Table&nbsp;<span>10.2</span></a>.)</p>
+<p>Let’s say that one of the events listed above actually happens raising the possibility of a decline in <span class="math inline">\(M\)</span>—and, therefore, in <span class="math inline">\(R\)</span>. In other words, people are expected to start arriving at the Fed to buy some of the Fed’s stash of British pounds. Specifically, let’s say that the people are expected to line up at the Fed’s door—not all at once but, say, over a two month period—to spend one trillion dollars to buy pounds at the Fed’s announced rate of 1.50 pounds per dollar. So, if the process reaches its expected completion, one trillion dollars will disappear from people’s wallets into the Fed’s vaults—meaning that <span class="math inline">\(M\)</span> will decline by one trillion dollars—and <span class="math inline">\(R\)</span>, the Fed’s pound reserves, will decline by 1.50 trillion pounds.</p>
+<p>But what if the Fed had only 1.00 trillion pounds to begin with? Clearly, the Fed would run out of pounds before all those who wanted to buy pounds could do so. Therefore, the Fed will ultimately have to take back its promise to buy pounds at $1.50 per pound and, therefore, abandon its fixed exchange rate system altogether. That is, the Fed will be forced to switch to a flexible exchange rate system, which entails no promises of any kind.</p>
+<p>The question then is, will the dollar’s value increase or decrease when the fixed exchange rate system ends and the flexible exchange rate system begins? The answer is simple: the dollar’s value will have to fall when the Fed stops buying dollars with its pound reserves. When the Fed buys dollars it props up the dollar’s value. So when the Fed stops buying dollars, the demand for and, therefore, the value of the dollar will decline.</p>
+<p>To summarize,</p>
+<ol type="1">
+<li>if an economy has a fixed exchange rate system and</li>
+<li>if something happens today that is likely to reduce <span class="math inline">\(M\)</span> and, therefore, <span class="math inline">\(R\)</span> and is also likely to be hard to reverse and</li>
+<li>if it is known that the central bank’s foreign currency reserves are inadequate,</li>
+</ol>
+<p>then an abrupt collapse of the fixed exchange rate system sometime ahead in the future followed by a sharp decline in the value of the home country’s currency will be widely anticipated.</p>
+<p>But if people fear a decline in the dollar’s value in two months time, what would they do?</p>
+<p>Fearing a fall in the value of the dollar, people will try to sell the dollar for pounds while the dollar is still (temporarily) high. But this will only accelerate the emptying of the central bank’s reserves and hasten the abandonment of the peg. In short, if something happens that would cause people to sell dollars, then that itself would cause more people to want to sell dollars.</p>
+<p>Let’s say that initially people believe that the fixed exchange rate system would have to be abandoned by the Fed in two months (i.e., <em>eight</em> weeks) and that the dollar’s value would fall at that time. It would then be rational to want to sell dollars for pounds <em>seven</em> weeks from today. But people will quickly realize that, therefore, the Fed would run out of pounds not eight weeks from today but seven weeks from today. In other words, people would expect the dollar’s value to fall seven weeks from today. Realizing this, individuals would now want to sell their dollars one week earlier, i.e., <em>six</em> weeks from today. But then people would quickly realize that since it is advantageous for everybody to do that, the dollar’s value will fall not eight weeks from today but just six weeks from today. And so on and on. Continuing in this way, we realize that the first whiff of a <em>future</em> currency crisis would cause an <em>immediate</em> currency crisis. There would be a mad dash for the exits as people try, all at the same time, to sell their dollars to the Fed for pounds. The Fed would lose all its pounds before it even realized what had happened.</p>
+<p>Let’s look at the whole process in a slightly different way. Saying that a sharp decline in <span class="math inline">\(e\)</span> will be widely anticipated is like saying that <span class="math inline">\(e_g^e\)</span> will decrease. And as was discussed earlier, this will add to the downward pressure on <span class="math inline">\(M\)</span> and hasten the demise of the fixed exchange rate system because the added downward pressure on <span class="math inline">\(M\)</span> implies an added downward pressure on <span class="math inline">\(R\)</span>, which would lead people to expect an even quicker exhaustion of the central bank’s foreign currency reserves. But if people accordingly revise their prediction of the likely date of the death of the fixed exchange rate system, it would mean a further decline in <span class="math inline">\(e_g^e\)</span> which would further hasten the demise of the fixed exchange rate system, and so on.</p>
+<p>In short, a currency crisis occurs in two stages. First, something happens—either <span class="math inline">\(i^*\)</span>, <span class="math inline">\(e\)</span> or <span class="math inline">\(t\)</span> increases or <span class="math inline">\(P^*\)</span>, <span class="math inline">\(Y^p\)</span>, <span class="math inline">\(\pi^e\)</span>, <span class="math inline">\(e_g^e\)</span> , <span class="math inline">\(G\)</span>, <span class="math inline">\(c\)</span> or <span class="math inline">\(\theta\)</span> decreases—that reduces <span class="math inline">\(M\)</span> and <span class="math inline">\(R\)</span>. Second, there is a series of declines in <span class="math inline">\(e_g^e\)</span> that finish the job off. What is scary is that even the first stage, in which the currency crisis is born, may consist of a decline in <span class="math inline">\(e_g^e\)</span>. So, the whole crisis, from beginning to end, may occur simply because of a possibly baseless fear that the currency’s value would fall. That initially baseless fear could set in motion a self-fulfilling prophecy that would end up confirming the fear.</p>
+</section>
+<section id="sec-currboard" class="level2" data-number="14.2">
+<h2 data-number="14.2" class="anchored" data-anchor-id="sec-currboard"><span class="header-section-number">14.2</span> Currency Boards</h2>
+<p>What is even scarier is that a currency crisis can occur even if the central bank has adequate foreign currency reserves, in which case the fixed exchange rate system is called a <strong>currency board</strong> . To see why, let us return briefly to <a href="short_fixed.html#tbl-short_fixed" class="quarto-xref">Table&nbsp;<span>11.1</span></a>, the table that summarizes the results for an economy in the short-run under fixed exchange rates. Note that the columns for <span class="math inline">\(M\)</span> and <span class="math inline">\(Y\)</span> are virtually identical. So, <span class="math inline">\(M\)</span> and <span class="math inline">\(Y\)</span> usually move in the same direction; if something happens that makes <span class="math inline">\(M\)</span> decrease it will very likely also make <span class="math inline">\(Y\)</span> decrease. Now, when <span class="math inline">\(Y\)</span> decreases, the country’s government, fearful of becoming unpopular, will be tempted to devalue the currency (that is, it will be tempted to reduce the pegged value of <span class="math inline">\(e\)</span>) in order to reverse the decline in <span class="math inline">\(Y\)</span>. And if a sudden sharp decline in <span class="math inline">\(e\)</span> is widely anticipated, a currency crisis will develop just as before: <span class="math inline">\(e_g^e\)</span> will go down making a bad situation worse and, as we saw earlier, this itself might precipitate a currency crisis.</p>
+<p>So, the possibility that the central bank will abandon fixed exchange rates either because it has inadequate reserves or because it will have to do something about the declining <span class="math inline">\(Y\)</span>, could precipitate a currency crisis.</p>
+</section>
+<section id="sec-cure" class="level2" data-number="14.3">
+<h2 data-number="14.3" class="anchored" data-anchor-id="sec-cure"><span class="header-section-number">14.3</span> Dealing with a Currency Crisis</h2>
+<p><a href="short_fixed.html#tbl-short_fixed" class="quarto-xref">Table&nbsp;<span>11.1</span></a> suggests several ways of dealing with an unfolding currency crisis: increase government spending, <span class="math inline">\(G\)</span>, cut taxes, <span class="math inline">\(t\)</span>, or raise tariffs, <span class="math inline">\(\theta\)</span>, on imported goods. As the table shows, if any or all of these things are done, <span class="math inline">\(M\)</span> and, therefore, <span class="math inline">\(R\)</span> will increase, thereby reversing the initial decrease in <span class="math inline">\(M\)</span> that precipitated the crisis.</p>
+<p>The problem with this strategy is that the crisis is likely to happen much too quickly for <span class="math inline">\(G\)</span>, <span class="math inline">\(t\)</span> and <span class="math inline">\(\theta\)</span> to have any timely effect. Besides, if the government is to cut taxes and increase spending at the same time, it would have to borrow money from private citizens and such borrowing may be prohibitively expensive, particularly since it is being done in the middle of a currency crisis. And as for tariffs, the effect on <span class="math inline">\(M\)</span> is likely to be weak.</p>
+<p>So, what’s to be done?</p>
+<p>One way out is to get wealthy foreign governments or the International Monetary Fund to come to the crisis country’s aid with a generous line of credit. Suppose people have begun arriving at the Fed to buy British pounds. If it transpires that the Fed has an inadequate stock of pounds, the orderly process of people lining up to buy pounds could quickly turn into a full-fledged currency crisis, as we saw earlier. But if some wealthy foreign government or the IMF steps in with a large loan of British pounds for the Fed, the fear that the fed will run out of pounds will go away and, therefore, the currency crisis itself will go away.</p>
+<p>Of course, the Fed will have to pay those borrowed British pounds back eventually. Therefore, if nothing is done between now and ‘eventually’, the crisis will return. Consequently, all that foreign loans can do is buy the U.S. some time. If the breathing space thus obtained is used to reverse the decline in <span class="math inline">\(M\)</span>—by increasing <span class="math inline">\(G\)</span> and reducing <span class="math inline">\(t\)</span>, as was discussed in the first paragraph of this section—then the crisis will truly end. Emergency infusions of foreign currency reserves combined with necessary changes in domestic policy can effectively bring a currency crisis to an end.</p>
+<p>However, all this, while fine in theory, is very tricky to pull off right in the middle of an actual currency crisis. Therefore, we need to focus on prevention.</p>
+</section>
+<section id="sec-preven" class="level2" data-number="14.4">
+<h2 data-number="14.4" class="anchored" data-anchor-id="sec-preven"><span class="header-section-number">14.4</span> Preventing a Currency Crisis</h2>
+<p>What can be done to prevent a currency crisis? There are three possibilities.</p>
+<ol type="1">
+<li><p>Don’t have a fixed exchange rate system in the first place. Have flexible exchange rates instead. However, the downside of a flexible exchange rate system is that the uncertainty associated with the exchange rate fluctuations that might follow would reduce trade and, therefore, hurt the country’s economic health.</p></li>
+<li><p>Make sure the central bank piles up enough foreign exchange reserves so that it will never run out—that is, adopt the currency board system. For example, suppose 2 trillion dollars have been printed so far. If the Fed announces a peg of 1.50 pounds per dollar and if the Fed has 3 trillion British pounds in its reserves, then it will never run out of pounds: Not even if every single dollar out there is sold to the Fed for pounds. However, this system—the currency board—is not foolproof. As was pointed out in <a href="#sec-currboard" class="quarto-xref"><span>Section 14.2</span></a>, a currency crisis can occur even when there are enough reserves.</p></li>
+<li><p>Join up with other countries with which you wanted to have fixed exchange rates and jointly decide to adopt a single currency for all countries. This system—called a <strong>currency union</strong> —would allow all the advantages of a fixed exchange rate system without the fear of periodic currency crises.</p></li>
+</ol>
+<p>The most important example of the currency union solution to the problem of currency crises is the European Monetary Union and the birth of the Euro and that’s our next topic.</p>
 
 
-<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
-<div id="ref-feenstra2008international" class="csl-entry" role="listitem">
-Feenstra, Robert C, and Alan M Taylor. 2008. <em>International Trade</em>. Macmillan.
-</div>
-<div id="ref-krugman2022international" class="csl-entry" role="listitem">
-Krugman, Paul R, Maurice Obstfeld, and Marc Melitz. 2022. <em>International Economics: Theory and Policy</em>. Pearson Education.
-</div>
-<div id="ref-rodseth2000open" class="csl-entry" role="listitem">
-Rødseth, Asbjørn. 2000. <em>Open Economy Macroeconomics</em>. Cambridge University Press.
-</div>
-</div>
 </section>
 <section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
 <hr>
 <ol>
-<li id="fn1"><p>On these issues, see <span class="citation" data-cites="rodseth2000open">Rødseth (<a href="references.html#ref-rodseth2000open" role="doc-biblioref">2000</a>)</span>. By perfect capital mobility I mean a world in which (a) people who buy assets care only about the expected returns of those assets, and (b) they all have the same expectations about future changes in exchange rates. See section XXX.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn2"><p>On page 442 of <span class="citation" data-cites="krugman2022international">Krugman, Obstfeld, and Melitz (<a href="references.html#ref-krugman2022international" role="doc-biblioref">2022</a>)</span> the authors address the issue as follows: “A permanent policy shift affects not only the current value of the government’s policy instrument (the money supply, government spending, or taxes) but also the <em>long-run</em> exchange rate. This in turn affects expectations about future exchange rates. Because these changes in expectations have a major influence on the exchange rate prevailing in the short run, the effects of permanent policy shifts differ from those of temporary shifts.”<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn3"><p>Consider <span class="citation" data-cites="feenstra2008international">Feenstra and Taylor (<a href="references.html#ref-feenstra2008international" role="doc-biblioref">2008</a>)</span>. On page 551 of their excellent textbook, the authors write, “[W]e can form expectations of the future exchange rate using the long-run monetary approach …” This easy-to-miss mention of the idea that expectations are based on the long-run equilibrium outcome is not adequately developed, as far as I am concerned. And the consequent need to distinguish between temporary and permanent policy changes is not as clearly developed as I would like.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn1"><p>See <a href="exchange_rate_systems.html#sec-fixexrates" class="quarto-xref"><span>Section 8.1</span></a> for a refresher.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section>
 
@@ -729,10 +765,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="./short_flex_permanent.html" class="pagination-link" aria-label="Short-Run Predictions: Expectations and Flexible Exchange Rates">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Short-Run Predictions: Expectations and Flexible Exchange Rates</span></span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./preliminaries.html" class="pagination-link" aria-label="Preliminaries">
-        <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Preliminaries</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./summary.html" class="pagination-link" aria-label="International Macroeconomics: Summary">
+        <span class="nav-page-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">International Macroeconomics: Summary</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -744,7 +783,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/UdayanRoy62/internationalmacro/edit/main/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/UdayanRoy62/internationalmacro/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/UdayanRoy62/internationalmacro/edit/main/crises.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/UdayanRoy62/internationalmacro/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>This book was built with <a href="https://quarto.org/">Quarto</a>.</p>
 </div>

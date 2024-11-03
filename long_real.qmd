@@ -1,0 +1,248 @@
+<!--
+sec-longreal
+sec-longy
+sec-longc
+eq-longc
+sec-longnx
+eq-longnx
+sec-boost-nx
+sec-longq
+sec-q-long-appp
+fig-NX_real_exch_rate_LR_eqm
+sec-q-long-no-appp
+sec-nx-curves
+sec-eqm-no-appp
+sec-real-ex-rates-summary
+tbl-real_long
+sec-longexp
+sec-longimp
+sec-longrealconclusions
+-->
+# Long-Run Predictions: The Real World  {#sec-longreal}
+
+What would be the long-run (or, eventual) consequence of an increase in taxes? This and similar other questions are discussed in this chapter and the next. These questions will all have the same format: If there is a permanent increase in [insert the name of an exogenous variable], what will happen in the long run to [insert the name of an endogenous variable]? Notice that the focus will always be on prediction, because only when a theory takes a stand by making a prediction can it be tested with actual data.
+
+We have seen the distinctions between nominal and real gross domestic product--- in @sec-niaccounts --- and nominal and real exchange rates---in @sec-exrates. Nominal variables are not adjusted for inflation, whereas real variables are. Real variables could meaningfully describe even a barter economy in which money does not exist. Nominal variables, on the other hand, would make sense only in monetary economies. This chapter focuses on the long-run effects of exogenous variables on  *real* endogenous variables. The next chapter takes on nominal endogenous variables, such as the price level, the inflation rate, and the nominal exchange rate.
+
+As I said in @sec-longana, for long-run analysis\index{macroeconomic analysis!long-run analysis} I will assume: 
+
+*  Full Employment\index{full employment}---i.e., $Y = Y^p$---and
+*  Perfect Foresight\index{perfect foresight}---i.e., $E^e_f=E_f$. 
+
+
+## Gross Domestic Product {#sec-longy}
+
+Recall from @sec-exoendo that $Y^p$, potential GDP, is, for us, an exogenous variable. Therefore, the full-employment assumption, $Y=Y^p$, says all that can be said about the long-run behavior of GDP: *$Y$ is equal to $Y^p$ and unaffected by all other exogenous variables.* This is shown in the $Y$-column of @tbl-real_long, which shows the ceteris paribus effects of each exogenous variable on all endogenous variables.^[See @sec-whytheory for the definition of ceteris paribus effects.]
+
+## Consumption {#sec-longc}
+
+Recall from @eq-consfn in @sec-consumption that consumption ($C$) is directly related to disposable income ($Y-T$) as in the consumption function, $C=C(Y-T)$. The full-employment assumption that we just saw then implies 
+
+$$
+C=C(Y^p-T).
+$$ {#eq-longc}
+As $T$ and $Y^p$ are assumed exogenous for our purposes---see @sec-exoendo ---we can say right here all that can be said about the long-run behavior of consumption: *$C$ is directly affected by $Y^p$, inversely affected by $T$, and unaffected by all other exogenous variables*. These are ceteris paribus effects, and they are shown in the $C$-column of @tbl-real_long.
+
+As consumption is an endogenous variable, we need to be able to explain the ups and downs of $C$. Once we have succeeded in expressing an endogenous variable in terms of exogenous variables alone---as we have done in @eq-longc ---we can't go any further because, by definition, exogenous variables are variables we know nothing about (except that they may help explain the up and down movements of our endogenous variables). We don't know what makes $Y^p$ and $T$ fluctuate. Therefore, once we have expressed $C$ entirely in terms of $Y^p$ and $T$, we cannot say anything more about $C$.
+
+## Net Exports {#sec-longnx}
+
+Recall from  @eq-IS that $Y=C+I+G+NX$ is the condition that must be satisfied for the goods market to be in equilibrium. Therefore,
+$$
+\begin{eqnarray}
+NX&=&Y-C(Y-T)-I-G\nonumber \\
+&=&Y^p-C(Y^p-T)-I-G
+\end{eqnarray}
+$$ {#eq-longnx}
+in long-run equilibrium.
+
+Notice that all the variables on the right hand side of this equation are exogenous. Therefore this equation tells us all that can be said about the long run behavior of $NX$. 
+
+For example, what if there is a permanent increase in either $I$ or $G$ or both? It follows directly from @eq-longnx that $NX$ will decrease.
+
+If, however, you are persuaded by the logic of Ricardian equivalence, which we saw in @sec-mpc, then the analysis would be a lot more subtle. Suppose $G$ has permanently increased by \$100 a year. @sec-mpc implies that even though the government in this case has not raised taxes to pay for the increased spending, people may behave as if taxes have gone up by the same \$100. In that case, $C$ would fall. For a \$100 increase in government spending that is perceived to be permanent, $C$ would also fall by \$100, the full extent of the perceived/feared increase in $T$ and the actual increase in $G$. And, therefore, the decline in $C$ would cancel out the increase in $G$ in @eq-longnx, leaving $NX$ unchanged.
+
+<!--
+% So, what is one to believe? In the paragraph before last, an increase in $G$ reduces $NX$. In the last paragraph, on the other hand, an increase in $G$ does not affect $NX$. Both answers make sense; both answers have a logical basis, given the assumptions that underlie them. So it is probably best, in the absence of clinching evidence one way or the other, to split the difference: When $G$ increases, $NX$ will decrease, not as much as the non-Ricardian analysis suggests but not as little as the Ricardian analysis says.
+-->
+
+The effect of an increase in taxes is equally easy to figure out. When $T$ increases, $C$ decreases, as we saw in @sec-longc above. Therefore, by @eq-longnx, $NX$ will increase. 
+
+<!--
+% But, as was the case with my discussion of the effect of $G$ on $NX$, the notion of Ricardian Equivalence introduces a layer of complexity. If there is a tax *increase* today without there being an accompanying increase in government spending, farsighted individuals will anticipate a tax *cut* in the future. If we pursue the line of thinking that was developed two paragraphs back, we would conclude that a tax increase will affect neither $C$ nor $NX$.
+
+% With non-Ricardian analysis arguing that a tax increase will lead to lower consumption and higher net exports, and Ricardian analysis arguing that a tax increase will affect neither $C$ nor $NX$, it makes sense to split the difference and conclude that a tax increase does lead to lower consumption and higher net exports, but not as much as the non-Ricardians may think.
+-->
+
+Finally, what if there is a permanent increase in the domestic country's potential real GDP ($Y^p$) by, say, \$1.00? Consumption spending will increase---as we saw in @sec-consumption above---by the magnitude of the marginal propensity to consume (MPC). And, as we saw in @sec-mpc, the size of the MPC depends on whether the change in income is perceived to be permanent or temporary. Specifically, if the one-dollar increase in income is perceived to be permanent, $C$ will also rise by one dollar and therefore, by @eq-longnx, $NX$ will be *unchanged*. But when the one-dollar increase in income is perceived to be less than permanent, $C$ will rise by a fraction of one dollar. So, $Y^p-C(Y^p-T)$ will increase. Therefore, by @eq-longnx, $NX$ will be *increase*.
+
+So, what's one to believe? If the permanent increase in $Y^p$ is perceived to be permanent, $NX$ is unaffected by the increase in $Y^p$. But if people doubt the permanence of this increase in $Y^p$, $NX$ increases. It makes sense to split the difference and say that when potential real GDP increases, so does net exports, because in actual cases there may be no increase in potential real GDP that is perceived to be entirely permanent.
+
+To sum up, what does our analysis say about the long-run behavior of a country's trade balance or net exports? *A country's net exports is directly affected by its potential real GDP and its tax revenues; inversely affected by government spending and investment spending; and unaffected by all other exogenous variables*. These are ceteris paribus effects, and they are shown in the $NX$-column of @tbl-real_long.
+
+### Policies to raise net exports {#sec-boost-nx}
+
+The important lesson of our analysis is that the only dependable way to achieve a long-run increase in net exports is through 'fiscal austerity' or 'belt tightening' by the country's government. When government spending is reduced ($G\downarrow$) and/or taxes are raised ($T\uparrow$), net exports increases ($NX\uparrow$).
+
+A surprising related point in that **tariffs**, which are taxes imposed only on imported goods and services, and other protectionist policies cannot affect a country's net exports.\index{tariffs} It would be hard to make a cogent argument that tariffs would lead to an increase in $Y^p$ or in $Y^p-C(Y^p-T)$, or to a decrease in $I$ or in $G$. Therefore, it would be hard to make a persuasive argument that $NX=Y^p-C(Y^p-T)-I-G$ would increase in the long run if tariffs or other protectionist measures are implemented.
+
+## Real Exchange Rate {#sec-longq}
+
+The analysis of the long-run behavior of the real exchange rate ($q$) depends on whether or not the law of one price is assumed to be true.^[See @sec-realexrates for more on the real exchange rate, and @sec-summary-nxp and @sec-appp for more on the law of one price.]
+
+### Under absolute purchasing power parity {#sec-q-long-appp} 
+\index{purchasing power parity!absolute}
+
+Recall from @sec-appp that under the law of one price---also called absolute purchasing power parity---the real exchange rate must always be $q=1$ and the relation between net exports and the real exchange rate is represented by a horizontal net exports curve such as the one shown in the right panel of @fig-net_exports_general. In this case, the analysis of the long-run behavior of the real exchange rate is trivial: it will always stay at $q=1$, nothing can make it budge.
+
+Let us, therefore, move on to the less restrictive case shown by the rising net exports curve in the left panel of @fig-net_exports_general. 
+
+![This diagram shows how real exchange rates can change. In long-run equilibrium, both $NX=NX(q,Y^p-T)$ and $NX=Y^p-C(Y^p-T)-I-G$ must be true. Therefore, for the initial values $Y^p=Y^p_0$ and $T=T_0$, the equilibrium is at point $A$. When either $T$ increases or $Y^p$ decreases, the upward-sloping net exports curve shifts right, as shown. When $T$ increases, the vertical net exports curve also shifts right, but by more than the upward-sloping net exports curve does. As a result, the long run equilibrium moves from $A$ to $C$. This implies a direct effect of $T$ on $q$. When $Y^p$ decreases, the vertical net exports curve shifts left. As a result, the long run equilibrium moves from $A$ to $E$. This implies a direct effect of $Y^p$ on $q$; they both move in the same direction. When either $I$ or $G$ increases, the upward-sloping net exports curve is unaffected and the vertical net exports curve shifts left, taking the equilibrium from $A$ to $D$. This shows that $I$ and $G$ have inverse effects on $q$. No other exogenous variable affects $q$. (Note that absolute purchasing power parity has *not* been assumed.)](images/NX_real_exch_rate_LR_eqm.png){#fig-NX_real_exch_rate_LR_eqm}
+
+
+
+<!--
+\begin{figure}
+\begin{picture}(8,9)
+\put(2,1){\vector(1,0){9}}	%x axis
+\put(4,1){\vector(0,1){6}}	%y axis
+\put(6.1,5){\vector(1,0){0.8}}	%
+\put(2.5,2.5){\vector(1,-1){0.4}}	%
+\put(5.5,7.5){\vector(1,-1){0.4}}	%
+%\linethickness{1.5mm}
+\put(2.5,1.5){\line(1,1){6}}	%The NX Curve
+\put(5,1){\line(0,1){6}}	%
+%\put(6,1){\line(0,1){6}}	%
+\multiput(7,1)(0,0.1){60}{\circle*{0.05}}	%dots 
+\put(8,1){\line(0,1){6}}	%
+
+\thicklines
+\put(3.5,1.5){\line(1,1){6}}	%The lower NX Curve
+\put(6,1){\line(0,1){6}}	%initial Y-C-I-G curve
+
+\put(3.75,0.5){$O$}		%origin
+\put(11,0.5){$NX$}
+\put(3.5,6.5){$q$}
+
+\put(5,3){\circle*{0.1}}	%At 
+\put(5,4){\circle*{0.1}}	%At 
+\put(6,5){\circle*{0.1}}	%At 
+\put(7,5){\circle*{0.1}}	%At 
+\put(4,1){\circle*{0.1}}	%At origin
+\put(8,6){\circle*{0.1}}	%At 
+\put(5.5,5){$A$}
+\put(7.1,4.7){$B$}
+\put(8.1,5.7){$C$}
+\put(5.1,3.7){$D$}
+\put(5.1,2.7){$E$}
+\put(1,7.75){\footnotesize{$NX=Y^p_0-C(Y^p_0-T_0)-I-G$}}
+\put(0,2.75){\footnotesize{$NX=NX(q,Y^p_0-T_0)$}}
+
+%\put(2,2){\line(1,1){3}}	%The dotted NX Curve
+%\multiput(2,2)(0.1,0.1){30}{\circle*{0.05}}	%The dotted NX Curve
+%\multiput(4.5,4.5)(0,-0.1){35}{\circle*{0.05}}	%dots dropping down from point to the right of A
+%\multiput(4.5,4.5)(-0.1,0){15}{\circle*{0.05}}	%dots going left from A
+%\put(2.5,2.95){$q_B$}
+%\put(2.5,4.45){$q_A$}
+%\put(3.5,0.5){$NX_A$}
+%\put(9.5,2.5){\shortstack{\footnotesize{Absolute Purchasing} \\ \footnotesize{Power Parity}}}
+
+\end{picture}
+\caption[The Real Exchange Rate]{This diagram shows why real exchange rates can change. In long-run equilibrium, both $NX=NX(q,Y^p-T)$ and $NX=Y^p-C(Y^p-T)-I-G$ must be true. Therefore, for the initial values $Y^p=Y^p_0$ and $T=T_0$, the equilibrium is at point $A$. When either $T$ increases or $Y^p$ decreases, the upward-sloping net exports curve shifts right, as shown. When $T$ increases, the vertical net exports curve also shifts right, but by more than the upward-sloping net exports curve does. As a result, the long run equilibrium moves from $A$ to $C$. This implies a direct effect of $T$ on $q$. When $Y^p$ decreases, the vertical net exports curve shifts left. As a result, the long run equilibrium moves from $A$ to $E$. This implies a direct effect of $Y^p$ on $q$; they both move in the same direction. When either $I$ or $G$ increases, the upward-sloping net exports curve is unaffected and the vertical net exports curve shifts left, taking the equilibrium from $A$ to $D$. This shows that $I$ and $G$ have inverse effects on $q$. No other exogenous variable affects $q$. (Note that absolute purchasing power parity has *not* been assumed.)}
+\label{fig:qlong}
+\end{figure}
+-->
+
+### Without absolute purchasing power parity {#sec-q-long-no-appp}
+
+#### Two net exports curves: one upward-sloping, the other vertical {#sec-nx-curves}
+
+Recall from @eq-netexports that $NX=NX(q,Y-T)$ is directly related to $q$ and inversely related to $Y-T$. For some given value of $Y-T$, the direct effect of $q$ on $NX$ is shown as an *upward-sloping net exports curve* in the left panels of @fig-net_exports_general and @fig-net_exports_real_exchange_rate and yet again in @fig-NX_real_exch_rate_LR_eqm in this chapter.^[@fig-NX_real_exch_rate_LR_eqm also makes use of the long-run assumption of $Y=Y^p$. The upward-rising net exports curve marked with a label and an arrow assumes that the magnitude of potential output is $Y^p=Y^p_0$ and the magnitude of taxes is $T=T_0$.]
+
+These figures also show that a decrease in $Y^p$ or an increase in $T$ or, generally, *a decrease in $Y-T=Y^p-T$ shifts the upward-sloping net exports curve downward or to the right*. A poorer country imports less and, therefore, sees its net exports increase at any given value of the real exchange rate. 
+
+In fact, we can be more specific about the size of this shift. Recall from @sec-imports that if $Y-T$ decreases by a dollar, both consumption ($C$) and imports ($IM$) will decrease, but the latter will decrease less than the former. In particular, $C$ decreases by the marginal propensity to consume (MPC) and $IM$ decreases by less than the MPC. It therefore follows that when $Y^p-T$ decreases by a dollar, $NX$ will increase by less than the MPC, at any given value of the real exchange rate. In other words, *when $Y^p-T$ decreases by a dollar, the vertical net exports curve shifts right by a length smaller than the MPC*.
+
+Now, as we saw in @sec-longnx above, the goods market's equilibrium condition, $Y=C+I+G+NX$, also tells us something about a country's net exports. Specifically, $NX=Y-C(Y-T)-I-G$ or, in long-run equilibrium, $NX=Y^p-C(Y^p-T)-I-G$. As this equation expresses $NX$ as entirely independent of $q$, it can be graphically shown as the *vertical net exports curve* in @fig-NX_real_exch_rate_LR_eqm. It is vertical because changes in $q$ have no effect on $NX=Y^p-C(Y^p-T)-I-G$. Of course, if $Y^p$ or $T$ or $I$ or $G$ changes in value, so will $NX$ and the vertical net exports curve will shift.
+
+For example, *if either $I$ or $G$ increases by a dollar, $NX=Y^p-C(Y^p-T)-I-G$ will decrease by a dollar and the vertical net exports curve will shift left by a dollar*. If $T$ increases by a dollar, $C$ will decrease, not by the entire dollar's increase in taxes but by a fraction---a fraction that was called the marginal propensity to consume (MPC) in @sec-mpc. As a result, $NX=Y^p-C(Y^p-T)-I-G$ will increase by that same amount (the MPC). Therefore, *when $T$ increases by a dollar, the vertical net exports curve  shifts right by a length equal to the MPC*.
+
+Finally, if $Y^p$ increases by a dollar, then $C(Y^p-T)$ increases by the MPC. Therefore, $Y^p-C(Y^p-T)$, which is simply the part of total income that is saved, will increase by $1-\text{MPC}$ dollars, which is equivalent to MPS dollars, where MPS stands for the marginal propensity to save---see @sec-mpc. In short, *when $Y^p$ increases by a dollar, the vertical net exports curve shifts right by MPS dollars*.
+
+#### Equilibrium {#sec-eqm-no-appp}
+
+Now, in long-run equilibrium, what we know about the factors that influence net exports ($NX=NX(q,Y^p-T)$, the upward-sloping net exports curve) must be consistent with what the goods market's equilibrium condition tells us about net exports ($NX=Y^p-C(Y^p-T)-I-G$, the vertical net exports curve). Therefore, in @fig-NX_real_exch_rate_LR_eqm, the long-run equilibrium must be at $A$, where the two net exports curves intersect. This pinpoints the long-run equilibrium level of the real exchange rate. 
+
+And, as we know how the two net exports curve shift when there are changes in the magnitudes of the exogenous variables $Y^p$, $T$, $I$, and $G$, we will be able to predict how the real exchange rate is affected by these changes.
+
+For example, as we saw in the previous section, if either $I$ or $G$ increases, the upward-sloping net exports curve is unaffected and the vertical net exports curve shifts left. Therefore, the long-run equilibrium in @fig-NX_real_exch_rate_LR_eqm  moves from $A$ to $D$, implying a decrease in $q$. That is, *increases in domestic spending either by businesses ($I\uparrow$) or the government ($G\uparrow$) boosts the relative demand for the domestic country's products and thereby raises the relative price of those products or, equivalently, reduces the relative price of foreign goods ($q\downarrow$)*.
+
+We have also seen that if $T$ increases by a dollar, the upward-sloping net exports curve shifts right by *less than* the MPC. On the other hand, we have also seen that the vertical net exports curve shifts right by a length *equal to* the MPC. Therefore, the long-run equilibrium in @fig-NX_real_exch_rate_LR_eqm will move from $A$ to $C$, implying an increase in $q$. That is, *an increase in taxes ($T\uparrow$) leads to a higher real exchange rate ($q\uparrow$)*. This is intuitive: A rise in taxes squeezes domestic consumption, which reduces demand in the domestic economy. This reduces the relative price of domestic goods or, equivalently, raises the relative price of foreign-made goods, which is the real exchange rate.
+
+Finally, we have seen in the previous section that if $Y^p$ decreases by a dollar, the upward-sloping net exports curve shifts right and the vertical net exports curve shifts left. Therefore, the long-run equilibrium in @fig-NX_real_exch_rate_LR_eqm moves from $A$ to $E$, implying a decrease in $q$. That is, as in the case of $T$, *a change in $Y^p$ brings about a change in $q$ in the same direction*.
+
+And, again, this is intuitive. If a country becomes more productive ($Y^p\uparrow$) its goods become relatively more plentiful in the world economy. This drives down the relative price of domestic goods or, equivalently, makes foreign-made goods relatively more expensive ($q\uparrow$).
+
+<!--
+% Under the full employment assumption of long run analysis, this becomes $NX=NX(q,Y^p-T)$. We have seen in @sec-longnx above that the long-run equilibrium level of $NX$ increases when $Y^p-T$ increases. Intriguingly, however, we saw in @sec-summary-nxp that, as long as all other factors that affect $NX(q,Y^p-T)$ are unchanged, $NX$ *decreases* when $Y^p$ increases. The only way both these ideas can be true---and they have to be true!---is if the real exchange rate ($q$) increases. Therefore, $Y^p$ and $q$ are directly related in the long run.
+
+% We have seen that if either $G$ or $I$ or both decrease, the long run equilibrium magnitude of $NX$ must increase. But then so must $NX(q,Y^p-T)$. As $Y^p-T$ has not changed, the only way $NX(q,Y^p-T)$ can increase is if $q$ rises. Therefore, both $I$ and $G$ have an inverse effect on $q$ in the long run.
+
+% We have seen that an increase in taxes causes an increase in the long run equilibrium magnitude of a country's net exports. Let's say $T$ increases by \$1.00 and that, as a result, $C$ decreases by \$0.80. Then, the long-run equilibrium level of $NX=Y^p-C(Y^p-T)-I-G$ must increase by \$0.80. Now, recall from @eq-exp that, if the real exchange rate is unchanged, exports are unaffected by a tax increase. Yes, imports will decrease, but if total consumption spending decreases by \$0.80, total spending on imports will decrease by only a part of that---say, by \$0.35. So, although the long-run level of $NX$ must increase by \$0.80, we see that, if $q$ is unchanged, $NX(q,Y^p-T)$ would increase by only \$0.35 or at any rate by less than \$0.80. So, as both $NX(q,Y^p-T)$ and $NX=Y^p-C(Y^p-T)-I-G$ must increase by the same magnitude, $q$ must increase. This implies that $T$ has a direct effect on $q$ in the long run.
+-->
+
+#### Real Exchange Rate: Summary {#sec-real-ex-rates-summary}
+
+To summarize, under absolute purchasing power parity, $q=1$ in all situations and is, therefore, unaffected by changes in our exogenous variables. When absolute purchasing power parity is not applicable, *in long run equilibrium, the real exchange rate ($q$) is inversely affected by government spending ($G$) and business investment ($I$); directly affected by taxes ($T$) and  potential output ($Y^p$); and unaffected by all other exogenous variables*. These ceteris paribus effects are shown in the $q$-column of @tbl-real_long.
+
+In @sec-longnom, a less stringent version of absolute purchasing power parity---called *relative* purchasing power parity---is assumed.\index{purchasing power parity!relative} Relative purchasing power parity is the assumption that the real exchange rate is *constant* over time, though not necessarily equal to one---see @sec-rppp. Given the results summarized in the previous paragraph, for the real exchange rate to be constant, either $I$, $G$, $T$, and $Y^p$ would have to be constant or---and this is an unlikely possibility---they would have to change in concert in such a way that they cancel each others' effects on $q$ and, therefore, leave the real exchange rate constant.
+
+![**Macroeconomic Behavior of Real Variables in the Long Run**. All variables named in the first column are exogenous and all variables listed in the first row are endogenous. Each cell in the table shows the relation between the exogenous variable and the endogenous variable aligned with the cell. The +/?/- symbols denote a direct/ambiguous/inverse relation. A blank cell denotes that there is no relation. Note that absolute purchasing power parity has *not been assumed. Under APPP, the last three columns would be gone and the rest of the table would be unaffected. Recall that $q$ is constant at $q=1$ under APPP. Moreover, the $EX$ and $IM$ columns would be gone too, as they would no longer make sense, being infinitely elastic at $q=1$.](images/real_long.png){#tbl-real_long}
+
+<!--
+\begin{table}
+\begin{tabular}
+{*{9}{|c}|}
+\hline
+
+	&$Y$	&$C$		&$NX$	&$EX$	&$IM$		&$q$\\ \hline
+$G,I$	&	&		&-	&-	&+		&-	\\ \hline
+$T$	&	&-		&+	&+	&-		&+	\\ \hline
+$Y^p$	&+	&+		&+	&+	&?		&+	\\ \hline
+\end{tabular}
+\caption[Macroeconomic Behavior of Real Variables in the Long Run]{**Macroeconomic Behavior of Real Variables in the Long Run**. All variables named in the first column are exogenous and all variables listed in the first row are endogenous. Each cell in the table shows the relation between the exogenous variable and the endogenous variable aligned with the cell. The +/?/- symbols denote a direct/ambiguous/inverse relation. A blank cell denotes that there is no relation. 
+
+Note that absolute purchasing power parity has *not been assumed. Under APPP, the last three columns would be gone and the rest of the table would be unaffected. Recall that $q$ is constant at $q=1$ under APPP. Moreover, the $EX$ and $IM$ columns would be gone too, as they would no longer make sense, being infinitely elastic at $q=1$.}
+\label{table:longreal}
+\end{table}
+-->
+
+## Exports {#sec-longexp}
+
+Recall from @eq-exp in @sec-exports that the amount of domestically produced goods that is exported ($EX=EX(q)$), is directly related to the real exchange rate ($q$).^[For a recap on real exchange rates, see @sec-realexrates.]
+
+Therefore, if an exogenous variable has a direct/non-existent/inverse effect on $q$ it will have an identical effect on $EX$. In @tbl-real_long, therefore, the $EX$-column must necessarily be the same as the $q$-column that was discussed in @sec-longq above.
+
+## Imports {#sec-longimp}
+
+Recall from @eq-imports in @sec-imports that the amount imported by a country in the long run ($IM=IM(q,Y^p-T)$) is inversely related to the real exchange rate ($q$) and directly related to the disposable potential real GDP ($Y^p-T$).
+
+According to @sec-longq, a ceteris paribus increase in $G$ or $I$ causes a  decrease $q$. This, in turn, would increase $IM$. 
+
+An increase in $Y^p$ leads to a higher $q$, which reduces imports, and a higher $Y^p-T$, which increases imports. Therefore, the overall effect of $Y^p$ on $IM$ is ambiguous.
+
+An increase in $T$ leads to an increase in $q$ and a decrease in $Y^p-T$. Both lead to reduced imports.
+
+To summarize, *imports are directly affected by $G$ and $I$; inversely affected by $T$; ambiguously affected by $Y^p$; and unaffected by all other exogenous variables*.
+
+## Macroeconomic Behavior of Real Variables in the Long Run: Conclusions {#sec-longrealconclusions}
+
+We have been discussing the long-run effects of our exogenous variables on our real endogenous variables. The results are summarized in @tbl-real_long.
+
+Note that only fiscal policy can affect net exports; tariffs, for example, are useless. Contractionary fiscal policy---i.e., either a cut in government spending, $G$, or an increase in taxes, $T$, or both---can reliably increase net exports.\index{policy!fiscal policy!contractionary}
+
+Note also that neither monetary variables---such as $M$, $P$, and $E$---nor the money market equilibrium condition---that is $M=L(R)\cdot P\cdot Y$ in @sec-summary-moneyeqm ---played any role in this chapter's discussion of the long run behavior of real variables. In fact, I did not even mention any monetary variables before this paragraph. This is an instance of an idea with a long pedigree in economics called *monetary neutrality*: any change in the quantity of money in circulation ($M$) will not affect a real variable. 
+
+While monetary neutrality is thought to be a good description of an economy in the long run, we will see that things are different in the short run. In the short run, $M$ can be an important determinant of real variables such as $Y$, $C$, $I$, $q$, and $NX$.
+
+Note, finally, that in this chapter I did not bring up the issue of whether the country has a flexible exchange rate system or a fixed exchange rate system. In other words, the exchange rate system has nothing to do with the long run behavior of real variables. Put yet another way, the long run analysis of real variables will have nothing useful to say if a country is debating what kind of exchange rate system to adopt: both systems have the same real consequences.

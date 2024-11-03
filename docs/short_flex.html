@@ -1,0 +1,1249 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.4.554">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>International Macroeconomics: Lecture Notes - 12&nbsp; Short-Run Predictions: Flexible Exchange Rates</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./short_flex_permanent.html" rel="next">
+<link href="./short_fixed.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./short_flex.html"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Short-Run Predictions: Flexible Exchange Rates</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">International Macroeconomics: Lecture Notes</a> 
+        <div class="sidebar-tools-main">
+    <a href="https://github.com/UdayanRoy62/internationalmacro" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./preliminaries.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Preliminaries</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./natincome.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">National Income Accounts, Prices, and Inflation</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./bop.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Balance of Payments Accounts</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./exchange_rates.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Exchange Rates</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./markets_equilibrium.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Markets and Equilibrium</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./theories_equations_variables.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Theories, Equations and Variables</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./long_run_short_run.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">The Long Run and the Short Run</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./exchange_rate_systems.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Exchange Rate Systems: Fixed and Flexible</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./long_real.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Long-Run Predictions: The Real World</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./long_nominal.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Long-Run Predictions: The Nominal World</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./short_fixed.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Short-Run Predictions: Fixed Exchange Rates</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./short_flex.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Short-Run Predictions: Flexible Exchange Rates</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./short_flex_permanent.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Short-Run Predictions: Expectations and Flexible Exchange Rates</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./crises.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Special Topic: Currency Crises</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./summary.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">International Macroeconomics: Summary</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#sec-goods-short-temp" id="toc-sec-goods-short-temp" class="nav-link active" data-scroll-target="#sec-goods-short-temp"><span class="header-section-number">12.1</span> The Goods Market: The <em>DD</em> Curve</a>
+  <ul class="collapse">
+  <li><a href="#sec-DD" id="toc-sec-DD" class="nav-link" data-scroll-target="#sec-DD"><span class="header-section-number">12.1.1</span> The <em>DD</em> Curve: slope</a></li>
+  <li><a href="#sec-DD-shifts" id="toc-sec-DD-shifts" class="nav-link" data-scroll-target="#sec-DD-shifts"><span class="header-section-number">12.1.2</span> The <em>DD</em> Curve: shifts</a></li>
+  </ul></li>
+  <li><a href="#sec-assets-short-temp" id="toc-sec-assets-short-temp" class="nav-link" data-scroll-target="#sec-assets-short-temp"><span class="header-section-number">12.2</span> Asset Markets</a>
+  <ul class="collapse">
+  <li><a href="#sec-AA" id="toc-sec-AA" class="nav-link" data-scroll-target="#sec-AA"><span class="header-section-number">12.2.1</span> The <em>AA</em> Curve: slope</a></li>
+  <li><a href="#sec-AA-shifts" id="toc-sec-AA-shifts" class="nav-link" data-scroll-target="#sec-AA-shifts"><span class="header-section-number">12.2.2</span> The <em>AA</em> Curve: shifts</a></li>
+  </ul></li>
+  <li><a href="#sec-eqm-short-temp" id="toc-sec-eqm-short-temp" class="nav-link" data-scroll-target="#sec-eqm-short-temp"><span class="header-section-number">12.3</span> Short-Run Equilibrium</a></li>
+  <li><a href="#sec-short-temp-preds" id="toc-sec-short-temp-preds" class="nav-link" data-scroll-target="#sec-short-temp-preds"><span class="header-section-number">12.4</span> Predictions</a>
+  <ul class="collapse">
+  <li><a href="#sec-fiscal-short-temp" id="toc-sec-fiscal-short-temp" class="nav-link" data-scroll-target="#sec-fiscal-short-temp"><span class="header-section-number">12.4.1</span> Fiscal Policy</a></li>
+  <li><a href="#sec-pstar-short-temp" id="toc-sec-pstar-short-temp" class="nav-link" data-scroll-target="#sec-pstar-short-temp"><span class="header-section-number">12.4.2</span> Foreign Price Level</a></li>
+  <li><a href="#sec-rstar-efe-short-temp" id="toc-sec-rstar-efe-short-temp" class="nav-link" data-scroll-target="#sec-rstar-efe-short-temp"><span class="header-section-number">12.4.3</span> The Interest Rate</a></li>
+  <li><a href="#sec-money-short-temp" id="toc-sec-money-short-temp" class="nav-link" data-scroll-target="#sec-money-short-temp"><span class="header-section-number">12.4.4</span> Monetary Stimulus</a></li>
+  <li><a href="#sec-p-short-temp" id="toc-sec-p-short-temp" class="nav-link" data-scroll-target="#sec-p-short-temp"><span class="header-section-number">12.4.5</span> The Domestic Price Level</a></li>
+  </ul></li>
+  <li><a href="#sec-conclusion-short-temp" id="toc-sec-conclusion-short-temp" class="nav-link" data-scroll-target="#sec-conclusion-short-temp"><span class="header-section-number">12.5</span> Conclusion</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/UdayanRoy62/internationalmacro/edit/main/short_flex.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/UdayanRoy62/internationalmacro/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span id="sec-short-temp" class="quarto-section-identifier"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Short-Run Predictions: Flexible Exchange Rates</span></span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<!--
+sec-short-temp
+sec-goods-short-temp
+eq-IS-short-temp
+sec-DD
+fig-DD
+sec-DD-shifts
+sec-assets-short-temp
+eq-UIP-short-temp
+eq-LM-short-temp
+eq-assets-short-temp
+fig-AA
+sec-AA
+fig-AADD
+sec-AA-shifts
+sec-eqm-short-temp
+fig-AADD-shifts
+sec-short-temp-preds
+sec-fiscal-short-temp
+sec-pstar-short-temp
+sec-rstar-efe-short-temp
+sec-money-short-temp
+sec-p-short-temp
+tbl-short-temp
+sec-conclusion-short-temp
+-->
+<p>This chapter begins the analysis of the short-run macroeconomic behavior of an economy that has flexible exchange rates. The questions that concern us in this chapter share this basic format: If there is a temporary increase in [insert the name of any exogenous variable], what will happen in the short run to [insert the name of any endogenous variable]? This chapter’s focus will be on the consequences of <em>temporary</em> shocks and <em>temporary</em> policy changes; the effects of permanent changes in exogenous variables, which are somewhat harder to analyze, will be discussed in the next chapter.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
+<p>The reason why it makes sense to analyse temporary and permanent changes in exogenous variables separately was hinted at in the final paragraph of <a href="short_fixed.html#sec-sr-expectations" class="quarto-xref"><span>Section 11.1.3</span></a>. A temporary change in an exogenous variable—such as, a temporary tax cut—will not have long-term effects. Therefore, there will be no change in people’s expectations about the future: in particular, there will be no change in <span class="math inline">\(E_f^e\)</span>, the expected future value of the exchange rate. A permanent tax cut, on the other hand, will lead to a decrease in the future value of the exchange rate (<span class="math inline">\(E_{fLR}\)</span>)—see <a href="long_nominal.html#sec-efflex" class="quarto-xref"><span>Section 10.8.6</span></a> and the <span class="math inline">\(E_f\)</span>-column of <a href="long_nominal.html#tbl-nominal_long_flex" class="quarto-xref">Table&nbsp;<span>10.1</span></a>—and the people’s understanding of this effect will lead to an <em>immediate</em> decrease in <span class="math inline">\(E_f^e\)</span>, which is assumed equal to <span class="math inline">\(E_{fLR}\)</span>. Therefore, while the short-run analysis of a temporary tax cut will require us only to work through the consequences of the tax cut on consumption—as <span class="math inline">\(C=C(Y-T)\)</span>—the short-run analysis of a permanent tax cut will also require us to delve into the intricacies of uncovered interest parity, which requires that <span class="math inline">\(R=R^*+(E_f^e/E)-1\)</span>—see <a href="markets_equilibrium.html#sec-UIP" class="quarto-xref"><span>Section 5.9.2</span></a> —and is therefore affected by the decrease in <span class="math inline">\(E_f^e\)</span>.</p>
+<p>The alert reader may recall that this distinction between temporary and permanent changes, though crucial for this chapter’s analysis of flexible exchange rates, played no role in last chapter’s analysis of fixed exchange rates. Why? Well, in a credible fixed exchange rate system, people will assume that the exchange rate, both now (<span class="math inline">\(E\)</span>) and in the future (<span class="math inline">\(E_f\)</span>), will be maintained by the nation’s central bank at its targeted value (<span class="math inline">\(\bar{E}\)</span>). Therefore, <span class="math inline">\(E_f^e=\bar{E}\)</span> will prevail, no matter what. Consequently, even when an exogenous variable undergoes a permanent change, there is no need to worry about its effect on <span class="math inline">\(E_f^e\)</span>, simply because there will be none. %This is why the short-run analysis of a permanent exogenous shock is identical to the short-run analysis of a temporary exogenous shock.</p>
+<p>Returning to this chapter’s topic—namely, the short-run analysis of a flexible exchange rate system—the bedrock of the analysis is once again the three equations that represent equilibrium in the markets for goods, money, and foreign exchange—see <a href="markets_equilibrium.html#eq-IS" class="quarto-xref">Equation&nbsp;<span>5.8</span></a>, <a href="markets_equilibrium.html#eq-LM" class="quarto-xref">Equation&nbsp;<span>5.9</span></a>, and <a href="markets_equilibrium.html#eq-UIP-alt" class="quarto-xref">Equation&nbsp;<span>5.13</span></a>. We will assume that</p>
+<ul>
+<li>the domestic price level (<span class="math inline">\(P\)</span>) and current expectations about the future value of the exchange rate (<span class="math inline">\(E_f^e=E_{fLR}\)</span>) are both exogenous (short-run)</li>
+<li>the exchange rate (<span class="math inline">\(E\)</span>) is endogenous and the money supply (<span class="math inline">\(M\)</span>) is exogenous (flexible exchange rates)</li>
+</ul>
+<p>In a flexible exchange rate regime, the nation’s central bank has no obligation to exchange currencies at some specified rate; indeed, it has no obligation to exchange currencies, <em>period</em>. Free from such obligations, the central bank can change the quantity of money (<span class="math inline">\(M\)</span>) only when it wants to, and not at the whims of those who wish to trade currencies. The exchange rate is free to fluctuate according to the push and pull of the supply and demand for currencies. In short, <span class="math inline">\(E\)</span> becomes an endogenous variable, and <span class="math inline">\(M\)</span> becomes an exogenous policy variable, under the firm control of the country’s central bank.</p>
+<section id="sec-goods-short-temp" class="level2" data-number="12.1">
+<h2 data-number="12.1" class="anchored" data-anchor-id="sec-goods-short-temp"><span class="header-section-number">12.1</span> The Goods Market: The <em>DD</em> Curve</h2>
+<p></p>
+<p>We saw in <a href="markets_equilibrium.html#eq-IS" class="quarto-xref">Equation&nbsp;<span>5.8</span></a> and <a href="short_fixed.html#eq-IS-shortfix" class="quarto-xref">Equation&nbsp;<span>11.1</span></a> that the goods market is in equilibrium when <span id="eq-IS-short-temp"><span class="math display">\[
+\fbox{$\displaystyle Y=C(Y-T)+I+G+NX\left(\frac{E\cdot P^*}{P},Y-T\right)$}
+\tag{12.1}\]</span></span></p>
+<p>or, equivalently, the output of domestically produced goods is equal to the aggregate expenditure on those goods: <span class="math inline">\(Y=AE\)</span>.</p>
+<p>As in the “Keynesian cross” diagram in <a href="short_fixed.html#fig-AE" class="quarto-xref">Figure&nbsp;<span>11.1</span></a>, the dependence of each of the four components of aggregate expenditure—<span class="math inline">\(C\)</span>, <span class="math inline">\(I\)</span>, <span class="math inline">\(G\)</span>, and <span class="math inline">\(NX\)</span>—on income (<span class="math inline">\(Y\)</span>) can be shown by means of four curves.</p>
+<ul>
+<li>The consumption curve shows that <span class="math inline">\(C\)</span> increases as <span class="math inline">\(Y\)</span> increases, provided <span class="math inline">\(T\)</span> is unchanged. Moreover, the entire curve shifts up when <span class="math inline">\(T\)</span> decreases.</li>
+<li>The <span class="math inline">\(I\)</span> and <span class="math inline">\(G\)</span> curves are horizontal. These curves shift upwards when <span class="math inline">\(I\)</span> and <span class="math inline">\(G\)</span> increase in magnitude.</li>
+<li>The net exports curve shows that <span class="math inline">\(NX\)</span> decreases as <span class="math inline">\(Y\)</span> increases, provide <span class="math inline">\(q\equiv E\cdot P^*/P\)</span> and <span class="math inline">\(T\)</span> stay unchanged. Moreover, the entire curve shifts up when <span class="math inline">\(q\)</span> or <span class="math inline">\(T\)</span> or both increase.</li>
+<li>By stacking these four curves one on top of each other we get the aggregate expenditure curve. This curve shows that <span class="math inline">\(AE=C+I+G+NX\)</span> increases as <span class="math inline">\(Y\)</span> increases, provided <span class="math inline">\(T\)</span>, <span class="math inline">\(I\)</span>, <span class="math inline">\(G\)</span>, and <span class="math inline">\(q\equiv E\cdot P^*/P\)</span> stay unchanged. Moreover, the entire curve shifts up—as from <span class="math inline">\(AE^1\)</span> to <span class="math inline">\(AE^2\)</span> in <a href="short_fixed.html#fig-AE-shifts" class="quarto-xref">Figure&nbsp;<span>11.2</span></a> —when <span class="math inline">\(T\)</span> decreases, or <span class="math inline">\(I\)</span> or <span class="math inline">\(G\)</span> or <span class="math inline">\(q\equiv E\cdot P^*/P\)</span> increases.</li>
+<li>The output (<span class="math inline">\(Y\)</span>) at which the <span class="math inline">\(AE\)</span> curve crosses the 45<span class="math inline">\(^{\circ}\)</span> line is also the output at which <span class="math inline">\(Y=AE\)</span>. This is the output at which the goods market is in equilibrium. See <a href="short_fixed.html#fig-AE" class="quarto-xref">Figure&nbsp;<span>11.1</span></a>.</li>
+<li>If one or more of only these changes occur—<span class="math inline">\(T\downarrow\)</span>, or <span class="math inline">\(I\uparrow\)</span>, or <span class="math inline">\(G\uparrow\)</span>, or <span class="math inline">\(q\equiv E\cdot P^*/P\uparrow\)</span>—the <span class="math inline">\(AE\)</span> curve shifts up, as we saw a moment ago, and, therefore, the short-run equilibrium output increases—as from <span class="math inline">\(Y_{SR}^1\)</span> to <span class="math inline">\(Y_{SR}^1\)</span> in <a href="short_fixed.html#fig-AE-shifts" class="quarto-xref">Figure&nbsp;<span>11.2</span></a>.</li>
+</ul>
+<p>In <a href="short_fixed.html" class="quarto-xref"><span>Chapter 11</span></a>, which was about the short-run and fixed exchange rates, <span class="math inline">\(T\)</span>, <span class="math inline">\(I\)</span>, <span class="math inline">\(G\)</span>, and <span class="math inline">\(q\equiv E\cdot P^*/P\)</span> were all exogenous. In this chapter, on the other hand, <span class="math inline">\(E\)</span> is endogenous. We will, therefore, have to develop a theory that explains what makes <span class="math inline">\(E\)</span> high in certain situations and low in other situations. Nevertheless, the graphical apparatus of <a href="short_fixed.html" class="quarto-xref"><span>Chapter 11</span></a> that I have just reviewed does tell us something useful in the analysis of flexible exchange rates. It tells us that, for given (that is, pre-specified) values of the exogenous variables <span class="math inline">\(T\)</span>, <span class="math inline">\(I\)</span>, <span class="math inline">\(G\)</span>, <span class="math inline">\(P^*\)</span>, and <span class="math inline">\(P\)</span>, if the goods market is in equilibrium when the endogenous variables <span class="math inline">\(Y\)</span> and <span class="math inline">\(E\)</span> are, respectively, equal to <span class="math inline">\(Y_1\)</span> and <span class="math inline">\(E_1\)</span>—point <span class="math inline">\(A\)</span> in <a href="#fig-DD" class="quarto-xref">Figure&nbsp;<span>12.1</span></a> —then the goods market will also be in equilibrium at another pair of values <span class="math inline">\(Y=Y_2&gt;Y_1\)</span> and <span class="math inline">\(E=E_2&gt;E_1\)</span>—point <span class="math inline">\(B\)</span> in figure <a href="#fig-DD" class="quarto-xref">Figure&nbsp;<span>12.1</span></a>.</p>
+<!--
+%As was explained in @sec-aecurve and @sec-keynes-cross, this impressive equation can be analyzed graphically. As in the "Keynesian cross" diagram in @fig-AE, consumption spending or $C=C(Y-T)$ can be drawn as a rising curve (with real output, $Y$, measured along the horizontal axis) when taxes ($T$) are taken as given. Business investment ($I$) and government spending ($G$) can be drawn as horizontal lines. And net exports or $NX=NX(E\cdot P^*/P,Y-T)$ can be drawn as a downward-sloping curve when the exchange rate ($E$), the foreign price level ($P^*$), the domestic price level ($P$), and taxes ($T$) are taken as given. These four curves can then be stacked vertically, one on top of the other, to obtain the upward-sloping aggregate expenditure ($AE$) curve.^[Please review @sec-aeslope to see why the $AE$ curve is a rising curve even though it is the vertical sum of two horizontal curves ($I$ and $G$), a rising curve ($C$), and a falling curve ($NX$).] And, as was explained in @sec-keynes-cross, if a country's $AE$ curve is known, its short-run equilibrium GDP is the value of $Y$ at which the $AE$ curve crosses the 45$^{\circ}$ line.^[For more on the 45$^{\circ}$ line, see @sec-45degline.]
+
+%An implication of this simple graphical technique is that output increases if and only if the $AE$ curve shifts upward (say, from $AE^1$ to $AE^2$ in @fig-AE-shifts. Therefore, if we could figure out what can make the $AE$ curve shift upward (respectively, downward) we would know what can make $Y$ increase (respectively, decrease).
+
+%As the $AE$ curve is constructed by vertically stacking the $C$, $I$, $G$, and $NX$ curves, knowing what can make any or all of these four curves shift upward (respectively, downward) amounts to knowing what makes the $AE$ curve shift upward (respectively, downward). We saw in @sec-consumption and in @fig-c that a tax cut (respectively, hike) raises (respectively, lowers) the $C$ curve. The $I$ and $G$ curves move up and down with the magnitudes of $I$ and $G$, in a very trivial sense. And, we saw in @sec-summary-nxp and in the right panel of @fig-nx that the $NX$ curve shifts upward if some subset of the following changes occur: $T\uparrow$, $E\uparrow$, $P^*\uparrow$, and $P\downarrow$. We also saw that although a tax cut raises the $C$ curve and lowers the $NX$ curve, the overall effect is that the $AE$ curve rises.
+
+%In summary, we conclude that 
+%
+%\item the aggregate expenditure ($AE$) curve will *not* shift if the variables $T$, $I$, $G$, $E$, $P^*$, and $P$ all stay unchanged. 
+%\item The $AE$ curve will shift upward if some subset of the following changes occur: $T\downarrow$, $I\uparrow$, $G\uparrow$, $E\uparrow$, $P^*\uparrow$, and $P\downarrow$.^[Reverse the arrows to see what changes will shift the $AE$ curve downward.]
+-->
+<section id="sec-DD" class="level3" data-number="12.1.1">
+<h3 data-number="12.1.1" class="anchored" data-anchor-id="sec-DD"><span class="header-section-number">12.1.1</span> The <em>DD</em> Curve: slope</h3>
+<!--
+%It follows from the last paragraph that if the exogenous variables $T$, $I$, $G$, $P^*$, and $P$ stay unchanged, an increase in the value of foreign currency ($E\uparrow$) will shift the $AE$ curve upward, say, from $AE^1$ to $AE^2$ in @fig-AE-shifts. As the goods market's equilibrium output is given by the level of $Y$ at which the $AE$ curve intersects the 45$^{\circ}$ line, the upward shift of the $AE$ curve implies that real income will increase, as it does in @fig-AE-shifts from $Y_{SR}^1$ to $Y_{SR}^2$. 
+-->
+<p>In other words, if there is an equilibrium outcome such that <span class="math inline">\(E=E_1\)</span> and <span class="math inline">\(Y=Y_1\)</span>, as in point <span class="math inline">\(A\)</span> in <a href="#fig-DD" class="quarto-xref">Figure&nbsp;<span>12.1</span></a>, there is no reason to think that it is the only equilibrium outcome. Assuming <span class="math inline">\(T\)</span>, <span class="math inline">\(I\)</span>, <span class="math inline">\(G\)</span>, <span class="math inline">\(P^*\)</span>, and <span class="math inline">\(P\)</span> are fixed, there will exist another equilibrium such that <span class="math inline">\(E=E_2\)</span> and <span class="math inline">\(Y=Y_2\)</span> as in point <span class="math inline">\(B\)</span>. <em>The collection of all such (<span class="math inline">\(Y\)</span>, <span class="math inline">\(E\)</span>) pairs that keep the goods market in equilibrium is the <span class="math inline">\(DD\)</span> curve. As there is a direct relation between the values of <span class="math inline">\(E\)</span> and <span class="math inline">\(Y\)</span> that keep the goods market in equilibrium when <span class="math inline">\(T\)</span>, <span class="math inline">\(I\)</span>, <span class="math inline">\(G\)</span>, <span class="math inline">\(P^*\)</span>, and <span class="math inline">\(P\)</span> are fixed, the <span class="math inline">\(DD\)</span> curve is upward-rising</em>, as in <a href="#fig-DD" class="quarto-xref">Figure&nbsp;<span>12.1</span></a>.<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></p>
+<div id="fig-DD" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-DD-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/DD_and_shift.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-DD-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;12.1: If the exogenous variables <span class="math inline">\(T\)</span>, <span class="math inline">\(I\)</span>, <span class="math inline">\(G\)</span>, <span class="math inline">\(P^*\)</span>, and <span class="math inline">\(P\)</span> stay unchanged, for the goods market to be in equilibrium, any increase in <span class="math inline">\(E\)</span> must be accompanied by an increase in <span class="math inline">\(Y\)</span>. This direct relation between the exchange rate and output is called the <span class="math inline">\(DD\)</span> curve. The <span class="math inline">\(DD\)</span> curve will shift to the right if <span class="math inline">\(T\downarrow\)</span>, <span class="math inline">\(I\uparrow\)</span>, <span class="math inline">\(G\uparrow\)</span>, <span class="math inline">\(P^*\uparrow\)</span>, and <span class="math inline">\(P\downarrow\)</span>.
+</figcaption>
+</figure>
+</div>
+<!--
+\begin{figure}
+\begin{picture}(13,6)
+\put(1,1){\vector(1,0){5}}  %x axis left
+\put(8,1){\vector(1,0){6}}  %x axis right
+\put(1,1){\vector(0,1){5}}  %y axis
+\put(8,1){\vector(0,1){5}}  %y axis
+\put(1,1){\circle*{0.1}}    %At origin left
+\put(8,1){\circle*{0.1}}    %At origin right
+
+\put(3,3){\circle*{0.1}}    %
+\put(4,4){\circle*{0.1}}    %
+\put(8,3){\circle*{0.1}}    %
+\put(8,4){\circle*{0.1}}    %
+\put(10,1){\circle*{0.1}}   %
+\put(11,1){\circle*{0.1}}   %
+\put(12,1){\circle*{0.1}}   %
+\put(10,3){\circle*{0.1}}   %
+\put(11,4){\circle*{0.1}}   %
+\put(12,3){\circle*{0.1}}   %
+\put(3,1){\circle*{0.1}}    %
+\put(4,1){\circle*{0.1}}    %
+\put(1,3){\circle*{0.1}}    %
+\put(1,4){\circle*{0.1}}    %
+
+\multiput(10,3)(0,-0.1){20}{\circle*{0.05}} %dots dropping down from eqm 1
+\multiput(12,3)(0,-0.1){20}{\circle*{0.05}} %dots dropping down from eqm 1
+\multiput(11,4)(0,-0.1){30}{\circle*{0.05}} %dots dropping down from eqm 1
+\multiput(3,3)(0,-0.1){20}{\circle*{0.05}}  %dots dropping down from eqm 1
+\multiput(4,4)(0,-0.1){30}{\circle*{0.05}}  %dots dropping down from eqm 1
+\multiput(8,3)(0.1,0){40}{\circle*{0.05}}   %dots dropping down from eqm 1
+\multiput(8,4)(0.1,0){30}{\circle*{0.05}}   %dots dropping down from eqm 1
+\multiput(1,3)(0.1,0){20}{\circle*{0.05}}   %dots dropping down from eqm 1
+\multiput(1,4)(0.1,0){30}{\circle*{0.05}}   %dots dropping down from eqm 1
+
+\put(6,0.5){$Y$}
+\put(14,0.5){$Y$}
+\put(10,0.5){$Y_1$}
+\put(11,0.5){$Y_2$}
+\put(3,0.5){$Y_1$}
+\put(4,0.5){$Y_2$}
+\put(12,0.5){$Y_3$}
+\put(0.6,0.5){$O$}  %Origin left
+\put(7.6,0.5){$O$}  %Origin right
+\put(0.6,5.75){$E$} %E left
+\put(7.5,5.75){$E$} %E right
+\put(7.5,2.75){$E_1$}   %E right
+\put(7.5,3.75){$E_2$}   %E right
+\put(0.5,2.75){$E_1$}   %E right
+\put(0.5,3.75){$E_2$}   %E right
+\put(4.5,5.5){$DD$} %DD
+\put(11.5,5.25){$DD_1$} %DD
+\put(13.25,5.25){$DD_2$}    %DD
+\put(9.75,3.1){$A$} %A
+\put(10.75,4.1){$B$}    %B
+\put(12.1,2.75){$C$}    %C
+\put(2.75,3.1){$A$} %A
+\put(3.75,4.1){$B$} %B
+
+
+\thicklines
+\put(2,2){\line(1,1){3.5}}  %DD
+\put(9,2){\line(1,1){3}}    %DD1
+\put(11,2){\line(1,1){3}}   %DD2
+
+
+\end{picture}
+\caption[The $DD$ curve]{If the exogenous variables $T$, $I$, $G$, $P^*$, and $P$ stay unchanged, for the goods market to be in equilibrium, any increase in $E$ must be accompanied by an increase in $Y$. This direct relation between the exchange rate and output is called the $DD$ curve. The $DD$ curve will shift to the right if $T\downarrow$, $I\uparrow$, $G\uparrow$, $P^*\uparrow$, and $P\downarrow$.}
+ {#fig-DD}
+\end{figure}
+-->
+</section>
+<section id="sec-DD-shifts" class="level3" data-number="12.1.2">
+<h3 data-number="12.1.2" class="anchored" data-anchor-id="sec-DD-shifts"><span class="header-section-number">12.1.2</span> The <em>DD</em> Curve: shifts</h3>
+<p>It also follows from the last paragraph of the <a href="#sec-goods-short-temp" class="quarto-xref"><span>Section 12.1</span></a> that if <span class="math inline">\(E\)</span> remains unchanged at, say, <span class="math inline">\(E_1\)</span> in <a href="#fig-DD" class="quarto-xref">Figure&nbsp;<span>12.1</span></a>, and if one or more of only these changes occur—<span class="math inline">\(T\downarrow\)</span>, <span class="math inline">\(I\uparrow\)</span>, <span class="math inline">\(G\uparrow\)</span>, <span class="math inline">\(P^*\uparrow\)</span>, and <span class="math inline">\(P\downarrow\)</span>—then output would increase (<span class="math inline">\(Y\uparrow\)</span>). In other words, assuming the economy was initially at the equilibrium outcome represented by point <span class="math inline">\(A\)</span> in <a href="#fig-DD" class="quarto-xref">Figure&nbsp;<span>12.1</span></a>, the new equilibrium would be at a point such as <span class="math inline">\(C\)</span>, with <span class="math inline">\(E\)</span> unchanged and <span class="math inline">\(Y\)</span> higher. And, as the <span class="math inline">\(DD\)</span> curve represents all possible equilibrium outcomes, if the equilibrium is no longer at point <span class="math inline">\(A\)</span>, the <span class="math inline">\(DD\)</span> curve can no longer be <span class="math inline">\(DD_1\)</span>. As the equilibrium has moved from <span class="math inline">\(A\)</span> to <span class="math inline">\(C\)</span>, the <span class="math inline">\(DD\)</span> curve must also have moved from <span class="math inline">\(DD_1\)</span> to <span class="math inline">\(DD_2\)</span>. In other words, we have established that <em>the <span class="math inline">\(DD\)</span> curve will shift to the right if one or more of only the folowing changes occur—<span class="math inline">\(T\downarrow\)</span>, <span class="math inline">\(I\uparrow\)</span>, <span class="math inline">\(G\uparrow\)</span>, <span class="math inline">\(P^*\uparrow\)</span>, and <span class="math inline">\(P\downarrow\)</span></em>.</p>
+<p>This ends my discussion of the goods market, for the time being. The <span class="math inline">\(DD\)</span>-column of <a href="#tbl-short-temp" class="quarto-xref">Table&nbsp;<span>12.1</span></a> gives a hyper-concise summary.</p>
+</section>
+</section>
+<section id="sec-assets-short-temp" class="level2" data-number="12.2">
+<h2 data-number="12.2" class="anchored" data-anchor-id="sec-assets-short-temp"><span class="header-section-number">12.2</span> Asset Markets</h2>
+<p>Recall from <a href="markets_equilibrium.html#sec-UIP" class="quarto-xref"><span>Section 5.9.2</span></a> that equilibrium in the foreign exchange market is represented by the uncovered interest parity equation, <a href="markets_equilibrium.html#eq-UIP-alt" class="quarto-xref">Equation&nbsp;<span>5.13</span></a>, which is <span id="eq-UIP-short-temp"><span class="math display">\[
+\fbox{$\displaystyle R=R^*+\frac{E^e_f}{E}-1.$}
+\tag{12.2}\]</span></span></p>
+<p>It follows in a straightforward manner that the interest rate (<span class="math inline">\(R\)</span>) will remain unchanged if <span class="math inline">\(R^*\)</span>, <span class="math inline">\(E_f^e\)</span>, and <span class="math inline">\(E\)</span> are unchanged. And, <span class="math inline">\(R\)</span> will increase if one or more of only the following changes occur: <span class="math inline">\(R^*\uparrow\)</span>, <span class="math inline">\(E_f^e\uparrow\)</span>, and <span class="math inline">\(E\downarrow\)</span>.</p>
+<p>Also, recall from <a href="markets_equilibrium.html#sec-summary-moneyeqm" class="quarto-xref"><span>Section 5.8.5</span></a> that the money market is in equilibrium when money supply (<span class="math inline">\(M\)</span>) is equal to money demand (<span class="math inline">\(L(R)\cdot P\cdot Y\)</span>): <span id="eq-LM-short-temp"><span class="math display">\[
+\fbox{$M=L(R)\cdot P\cdot Y.$}
+\tag{12.3}\]</span></span></p>
+<p>The two equations above can be merged into the following equation representing simultaneous equilibrium in both the money and foreign exchange markets: <span id="eq-assets-short-temp"><span class="math display">\[
+M=L\left(R^*+\frac{E^e_f}{E}-1\right)\cdot P\cdot Y.
+\tag{12.4}\]</span></span></p>
+<div id="fig-AA" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-AA-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/AA_and_shift.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-AA-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;12.2: For the asset markets to be in equilibrium, if the exogenous variables <span class="math inline">\(M\)</span>, <span class="math inline">\(R^*\)</span>, <span class="math inline">\(E_f^e\)</span>, and <span class="math inline">\(P\)</span> stay unchanged, any increase in <span class="math inline">\(E\)</span> must be accompanied by a decrease in <span class="math inline">\(Y\)</span>. This inverse relation between the exchange rate and output is called the <span class="math inline">\(AA\)</span> curve. The <span class="math inline">\(AA\)</span> curve will shift to the right if <span class="math inline">\(M\uparrow\)</span>, <span class="math inline">\(P\downarrow\)</span>, <span class="math inline">\(R^*\uparrow\)</span>, or <span class="math inline">\(E_f^e\uparrow\)</span>.
+</figcaption>
+</figure>
+</div>
+<!--
+\begin{figure}
+\begin{picture}(16,7)
+
+%Left panel
+
+\put(1,1){\vector(1,0){4}}  %x axis
+\put(1,1){\vector(0,1){5}}  %y axis
+%\linethickness{1.5mm}
+%\thicklines
+\put(2,6){\line(2,-3){3}}   %The AA Curve
+\put(5,1.5){$AA$}
+\put(0.5,0.5){$O$}
+\put(5,0.5){$Y$}
+\put(0.5,5.75){$E$}
+
+\put(1,3){\circle*{0.1}}    %At ep = 2
+\put(4,1){\circle*{0.1}}    %At Y = 3
+\put(4,3){\circle*{0.1}}    %At B
+\put(4.1,2.95){$A$}
+\put(0.5,2.95){$E_1$}
+\put(3.95,0.5){$Y_1$}
+\multiput(4,3)(0,-0.1){20}{\circle*{0.05}}  %dots dropping down from B
+\multiput(4,3)(-0.1,0){30}{\circle*{0.05}}  %dots going left from B
+\put(1,4.5){\circle*{0.1}}  %At A
+\put(3,1){\circle*{0.1}}    %at Y = 2
+\put(3,4.5){\circle*{0.1}}  %At A
+\put(3.1,4.5){$B$}
+\put(0.5,4.45){$E_2$}
+\put(2.95,0.5){$Y_2$}
+\multiput(3,4.5)(0,-0.1){35}{\circle*{0.05}}    %dots dropping down from A
+\multiput(3,4.5)(-0.1,0){20}{\circle*{0.05}}    %dots going left from A
+
+%Right panel
+
+
+\put(7,1){\vector(1,0){5.5}}    %x axis
+\put(7,1){\vector(0,1){5}}  %y axis
+%\linethickness{1.5mm}
+\thicklines
+%\put(7.6,6.6){\line(2,-3){0.4}}    %The IS Curve
+%\put(8.6,6.6){\line(2,-3){0.4}}    %The shifted IS Curve
+\put(8,6){\line(2,-3){3}}   %The IS Curve
+\put(9,6){\line(2,-3){3}}   %The shifted IS Curve
+\multiput(10,4.5)(0,-0.1){35}{\circle*{0.05}}   %dots dropping down from A
+\multiput(10,3)(-0.1,0){30}{\circle*{0.05}} %dots going left from A
+\multiput(10,4.5)(-0.1,0){30}{\circle*{0.05}}   %dots going left from B
+\multiput(9,4.5)(0,-0.1){35}{\circle*{0.05}}    %dots going down from B
+\put(10.1,3.1){$A$}
+\put(9.1,4.6){$B$}
+\put(10.1,4.6){$C$}
+\put(11,1.5){$AA_1$}
+\put(12,1.5){$AA_2$}
+\put(6.5,0.5){$O$}
+\put(6.5,2.95){$E_1$}
+\put(6.5,4.45){$E_2$}
+\put(8.95,0.5){$Y_2$}
+\put(9.95,0.5){$Y_1$}
+\put(12.25,0.5){$Y$}
+\put(6.5,5.75){$E$}
+
+\put(7,3){\circle*{0.1}}    %At ep = 2
+\put(9,1){\circle*{0.1}}    %At Y = 2
+\put(10,1){\circle*{0.1}}   %At Y = 3
+\put(10,3){\circle*{0.1}}   %At B
+\put(9,4.5){\circle*{0.1}}  %At C
+\put(10,4.5){\circle*{0.1}} %At C
+
+
+
+\end{picture}
+\caption[The $AA$ curve]{For the asset markets to be in equilibrium, if the exogenous variables $M$, $R^*$, $E_f^e$, and $P$ stay unchanged, any increase in $E$ must be accompanied by a decrease in $Y$. This inverse relation between the exchange rate and output is called the $AA$ curve. The $AA$ curve will shift to the right if $M\uparrow$, $P\downarrow$, $R^*\uparrow$, or $E_f^e\uparrow$.}
+ {#fig-AA}
+\end{figure}
+-->
+<section id="sec-AA" class="level3" data-number="12.2.1">
+<h3 data-number="12.2.1" class="anchored" data-anchor-id="sec-AA"><span class="header-section-number">12.2.1</span> The <em>AA</em> Curve: slope</h3>
+<p>The equation above has two endogenous variables (<span class="math inline">\(E\)</span> and <span class="math inline">\(Y\)</span>) and four exogenous variables (<span class="math inline">\(M\)</span>, <span class="math inline">\(R^*\)</span>, <span class="math inline">\(E_f^e\)</span>, and <span class="math inline">\(P\)</span>). Suppose the magnitudes of the exogenous variables are known. Further, suppose the asset markets are in equilibrium—that is, <a href="#eq-assets-short-temp" class="quarto-xref">Equation&nbsp;<span>12.4</span></a> is satisfied—for the values <span class="math inline">\(E=E_1\)</span> and <span class="math inline">\(Y=Y_1\)</span>. Would this pair of values for <span class="math inline">\(E\)</span> and <span class="math inline">\(Y\)</span> be the only such pair at which <a href="#eq-assets-short-temp" class="quarto-xref">Equation&nbsp;<span>12.4</span></a> is satisfied? Certainly not: there are many others.</p>
+<p>If <span class="math inline">\(R^*\)</span> and <span class="math inline">\(E_f^e\)</span> stay unchanged and the value of the foreign currency increases (<span class="math inline">\(E\uparrow\)</span>), <a href="#eq-UIP-short-temp" class="quarto-xref">Equation&nbsp;<span>12.2</span></a> implies that the interest rate must decrease (<span class="math inline">\(R\downarrow\)</span>). And, we know from <a href="markets_equilibrium.html#sec-mdemanddet2" class="quarto-xref"><span>Section 5.8.4.2</span></a>, that this must increase people’s desire for liquidity (<span class="math inline">\(L(R)\uparrow\)</span>): when the interest rate decreases people get rid of some of their interest-paying assets (such as bonds) and hold on to non-interest-paying cash instead. Now, note that <a href="#eq-LM-short-temp" class="quarto-xref">Equation&nbsp;<span>12.3</span></a> implies <span class="math inline">\(Y=M/(L(R)\cdot P)\)</span>. As both <span class="math inline">\(M\)</span> and <span class="math inline">\(P\)</span> are unchanged and <span class="math inline">\(L(R)\)</span> has increased, <span class="math inline">\(Y\)</span> must decrease if the asset markets are to remain in equilibrium. Therefore, we see that, <em>if the exogenous variables (<span class="math inline">\(M\)</span>, <span class="math inline">\(R^*\)</span>, <span class="math inline">\(E_f^e\)</span>, and <span class="math inline">\(P\)</span>) are unchanged, and if the asset markets are in equilibrium when <span class="math inline">\(E=E_1\)</span> and <span class="math inline">\(Y=Y_1\)</span>, then the asset markets will also be in equilibrium for some higher value of <span class="math inline">\(E\)</span>—such as <span class="math inline">\(E=E_2\)</span> in <a href="#fig-AA" class="quarto-xref">Figure&nbsp;<span>12.2</span></a> —and some lower value of <span class="math inline">\(Y\)</span>—such as <span class="math inline">\(Y=Y_2\)</span> in <a href="#fig-AA" class="quarto-xref">Figure&nbsp;<span>12.2</span></a>.</em></p>
+<p>That is, if initially the asset markets are in equilibrium and <span class="math inline">\(E=E_1\)</span> and <span class="math inline">\(Y=Y_1\)</span> as in point <span class="math inline">\(A\)</span> in <a href="#fig-AA" class="quarto-xref">Figure&nbsp;<span>12.2</span></a>, this will not be the only asset markets equilibrium outcome. Assuming <span class="math inline">\(M\)</span>, <span class="math inline">\(R^*\)</span>, <span class="math inline">\(E_f^e\)</span>, and <span class="math inline">\(P\)</span> are fixed, there will exist other equilibrium in which <span class="math inline">\(E=E_2\)</span> and <span class="math inline">\(Y=Y_2\)</span> as in point <span class="math inline">\(B\)</span>. <em>The collection of all such outcomes that keep the asset markets in equilibrium is the <span class="math inline">\(AA\)</span> curve. As there is an inverse relation between the values of <span class="math inline">\(E\)</span> and <span class="math inline">\(Y\)</span> that keep the asset markets in equilibrium when <span class="math inline">\(M\)</span>, <span class="math inline">\(R^*\)</span>, <span class="math inline">\(E_f^e\)</span>, and <span class="math inline">\(P\)</span> are fixed, the <span class="math inline">\(AA\)</span> curve is downward-sloping</em>, as in <a href="#fig-AA" class="quarto-xref">Figure&nbsp;<span>12.2</span></a>.<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a></p>
+<div id="fig-AADD" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-AADD-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/DD_AA_equilibrium.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-AADD-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;12.3: The short-run equilibrium under flexible exchange rates is at <span class="math inline">\(Q\)</span>, the intersection of the <span class="math inline">\(DD\)</span> and <span class="math inline">\(AA\)</span> curves.
+</figcaption>
+</figure>
+</div>
+<!--
+\begin{figure}
+\begin{picture}(7,6)
+
+\put(1,1){\vector(1,0){5}}  %x axis
+\put(1,1){\vector(0,1){4}}  %y axis
+%\linethickness{1.5mm}
+\put(5,3){$AA$}
+\put(5,5){$DD$}
+\put(0.5,0.5){$O$}
+\put(6,0.5){$Y$}
+\put(0.5,4.75){$E$}
+
+\put(1,3.8){\circle*{0.1}}  %At ESR
+\put(3.8,1){\circle*{0.1}}  %At YSR
+\put(3.8,3.8){\circle*{0.1}}    %At Q
+\put(2.75,1){\circle*{0.1}} %At YC
+\put(3.5,1){\circle*{0.1}}  %At YA
+\put(3.8,1){\circle*{0.1}}  %At YSR
+\put(4.5,1){\circle*{0.1}}  %At YB
+\put(4.5,4.5){\circle*{0.1}}    %At B
+\put(2.75,4.5){\circle*{0.1}}   %At C
+\put(3.5,4.5){\circle*{0.1}}    %At A
+
+\put(3.5,4.6){$A$}
+\put(2.8,4.6){$C$}
+\put(4.6,4.25){$B$}
+\put(4,3.75){$Q$}
+\put(0,3.55){$E_{SR}$}
+\put(0,4.45){$E_{ABC}$}
+\put(2.5,0.5){$Y_C$}
+\put(3.2,0.5){$Y_A$}
+\put(3.7,0.5){$Y_{SR}$}
+\put(4.5,0.5){$Y_B$}
+
+\multiput(2.75,4.5)(0,-0.1){35}{\circle*{0.05}} %dots dropping down from C
+\multiput(3.5,4.5)(0,-0.1){35}{\circle*{0.05}}  %dots dropping down from A
+\multiput(4.5,4.5)(0,-0.1){35}{\circle*{0.05}}  %dots dropping down from B
+\multiput(3.8,3.8)(0,-0.1){28}{\circle*{0.05}}  %dots dropping down from Q
+\multiput(3.8,3.8)(-0.1,0){28}{\circle*{0.05}}  %dots going left from Q
+\multiput(4.5,4.5)(-0.1,0){35}{\circle*{0.05}}  %dots going left from B
+
+\thicklines
+\put(2,5){\line(3,-2){3}}   %The AA Curve
+\put(2,2){\line(1,1){3}}    %The DD Curve
+
+\end{picture}
+\caption[Short-Run Equilibrium: Flexible Exchange Rates]{The short-run equilibrium under flexible exchange rates is at $Q$, the intersection of the $DD$ and $AA$ curves.}
+ {#fig-AADD}
+\end{figure}
+-->
+</section>
+<section id="sec-AA-shifts" class="level3" data-number="12.2.2">
+<h3 data-number="12.2.2" class="anchored" data-anchor-id="sec-AA-shifts"><span class="header-section-number">12.2.2</span> The <em>AA</em> Curve: shifts</h3>
+<p>Let us return to point <span class="math inline">\(B\)</span> in <a href="#fig-AA" class="quarto-xref">Figure&nbsp;<span>12.2</span></a>, where the asset markets are in equilibrium. Let us consider what would happen if the money supply increases (<span class="math inline">\(M\uparrow\)</span>), the other exogenous variables (<span class="math inline">\(R^*\)</span>, <span class="math inline">\(E_f^e\)</span>, and <span class="math inline">\(P\)</span>) remain unchanged. Is it possible that at the new equilibrium the exchange rate is still at <span class="math inline">\(E=E_2\)</span>? We know from <a href="#eq-UIP-short-temp" class="quarto-xref">Equation&nbsp;<span>12.2</span></a> that the interest rate (<span class="math inline">\(R\)</span>) will not change. Therefore, <span class="math inline">\(L(R)\)</span> will not change. Therefore, as <a href="#eq-LM-short-temp" class="quarto-xref">Equation&nbsp;<span>12.3</span></a> implies <span class="math inline">\(Y=M/(L(R)\cdot P)\)</span>, the increase in money supply will lead to an increase in output (<span class="math inline">\(Y\uparrow\)</span>). That is, when <span class="math inline">\(M\)</span> increases, there indeed would exist a new equilibrium such that <span class="math inline">\(E=E_2\)</span>, as before, but with an output that’s higher than before. In other words, the increase in <span class="math inline">\(M\)</span> pushes the outcome from <span class="math inline">\(B\)</span> to <span class="math inline">\(C\)</span>.</p>
+<p>Following the same line of reasoning, it can be shown that if domestic prices fall (<span class="math inline">\(P\downarrow\)</span>), the other exogenous variables (<span class="math inline">\(R^*\)</span>, <span class="math inline">\(E_f^e\)</span>, and <span class="math inline">\(M\)</span>) remain unchanged, and the exchange rate stays unchanged at <span class="math inline">\(E=E_2\)</span>, then neither <span class="math inline">\(R\)</span> nor <span class="math inline">\(L(R)\)</span> will change, and, consequently, output will increase (<span class="math inline">\(Y\uparrow\)</span>).</p>
+<p>Next, what would happen if the foreign interest rate increases (<span class="math inline">\(R^*\uparrow\)</span>), the other exogenous variables (<span class="math inline">\(M\)</span>, <span class="math inline">\(E_f^e\)</span>, and <span class="math inline">\(P\)</span>) remain unchanged, and the exchange rate also stays unchanged at <span class="math inline">\(E=E_2\)</span>. We know from <a href="#eq-UIP-short-temp" class="quarto-xref">Equation&nbsp;<span>12.2</span></a> that the interest rate must increase (<span class="math inline">\(R\uparrow\)</span>). Therefore, as we saw in the opening paragraph of this section, the people’s desire for liquidity must decrease (<span class="math inline">\(L(R)\downarrow\)</span>). Therefore, as <span class="math inline">\(Y=M/(L(R)\cdot P)\)</span>, it follows that output must increase (<span class="math inline">\(Y\uparrow\)</span>).</p>
+<p>The previous paragraph could be repeated word-for-word, but with <span class="math inline">\(R^*\)</span> and <span class="math inline">\(E_f^e\)</span> changing places, to establish that an increase in the current expectation of the future value of the foreign currency (<span class="math inline">\(E_f^e\uparrow\)</span>) must also lead to an increase in output (<span class="math inline">\(Y\uparrow\)</span>), assuming <span class="math inline">\(M\)</span>, <span class="math inline">\(R^*\)</span>, <span class="math inline">\(P\)</span>, and <span class="math inline">\(E\)</span> are unchanged.</p>
+<p>In short, if <span class="math inline">\(E\)</span> stays unchanged, then, for the asset markets to remain in equilibrium, <span class="math inline">\(Y\)</span> must increase if some subset of the following ceteris paribus changes occurs: <span class="math inline">\(M\uparrow\)</span>, <span class="math inline">\(P\downarrow\)</span>, <span class="math inline">\(R^*\uparrow\)</span>, and <span class="math inline">\(E_f^e\uparrow\)</span>. In other words, assuming the economy is initially at an equilibrium outcome represented by point <span class="math inline">\(B\)</span> in <a href="#fig-AA" class="quarto-xref">Figure&nbsp;<span>12.2</span></a>, the new equilibrium would be at a point such as <span class="math inline">\(C\)</span>. And, as the <span class="math inline">\(AA\)</span> curve represents all possible asset markets equilibrium outcomes, if the equilibrium is no longer at point <span class="math inline">\(B\)</span>, the <span class="math inline">\(AA\)</span> curve can no longer be <span class="math inline">\(AA_1\)</span>. As the equilibrium has moved from <span class="math inline">\(B\)</span> to <span class="math inline">\(C\)</span>, the <span class="math inline">\(AA\)</span> curve must also have moved from <span class="math inline">\(AA_1\)</span> to <span class="math inline">\(AA_2\)</span>. In other words, we have established that <em>the <span class="math inline">\(AA\)</span> curve will shift to the right if one or more of only the following changes occur—<span class="math inline">\(M\uparrow\)</span>, <span class="math inline">\(P\downarrow\)</span>, <span class="math inline">\(R^*\uparrow\)</span>, and <span class="math inline">\(E_f^e\uparrow\)</span></em>. These effects are summarized in the <span class="math inline">\(AA\)</span>-column of <a href="#tbl-short-temp" class="quarto-xref">Table&nbsp;<span>12.1</span></a>.</p>
+</section>
+</section>
+<section id="sec-eqm-short-temp" class="level2" data-number="12.3">
+<h2 data-number="12.3" class="anchored" data-anchor-id="sec-eqm-short-temp"><span class="header-section-number">12.3</span> Short-Run Equilibrium</h2>
+<p>A crucial feature of the analysis presented here is the assumption that all three markets—goods, money, and foreign exchange—must be in equilibrium simultaneously. Therefore, point <span class="math inline">\(A\)</span> in <a href="#fig-AADD" class="quarto-xref">Figure&nbsp;<span>12.3</span></a> cannot represent equilbrium because none of our three markets are in equilibrium when <span class="math inline">\(E=E_{ABC}\)</span> and <span class="math inline">\(Y=Y_A\)</span>. Point <span class="math inline">\(A\)</span> lies neither on the <span class="math inline">\(DD\)</span> curve, which includes all outcomes that represent equilibrium in the goods market, nor on the <span class="math inline">\(AA\)</span> curve, which includes all outcomes that represent equilibrium in the asset markets, meaning the money and foreign exchange markets.</p>
+<p>Similarly, neither <span class="math inline">\(B\)</span> nor <span class="math inline">\(C\)</span> in <a href="#fig-AADD" class="quarto-xref">Figure&nbsp;<span>12.3</span></a> can be the short-run equilibrium. At <span class="math inline">\(B\)</span>, which is on the <span class="math inline">\(DD\)</span> curve but not on the <span class="math inline">\(AA\)</span> curve, the goods market is in equilibrium, but not the asset markets. At <span class="math inline">\(C\)</span>, the asset markets are in equilibrium but the goods market is not.</p>
+<p>It is only at <span class="math inline">\(Q\)</span>—that is, where the <span class="math inline">\(DD\)</span> and <span class="math inline">\(AA\)</span> curves intersect—that all three markets are in equilibrium. In other words, only when the exchange rate is <span class="math inline">\(E=E_{SR}\)</span> and real GDP is <span class="math inline">\(Y=Y_{SR}\)</span> does short-run equilibrium prevail. <a href="#fig-AADD" class="quarto-xref">Figure&nbsp;<span>12.3</span></a> therefore shows that, <em>if an economy’s <span class="math inline">\(DD\)</span> and <span class="math inline">\(AA\)</span> curves are known, their intersection determines the short-run equilibrium levels of the exchange rate and real income</em>.</p>
+<div id="fig-AADD-shifts" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-AADD-shifts-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/AA_DD_shift.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-AADD-shifts-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;12.4: Short-run equilibrium under flexible exchange rates. In panel (a), <span class="math inline">\(Y\uparrow\)</span> and <span class="math inline">\(E\downarrow\)</span>. In panel (d), <span class="math inline">\(Y\uparrow\)</span> and <span class="math inline">\(E\uparrow\)</span>. Panels (b) and (c) show why the effect of an increase in the domestic price level (<span class="math inline">\(P\uparrow\)</span>), which shifts both the <span class="math inline">\(DD\)</span> and <span class="math inline">\(AA\)</span> curves to the left, has a negative effect on output and an ambiguous effect on the exchange rate. In panel (b), <span class="math inline">\(DD\)</span> shifts a lot more than <span class="math inline">\(AA\)</span> and, as a result, <span class="math inline">\(E\uparrow\)</span>. In panel (c), <span class="math inline">\(DD\)</span> shifts a lot less than <span class="math inline">\(AA\)</span> and, as a result, <span class="math inline">\(E\downarrow\)</span>.
+</figcaption>
+</figure>
+</div>
+<!--
+\begin{figure}
+\begin{picture}(16,5)
+
+\put(2.05,2){\vector(1,0){0.35}}    %shift arrow
+\put(1,1){\vector(1,0){2.5}}    %x axis a
+\put(1,1){\vector(0,1){2.5}}    %y axis a
+\put(1.5,1.5){\line(1,1){2}}    %The DD a
+\put(1.5,3.5){\line(1,-1){2}}   %The AA a
+\put(2,1.5){\line(1,1){1.5}}    %The DD2 a
+\put(2,0.5){$(a)$}
+
+\put(5.45,2){\vector(-1,0){0.35}}   %shift arrow
+\put(5.45,3){\vector(-1,0){0.25}}   %shift arrow
+\put(4.5,1){\vector(1,0){2.5}}  %x axis b
+\put(4.5,1){\vector(0,1){2.5}}  %y axis b
+\put(5.1,1.5){\line(1,1){1.9}}  %The DD b
+\put(5,3.5){\line(1,-1){2}} %The AA b
+\put(5,2){\line(1,1){1.5}}  %The DD2 b
+\put(5,3.2){\line(1,-1){1.7}}   %The AA2 b
+\put(5.5,0.5){$(b)$}
+\multiput(6,2.45)(-0.1,0){15}{\circle*{0.05}}   %dots going left from Q
+\multiput(5.55,2.62)(-0.1,0){11}{\circle*{0.05}}    %dots going left from Q
+
+\put(8.95,2){\vector(-1,0){0.25}}   %shift arrow
+\put(8.95,3){\vector(-1,0){0.25}}   %shift arrow
+\put(8,1){\vector(1,0){2.5}}    %x axis c
+\put(8,1){\vector(0,1){2.5}}    %y axis c
+\put(8.5,1.5){\line(1,1){2}}    %The DD c
+\put(8.5,3.5){\line(1,-1){2}}   %The AA c
+\put(8.5,1.8){\line(1,1){1.7}}  %The DD2 c
+\put(8.5,2.8){\line(1,-1){1.4}} %The AA2 c
+\put(9,0.5){$(c)$}
+\multiput(9.5,2.48)(-0.1,0){15}{\circle*{0.05}} %dots going left from Q
+\multiput(9,2.28)(-0.1,0){11}{\circle*{0.05}}   %dots going left from Q
+
+\put(13.15,2.40){\vector(1,0){0.35}}    %shift arrow
+\put(11.5,1){\vector(1,0){2.5}} %x axis d
+\put(11.5,1){\vector(0,1){2.5}} %y axis d
+\put(12,1.5){\line(1,1){2}} %The DD d
+\put(12,3.5){\line(1,-1){2}}    %The AA d
+\put(12.5,3.5){\line(1,-1){1.5}}    %The DD2 d
+\put(12.5,0.5){$(d)$}
+
+
+%\linethickness{1.5mm}
+\put(3.5,3.6){$DD$}
+\put(3.6,1.4){$AA$}
+\put(0.5,0.5){$O$}
+\put(3.25,0.5){$Y$}
+\put(0.5,3.25){$E$}
+
+%\put(2.75,4.5){\circle*{0.1}}  %At C
+%\put(3.5,4.5){\circle*{0.1}}   %At A
+
+%\multiput(4.5,4.5)(-0.1,0){35}{\circle*{0.05}} %dots going left from B
+
+%\thicklines
+
+\end{picture}
+\caption[Short-Run Equilibrium: Flexible Exchange Rates]{Short-run equilibrium under flexible exchange rates. In panel (a), $Y\uparrow$ and $E\downarrow$. In panel (d), $Y\uparrow$ and $E\uparrow$. Panels (b) and (c) show why the effect of an increase in the domestic price level ($P\uparrow$), which shifts both the $DD$ and $AA$ curves to the left, has a negative effect on output and an ambiguous effect on the exchange rate. In panel (b), $DD$ shifts a lot more than $AA$ and, as a result, $E\uparrow$. In panel (c), $DD$ shifts a lot less than $AA$ and, as a result, $E\downarrow$.}
+ {#fig-AADD-shifts}
+\end{figure}
+-->
+</section>
+<section id="sec-short-temp-preds" class="level2" data-number="12.4">
+<h2 data-number="12.4" class="anchored" data-anchor-id="sec-short-temp-preds"><span class="header-section-number">12.4</span> Predictions</h2>
+<p>We are now close to working out the full short-run consequences of temporary changes in our exogenous variables. We can now apply (a) our understanding that the intersection of the <span class="math inline">\(DD\)</span> and <span class="math inline">\(AA\)</span> curves determines the equilibrium values of <span class="math inline">\(Y\)</span> and <span class="math inline">\(E\)</span>, and (b) our knowledge of how changes in certain exogenous variables can shift the <span class="math inline">\(DD\)</span> and <span class="math inline">\(AA\)</span> curves, to make predictions about the effects of those exogenous changes on all our endogenous variables, including <span class="math inline">\(Y\)</span> and <span class="math inline">\(E\)</span>.</p>
+<section id="sec-fiscal-short-temp" class="level3" data-number="12.4.1">
+<h3 data-number="12.4.1" class="anchored" data-anchor-id="sec-fiscal-short-temp"><span class="header-section-number">12.4.1</span> Fiscal Policy</h3>
+<p>Let us begin by analysing the effects of expansionary fiscal policy, which refers to either an increase in government spending (<span class="math inline">\(G\uparrow\)</span>) or a cut in taxes (<span class="math inline">\(T\downarrow\)</span>) or both. We know from <a href="#sec-DD-shifts" class="quarto-xref"><span>Section 12.1.2</span></a> and <a href="#sec-AA-shifts" class="quarto-xref"><span>Section 12.2.2</span></a> that, as a result of these changes in fiscal policy, the <span class="math inline">\(DD\)</span> curve will shift to the right and the <span class="math inline">\(AA\)</span> curve will be unaffected. Therefore, the effects of expansionary fiscal policy can be shown by panel (a) of <a href="#fig-AADD-shifts" class="quarto-xref">Figure&nbsp;<span>12.4</span></a>. It follows that, real income will rise (<span class="math inline">\(Y\uparrow\)</span>) and the domestic currency will appreciate (<span class="math inline">\(E\downarrow\)</span>).</p>
+<p>Therefore, disposable income must increase (<span class="math inline">\(Y-T\uparrow\)</span>). And, therefore, consumption spending must increase (<span class="math inline">\(C=C(Y-T)\uparrow\)</span>).</p>
+<p>Expansionary fiscal policy cannot affect the domestic and foreign price levels (<span class="math inline">\(P\)</span> and <span class="math inline">\(P^*\)</span>), which are exogenous. Therefore, the decrease in <span class="math inline">\(E\)</span> implies a decrease in the real exchange rate (<span class="math inline">\(q\equiv E\cdot P^*/P\downarrow\)</span>). The decrease in the real exchange rate, which implies that foreign goods have become relatively cheaper, and the increase in disposable income, which leads to more imports, must both lead to a decrease in net exports (<span class="math inline">\(NX=NX(q, Y-T)\downarrow\)</span>).<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a></p>
+<p>Finally, note that expansionary fiscal policy cannot affect <span class="math inline">\(R^*\)</span> and <span class="math inline">\(E_f^e\)</span>, which are exogenous. This, plus the decrease in <span class="math inline">\(E\)</span>, together imply, as we saw in <a href="#sec-assets-short-temp" class="quarto-xref"><span>Section 12.2</span></a>, that the domestic interest rate must increase (<span class="math inline">\(R\uparrow\)</span>).</p>
+<p>The reader can verify that the effects of an increase in business investment (<span class="math inline">\(I\uparrow\)</span>) are identical to the effects of an increase in government spending.</p>
+<p>To summarize, <em>if only some subset of these exogenous changes—<span class="math inline">\(I\uparrow\)</span>, <span class="math inline">\(G\uparrow\)</span>, <span class="math inline">\(T\downarrow\)</span>—occur, then <span class="math inline">\(Y\uparrow\)</span>, <span class="math inline">\(E\downarrow\)</span>, <span class="math inline">\(C\uparrow\)</span>, <span class="math inline">\(NX\downarrow\)</span>, <span class="math inline">\(q\downarrow\)</span>, and <span class="math inline">\(R\uparrow\)</span></em>, as shown in the rows for <span class="math inline">\(I\)</span>, <span class="math inline">\(G\)</span>, and <span class="math inline">\(T\)</span> in <a href="#tbl-short-temp" class="quarto-xref">Table&nbsp;<span>12.1</span></a>.</p>
+<p>Note that these results provide an intellectual basis for the use of expansionary fiscal policy during a recession. Cutting government spending and raising taxes may represent a rare and admirable sense of responsibility and restraint in a government, but such otherwise praiseworthy behavior may not be a good idea when an economy is facing short-run trouble.</p>
+</section>
+<section id="sec-pstar-short-temp" class="level3" data-number="12.4.2">
+<h3 data-number="12.4.2" class="anchored" data-anchor-id="sec-pstar-short-temp"><span class="header-section-number">12.4.2</span> Foreign Price Level</h3>
+<p>The effects of an increase in foreign prices (<span class="math inline">\(P^*\uparrow\)</span>) are also shown by panel (a) of <a href="#fig-AADD-shifts" class="quarto-xref">Figure&nbsp;<span>12.4</span></a>. Specifically, we know from <a href="#sec-DD-shifts" class="quarto-xref"><span>Section 12.1.2</span></a>} and <a href="#sec-AA-shifts" class="quarto-xref"><span>Section 12.2.2</span></a> or from the <span class="math inline">\(DD\)</span> and <span class="math inline">\(AA\)</span> columns of <a href="#tbl-short-temp" class="quarto-xref">Table&nbsp;<span>12.1</span></a> that the <span class="math inline">\(DD\)</span> curve shifts right and the <span class="math inline">\(AA\)</span> curve is unaffected. Therefore, <span class="math inline">\(Y\uparrow\)</span> and <span class="math inline">\(E\downarrow\)</span>, as they did under expansionary fiscal policy. As taxes, which are exogenous, are unaffected, <span class="math inline">\(Y-T\uparrow\)</span>, which further implies <span class="math inline">\(C=C(Y-T)\uparrow\)</span>.</p>
+<p>We know from <a href="markets_equilibrium.html#sec-consumption" class="quarto-xref"><span>Section 5.3</span></a> that when disposable income increases, consumption increases, but by a smaller amount. Therefore, <span class="math inline">\(Y-T-C\)</span> must increase, which implies that <span class="math inline">\(Y-C\)</span> must increase when <span class="math inline">\(P^*\)</span> increases, as the exogenous <span class="math inline">\(T\)</span> is unaffected. Now recall that the goods market’s equilibrium condition, <span class="math inline">\(Y=C+I+G+NX\)</span>, implies <span class="math inline">\(NX=Y-C-I-G\)</span>. As the rise in the foreign price level (a) cannot affect <span class="math inline">\(I\)</span> and <span class="math inline">\(G\)</span>, which are exogenous, and (b) leads to an increase in <span class="math inline">\(Y-C\)</span>, we can conclude that net exports must increase (<span class="math inline">\(NX\uparrow\)</span>).</p>
+<p>We have just seen that when <span class="math inline">\(P^*\)</span> increases, <span class="math inline">\(NX\)</span> and <span class="math inline">\(Y-T\)</span> both increase. Now recall from <a href="markets_equilibrium.html#sec-summary-nxp" class="quarto-xref"><span>Section 5.6.3</span></a> that net exports (<span class="math inline">\(NX=NX(q, Y-T)\)</span>) are directly related to <span class="math inline">\(q\)</span> and <em>inversely related</em> to <span class="math inline">\(Y-T\)</span>. Given that <span class="math inline">\(Y-T\)</span> has increased, how could <span class="math inline">\(NX\)</span> have increased? The only possible explanation is that the real exchange rate must have increased, and to such an extent that <span class="math inline">\(NX\)</span> increased in spite of the increase in <span class="math inline">\(Y-T\)</span>.</p>
+<p>Finally, note that higher foreign prices cannot affect <span class="math inline">\(R^*\)</span> and <span class="math inline">\(E_f^e\)</span>, which are exogenous. This, plus the decrease in <span class="math inline">\(E\)</span>, together imply, as we saw in <a href="#sec-assets-short-temp" class="quarto-xref"><span>Section 12.2</span></a>, that the domestic interest rate must increase (<span class="math inline">\(R\uparrow\)</span>).</p>
+<p>To summarize, <em>if there is a ceteris paribus increase in <span class="math inline">\(P^*\)</span>, then <span class="math inline">\(E\downarrow\)</span>, <span class="math inline">\(Y\uparrow\)</span>, <span class="math inline">\(C\uparrow\)</span>, <span class="math inline">\(NX\uparrow\)</span>, <span class="math inline">\(q\uparrow\)</span>, and <span class="math inline">\(R\uparrow\)</span></em>. These ceteris paribus effects are shown in the <span class="math inline">\(P^*\)</span>-row of <a href="#tbl-short-temp" class="quarto-xref">Table&nbsp;<span>12.1</span></a>.</p>
+</section>
+<section id="sec-rstar-efe-short-temp" class="level3" data-number="12.4.3">
+<h3 data-number="12.4.3" class="anchored" data-anchor-id="sec-rstar-efe-short-temp"><span class="header-section-number">12.4.3</span> The Interest Rate</h3>
+<p>Now let us consider increases in <span class="math inline">\(R^*\)</span> or <span class="math inline">\(E_f^e\)</span> or both. From <a href="#sec-DD-shifts" class="quarto-xref"><span>Section 12.1.2</span></a> and <a href="#sec-AA-shifts" class="quarto-xref"><span>Section 12.2.2</span></a> or from the <span class="math inline">\(DD\)</span>- and <span class="math inline">\(AA\)</span>-columns of <a href="#tbl-short-temp" class="quarto-xref">Table&nbsp;<span>12.1</span></a>, one can check that the <span class="math inline">\(DD\)</span> curve will be unaffected and the <span class="math inline">\(AA\)</span> curve will shift to the right. These shifts are shown in panel (d) of <a href="#fig-AADD-shifts" class="quarto-xref">Figure&nbsp;<span>12.4</span></a>, which makes clear that real output and the exchange rate will both increase (<span class="math inline">\(Y\uparrow\)</span> and <span class="math inline">\(E\uparrow\)</span>). The increase in <span class="math inline">\(E\)</span> and the fact that the exogenous prices, <span class="math inline">\(P\)</span> and <span class="math inline">\(P^*\)</span>, are unaffected by changes in <span class="math inline">\(R^*\)</span> and/or <span class="math inline">\(E_f^e\)</span>, together imply that the real exchange rate must have increased (<span class="math inline">\(q\equiv E\cdot P^*/P\uparrow\)</span>). And, the increase in output must lead to an increase in consumption (<span class="math inline">\(C=C(Y-T)\uparrow\)</span>), as taxes, which are exogenous, are unaffected by <span class="math inline">\(R^*\)</span> or <span class="math inline">\(E_f^e\)</span>.</p>
+<p>Moreover, as we saw a few paragraphs ago, <span class="math inline">\(Y-C\)</span> increases when <span class="math inline">\(Y\)</span> increases and <span class="math inline">\(T\)</span> is unchanged. Therefore, net exports, which we saw a few paragraphs back are given by <span class="math inline">\(NX=Y-C-I-G\)</span>, must increase.</p>
+<p>Now recall the money market’s equilibrium condition is given by <a href="#eq-LM-short-temp" class="quarto-xref">Equation&nbsp;<span>12.3</span></a> above or <span class="math inline">\(M=L(R)\cdot P\cdot Y\)</span>. This implies <span class="math inline">\(L(R)=M/(P\cdot Y)\)</span>. As <span class="math inline">\(M\)</span> and <span class="math inline">\(P\)</span>, which are exogenous, are unchanged, and <span class="math inline">\(Y\)</span> has increased, it follows that <span class="math inline">\(L(R)\)</span> has decreased. But we know from <a href="markets_equilibrium.html#sec-mdemanddet2" class="quarto-xref"><span>Section 5.8.4.2</span></a> that <span class="math inline">\(L(R)\)</span> is inversely related to <span class="math inline">\(R\)</span>: when interest rates are high, people do not want to hang on to liquid cash; they’d rather buy interest-paying bonds. Therefore, the decrease in <span class="math inline">\(L(R)\)</span> implies that <span class="math inline">\(R\)</span> has increased.</p>
+<p>To summarize, <em>if there is a ceteris paribus increase in <span class="math inline">\(R^*\)</span> or in <span class="math inline">\(E_f^e\)</span>, then <span class="math inline">\(E\uparrow\)</span>, <span class="math inline">\(Y\uparrow\)</span>, <span class="math inline">\(C\uparrow\)</span>, <span class="math inline">\(NX\uparrow\)</span>, <span class="math inline">\(q\uparrow\)</span>, and <span class="math inline">\(R\uparrow\)</span></em>. These ceteris paribus effects are shown in the <span class="math inline">\(R^*\)</span>- and <span class="math inline">\(E_f^e\)</span>-rows of <a href="#tbl-short-temp" class="quarto-xref">Table&nbsp;<span>12.1</span></a> as a long row of plus (<span class="math inline">\(+\)</span>) signs.</p>
+</section>
+<section id="sec-money-short-temp" class="level3" data-number="12.4.4">
+<h3 data-number="12.4.4" class="anchored" data-anchor-id="sec-money-short-temp"><span class="header-section-number">12.4.4</span> Monetary Stimulus</h3>
+<p>Recall that a nation’s central bank can run the printing presses at any time, and use the newly printed cash to buy financial assets such as government bonds from John or Jane Q. Public, as a result of which there would be a quick increase in <span class="math inline">\(M\)</span>. What would be the short run effects of a temporary increase in the quantity of money in circulation?</p>
+<p>The first two paragraphs of the previous section will work just fine if all mentions of <span class="math inline">\(R^*\)</span> or <span class="math inline">\(E_f^e\)</span> are replaced by <span class="math inline">\(M\)</span>. Therefore, it is easy to check that <span class="math inline">\(Y\)</span>, <span class="math inline">\(C\)</span>, <span class="math inline">\(NX\)</span>, <span class="math inline">\(q\)</span>, and <span class="math inline">\(E\)</span> will all increase as a result of an increase in the quantity of money.</p>
+<p>The only difference is that increases in <span class="math inline">\(R^*\)</span> or <span class="math inline">\(E_f^e\)</span> lead to higher domestic interest rates whereas an increase in <span class="math inline">\(M\)</span> leads to lower domestic interest rates (<span class="math inline">\(R\downarrow\)</span>). To see why, recall from <a href="#eq-UIP-short-temp" class="quarto-xref">Equation&nbsp;<span>12.2</span></a> that <span class="math inline">\(R=R^*+(E^e_f/E)-1\)</span>. An increase in <span class="math inline">\(M\)</span> depreciates the domestic currency (<span class="math inline">\(E\uparrow\)</span>) and has no effect on other exogenous variables such as <span class="math inline">\(R^*\)</span> and <span class="math inline">\(E_f^e\)</span>. Therefore, it follows that the domestic interest rate decreases.</p>
+<p>To summarize, <em>if a nation’s money supply increases—and all other exogenous variables remain unchanged—then <span class="math inline">\(Y\)</span>, <span class="math inline">\(C\)</span>, <span class="math inline">\(NX\)</span>, <span class="math inline">\(q\)</span>, and <span class="math inline">\(E\)</span> will all increase, and <span class="math inline">\(R\)</span> will decrease</em>. This is shown in the <span class="math inline">\(M\)</span>-row of <a href="#tbl-short-temp" class="quarto-xref">Table&nbsp;<span>12.1</span></a>.</p>
+<p>The direct effect of <span class="math inline">\(M\)</span> on <span class="math inline">\(Y\)</span> is a hugely important result that is the intellectual basis of the argument in favor of expansionary monetary policy in a recession. Indeed, it is now standard practice for central banks to boost the money supply whenever a recession hits.</p>
+</section>
+<section id="sec-p-short-temp" class="level3" data-number="12.4.5">
+<h3 data-number="12.4.5" class="anchored" data-anchor-id="sec-p-short-temp"><span class="header-section-number">12.4.5</span> The Domestic Price Level</h3>
+<p>Finally, we need to work out how our endogenous variables respond to an increase in the domestic price level. (I have saved the toughest nut for the last!)</p>
+<p>A quick glance at <a href="#sec-DD-shifts" class="quarto-xref"><span>Section 12.1.2</span></a> and <a href="#sec-AA-shifts" class="quarto-xref"><span>Section 12.2.2</span></a> or at the <span class="math inline">\(DD\)</span> and <span class="math inline">\(AA\)</span> columns of <a href="#tbl-short-temp" class="quarto-xref">Table&nbsp;<span>12.1</span></a> shows that both the <span class="math inline">\(DD\)</span> and <span class="math inline">\(AA\)</span> curves must shift leftward when <span class="math inline">\(P\)</span> increases. These shifts are portrayed by panels (b) and (c) in <a href="#fig-AADD-shifts" class="quarto-xref">Figure&nbsp;<span>12.4</span></a>. It is clear that output decreases (<span class="math inline">\(Y\downarrow\)</span>).</p>
+<p>But the effect on the exchange rate is <em>ambiguous</em>: <span class="math inline">\(E\)</span> increases in panel (b), in which <span class="math inline">\(DD\)</span> shifts more than <span class="math inline">\(AA\)</span>, but decreases in panel (c) in which <span class="math inline">\(DD\)</span> shifts less than <span class="math inline">\(AA\)</span>. In other words, although an increase in the domestic price level affects the equilibrium outcome in all three markets, if the effect on the goods market is very strong compared to the effects on the money and foreign currency markets, then the value of the foreign currency increases. On the other hand, if the effect on the asset markets is stronger, then the exchange rate decreases.</p>
+<p>Also, recall from <a href="#eq-UIP-short-temp" class="quarto-xref">Equation&nbsp;<span>12.2</span></a> that <span class="math inline">\(R=R^*+(E^e_f/E)-1\)</span>. As an increase in <span class="math inline">\(P\)</span> cannot affect other exogenous variables such as <span class="math inline">\(R^*\)</span> and <span class="math inline">\(E_f^e\)</span>, and as the effect on <span class="math inline">\(E\)</span> is ambiguous, the effect on the domestic interest rate must be ambiguous as well.</p>
+<p>We have seen several times already that any change in <span class="math inline">\(Y\)</span> leads to similar changes in <span class="math inline">\(C\)</span> and <span class="math inline">\(Y-C\)</span>, provided taxes are unaffected. Therefore, as an increase in <span class="math inline">\(P\)</span> cannot affect other exogenous variables such as <span class="math inline">\(T\)</span>, the decrease in <span class="math inline">\(Y\)</span> that we saw two paragraphs back must lead to decreases in <span class="math inline">\(C\)</span> and <span class="math inline">\(Y-C\)</span>. We have also seen on several occasions above that the goods market’s equilibrium condition <span class="math inline">\(Y=C+I+G+NX\)</span> implies <span class="math inline">\(NX=Y-C-I-G\)</span>. Therefore, the decrease in <span class="math inline">\(Y-C\)</span> implies a decrease in net exports as well, given that <span class="math inline">\(I\)</span> and <span class="math inline">\(G\)</span>, which are exogenous, are unaffected.</p>
+<p>Note that when <span class="math inline">\(P\)</span> increases, <span class="math inline">\(NX\)</span> and <span class="math inline">\(Y-T\)</span> both decrease. Now recall from <a href="markets_equilibrium.html#sec-summary-nxp" class="quarto-xref"><span>Section 5.6.3</span></a> that net exports (<span class="math inline">\(NX=NX(q, Y-T)\)</span>) are directly related to <span class="math inline">\(q\)</span> and inversely related to <span class="math inline">\(Y-T\)</span>. Given that <span class="math inline">\(Y-T\)</span> has decreased, how on earth could <span class="math inline">\(NX\)</span> have decreased also? The only possible explanation is that the real exchange rate must have decreased, and decreased to such an extent that <span class="math inline">\(NX\)</span> decreased in spite of the decrease in <span class="math inline">\(Y-T\)</span>.<a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a></p>
+<p>To summarize, <em>if the domestic price level increases and all other exogenous variables stay unchanged, then <span class="math inline">\(Y\)</span>, <span class="math inline">\(C\)</span>, <span class="math inline">\(NX\)</span>, and <span class="math inline">\(q\)</span> must all decrease. The effects on <span class="math inline">\(E\)</span> and <span class="math inline">\(R\)</span> are ambiguous</em>.</p>
+<p>This completes my analysis of the short-run effects of temporary changes in exogenous variables in an economy that has flexible exchange rates. The results are summarized in <a href="#tbl-short-temp" class="quarto-xref">Table&nbsp;<span>12.1</span></a>.</p>
+<div id="tbl-short-temp" class="quarto-float anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-short-temp-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;12.1: <strong>Macroeconomic Behavior under Flexible Exchange Rates in the Short Run: temporary changes.</strong> All variables named in the first column are exogenous and all variables listed in the first row are endogenous. Each cell in the table—except those in the <span class="math inline">\(DD\)</span> and <span class="math inline">\(AA\)</span> columns—shows the relation between the exogenous variable and the endogenous variable aligned with the cell. The +/?/- symbols denote a direct/ambiguous/inverse relation. A blank cell denotes that there is no relation. Each cell in the <span class="math inline">\(DD\)</span> and <span class="math inline">\(AA\)</span> columns shows how the two curves shift, if at all, when the exogenous variable aligned with that cell <em>increases</em>.
+</figcaption>
+<div aria-describedby="tbl-short-temp-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/short_flex_temporary.png" class="img-fluid figure-img">
+</div>
+</figure>
+</div>
+<!--
+\begin{table}
+\begin{tabular}
+{*{9}{|c}|}
+\hline
+%\multicolumn{10}{c}{**Fixed Exchange Rates and Short Run**}\\ \hline
+
+        &$DD$       &$AA$       &$Y$    &$E$    &$C$    &$NX$   &$q$    &$R$    \\ \hline
+$I, G$      &$\rightarrow$  &       &+  &-  &+  &-  &-      &+  \\ \hline
+$T$     &$\leftarrow$   &       &-  &+  &-  &+  &+      &-  \\ \hline
+$P^*$       &$\rightarrow$  &       &+  &-  &+  &+  &+      &+  \\ \hline
+$P$     &$\leftarrow$   &$\leftarrow$   &-  &?  &-  &-  &-      &?  \\ \hline
+$R^*$       &       &$\rightarrow$  &+  &+  &+  &+  &+      &+  \\ \hline
+$E_f^e$     &       &$\rightarrow$  &+  &+  &+  &+  &+      &+  \\ \hline
+$M$     &       &$\rightarrow$  &+  &+  &+  &+  &+      &-  \\ \hline
+\end{tabular}
+\caption[Macroeconomic Behavior under Flexible Exchange Rates in the Short Run: temporary changes]{**Macroeconomic Behavior under Flexible Exchange Rates in the Short Run: temporary changes.** All variables named in the first column are exogenous and all variables listed in the first row are endogenous. Each cell in the table---except those in the $DD$ and $AA$ columns---shows the relation between the exogenous variable and the endogenous variable aligned with the cell. The +/?/- symbols denote a direct/ambiguous/inverse relation. A blank cell denotes that there is no relation. Each cell in the $DD$ and $AA$ columns shows how the two curves shift, if at all, when the  exogenous variable aligned with that cell *increases*.}
+\end{table} {#tbl-short-temp}
+-->
+</section>
+</section>
+<section id="sec-conclusion-short-temp" class="level2" data-number="12.5">
+<h2 data-number="12.5" class="anchored" data-anchor-id="sec-conclusion-short-temp"><span class="header-section-number">12.5</span> Conclusion</h2>
+<p>A country’s net exports (or “trade balance”) is often a controversial issue. We have seen in other contexts before that contractionary fiscal policy (<span class="math inline">\(G\downarrow\)</span> and/or <span class="math inline">\(T\uparrow\)</span>) consistently leads to higher net exports. It is, therefore, a relief to see the same result in this chapter.</p>
+<p>Although casual commentators often suggest an increase in tariffs on imported goods as a way to increase net exports, we have seen in <a href="long_real.html" class="quarto-xref"><span>Chapter 9</span></a>} that tariffs do not affect net exports in the long run. An increase in tariffs does raise net exports in the short run under fixed exchange rates, as we saw in the last chapter. This chapter’s analysis shows the same effect is true under flexible exchange rates as well.</p>
+
+
+</section>
+<section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn1"><p>For more on <em>shocks</em> and <em>policy variables</em>, see <a href="theories_equations_variables.html#sec-exovar" class="quarto-xref"><span>Section 6.1.1</span></a>.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>Recall from <a href="theories_equations_variables.html#thm-eqnno" class="quarto-xref">Theorem&nbsp;<span>6.1</span></a> that if the number of endogenous variables exceeds the number of equations, the equations have many solutions. Here, we are dealing with <em>one</em> equation—the goods market equilibrium equation, <a href="#eq-IS-short-temp" class="quarto-xref">Equation&nbsp;<span>12.1</span></a> —that has <em>two</em> endogenous variables, <span class="math inline">\(Y\)</span> and <span class="math inline">\(E\)</span>. Therefore, it should not be a surprise that there are many pairs of values for <span class="math inline">\(Y\)</span> and <span class="math inline">\(E\)</span>—such as points <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> and, indeed, all the other points on the <span class="math inline">\(DD\)</span> curve in <a href="#fig-DD" class="quarto-xref">Figure&nbsp;<span>12.1</span></a> —that all represent equilibrium in the goods market.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>Recall from <a href="theories_equations_variables.html#thm-eqnno" class="quarto-xref">Theorem&nbsp;<span>6.1</span></a> that if the number of endogenous variables exceeds the number of equations, the equations have many solutions. Here, we are dealing with <em>one</em> equation—<a href="#eq-assets-short-temp" class="quarto-xref">Equation&nbsp;<span>12.4</span></a> —that has <em>two</em> endogenous variables, <span class="math inline">\(Y\)</span> and <span class="math inline">\(E\)</span>. Therefore, it should not be a surprise that there are many pairs of values for <span class="math inline">\(Y\)</span> and <span class="math inline">\(E\)</span>—such as points <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> and, indeed, all the other points on the <span class="math inline">\(AA\)</span> curve in <a href="#fig-AA" class="quarto-xref">Figure&nbsp;<span>12.2</span></a> —that all represent equilibrium in the asset markets.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn4"><p>See <a href="markets_equilibrium.html#sec-summary-nxp" class="quarto-xref"><span>Section 5.6.3</span></a> for more on the factors that drive a country’s net exports.<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn5"><p>Alert readers will notice that I have used this line of reasoning before to deduce the behavior of the real exchange rate whenever disposable income and net exports move in the <em>same</em> direction. Disposable income is supposed to have an <em>inverse</em> effect on net exports. Therefore, when these two variables move together, it must be the doing of the real exchange rate. And, as the real exchange rate is the relative price of foreign goods, it has a <em>direct</em> effect on net exports. Therefore, if the real exchange is reversing the effect of disposable income on net exports, it must have changed in the same direction as disposable income. For instance, if <span class="math inline">\(Y-T\)</span> and <span class="math inline">\(NX\)</span> both decrease, then <span class="math inline">\(q\)</span> must also have decreased.<a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+          // target, if specified
+          link.setAttribute("target", "_blank");
+          if (link.getAttribute("rel") === null) {
+            link.setAttribute("rel", "noopener");
+          }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./short_fixed.html" class="pagination-link" aria-label="Short-Run Predictions: Fixed Exchange Rates">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Short-Run Predictions: Fixed Exchange Rates</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./short_flex_permanent.html" class="pagination-link" aria-label="Short-Run Predictions: Expectations and Flexible Exchange Rates">
+        <span class="nav-page-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Short-Run Predictions: Expectations and Flexible Exchange Rates</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/UdayanRoy62/internationalmacro/edit/main/short_flex.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/UdayanRoy62/internationalmacro/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="nav-footer-right">
+<p>This book was built with <a href="https://quarto.org/">Quarto</a>.</p>
+</div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

@@ -1,0 +1,1312 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.4.554">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>International Macroeconomics: Lecture Notes - 5&nbsp; Markets and Equilibrium</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./theories_equations_variables.html" rel="next">
+<link href="./exchange_rates.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./markets_equilibrium.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Markets and Equilibrium</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">International Macroeconomics: Lecture Notes</a> 
+        <div class="sidebar-tools-main">
+    <a href="https://github.com/UdayanRoy62/internationalmacro" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./preliminaries.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Preliminaries</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./natincome.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">National Income Accounts, Prices, and Inflation</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./bop.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Balance of Payments Accounts</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./exchange_rates.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Exchange Rates</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./markets_equilibrium.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Markets and Equilibrium</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./theories_equations_variables.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Theories, Equations and Variables</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./long_run_short_run.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">The Long Run and the Short Run</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./exchange_rate_systems.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Exchange Rate Systems: Fixed and Flexible</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./long_real.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Long-Run Predictions: The Real World</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./long_nominal.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Long-Run Predictions: The Nominal World</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./short_fixed.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Short-Run Predictions: Fixed Exchange Rates</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./short_flex.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Short-Run Predictions: Flexible Exchange Rates</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./short_flex_permanent.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Short-Run Predictions: Expectations and Flexible Exchange Rates</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./crises.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Special Topic: Currency Crises</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./summary.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">International Macroeconomics: Summary</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#sec-goodseqm" id="toc-sec-goodseqm" class="nav-link active" data-scroll-target="#sec-goodseqm"><span class="header-section-number">5.1</span> The Goods Market Equilibrium Condition</a>
+  <ul class="collapse">
+  <li><a href="#sec-goodseqmdef" id="toc-sec-goodseqmdef" class="nav-link" data-scroll-target="#sec-goodseqmdef"><span class="header-section-number">5.1.1</span> Components of Aggregate Expenditure</a></li>
+  <li><a href="#sec-goodseqmmeaning" id="toc-sec-goodseqmmeaning" class="nav-link" data-scroll-target="#sec-goodseqmmeaning"><span class="header-section-number">5.1.2</span> What Does the Goods Market Equilibrium Condition Mean?</a></li>
+  <li><a href="#sec-useeqmcon" id="toc-sec-useeqmcon" class="nav-link" data-scroll-target="#sec-useeqmcon"><span class="header-section-number">5.1.3</span> What’s the Use of an Equilibrium Condition?</a></li>
+  </ul></li>
+  <li><a href="#sec-functional" id="toc-sec-functional" class="nav-link" data-scroll-target="#sec-functional"><span class="header-section-number">5.2</span> Notation: Functional Relationships</a></li>
+  <li><a href="#sec-consumption" id="toc-sec-consumption" class="nav-link" data-scroll-target="#sec-consumption"><span class="header-section-number">5.3</span> What Are the Factors that Affect Consumption?</a>
+  <ul class="collapse">
+  <li><a href="#sec-mpc" id="toc-sec-mpc" class="nav-link" data-scroll-target="#sec-mpc"><span class="header-section-number">5.3.1</span> The Marginal Propensity to Consume and Ricardian Equivalence</a></li>
+  </ul></li>
+  <li><a href="#sec-investment" id="toc-sec-investment" class="nav-link" data-scroll-target="#sec-investment"><span class="header-section-number">5.4</span> What Are the Factors that Affect Investment?</a></li>
+  <li><a href="#sec-gov" id="toc-sec-gov" class="nav-link" data-scroll-target="#sec-gov"><span class="header-section-number">5.5</span> What Are the Factors that Affect Government Spending?</a></li>
+  <li><a href="#sec-netexports" id="toc-sec-netexports" class="nav-link" data-scroll-target="#sec-netexports"><span class="header-section-number">5.6</span> What Are the Factors that Affect Net Exports?</a>
+  <ul class="collapse">
+  <li><a href="#sec-exports" id="toc-sec-exports" class="nav-link" data-scroll-target="#sec-exports"><span class="header-section-number">5.6.1</span> What Are the Factors that Affect Exports?</a></li>
+  <li><a href="#sec-imports" id="toc-sec-imports" class="nav-link" data-scroll-target="#sec-imports"><span class="header-section-number">5.6.2</span> What Are the Factors that Affect Imports?</a></li>
+  <li><a href="#sec-summary-nxp" id="toc-sec-summary-nxp" class="nav-link" data-scroll-target="#sec-summary-nxp"><span class="header-section-number">5.6.3</span> Summary: What Are the Factors that Affect Net Exports?</a></li>
+  <li><a href="#sec-appp" id="toc-sec-appp" class="nav-link" data-scroll-target="#sec-appp"><span class="header-section-number">5.6.4</span> The Law of One Price and Purchasing Power Parity</a></li>
+  </ul></li>
+  <li><a href="#sec-summary-goodseqm" id="toc-sec-summary-goodseqm" class="nav-link" data-scroll-target="#sec-summary-goodseqm"><span class="header-section-number">5.7</span> Summary: What Is the Goods Market Equilibrium Condition?</a></li>
+  <li><a href="#sec-moneyeqm" id="toc-sec-moneyeqm" class="nav-link" data-scroll-target="#sec-moneyeqm"><span class="header-section-number">5.8</span> What is the Money Market Equilibrium Condition?</a>
+  <ul class="collapse">
+  <li><a href="#sec-msupply" id="toc-sec-msupply" class="nav-link" data-scroll-target="#sec-msupply"><span class="header-section-number">5.8.1</span> What Is the Money Supply?</a></li>
+  <li><a href="#sec-msupplydet" id="toc-sec-msupplydet" class="nav-link" data-scroll-target="#sec-msupplydet"><span class="header-section-number">5.8.2</span> What Are the Factors that Affect Money Supply?</a></li>
+  <li><a href="#sec-mdemand" id="toc-sec-mdemand" class="nav-link" data-scroll-target="#sec-mdemand"><span class="header-section-number">5.8.3</span> What Is the Money Demand?</a></li>
+  <li><a href="#sec-mdemanddet" id="toc-sec-mdemanddet" class="nav-link" data-scroll-target="#sec-mdemanddet"><span class="header-section-number">5.8.4</span> What Are the Factors that Affect the Demand for Money?</a></li>
+  <li><a href="#sec-summary-moneyeqm" id="toc-sec-summary-moneyeqm" class="nav-link" data-scroll-target="#sec-summary-moneyeqm"><span class="header-section-number">5.8.5</span> Summary: What Is the Money Market Equilibrium Condition?</a></li>
+  </ul></li>
+  <li><a href="#sec-forexeqm" id="toc-sec-forexeqm" class="nav-link" data-scroll-target="#sec-forexeqm"><span class="header-section-number">5.9</span> What Is the Equilibrium Condition for the Foreign Exchange Market?</a>
+  <ul class="collapse">
+  <li><a href="#sec-UIA" id="toc-sec-UIA" class="nav-link" data-scroll-target="#sec-UIA"><span class="header-section-number">5.9.1</span> What Is Uncovered Interest Arbitrage?</a></li>
+  <li><a href="#sec-UIP" id="toc-sec-UIP" class="nav-link" data-scroll-target="#sec-UIP"><span class="header-section-number">5.9.2</span> What Is the Uncovered Interest Parity Condition?</a></li>
+  </ul></li>
+  <li><a href="#sec-summary-basiceq" id="toc-sec-summary-basiceq" class="nav-link" data-scroll-target="#sec-summary-basiceq"><span class="header-section-number">5.10</span> Summary: The Basic Equations</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/UdayanRoy62/internationalmacro/edit/main/markets_equilibrium.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/UdayanRoy62/internationalmacro/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span id="sec-basicequations" class="quarto-section-identifier"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Markets and Equilibrium</span></span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<!--
+sec-basicequations, 
+sec-goodseqm, 
+eq-goodseqm, 
+sec-goodseqmdef, 
+sec-goodseqmmeaning, 
+sec-useeqmcon, 
+sec-functional, 
+sec-consumption, 
+eq-consfn, 
+fig-consumption_function, 
+sec-mpc, 
+sec-investment, 
+sec-gov, 
+sec-netexports, 
+eq-nxp, 
+sec-exports, 
+eq-exp, 
+sec-imports, 
+eq-imports, 
+sec-summary-nxp, 
+eq-netexports, 
+fig-net_exports_general, 
+fig-net_exports_real_exchange_rate, 
+sec-appp, 
+eq-absppp, 
+sec-summary-goodseqm, 
+eq-IS, sec-moneyeqm, 
+sec-msupply, 
+sec-msupplydet, 
+sec-mdemand, 
+sec-mdemanddet, 
+sec-nomint, 
+sec-mdemanddet2, 
+sec-summary-moneyeqm, 
+eq-LM, 
+sec-forexeqm, 
+sec-UIA, 
+sec-UIP, 
+eq-UIP, 
+nte-uniform-Ee, 
+eq-eeg, 
+eq-UIP-compact, 
+sec-summary-UIP, 
+eq-UIP-alt, 
+sec-pcm, 
+sec-summary-basiceq
+-->
+<p>A theory that says “Anything is possible” or “All conceivable outcomes are equally plausible” would not be of any use. To be useful, a theory must put its foot down and take a stand on which outcomes are plausible and which outcomes are not. For an outcome to be considered plausible, the typical theory in economics requires that all relevant markets (for goods, services, and assets) be in equilibrium, which is when supply and demand are equal. This chapter describes the conditions that must prevail in the markets for goods, money, and foreign currency for them to be in equilibrium.</p>
+<section id="sec-goodseqm" class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="sec-goodseqm"><span class="header-section-number">5.1</span> The Goods Market Equilibrium Condition</h2>
+<p></p>
+<p>The goods market is said to be in equilibrium when</p>
+<p><span id="eq-goodseqm"><span class="math display">\[
+Y=C+I+G+NX.
+\tag{5.1}\]</span></span></p>
+<p>You have seen this equation before as <a href="natincome.html#eq-ni-identity" class="quarto-xref">Equation&nbsp;<span>2.5</span></a> or the national income identity of <a href="natincome.html#sec-ni-identity" class="quarto-xref"><span>Section 2.5</span></a>. However, <a href="#eq-goodseqm" class="quarto-xref">Equation&nbsp;<span>5.1</span></a> is actually quite different from <a href="natincome.html#eq-ni-identity" class="quarto-xref">Equation&nbsp;<span>2.5</span></a>, in the sense that <span class="math inline">\(Y\)</span>, <span class="math inline">\(C\)</span>, <span class="math inline">\(I\)</span>, <span class="math inline">\(G\)</span>, and <span class="math inline">\(NX\)</span> are defined differently in these two equations.</p>
+<p>In <a href="natincome.html#eq-ni-identity" class="quarto-xref">Equation&nbsp;<span>2.5</span></a>, the five symbols were defined in such a way that <span class="math inline">\(Y\)</span> had to be equal to <span class="math inline">\(C+I+G+NX\)</span> simply by virtue of the definitions of the five symbols. In <a href="natincome.html#sec-ni-identity" class="quarto-xref"><span>Section 2.5</span></a>, <span class="math inline">\(Y\)</span>, <span class="math inline">\(C\)</span>, <span class="math inline">\(I\)</span>, <span class="math inline">\(G\)</span>, and <span class="math inline">\(NX\)</span> were defined as the <em>actual</em> magnitudes of gross domestic product, personal consumption expenditures, gross private domestic investment, government spending, and net exports of goods and services that are published periodically by government statisticians. And, as we saw in <a href="natincome.html#sec-ni-identity" class="quarto-xref"><span>Section 2.5</span></a>, under those definitions, <span class="math inline">\(Y\)</span> <em>had to</em> be equal to <span class="math inline">\(C+I+G+NX\)</span>.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
+<p>In <a href="#eq-goodseqm" class="quarto-xref">Equation&nbsp;<span>5.1</span></a>, on the other hand, <span class="math inline">\(Y\)</span> represents the output that domestic producers wish to produce (supply) and <span class="math inline">\(C+I+G+NX\)</span> now represents the total purchases of domestically produced goods and services desired by buyers the world over (demand). Therefore, <span class="math inline">\(Y\)</span> and <span class="math inline">\(C+I+G+NX\)</span>, as redefined for <a href="#eq-goodseqm" class="quarto-xref">Equation&nbsp;<span>5.1</span></a>, are not necessarily equal. When they <em>are</em> equal, we say that the goods market is in equilibrium.</p>
+<p>As you will see later, the goods market equilibrium condition—as well as the other equilibrium conditions that I will discuss later—helps to rule out certain economic outcomes. As a result, our theory will be able to make predictions that are specific and not say something vague and useless such as “Anything is possible”.</p>
+<section id="sec-goodseqmdef" class="level3" data-number="5.1.1">
+<h3 data-number="5.1.1" class="anchored" data-anchor-id="sec-goodseqmdef"><span class="header-section-number">5.1.1</span> Components of Aggregate Expenditure</h3>
+<p>The total purchases of domestically produced goods and services desired by buyers the world over—that is, the demand for “Made in USA” goods and services—is referred to as <strong>aggregate expenditure</strong>. In parallel to the discussion of the components of gross domestic product in <a href="natincome.html#sec-gdp-components" class="quarto-xref"><span>Section 2.4</span></a>, we can specify the components of aggregate expenditure.</p>
+<ul>
+<li><span class="math inline">\(Y\)</span> is the real (i.e., inflation-adjusted) value of the total output that the firms of the country we are analyzing—the domestic country—would like to produce. That is, <span class="math inline">\(Y\)</span> is what the gross domestic product would be if the firms’ production levels turn out to be what they had planned.</li>
+<li>Since our incomes are what we get for the work we do, <span class="math inline">\(Y\)</span> is also the <strong>total income</strong> of the domestic country’s households. (It should be clear that if a firm’s output—or value added, to use a technical term—was $500,000 in 1999, that amount must have ended up as the incomes of the households that owned the resources used by the firm.)</li>
+<li><span class="math inline">\(C\)</span> is the real consumption spending desired by residents of the domestic country.</li>
+<li><span class="math inline">\(I\)</span> is the real investment expenditure that the firms in the domestic country would like to make.</li>
+<li><span class="math inline">\(G\)</span> is the real level of spending planned by the domestic country’s government.</li>
+<li><span class="math inline">\(NX\)</span> is the real net exports of the domestic economy that would result from the plans of all exporters and importers.</li>
+</ul>
+</section>
+<section id="sec-goodseqmmeaning" class="level3" data-number="5.1.2">
+<h3 data-number="5.1.2" class="anchored" data-anchor-id="sec-goodseqmmeaning"><span class="header-section-number">5.1.2</span> What Does the Goods Market Equilibrium Condition Mean?</h3>
+<p>Note that we have <span class="math inline">\(Y\)</span>, the <em>supply</em> of “Made in USA” goods, on the left hand side of <a href="#eq-goodseqm" class="quarto-xref">Equation&nbsp;<span>5.1</span></a>. Therefore, for <a href="#eq-goodseqm" class="quarto-xref">Equation&nbsp;<span>5.1</span></a> to represent equilibrium, the right hand side ought to be the <em>demand</em> for “Made in USA” goods. But is it?</p>
+<p>Let’s look at the people who buy “Made in USA” goods. Such goods are bought by</p>
+<ul>
+<li>American households, for consumption</li>
+<li>American businesses, for investment</li>
+<li>the U.S. government, for government spending, and</li>
+<li>foreigners, as our exports</li>
+</ul>
+<p>Therefore, it would seem that the demand for “Made in USA” goods is simply <span class="math inline">\(C+I+G+\text{Exports}\)</span>. But wait! <span class="math inline">\(C\)</span> includes consumption spending on French wine, Italian cheese, etc. <span class="math inline">\(I\)</span> includes investment spending on German machine tools and Korean earth-moving equipment. And <span class="math inline">\(G\)</span> includes government spending on British-made Jaguar cars. Therefore, to calculate the demand for “Made in USA” goods, one must deduct Imports from <span class="math inline">\(C+I+G+\text{Exports}\)</span>. That is, the demand for “Made in USA” goods is given by <span class="math inline">\(C+I+G+\text{Exports}-\text{Imports}\)</span> or <span class="math inline">\(C+I+G+NX\)</span>, which is precisely what’s on the right hand side of <a href="#eq-goodseqm" class="quarto-xref">Equation&nbsp;<span>5.1</span></a>.</p>
+<p>Therefore, we see that <a href="#eq-goodseqm" class="quarto-xref">Equation&nbsp;<span>5.1</span></a> does indeed represent equilibrium in the goods market.<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></p>
+<p>As we saw in the previous section, the demand for domestically produced goods, <span class="math inline">\(C+I+G+NX\)</span>, is also referred to as aggregate expenditure (<span class="math inline">\(AE\)</span>). Consequently, the goods market equilibrium condition can be written compactly as <span class="math inline">\(Y=AE\)</span>.</p>
+</section>
+<section id="sec-useeqmcon" class="level3" data-number="5.1.3">
+<h3 data-number="5.1.3" class="anchored" data-anchor-id="sec-useeqmcon"><span class="header-section-number">5.1.3</span> What’s the Use of an Equilibrium Condition?</h3>
+<p>When the variables in the goods market equilibrium condition, <a href="#eq-goodseqm" class="quarto-xref">Equation&nbsp;<span>5.1</span></a>, are interpreted as in the statistical tables of the United States’ National Income and Product Accounts, it becomes an identity that is useless for theoretical purposes because identities are always true by definition. The definitions in <a href="#sec-goodseqmdef" class="quarto-xref"><span>Section 5.1.1</span></a> on the other hand interpret the variables as plans or desired levels. Therefore, <span class="math inline">\(Y\)</span> can be thought of as the supply of ‘Made in USA’ goods and the expression on the right hand side of <a href="#eq-goodseqm" class="quarto-xref">Equation&nbsp;<span>5.1</span></a> can be interpreted as the demand for ‘Made in USA’ goods. Therefore, the goods market equilibrium condition may be seen as another form of the familiar “supply equals demand” idea.</p>
+<p>To repeat the discussion at the beginning of <a href="#sec-goodseqm" class="quarto-xref"><span>Section 5.1</span></a>, unlike <a href="natincome.html#eq-ni-identity" class="quarto-xref">Equation&nbsp;<span>2.5</span></a>, which is an identity and, therefore, always true by definition, <a href="#eq-goodseqm" class="quarto-xref">Equation&nbsp;<span>5.1</span></a> is true only under pretty unique circumstances and for pretty unique magnitudes of the variables in the equation. Without equations like the one above, it would be an “anything goes” situation and any useful analysis would be impossible. The equation above asserts, “Only those values of <span class="math inline">\(Y\)</span>, <span class="math inline">\(C\)</span>, <span class="math inline">\(I\)</span>, <span class="math inline">\(G\)</span> and <span class="math inline">\(NX\)</span> that obey the equation will prevail in reality.” So, equations like the one above will allow us to be specific about the conditions under which certain important variables, such as <span class="math inline">\(Y\)</span>, may increase or decrease.</p>
+</section>
+</section>
+<section id="sec-functional" class="level2" data-number="5.2">
+<h2 data-number="5.2" class="anchored" data-anchor-id="sec-functional"><span class="header-section-number">5.2</span> Notation: Functional Relationships</h2>
+<p>Before we go any further with our analysis, we need to discuss a notation-related issue.</p>
+<p>If a variable <span class="math inline">\(y\)</span> is related in some way to a variable <span class="math inline">\(x\)</span>, we denote this as <span class="math inline">\(y=f(x)\)</span>. There is nothing special about the letter <span class="math inline">\(f\)</span> in the equation: any other letter (or letters) would have done just as well. The key point is that the variable that represents the cause—in this case <span class="math inline">\(x\)</span>—is put within parentheses and the variable that represents the effect—in this case <span class="math inline">\(y\)</span>—is put on the left of the equals sign. Saying <span class="math inline">\(y=f(x)\)</span> amounts to saying that <span class="math inline">\(y\)</span> depends on <span class="math inline">\(x\)</span>.</p>
+<p>Similarly, if a variable <span class="math inline">\(z\)</span> is related to the variables <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span>, we denote this as <span class="math inline">\(z=f(x,y)\)</span>.</p>
+<p>To avoid confusion, when a dot is placed in front of the opening parenthesis—that is, when I write “<span class="math inline">\(\cdot(\)</span>”—no functional relation is implied. For example, in the equation <span class="math inline">\(w=x\cdot(y-z)\)</span>, there is no functional relationship implied. All it says is that <span class="math inline">\(w\)</span> is equal to the product of <span class="math inline">\(x\)</span> and <span class="math inline">\(y - z\)</span>.</p>
+</section>
+<section id="sec-consumption" class="level2" data-number="5.3">
+<h2 data-number="5.3" class="anchored" data-anchor-id="sec-consumption"><span class="header-section-number">5.3</span> What Are the Factors that Affect Consumption?</h2>
+<p>The consumption plans of households will be assumed to satisfy the following equation, which is called the <strong>consumption function</strong>: </p>
+<p><span id="eq-consfn"><span class="math display">\[
+C=C(Y-T).
+\tag{5.2}\]</span></span></p>
+<p>As we saw in <a href="preliminaries.html#sec-fiscal" class="quarto-xref"><span>Section 1.4.1</span></a>, the symbol <span class="math inline">\(T\)</span> denotes the government’s total tax revenues. Therefore, <span class="math inline">\(Y-T\)</span> is the <strong>disposable (or after-tax) income</strong> of households. <a href="#eq-consfn" class="quarto-xref">Equation&nbsp;<span>5.2</span></a> uses functional notation—see <a href="#sec-functional" class="quarto-xref"><span>Section 5.2</span></a> above—to say that planned consumption spending depends on disposable income.<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a> More specifically, we assume that consumption is <em>directly related</em> to disposable income: <span class="math inline">\(C\)</span> increases (respectively, decreases) when <span class="math inline">\(Y-T\)</span> increases (respectively, decreases).</p>
+<div id="fig-consumption_function" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-consumption_function-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/consumption_function.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-consumption_function-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;5.1: <strong>Consumption Function</strong>. The solid line shows the relation between consuption spending (<span class="math inline">\(C\)</span>) and income (<span class="math inline">\(Y\)</span>) for some specified level of taxes (<span class="math inline">\(T\)</span>). Note that an increase in <span class="math inline">\(Y\)</span> from $1.00 to $2.00 causes <span class="math inline">\(C\)</span> to increase from $2.67 to $3.33. (Don’t be alarmed: <span class="math inline">\(C\)</span> can exceed <span class="math inline">\(Y\)</span> when people dis-save (or, borrow) to spend more than what they earn.) In other words, when <span class="math inline">\(Y\)</span> increases by $1.00, <span class="math inline">\(C\)</span> increases by $0.67, indicating that <span class="math inline">\(\hbox{MPC}=0.67\)</span>. When <span class="math inline">\(T\)</span> increases by $1.00, <span class="math inline">\(C\)</span> decreases—at every level of <span class="math inline">\(Y\)</span>—by the same $0.67. That is, an increase in <span class="math inline">\(T\)</span> causes the entire consumption function to shift downwards to the dotted line.
+</figcaption>
+</figure>
+</div>
+<!-- consumption_function.png
+\begin{figure}
+\begin{picture}(8,6)
+\put(1,1){\vector(1,0){4}}  %x axis
+\put(1,1){\vector(0,1){5}}  %y axis
+\put(1,1){\circle*{0.1}}    %At origin
+\put(0.75,0.5){$O$}     %Origin
+\put(1.75,0.5){\$1}     %
+\put(2.75,0.5){\$2}     %
+\put(1,3){\circle*{0.1}}    %At B
+\put(1,2.33){\circle*{0.1}} %At A
+\put(1,3.67){\circle*{0.1}} %At 
+\put(2,3.67){\circle*{0.1}} %At 
+\put(3,3.67){\circle*{0.1}} %At 
+\put(1,4.33){\circle*{0.1}} %At 
+\put(3,4.33){\circle*{0.1}} %At 
+\put(2,1){\circle*{0.1}}    %At 
+\put(3,1){\circle*{0.1}}    %At 
+ 
+\multiput(3,4.33)(0,-0.1){33}{\circle*{0.05}}   %dots dropping down from A
+\multiput(3,4.33)(-0.1,0){20}{\circle*{0.05}}   %dots going left from A
+\multiput(3,3.67)(-0.1,0){20}{\circle*{0.05}}   %dots going left from 
+\multiput(2,3.67)(0,-0.1){26}{\circle*{0.05}}   %dots dropping down from 
+
+\put(5,0.5){$Y$}
+\put(0.5,5.75){$C$}
+\put(0,3.60){\$2.67}
+\put(0,4.25){\$3.33}
+
+\thicklines
+\put(1,3){\line(3,2){3}}    %The C Curve
+\multiput(1,2.33)(0.15,0.1){20}{\circle*{0.05}} %The dotted C Curve
+
+\end{picture}
+\caption[Consumption Function]{**Consumption Function**. The solid line shows the relation between consuption spending ($C$) and income ($Y$) for some specified level of taxes ($T$). Note that an increase in $Y$ from \$1.00 to \$2.00 causes $C$ to increase from \$2.67 to \$3.33. (Don't be alarmed: $C$ can exceed $Y$ when people dis-save (or, borrow) to spend more than what they earn.) In other words, when $Y$ increases by \$1.00, $C$ increases by \$0.67, indicating that $\hbox{MPC}=0.67$. When $T$ increases by \$1.00, $C$ decreases---at every level of $Y$---by the same \$0.67. That is, an increase in $T$ causes the entire consumption function to shift downwards to the dotted line.}
+\end{figure} {#fig-consumption_function}
+-->
+<p>This does not mean that consumption is assumed to change <em>only when</em> disposable income changes. Other factors may also affect consumption. For example, if home prices—or, generally speaking, asset prices, such as the prices of the stocks and bonds and real estate owned by households—increase, people may feel wealthy and, as a result, begin to save less and consume more. Changes in interest rates may also affect the desire to save and the urge to consume. <a href="#eq-consfn" class="quarto-xref">Equation&nbsp;<span>5.2</span></a> merely simplifies the story, highlights the role of disposable income, and downplays the effect of asste prices, interest rates, and other variables on consumption spending.</p>
+<p>The effect of income and taxes on consumption is graphically shown in <a href="#fig-consumption_function" class="quarto-xref">Figure&nbsp;<span>5.1</span></a>. Assuming taxes (<span class="math inline">\(T\)</span>) are unchanged, an increase in income (<span class="math inline">\(Y\)</span>) implies an increase in disposable income (<span class="math inline">\(Y-T\)</span>) and, therefore, an increase in consumption (<span class="math inline">\(C\)</span>), as shown by the solid line in the figure. On the other hand, an increase in <span class="math inline">\(T\)</span> implies a decrease in <span class="math inline">\(Y-T\)</span> at any specified level of <span class="math inline">\(Y\)</span>. Therefore, <span class="math inline">\(C\)</span> decreases at every <span class="math inline">\(Y\)</span>, implying a downward shift of the consumption function, to the dotted line in <a href="#fig-consumption_function" class="quarto-xref">Figure&nbsp;<span>5.1</span></a>.</p>
+<section id="sec-mpc" class="level3" data-number="5.3.1">
+<h3 data-number="5.3.1" class="anchored" data-anchor-id="sec-mpc"><span class="header-section-number">5.3.1</span> The Marginal Propensity to Consume and Ricardian Equivalence</h3>
+<p>An important point to note about the consumption function is that it is often not enough to make the <em>qualitative</em> statement that increases in disposable income lead to increases in consumption spending: the <em>quantitative</em> magnitude of the effect can be important as well. One could ask, “If disposable income (<span class="math inline">\(Y-T\)</span>) increases by one dollar (and if all the other factors that affect consumption spending—such as the asset prices and interest rates mentioned in the last paragraph—remain unchanged), by <em>how many</em> dollars will consumption increase?”</p>
+<p>The answer to this question is the <strong>marginal propensity to consume</strong>. For example, if people spend 70 cents out of every dollar of additional disposable income and save the remaining 30 cents, we say that the marginal propensity to consume (MPC) is 0.70 and the <strong>marginal propensity to save</strong> (MPS) is 0.30.<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a></p>
+<p>In <a href="#fig-consumption_function" class="quarto-xref">Figure&nbsp;<span>5.1</span></a>, for example, the MPC is 0.67. As a result, when <span class="math inline">\(Y\)</span> increases by $1.00, <span class="math inline">\(C\)</span> increases by $0.67. In general, when <span class="math inline">\(Y\)</span> increases (respectively, decreases) by $<span class="math inline">\(x\)</span>, <span class="math inline">\(C\)</span> increases (respectively, decreases) by $0.67<span class="math inline">\(x\)</span>. On the other hand, a one-dollar increase in <span class="math inline">\(T\)</span> implies a one-dollar <em>decrease</em> in disposable income, causing <span class="math inline">\(C\)</span> to <em>decrease</em> by $0.67 at every value of <span class="math inline">\(Y\)</span>. As a result, the consumption function shifts downward by the amount of the MPC when taxes increase by one dollar. In general, when <span class="math inline">\(T\)</span> increases (respectively, decreases) by $<span class="math inline">\(y\)</span>, the consumption function shifts down (respectively, up) by $0.67<span class="math inline">\(y\)</span>.</p>
+<p>It is typically assumed that the magnitude of the MPC depends on whether a change in disposable income is perceived to be permanent or temporary. If the income of a household increases by $500 a month and if this is perceived to be a permanent increase, it is reasonable to assume that consumption spending will also increase by nearly $500 a month. In other words, <em>for changes in <span class="math inline">\(Y\)</span> or <span class="math inline">\(T\)</span> that are perceived to be permanent, it is reasonable to assume <span class="math inline">\(\text{MPC}=1\)</span> and <span class="math inline">\(\text{MPS}=0\)</span></em>. On the other hand, if the people receive a tax cut in the run-up to an election and come to believe that the tax cut will be revoked once the election is over, then it is reasonable to assume that the people will save the bonanza from the tax cut. In other words, <em>for changes in <span class="math inline">\(Y\)</span> or <span class="math inline">\(T\)</span> that are perceived to be temporary, it is reasonable to assume <span class="math inline">\(\text{MPC}=0\)</span> and <span class="math inline">\(\text{MPS}=1\)</span></em>.<a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a></p>
+<p>People’s estimation of the permanence of a tax cut may also depend on whether the tax cut is accompanied by a cut in government spending, <span class="math inline">\(G\)</span>. If there is a cut in taxes but none in government spending, the government would have to borrow from private lenders (for example, banks) to make up the shortfall in tax revenue. But the borrowed money would eventually have to be repayed—with interest. Where would the government get the money to do so? It would probably raise taxes.<a href="#fn6" class="footnote-ref" id="fnref6" role="doc-noteref"><sup>6</sup></a> Therefore, if people are smart enough, they may come to believe that a tax cut unaccompanied by a cut in government spending is very likely a temporary tax cut that would lead eventually to a tax hike larger than the tax cut itself. They may therefore respond to the tax cut, not by going on a shopping spree, but instead by socking the tax cut away in a bank thinking that a big tax increase is on the way.</p>
+<p>This sceptical view of the effect of a tax cut on consumption spending is referred to as the theory of <strong>Ricardian equivalence</strong>. Let’s consider this further with a numerical example. Suppose the government reduces taxes (<span class="math inline">\(T\)</span>) from $1000 to $900 but leaves annual government spending (<span class="math inline">\(G\)</span>) unchanged at $1000. The government borrows $100 from a bank at a 7% interest rate to make up the shortfall in tax revenue. Therefore, a year later the government would have to repay $107 to the bank. Therefore, people may conclude that the $100 tax cut is illusory and would inevitably be followed by a $107 tax increase a year later—to the level of $1107 to pay for $1000 in government spending plus $107 in loan repayment. Knowing that they would need an extra $107 next year, what would the people do? They would take the $100 tax cut and put it in a bank so that, at 7% interest, they would have enough next year to pay the tax hike they know is coming.</p>
+<p>In other words, when a reduction in <span class="math inline">\(T\)</span> is not accompanied by an equal cut in <span class="math inline">\(G\)</span>, <span class="math inline">\(\hbox{MPC}=0\)</span> and <span class="math inline">\(\hbox{MPS}=1\)</span>.</p>
+<p>Another implication of the theory of Ricardian equivalence is that in some circumstances consumption spending may respond <em>as if</em> taxes have changed even if they actually haven’t! Let’s say government spending increases by $100 but taxes stay the same. Once again, the government would have to borrow $100 from a bank. Therefore, a year later it would need to raise taxes by $107 (assuming 7% interest, as before) to repay the loan with interest. Therefore, taxes would have to rise next year by $107. Therefore, if people anticipate all this, they would put away an extra $100 in their bank accounts in preparation for the $107 tax increase they can see coming. In other words, if <span class="math inline">\(G\)</span> increases and <span class="math inline">\(Y-T\)</span> remains unchanged, <span class="math inline">\(C\)</span> would <em>fall</em>, as if the people are saying to themselves that taxes have risen even though they actually have not.</p>
+<p>Therefore, according to Ricardian equivalence, when analysing the effect of a change in government spending it might be a good idea to pretend that the change in <span class="math inline">\(G\)</span> is accompanied by an equal change in <span class="math inline">\(T\)</span>, even if <span class="math inline">\(T\)</span> is actually unchanged.</p>
+</section>
+</section>
+<section id="sec-investment" class="level2" data-number="5.4">
+<h2 data-number="5.4" class="anchored" data-anchor-id="sec-investment"><span class="header-section-number">5.4</span> What Are the Factors that Affect Investment?</h2>
+<p>Unlike consumption spending (<span class="math inline">\(C\)</span>), which has been assumed above to depend on disposable income (<span class="math inline">\(Y-T\)</span>), the total of the investment plans of businesses (<span class="math inline">\(I\)</span>) is assumed, for simplicity, to dance to its own tune, to be unrelated to other economic variables.</p>
+<p>To use a term that will be explained in <a href="theories_equations_variables.html#sec-exovar" class="quarto-xref"><span>Section 6.1.1</span></a>, investment will be assumed here to be an <em>exogenous</em> variable. You will see later that fluctuations in <span class="math inline">\(I\)</span> can explain fluctuations in other variables such as <span class="math inline">\(Y\)</span>. But you will see no explanation of the fluctuations in <span class="math inline">\(I\)</span> itself. Investment will be used here as an explanatory variable, but it will remain unexplained itself.</p>
+<p>In a theory that argues that increases in temperature cause increases in murder rates, but has nothing to say about what causes temperature to increase, temperature is exogenous and the murder rate is endogenous. In this case, the author of the theory may be admitting that the weather is too complex to explain. Or, perhaps she has concluded that trying to explain the weather would be a waste of time: as we cannot control the weather, it would make sense to forget about what causes temperature fluctuations and instead concentrate on how to deploy the police strategically on hot days to keep murder rates from spiking. Either way, weather is being treated as exogenous.</p>
+<p>Returning to the issue at hand, investment is actually not entirely mysterious. A strong case can be made that <span class="math inline">\(I\)</span> depends on the real (or, inflation-adjusted) interest rate, which is the inflation-adjusted cost of the money that businesses need to borrow in order to pay for their investment spending.<a href="#fn7" class="footnote-ref" id="fnref7" role="doc-noteref"><sup>7</sup></a></p>
+<p>Advances in technology and increases in the quantity and quality of a nation’s work force are important influences too. When such changes happen, the productivity of capital goods (such as equipment, machinery, software, etc.) increases. This induces greater investment in additional capital goods.<a href="#fn8" class="footnote-ref" id="fnref8" role="doc-noteref"><sup>8</sup></a></p>
+<p>That said, most economists agree that investment spending by businesses is overwhelmingly dependent on that elusive thing called the optimism or the “animal spirits” of businesspeople. And, as business psychology is not their strong suite, economists tend not to say much about such things. I will simply assume that the level of investment is exogenous or inexplicable—it is what it is.</p>
+</section>
+<section id="sec-gov" class="level2" data-number="5.5">
+<h2 data-number="5.5" class="anchored" data-anchor-id="sec-gov"><span class="header-section-number">5.5</span> What Are the Factors that Affect Government Spending?</h2>
+<p>Who knows?! Ask your Poli-Sci professor. I will treat <span class="math inline">\(G\)</span> as a variable that is inexplicable but nonetheless useful in explaining changes in other variables such as <span class="math inline">\(Y\)</span>, <span class="math inline">\(C\)</span>, <span class="math inline">\(NX\)</span>, etc. In other words, I will consider <span class="math inline">\(G\)</span> to be exogenous—see <a href="theories_equations_variables.html#sec-exovar" class="quarto-xref"><span>Section 6.1.1</span></a>.<a href="#fn9" class="footnote-ref" id="fnref9" role="doc-noteref"><sup>9</sup></a></p>
+</section>
+<section id="sec-netexports" class="level2" data-number="5.6">
+<h2 data-number="5.6" class="anchored" data-anchor-id="sec-netexports"><span class="header-section-number">5.6</span> What Are the Factors that Affect Net Exports?</h2>
+<p>As we saw in <a href="natincome.html#sec-netexports-nia" class="quarto-xref"><span>Section 2.4.4</span></a> and <a href="#sec-goodseqmdef" class="quarto-xref"><span>Section 5.1.1</span></a>, net exports is the excess of exports over imports: <span id="eq-nxp"><span class="math display">\[
+NX\equiv EX-IM,
+\tag{5.3}\]</span></span> where, <span class="math inline">\(EX\)</span> denotes the real (i.e., inflation-adjusted) value of the planned sales of domestically produced goods and services to foreign residents, and <span class="math inline">\(IM\)</span> denotes the real value of the demand for foreign-made goods from domestic residents. Therefore, to understand what drives <span class="math inline">\(NX\)</span> up and down, we need to look at what makes <span class="math inline">\(EX\)</span> and <span class="math inline">\(IM\)</span> fluctuate.</p>
+<section id="sec-exports" class="level3" data-number="5.6.1">
+<h3 data-number="5.6.1" class="anchored" data-anchor-id="sec-exports"><span class="header-section-number">5.6.1</span> What Are the Factors that Affect Exports?</h3>
+<p>I will assume that the demand from foreign residents for the goods and services produced in the domestic economy—i.e., the domestic country’s exports—is given by</p>
+<p><span id="eq-exp"><span class="math display">\[
+EX=EX(q),
+\tag{5.4}\]</span></span> where, as was pointed out in <a href="exchange_rates.html#sec-realexrates" class="quarto-xref"><span>Section 4.2</span></a>, the real exchange rate (<span class="math inline">\(q\)</span>) is the amount of domestically produced goods that can be obtained in trade for one unit of foreign-made goods. As the real exchange rate is the relative price of foreign goods (in units of domestic goods), a rise in <span class="math inline">\(q\)</span> would encourage foreigners to buy more domestic goods. That is, <em><span class="math inline">\(EX\)</span> and <span class="math inline">\(q\)</span> are directly related</em>.</p>
+<p>The real exchange rate, however, is not the only thing that affects exports. An important influence is foreign GDP. For example, countries such as China, Japan, and Germany saw sharp declines in their exports to the US during the US recession of 2008–09. To keep things simple, however, I will ignore this issue and assume that <span class="math inline">\(EX\)</span> depends on <span class="math inline">\(q\)</span> alone.</p>
+</section>
+<section id="sec-imports" class="level3" data-number="5.6.2">
+<h3 data-number="5.6.2" class="anchored" data-anchor-id="sec-imports"><span class="header-section-number">5.6.2</span> What Are the Factors that Affect Imports?</h3>
+<p>I will assume that the domestic country’s demand for foreign-made goods—i.e., its imports—is given by</p>
+<p><span id="eq-imports"><span class="math display">\[
+IM=IM(q,Y-T).
+\tag{5.5}\]</span></span></p>
+<p>Since the real exchange rate, <span class="math inline">\(q\)</span>, is the amount of domestically produced goods that can be obtained in trade for one unit of foreign-made goods, it should be clear that a high level of <span class="math inline">\(q\)</span> would discourage the import of foreign-made goods; i.e., <em><span class="math inline">\(q\)</span> and <span class="math inline">\(IM\)</span> are inversely related</em>.</p>
+<p>And, as we saw in <a href="#sec-consumption" class="quarto-xref"><span>Section 5.3</span></a> above, increases in disposable income (<span class="math inline">\(Y-T\)</span>) lead to increases in consumption spending (<span class="math inline">\(C\)</span>). Part of this additional consumption is likely to consist of foreign-made goods. Therefore, it follows in an obvious way that <em><span class="math inline">\(Y-T\)</span> and <span class="math inline">\(IM\)</span> are directly related</em>. Moreover, it also follows that when disposable income increases, consumption increases more than imports do. That is, the marginal propensity to import is smaller than the marginal propensity to consume.</p>
+<p>It is also important to keep in mind that just as the effect of a change in disposable income on consumption spending depends on whether the change in disposable income is perceived to be permanent or temporary—see <a href="#sec-mpc" class="quarto-xref"><span>Section 5.3.1</span></a> for a reminder—so does the effect of a change in disposable income on households’ purchases of imported goods.</p>
+</section>
+<section id="sec-summary-nxp" class="level3" data-number="5.6.3">
+<h3 data-number="5.6.3" class="anchored" data-anchor-id="sec-summary-nxp"><span class="header-section-number">5.6.3</span> Summary: What Are the Factors that Affect Net Exports?</h3>
+<p><a href="#sec-exports" class="quarto-xref"><span>Section 5.6.1</span></a> and <a href="#sec-imports" class="quarto-xref"><span>Section 5.6.2</span></a> imply that we can summarize the nature of a country’s net exports by the equation</p>
+<p><span id="eq-netexports"><span class="math display">\[
+NX=NX(q,Y-T).
+\tag{5.6}\]</span></span></p>
+<p>Moreover, we can conclude that <em>net exports (<span class="math inline">\(NX\)</span>) is related directly to the real exchange rate (<span class="math inline">\(q\)</span>) and inversely to disposable income (<span class="math inline">\(Y-T\)</span>)</em>.</p>
+<p>These effects of <span class="math inline">\(q\)</span>, <span class="math inline">\(Y\)</span>, and <span class="math inline">\(T\)</span> on <span class="math inline">\(NX\)</span> are shown graphically in the two panels of figure <a href="#fig-net_exports_general" class="quarto-xref">Figure&nbsp;<span>5.2</span></a>. The left panel emphasizes the role of the real exchange rate in a nation’s net exports. This rising net exports curve shifts rightward when <span class="math inline">\(Y-T\)</span> decreases, indicating lower imports and, therefore, higher net exports at every value of <span class="math inline">\(q\)</span>. The right panel of figure <a href="#fig-net_exports_general" class="quarto-xref">Figure&nbsp;<span>5.2</span></a>, on the other hand, emphasizes the role of GDP in determining a nation’s net exports. This net exports curve is negatively sloped, indicating that rising incomes lead to rising imports and, therefore, falling net exports. Both graphical representations of <span class="math inline">\(NX\)</span> in figure <a href="#fig-net_exports_general" class="quarto-xref">Figure&nbsp;<span>5.2</span></a> are useful, depending on the context.</p>
+<div id="fig-net_exports_general" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-net_exports_general-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/net_exports_general.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-net_exports_general-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;5.2: <strong>Net Exports</strong> This figure shows that both the real exchange rate (<span class="math inline">\(q\)</span>) and taxes (<span class="math inline">\(T\)</span>) have a direct effect on net exports (<span class="math inline">\(NX\)</span>) and that GDP (<span class="math inline">\(Y\)</span>) has an inverse effect. The left panel highlights the effect of the real exchange rate. This curve shifts right when <span class="math inline">\(Y-T\)</span> decreases. The right panel highlights the effect of real GDP. This curve shifts down when either <span class="math inline">\(q\)</span> or <span class="math inline">\(T\)</span> decreases. Note that net exports could be positive or negative. Absolute purchasing power parity is <em>not</em> assumed for this diagram.
+</figcaption>
+</figure>
+</div>
+<!-- net_exports_general.png 
+\begin{figure}
+\begin{picture}(8,6)
+\put(1,1){\vector(1,0){4}}  %x axis
+\put(3,1){\vector(0,1){5}}  %y axis
+%\put(3.1,2.75){$B$}
+%\put(3.6,4.6){$A$}
+\put(2.5,5.75){$q$}
+\put(2.5,2.95){$q_B$}
+\put(2.5,4.45){$q_A$}
+\put(2.75,0.5){$O$}     %left panel origin
+\put(4.75,0.5){$NX$}
+\multiput(4,4.5)(0,-0.1){35}{\circle*{0.05}}    %dots dropping down from A
+\multiput(4.5,4.5)(0,-0.1){35}{\circle*{0.05}}  %dots dropping down from point to the right of A
+\multiput(4.5,4.5)(-0.1,0){15}{\circle*{0.05}}  %dots going left from A
+
+
+\put(7,4){\vector(1,0){5.5}}    %x axis right panel
+\put(7,4){\vector(0,1){2}}  %y axis right panel
+\put(7,4){\vector(0,-1){3}} %y axis right panel pointing down
+\put(8,3.9){\vector(0,-1){0.8}} %shift arrow
+\put(3.1,3){\vector(1,0){0.3}}  %shift arrow
+
+%\linethickness{1.5mm}
+\thicklines
+\put(2,1.5){\line(2,3){3}}  %The left NX Curve
+\put(2.5,1.5){\line(2,3){3}}    %The left NX Curve shifted down
+\put(7,3.33){\line(3,-1){5}}    %The right NX Curve lower
+\put(7,4.33){\line(3,-1){5}}    %The right NX Curve higher
+
+\put(6.5,3.5){$O$}      %right panel origin
+\put(12,3.5){$Y$}
+\put(6.25,5.75){$NX$}       %right panel
+\put(7.5,1.5){\shortstack{\footnotesize{A downward shift} \\ \footnotesize{occurs when $T$ or $q$ falls}}}
+\put(0,3.5){\shortstack{\footnotesize{A right shift} \\ \footnotesize{occurs when} \\ \footnotesize{$Y-T$ decreases} }}
+
+\put(7,4){\circle*{0.1}}    %At right panel origin
+\put(7,3.33){\circle*{0.1}} %At right panel
+\put(8,3){\circle*{0.1}}    %At right panel 
+\put(8,4){\circle*{0.1}}    %At right panel 
+\put(7,4.33){\circle*{0.1}} %At right panel
+
+\put(3,3){\circle*{0.1}}    %At ep = 2
+\put(3,4.5){\circle*{0.1}}  %At ep = 3.5
+\put(4,1){\circle*{0.1}}    %At NX_A
+\put(4.5,1){\circle*{0.1}}  %At right of NX_A
+\put(3,1){\circle*{0.1}}    %At origin
+\put(3,3){\circle*{0.1}}    %At B
+\put(4,4.5){\circle*{0.1}}  %At A
+\put(4.5,4.5){\circle*{0.1}}    %At A
+
+
+\end{picture}
+\caption[Net Exports]{**Net Exports** This figure shows that both the real exchange rate ($q$) and taxes ($T$) have a direct effect on net exports ($NX$) and that GDP ($Y$) has an inverse effect. The left panel highlights the effect of the real exchange rate. This curve shifts right when $Y-T$ decreases. The right panel highlights the effect of real GDP. This curve shifts down when either $q$ or $T$ decreases. Note that net exports could be positive or negative. Absolute purchasing power parity is *not* assumed for this diagram.}
+\end{figure} {#fig-net_exports_general}
+-->
+<p>The direct relation between <span class="math inline">\(NX\)</span> and <span class="math inline">\(q\)</span> is shown one more time in figure <a href="#fig-net_exports_real_exchange_rate" class="quarto-xref">Figure&nbsp;<span>5.3</span></a>. The left panel in particular shows that as <span class="math inline">\(q\)</span> increases from <span class="math inline">\(q_B\)</span> to <span class="math inline">\(q_A\)</span>, <span class="math inline">\(NX\)</span> increases from <span class="math inline">\(NX=0\)</span> to <span class="math inline">\(NX=NX_A\)</span>. Had the net exports curve instead been the flatter dotted line, the same change in the real exchange rate would have provoked a bigger change in net exports. In other words, the flatter the net exports curve is—or, the more elastic it is, if you can forgive the jargon—the more responsive <span class="math inline">\(NX\)</span> is to <span class="math inline">\(q\)</span>. In the extreme case of <em>infinite</em> responsiveness or elasticity, the net exports curve is horizontal.</p>
+<p>If, moreover, the net exports curve is horizontal at <span class="math inline">\(q=1\)</span>, as in the right panel of figure <a href="#fig-net_exports_real_exchange_rate" class="quarto-xref">Figure&nbsp;<span>5.3</span></a>, it is said to obey the <strong>law of one price</strong> or <strong>absolute purchasing power parity</strong>. This is discussed further in the next section.</p>
+<div id="fig-net_exports_real_exchange_rate" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-net_exports_real_exchange_rate-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/net_exports_real_exchange_rate.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-net_exports_real_exchange_rate-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;5.3: <strong>Net Exports and the Real Exchange Rate</strong> The left panel shows a general direct relation between net exports and the real exchange rate. Note that net exports could be positive or negative. The right panel shows the relation between net exports and the real exchange rate under the law of one price or, equivalently, under absolute purchasing power parity.
+</figcaption>
+</figure>
+</div>
+<!-- net_exports_real_exchange_rate.png
+\begin{figure}
+\begin{picture}(8,6)
+\put(1,1){\vector(1,0){4}}  %x axis
+\put(3,1){\vector(0,1){5}}  %y axis
+\put(7,1){\vector(1,0){5.5}}    %x axis right panel
+\put(9,1){\vector(0,1){5}}  %y axis right panel
+%\linethickness{1.5mm}
+\thicklines
+\put(2,1.5){\line(2,3){3}}  %The NX Curve
+%\put(2,2){\line(1,1){3}}   %The dotted NX Curve
+\multiput(2,2)(0.1,0.1){30}{\circle*{0.05}} %The dotted NX Curve
+\put(7,4){\line(1,0){5.5}}  %The APPP Curve
+\put(2.75,0.5){$O$}
+\put(7.5,0.5){(-ve)}        %right panel origin
+\put(10,0.5){(+ve)}     %right panel origin
+\put(8.75,0.5){$O$}     %right panel origin
+\put(4.75,0.5){$NX$}
+\put(12,0.5){$NX$}
+\put(2.5,5.75){$q$}
+\put(8.5,5.75){$q$} %right panel
+\put(8.25,3.5){1.0}     %right panel
+
+\multiput(4,4.5)(0,-0.1){35}{\circle*{0.05}}    %dots dropping down from A
+\multiput(4.5,4.5)(0,-0.1){35}{\circle*{0.05}}  %dots dropping down from point to the right of A
+\multiput(4.5,4.5)(-0.1,0){15}{\circle*{0.05}}  %dots going left from A
+\put(3.1,2.75){$B$}
+\put(3.6,4.6){$A$}
+
+\put(2.5,2.95){$q_B$}
+\put(2.5,4.45){$q_A$}
+\put(3.5,0.5){$NX_A$}
+\put(9.5,2.5){\shortstack{\footnotesize{Absolute Purchasing} \\ \footnotesize{Power Parity}}}
+
+\put(9,4){\circle*{0.1}}    %At right panel intersection
+\put(3,3){\circle*{0.1}}    %At ep = 2
+\put(3,4.5){\circle*{0.1}}  %At ep = 3.5
+\put(4,1){\circle*{0.1}}    %At NX_A
+\put(4.5,1){\circle*{0.1}}  %At right of NX_A
+\put(3,1){\circle*{0.1}}    %At origin
+\put(3,3){\circle*{0.1}}    %At B
+\put(4,4.5){\circle*{0.1}}  %At A
+\put(4.5,4.5){\circle*{0.1}}    %At A
+
+\end{picture}
+\caption[Net Exports and the Real Exchange Rate]{**Net Exports and the Real Exchange Rate** The left panel shows a general direct relation between net exports and the real exchange rate. Note that net exports could be positive or negative. The right panel shows the relation between net exports and the real exchange rate under the law of one price or, equivalently, under absolute purchasing power parity.}
+
+\end{figure} {#fig-net_exports_real_exchange_rate}
+-->
+</section>
+<section id="sec-appp" class="level3" data-number="5.6.4">
+<h3 data-number="5.6.4" class="anchored" data-anchor-id="sec-appp"><span class="header-section-number">5.6.4</span> The Law of One Price and Purchasing Power Parity</h3>
+<p>The direct relation between net exports and the real exchange rate, when taken to an extreme, leads to the <em>law of one price</em> or, equivalently, <em>absolute purchasing power parity</em> (PPP). This requires that net exports be infinitely elastic with respect to changes in the real exchange rate (<span class="math inline">\(q\)</span>) and that</p>
+<p><span id="eq-absppp"><span class="math display">\[
+q\equiv\frac{E\cdot P^*}{P}=1.
+\tag{5.7}\]</span></span></p>
+<p>The first equality in <a href="#eq-absppp" class="quarto-xref">Equation&nbsp;<span>5.7</span></a> is simply the algebraic definition of the real exchange rate that we saw in <a href="exchange_rates.html#eq-q" class="quarto-xref">Equation&nbsp;<span>4.1</span></a> of <a href="exchange_rates.html#sec-realexrates" class="quarto-xref"><span>Section 4.2</span></a>. What is new in <a href="#eq-absppp" class="quarto-xref">Equation&nbsp;<span>5.7</span></a> is its insistence that <span class="math inline">\(q=1\)</span>.</p>
+<p>To see the logic behind this, let us work through an example. Suppose the price, <span class="math inline">\(P\)</span>, of American wheat is 2 dollars per pound; the price, <span class="math inline">\(P^*\)</span>, of French wheat is 3 euros per pound; and the price of a euro, <span class="math inline">\(E\)</span>, is $2.00. Therefore, the price of French wheat <em>in US dollars</em> is <span class="math inline">\(E\times P^*=2.00\times 3=6\)</span> US dollars, thrice the price of identical US wheat.</p>
+<p>How likely is this situation—in which the real exchange rate is <span class="math inline">\(q=2.00\times 3/2=3\)</span>—to persist? Not very likely, is the clear answer. People all over the world will see a juicy opportunity for <strong>arbitrage</strong> , which is a fancy term for the practice of making money by buying something at a cheap price and selling it at a higher price. People will start buying American wheat to sell in France. As long as <span class="math inline">\(q=3\)</span> persists, nobody will wish to sell wheat in the US and everybody will want to make money by buying up every grain of US wheat and selling it in France. This is clearly unsustainable. Net exports from America to France will be literally infinite!</p>
+<p>On the other hand, suppose <span class="math inline">\(P=2\)</span> dollars per pound of American wheat, as before; <span class="math inline">\(E=2.00\)</span> dollars per euro, also as before; but <span class="math inline">\(P^*=0.50\)</span> euros per pound of French wheat. Now the price of French wheat <em>in dollars</em> is <span class="math inline">\(E\times P^*=2.00\times 0.50=1\)</span> dollar, <em>half</em> the price of identical American wheat.</p>
+<p>How likely is this situation—in which the real exchange rate is <span class="math inline">\(q=2.00\times 0.50/2.00=0.50\)</span>—to persist? Again, not very likely. People will now wish to buy every grain of French wheat for sale in America. Net exports from America to France will now be negative infinity, which is clearly an unsustainable situation.</p>
+<p>For planned net exports to be neither infinity nor negative infinity, the price of wheat must be <em>equal</em> in America and France (when both prices are measured in the same currency). This is the basic idea of <em>the law of one price: the price of any tradable commodity, when measured with the same yardstick, should be the same everywhere if there are no trade-related costs</em>.</p>
+<p>To be specific, note that when I calculated the price of French wheat in dollars in the numerical examples above, I multiplied <span class="math inline">\(E\)</span> and <span class="math inline">\(P^*\)</span>. Therefore, saying that the price of wheat, when measured in the same currency, should be the same in America and France amounts to saying that <span class="math display">\[
+E\cdot P^* = P,
+\]</span> which in turn implies <span class="math inline">\(q=1\)</span> or absolute purchasing power parity, as in <a href="#eq-absppp" class="quarto-xref">Equation&nbsp;<span>5.7</span></a>.</p>
+<p>Note also that as the magnitude of America’s net exports is infinity when American goods are cheaper than French goods (<span class="math inline">\(q&gt;1\)</span>) and negative infinity when American goods are pricier than French goods (<span class="math inline">\(q&lt;1\)</span>), a finite level of net exports is possible only when <span class="math inline">\(q=1\)</span>. This is graphically represented by the <em>horizontal</em> net exports curve in the right panel of <a href="#fig-net_exports_general" class="quarto-xref">Figure&nbsp;<span>5.2</span></a>.</p>
+<p>The notion of absolute purchasing power parity does have a common-sense appeal. Unfortunately, it doesn’t seem to fit the facts very well, partly because many goods and services (haircuts and dry cleaning, for example) are not traded across large distances. Real exchange rates have been observed to stay higher than 1.0 (or lower than 1.0) for long periods of time. Therefore, in these lectures, I will <em>not</em> assume absolute purchasing power parity. Instead, a less stringent version of the idea—<em>relative</em> purchasing power parity—will be used.<a href="#fn10" class="footnote-ref" id="fnref10" role="doc-noteref"><sup>10</sup></a></p>
+</section>
+</section>
+<section id="sec-summary-goodseqm" class="level2" data-number="5.7">
+<h2 data-number="5.7" class="anchored" data-anchor-id="sec-summary-goodseqm"><span class="header-section-number">5.7</span> Summary: What Is the Goods Market Equilibrium Condition?</h2>
+<p>Using <a href="#eq-goodseqm" class="quarto-xref">Equation&nbsp;<span>5.1</span></a> – <a href="#eq-imports" class="quarto-xref">Equation&nbsp;<span>5.5</span></a>, the goods market equilibrium condition <span class="math inline">\(Y=C+I+G+NX\)</span> becomes: <span id="eq-IS"><span class="math display">\[
+\fbox{$\displaystyle Y=C(Y-T)+I+G+NX(q,Y-T).$}
+\tag{5.8}\]</span></span></p>
+<p>As was pointed out in <a href="#sec-useeqmcon" class="quarto-xref"><span>Section 5.1.3</span></a>, the goods market is said to be in equilibrium when the supply plans of domestic producers are equal to the demand plans of the buyers of domestically produced goods. For this to be true, <a href="#eq-IS" class="quarto-xref">Equation&nbsp;<span>5.8</span></a> must be satisfied.</p>
+</section>
+<section id="sec-moneyeqm" class="level2" data-number="5.8">
+<h2 data-number="5.8" class="anchored" data-anchor-id="sec-moneyeqm"><span class="header-section-number">5.8</span> What is the Money Market Equilibrium Condition?</h2>
+<p>The <strong>money market equilibrium condition</strong> requires that the financial assets that are held by the people be held willingly, and not under some sort of compulsion. For that to be the case, <em>money supply must be equal to money demand</em> .</p>
+<section id="sec-msupply" class="level3" data-number="5.8.1">
+<h3 data-number="5.8.1" class="anchored" data-anchor-id="sec-msupply"><span class="header-section-number">5.8.1</span> What Is the Money Supply?</h3>
+<p>Roughly, the nation’s money supply at any given moment is the total amount of <strong>liquid assets</strong> —that is, assets that can easily be used to pay for purchases when you go shopping—that are held by private citizens at that moment. A popular measure of money supply is M1. It consists of all currency in private hands and all the money in people’s checking accounts. You may think of M1 as the maximum amount of money that people would be able to spend if they all went shopping this minute. See <a href="#fig-M1-post2000-fredgraph" class="quarto-xref">Figure&nbsp;<span>5.4</span></a> for recent trends in M1 for the United States. For instance, on October 22, 2012, M1 was an estimated $2,417.2 billion, of which <em>currency in private hands</em> was $1,079.2 billion, <em>total checkable deposits</em> was $1,334.0 billion, and <em>travelers checks outstanding</em> was $3.9 billion.</p>
+<div id="fig-M1-post2000-fredgraph" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-M1-post2000-fredgraph-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/M1-post2000-fredgraph.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-M1-post2000-fredgraph-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;5.4: One measure of money supply is M1. Here we see recent US data on M1. Note that the Federal Reserve’s actions tend to sharply boost money supply in recessions. We will see why in later chapters. Source: <a href="https://fred.stlouisfed.org/series/M1SL" class="uri">https://fred.stlouisfed.org/series/M1SL</a>.
+</figcaption>
+</figure>
+</div>
+<!-- M1-post2000-fredgraph.png
+\begin{figure}
+%\vskip.1in
+%\vskip1.89in
+%\hskip1in
+%\special{bmp:M1-post2000-fredgraph.png x=3.15in y=1.89in}
+%\vskip.1in
+\includegraphics[scale=0.70]{images/M1-post2000-fredgraph.png}
+\caption[Money Supply: M1]{One measure of money supply is called M1. Here we see recent US data on M1. Note that the Federal Reserve's actions tend to sharply boost money supply in recessions. We will see why in later chapters. Source: \texttt{http://research.stlouisfed.org/fred2/series/M1}, downloaded on November 4, 2012.}
+\end{figure}
+-->
+<p>As we saw in <a href="preliminaries.html#sec-monetary" class="quarto-xref"><span>Section 1.4.2</span></a>, I will denote money supply by the symbol <span class="math inline">\(M\)</span>.</p>
+</section>
+<section id="sec-msupplydet" class="level3" data-number="5.8.2">
+<h3 data-number="5.8.2" class="anchored" data-anchor-id="sec-msupplydet"><span class="header-section-number">5.8.2</span> What Are the Factors that Affect Money Supply?</h3>
+<p>A nation’s money supply is controlled by its central bank.<a href="#fn11" class="footnote-ref" id="fnref11" role="doc-noteref"><sup>11</sup></a> Recall that M1, the simplest measure of <span class="math inline">\(M\)</span>, is basically equal to the currency held by the public and the value of all checkable bank accounts. The central bank can use its power to affect both these components of M1. The central bank is the only institution that can print (or mint) currency. Therefore, the “currency held by the public” can increase only if the central bank buys something from John or Jane Q. Public and pays for it with newly printed cash.</p>
+<p>For instance, if Jane decides to sell some of the government bonds that she owns, she may end up selling her bonds to the central bank in return for a bunch of newly printed currency notes. This would imply an increase in the currency held by the public and, therefore, in M1. Or, it could be that John has some yen that he wishes to sell in return for dollars. John could end up selling his yen to the U.S. central bank, which is known as the Federal Reserve or, simply, The Fed. Again, he would be paid in crisp newly printed dollar bills, the currency held by the public would increase, as would M1.</p>
+<p>Of course, the central bank could just as easily decide to sell some of its financial assets. In that case, the above process would work in reverse and M1 would decrease. If the Fed decides to sell some of the government bonds it owns, the buyer could be one John Q. Public. In this case, John would hand over some not-so-crisp dollar bills from his wallet to the Fed as payment for the bonds he had just purchased. Consequently, the currency held by the public would decrease, as would M1.</p>
+<p>Apart from controlling the currency held by the public in the manner just outlined, a central bank indirectly controls “the value of all checkable bank accounts”, which is the other component of M1. This is because a central bank typically has the power to regulate the lending behavior of banks. If I walk into a bank and deposit a hundred dollars into my account, the bank manager would lend <span class="math inline">\(X\)</span> dollars out of the money I had deposited to someone who wants a loan. That man may use the <span class="math inline">\(X\)</span> dollars he had borrowed to buy a shirt, in which case those <span class="math inline">\(X\)</span> dollars would end up in the shirt seller’s checkable bank account. Therefore, M1 would increase by <span class="math inline">\(X\)</span> dollars. In other words, the lending of depositors’ money by banks can affect M1.</p>
+<p>And that’s where the central bank can use its regulatory power to control the value of all checkable bank accounts and, thereby, M1. The central bank can set limits on how much of my hundred-dollar deposit my bank could lend. By adjusting the limit the central bank can encourage the manager of my bank to lend more or less than <span class="math inline">\(X\)</span> dollars to the guy who wanted a loan. Thereby, the central bank can (indirectly) control the rate at which bank lending expands M1.</p>
+<p>In some cases, central banks give up control over the money supply in order to exert control over some other economic variable that they consider important to control. You will see in <a href="exchange_rate_systems.html" class="quarto-xref"><span>Chapter 8</span></a> that in what are called fixed exchange rate systems, the central bank can fix the value of a currency by credibly promising to buy and/or sell that currency at the target rate of exchange. For example, if the central bank of Thailand wishes to fix the exchange value of the Thai baht at 25 bahts per US dollar, it can do so by announcing that it is ready to buy and/or sell US dollars at the rate of 25 bahts per dollar. After that announcement, the market price of a dollar could not be, say, 27 baht because nobody would buy a dollar at that price when Thailand’s central bank is willing to sell dollars for less. Similarly, the price of a dollar could not be 23 baht because nobody would sell at that price given that they could instead sell dollars to the Thai central bank for a higher price. In short, once Thailand’s central bank makes a credible announcement that it will exchange one dollar for 25 baht, the market exchange rate of a dollar will quickly become 25 baht.</p>
+<p>However, the Thai central bank’s efforts to control the exchange rate of the baht must come at the expense of its total loss of control over Thailand’s M1. If people show up with dollars and ask for baht, the central bank would have to print some additional currency. So, currency held by the public would increase, as would M1. If some Thai citizens hand over their baht and ask for dollars, the central bank would have to dig into its dollar reserves to keep its promise. The baht held by the thai public would decrease (because they have exhanged some of their baht for dollars), as would M1. In this way, the central bank would gain some control over the exchange rate, but by giving up control over M1. M1 would now fluctuate not according to the wishes of the Thai central bank but in tune with economic conditions in Thailand or, indeed, the world at large.</p>
+</section>
+<section id="sec-mdemand" class="level3" data-number="5.8.3">
+<h3 data-number="5.8.3" class="anchored" data-anchor-id="sec-mdemand"><span class="header-section-number">5.8.3</span> What Is the Money Demand?</h3>
+<p>The nation’s money demand at a specified point in time is the total amount of liquid assets—that is, currency plus checkable bank accounts—that its residents would like to hold at that point in time.</p>
+</section>
+<section id="sec-mdemanddet" class="level3" data-number="5.8.4">
+<h3 data-number="5.8.4" class="anchored" data-anchor-id="sec-mdemanddet"><span class="header-section-number">5.8.4</span> What Are the Factors that Affect the Demand for Money?</h3>
+<p>The behavior of the demand for money is assumed to be described by the equation <span class="math display">\[
+\text{Money Demand}=L(R)\cdot P\cdot Y.
+\]</span></p>
+<p>In other words, the demand for money is assumed to be a multiple <span class="math inline">\(L\)</span> of nominal income (<span class="math inline">\(P\cdot Y\)</span>; see <a href="natincome.html#eq-nomGDP" class="quarto-xref">Equation&nbsp;<span>2.12</span></a> of <a href="natincome.html#sec-IPDGDP" class="quarto-xref"><span>Section 2.6.1</span></a>). Moreover, the multiple <span class="math inline">\(L\)</span> itself depends on the nominal interest rate (<span class="math inline">\(R\)</span>).</p>
+<section id="sec-nomint" class="level4" data-number="5.8.4.1">
+<h4 data-number="5.8.4.1" class="anchored" data-anchor-id="sec-nomint"><span class="header-section-number">5.8.4.1</span> What Are Nominal Interest Rates?</h4>
+<p>The nominal interest rate, denoted by <span class="math inline">\(R\)</span> for the domestic country and <span class="math inline">\(R^*\)</span> for the foreign country, is the fraction of each currency unit borrowed (dollar, yen, etc.) that will have to be paid as interest.<a href="#fn12" class="footnote-ref" id="fnref12" role="doc-noteref"><sup>12</sup></a> If the bank charges you 15% interest on a loan, then the nominal interest rate is <span class="math inline">\(R=0.15\)</span> because that is the fraction of each dollar borrowed that you will have to pay as interest.</p>
+</section>
+<section id="sec-mdemanddet2" class="level4" data-number="5.8.4.2">
+<h4 data-number="5.8.4.2" class="anchored" data-anchor-id="sec-mdemanddet2"><span class="header-section-number">5.8.4.2</span> Again, What Are the Factors that Affect the Demand for Money?</h4>
+<p>As is clear from the equation above, <em>the demand for money is assumed to vary directly with <span class="math inline">\(P\)</span> and <span class="math inline">\(Y\)</span></em>. This makes sense. If, other things being unchanged, the average price level (<span class="math inline">\(P\)</span>) goes up, wouldn’t you wish to keep a larger part of your wealth as cash in your wallet? Of course, you would. And if GDP (<span class="math inline">\(Y\)</span>) increases, wouldn’t people carry more cash in their wallets? Of course, they would. A higher real GDP implies that more goods and services are being produced and then bought and sold. All this extra buying and selling will require people to carry more cash with them on a regular basis.</p>
+<p>And, as for the effect of <span class="math inline">\(R\)</span> on money demand, if the nominal interest rate increases, wouldn’t you wish to keep less of your wealth in cash? Yes, you would. Keep in mind that liquid assets, such as cash and checking account deposits, are convenient when you need to go shopping, but earn little or no interest. <em>The nominal interest rate <span class="math inline">\(R\)</span> is the interest rate on non-liquid assets</em> , such as bonds. So, a higher nominal interest rate increases the attractiveness of non-liquid assets and thereby reduces the desirability of liquid assets. Therefore, <em><span class="math inline">\(R\)</span> and <span class="math inline">\(L\)</span>—and, therefore, <span class="math inline">\(R\)</span> and money demand—are inversely related</em>.<a href="#fn13" class="footnote-ref" id="fnref13" role="doc-noteref"><sup>13</sup></a></p>
+<p>Other factors matter too. For example, in an economic crisis, when people are unsure that borrowers will be able to repay their loans, they may keep more of their wealth in the form of cold hard cash instead of lending it to others. On the other hand, when people are wealthier, they would very likely carry more cash.<a href="#fn14" class="footnote-ref" id="fnref14" role="doc-noteref"><sup>14</sup></a></p>
+</section>
+</section>
+<section id="sec-summary-moneyeqm" class="level3" data-number="5.8.5">
+<h3 data-number="5.8.5" class="anchored" data-anchor-id="sec-summary-moneyeqm"><span class="header-section-number">5.8.5</span> Summary: What Is the Money Market Equilibrium Condition?</h3>
+<p>The necessary equality of the supply and demand for money gives us what is usually called the <strong>money market equilibrium condition</strong> :</p>
+<p><span id="eq-LM"><span class="math display">\[
+\fbox{$\displaystyle M=L(R)\cdot P\cdot Y.$}
+\tag{5.9}\]</span></span></p>
+</section>
+</section>
+<section id="sec-forexeqm" class="level2" data-number="5.9">
+<h2 data-number="5.9" class="anchored" data-anchor-id="sec-forexeqm"><span class="header-section-number">5.9</span> What Is the Equilibrium Condition for the Foreign Exchange Market?</h2>
+<p>Foreign exchange markets are said to be in equilibrium if, for any two currencies <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span>, the amount of Currency <span class="math inline">\(A\)</span> supplied—by those who wish to sell Currency <span class="math inline">\(A\)</span> in exchange for Currency <span class="math inline">\(B\)</span>—is equal to the amount of Currency <span class="math inline">\(A\)</span> demanded—by those who wish to sell Currency <span class="math inline">\(B\)</span> in exchange for Currency <span class="math inline">\(A\)</span>. For this to be true, <strong>uncovered interest arbitrage</strong> must not be possible.</p>
+<p>People may wish to exchange currency <span class="math inline">\(A\)</span> for currency <span class="math inline">\(B\)</span> for many reasons. They may be tourists who have currency <span class="math inline">\(A\)</span> but wish to travel in regions where currency <span class="math inline">\(B\)</span> is accepted. They may be people who have currency <span class="math inline">\(A\)</span> but wish to buy goods, services, or assets from people who accept only currency <span class="math inline">\(B\)</span>. However, I will focus on one particular reason why people trade currencies: it involves speculation (or, less politely, financial gambling) and is called uncovered interest arbitrage. The foreign currency markets are in equilibrium when the demand and supply from these speculators are perfectly matched.</p>
+<section id="sec-UIA" class="level3" data-number="5.9.1">
+<h3 data-number="5.9.1" class="anchored" data-anchor-id="sec-UIA"><span class="header-section-number">5.9.1</span> What Is Uncovered Interest Arbitrage?</h3>
+<p>Opportunities for uncovered interest arbitrage are said to exist if one can expect to profit by borrowing money in country <span class="math inline">\(A\)</span> and lending it to borrowers in country <span class="math inline">\(B\)</span>, or vice versa.<a href="#fn15" class="footnote-ref" id="fnref15" role="doc-noteref"><sup>15</sup></a> If this is possible, then there would be no equilibrium in the foreign exchange market. Profit seekers would be constantly borrowing money in country <span class="math inline">\(A\)</span> and then changing it into the currency of country <span class="math inline">\(B\)</span> for the purpose of lending it to borrowers in that country. There would be literally <em>no limit</em> to the amount of country <span class="math inline">\(A\)</span>’s currency supplied by these people and—for the same reason—no limit to the amount of country <span class="math inline">\(B\)</span>’s currency demanded by these people. As a result, the supply of country <span class="math inline">\(A\)</span>’s currency would necessarily exceed the demand for it. Such a situation would not represent equilibrium.</p>
+<p>Therefore, for equilibrium in foreign exchange markets, there must not exist any opportunities for uncovered interest arbitrage. Put another way, the <strong>uncovered interest parity</strong> condition must be satisfied.</p>
+</section>
+<section id="sec-UIP" class="level3" data-number="5.9.2">
+<h3 data-number="5.9.2" class="anchored" data-anchor-id="sec-UIP"><span class="header-section-number">5.9.2</span> What Is the Uncovered Interest Parity Condition?</h3>
+<p>The uncovered interest parity condition (UIP, for short) is that <span id="eq-UIP"><span class="math display">\[
+R=R^*+\frac{E^e_f-E}{E}
+\tag{5.10}\]</span></span> must be satisfied.</p>
+<p>As we saw in <a href="#sec-nomint" class="quarto-xref"><span>Section 5.8.4.1</span></a> above, <span class="math inline">\(R\)</span> is the nominal interest rate in the home country, whereas <span class="math inline">\(R^*\)</span> is the nominal interest rate in the foreign country. As we saw in <a href="exchange_rates.html#sec-nomexrates" class="quarto-xref"><span>Section 4.1</span></a>, <span class="math inline">\(E\)</span> is the current value of the foreign currency in units of the domestic currency. And, as we saw in <a href="exchange_rates.html#sec-forward-exp" class="quarto-xref"><span>Section 4.4.1</span></a>, <span class="math inline">\(E_f\)</span> is the future value of the foreign currency, and <span class="math inline">\(E_f^e\)</span> is the current expectation of the future value of the foreign currency.<a href="#fn16" class="footnote-ref" id="fnref16" role="doc-noteref"><sup>16</sup></a></p>
+<p>Note that <span class="math inline">\(E^e_f-E\)</span> is the expected increase in the exchange value of the foreign currency. It then follows—along the lines of <a href="natincome.html#eq-f-growthrate" class="quarto-xref">Equation&nbsp;<span>2.3</span></a> in <a href="natincome.html#sec-notngrowth" class="quarto-xref"><span>Section 2.3.1</span></a> — that <span id="eq-eeg"><span class="math display">\[
+\begin{eqnarray}
+E^e_g&amp;\equiv&amp;\frac{E^e_f-E}{E}\nonumber \\
+&amp;\equiv&amp;\frac{E^e_f}{E}-1
+\end{eqnarray}
+\tag{5.11}\]</span></span> is the expected proportional <em>rate of increase</em> of the exchange value of the foreign currency. The uncovered interest parity equation above can therefore be written compactly as <span id="eq-UIP-compact"><span class="math display">\[
+R=R^*+E_g^e.
+\tag{5.12}\]</span></span></p>
+<p>The second term on the right-hand side, <span class="math inline">\(E_g^e\)</span>, is often called the <strong>expected rate of appreciation</strong> of the foreign currency . When the exchange value of a currency increases (respectively, decreases), the currency is said to have appreciated (respectively, depreciated) .<a href="#fn17" class="footnote-ref" id="fnref17" role="doc-noteref"><sup>17</sup></a></p>
+<p>With the definitions of the variables in <a href="#eq-UIP" class="quarto-xref">Equation&nbsp;<span>5.10</span></a> out of the way, we can now try to understand why that equation makes sense.</p>
+<section id="sec-summary-UIP" class="level4" data-number="5.9.2.1">
+<h4 data-number="5.9.2.1" class="anchored" data-anchor-id="sec-summary-UIP"><span class="header-section-number">5.9.2.1</span> Why Is Uncovered Interest Parity Necessary for Equilibrium?</h4>
+<p>To see the meaning of <a href="#eq-UIP" class="quarto-xref">Equation&nbsp;<span>5.10</span></a> above, consider the prospect of borrowing US dollars from someone in America today, turning it into euros in the foreign exchange market, lending it to someone in Europe for a year, turning the euros received a year later (as principal and interest on the loan that was made) back into dollars, paying off the dollars that had been borrowed a year earlier, and keeping any profits or losses that remain.</p>
+<p>The downside of this plan is that you would have to pay interest <span class="math inline">\(R\)</span> on the money you borrowed in America. This is on the left-hand side of the UIP equation; i.e., <a href="#eq-UIP" class="quarto-xref">Equation&nbsp;<span>5.10</span></a>.</p>
+<p>But there is an upside too. You will get interest <span class="math inline">\(R^*\)</span> from your borrowers in Europe.</p>
+<p>And that is not all. Remember that the plan requires you to change your borrowed dollars into euros today and then change your euros back into dollars a year later. So, you would make some money if the nominal value of the euro, <span class="math inline">\(E\)</span>, grows during the year. For example, if <span class="math inline">\(E = 2\)</span> today, you would pay $2.00 for every euro you buy today. And if <span class="math inline">\(E_f^e = 4\)</span> a year later, you would be able to turn each euro you have into $4.00. So, if <span class="math inline">\(E\)</span> grows from <span class="math inline">\(E = 2\)</span> at the beginning of the year to <span class="math inline">\(E^e_f = 4\)</span> at the year’s end, you could turn $2.00 into $4.00 over that year. In general, <span class="math inline">\(E^e_g\equiv(E^e_f-E)/E\)</span> represents your expected gains from changing dollars into euros and back into dollars a year later.</p>
+<p>Therefore, the right-hand side of the UIP equation above—i.e., <span class="math inline">\(R^* + E^e_g\)</span>—represents your total gains from this convoluted scheme of borrowing dollars, changing it into euros, earning interest on those euros for a year, and finally changing the euros back into dollars and bringing the money home.</p>
+<p>Had the left-hand side (<span class="math inline">\(R\)</span>) been smaller than the right-hand side (<span class="math inline">\(R^* + E^e_g\)</span>), opportunities for uncovered interest arbitrage would have existed. That is, you (and everybody else in the world) would have profited from borrowing in America and lending that money in Europe. But that would have violated the equilibrium condition for the foreign exchange markets.</p>
+<p>In the same way, it can be shown that had the left-hand side been greater than the right-hand side, opportunities for uncovered interest arbitrage would once again have existed. Only, this time you would expect to gain by borrowing in Europe and lending in America.</p>
+<p>So, for equilibrium in the foreign exchange market, the two sides of <a href="#eq-UIP" class="quarto-xref">Equation&nbsp;<span>5.10</span></a> would have to be equal. That is, for equilibrium in the foreign exchange market, the uncovered interest parity condition must be satisfied. This can be expressed either by <a href="#eq-UIP" class="quarto-xref">Equation&nbsp;<span>5.10</span></a> or, equivalently, by <span id="eq-UIP-alt"><span class="math display">\[
+\fbox{$\displaystyle R=R^*+\frac{E^e_f}{E}-1.$}
+\tag{5.13}\]</span></span></p>
+</section>
+<section id="sec-pcm" class="level4" data-number="5.9.2.2">
+<h4 data-number="5.9.2.2" class="anchored" data-anchor-id="sec-pcm"><span class="header-section-number">5.9.2.2</span> Perfect Capital Mobility</h4>
+<p>My discussion of the uncovered interest parity condition in <a href="#sec-summary-UIP" class="quarto-xref"><span>Section 5.9.2.1</span></a> has implicitly assumed perfect capital mobility in foreign exchange markets. This requires that:</p>
+<ul>
+<li>All individuals have the same expectations, and</li>
+<li>When considering which assets to buy and which assets to sell, people only look at the long-run average returns of the various available assets.<a href="#fn18" class="footnote-ref" id="fnref18" role="doc-noteref"><sup>18</sup></a></li>
+</ul>
+<p>The first requirement was discussed in <a href="#sec-UIP" class="quarto-xref"><span>Section 5.9.2</span></a> on <span class="math inline">\(E_f^e\)</span>.</p>
+<p>The second requirement of perfect capital mobility is that the long-run average return of an asset is all that we care about when judging the attractiveness of an asset. This idea is implicit in the discussion of uncovered interest parity in <a href="#sec-summary-UIP" class="quarto-xref"><span>Section 5.9.2.1</span></a>. If you borrow money in America and lend it in Europe, the benefits of all this wheeling and dealing are measured by <span class="math inline">\(R^*+[(E^e_f-E)/E]\)</span>. This is just the long-run average return that you would expect to receive. The UIP equation, <a href="#eq-UIP" class="quarto-xref">Equation&nbsp;<span>5.10</span></a>, therefore, reflects what equilibrium in foreign exchange markets ought to look like if these long-run average returns are all that matter to people.</p>
+<p>Perfect capital mobility, therefore, implies that the UIP equation must be satisfied for the foreign exchange market to be in equilibrium.</p>
+<p>We need to remember, however, that although I have assumed perfect capital mobility, I did so just for simplicity. In the real world, perfect capital mobility is unlikely to be true. First of all, different people cannot be expected to have the same expectations. Secondly, in judging the attractiveness of an asset, people are likely to look not only at the asset’s long-run average return but also at the volatility (or variability, or dispersion, or riskiness) of the asset’s return. Consider asset <span class="math inline">\(A\)</span>, which gives a steady 5% return, and another asset, asset <span class="math inline">\(B\)</span>, which yields a 0% return half the time and a 10% return half the time, for a long-run average return of 5%. Assets <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> both have the same long-run average return of 5%. And yet, most people will not regard assets <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> to be equally attractive; most people will regard asset <span class="math inline">\(A\)</span> to be superior because it is less risky.</p>
+<p>In my justification of uncovered interest parity in <a href="#sec-summary-UIP" class="quarto-xref"><span>Section 5.9.2.1</span></a>, I focused on the long-run average returns and ignored the riskiness of assets. For example, I assumed that people consider <span class="math inline">\((E^e_f-E)/E\)</span>, the expected appreciation of the foreign currency, but ignore the fact that even if people have an expectation about how much that currency may appreciate, they will also be aware that that expectation is just that, an expectation.</p>
+<p>Therefore, one needs to keep in mind the limitations inherent in defining equilibrium in foreign exchange markets by <a href="#eq-UIP" class="quarto-xref">Equation&nbsp;<span>5.10</span></a>.</p>
+</section>
+</section>
+</section>
+<section id="sec-summary-basiceq" class="level2" data-number="5.10">
+<h2 data-number="5.10" class="anchored" data-anchor-id="sec-summary-basiceq"><span class="header-section-number">5.10</span> Summary: The Basic Equations</h2>
+<p>To sum up, the theory of international macroeconomics that I am discussing here—which, incidentally, is called the Mundell-Fleming theory after the names of its authors—relies on three basic equations:</p>
+<ul>
+<li><strong>The goods market equilibrium equation</strong> that must be satisfied if the demand for domestically produced goods is to be equal to the supply of such goods. See <a href="#eq-goodseqm" class="quarto-xref">Equation&nbsp;<span>5.1</span></a>, and <a href="#eq-IS" class="quarto-xref">Equation&nbsp;<span>5.8</span></a> for equivalent versions of this equation.</li>
+<li><strong>The money market equilibrium equation</strong> that must be satisfied if the demand for money is to be equal to the supply of money. See <a href="#eq-LM" class="quarto-xref">Equation&nbsp;<span>5.9</span></a>.</li>
+<li><strong>The foreign exchange market equilibrium equation</strong> that must be satisfied if the demand for foreign currencies is to be equal to the supply of foreign currencies. See <a href="#eq-UIP" class="quarto-xref">Equation&nbsp;<span>5.10</span></a> and <a href="#eq-UIP-alt" class="quarto-xref">Equation&nbsp;<span>5.13</span></a> for equivalent versions of this equation.</li>
+</ul>
+
+
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
+<div id="ref-drazen2002political" class="csl-entry" role="listitem">
+Drazen, Allan. 2002. <em>Political Economy in Macroeconomics</em>. Princeton University Press.
+</div>
+<div id="ref-mueller2003public" class="csl-entry" role="listitem">
+Mueller, Dennis C. 2003. <em>Public Choice III</em>. Cambridge University Press.
+</div>
+<div id="ref-persson2002political" class="csl-entry" role="listitem">
+Persson, Torsten, and Guido Tabellini. 2002. <em>Political Economics: Explaining Economic Policy</em>. MIT press.
+</div>
+</div>
+</section>
+<section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn1"><p>To be precise, in <a href="natincome.html#eq-nii-ca" class="quarto-xref">Equation&nbsp;<span>2.8</span></a>, <span class="math inline">\(Y\)</span> denotes gross national domestic income, which is slightly different from gross domestic product, and <span class="math inline">\(CA\)</span> denotes the current account balance which is slightly different from <span class="math inline">\(NX\)</span> or net exports. However, these small differences—see <a href="natincome.html#sec-gndi" class="quarto-xref"><span>Section 2.5.1.2</span></a> and <a href="natincome.html#sec-nii-2" class="quarto-xref"><span>Section 2.5.1.3</span></a> — are not the main issue here. The main distinction between <a href="#eq-goodseqm" class="quarto-xref">Equation&nbsp;<span>5.1</span></a> on the one hand and the national income identity—that is, <a href="natincome.html#eq-ni-identity" class="quarto-xref">Equation&nbsp;<span>2.5</span></a> or <a href="natincome.html#eq-nii-ca" class="quarto-xref">Equation&nbsp;<span>2.8</span></a> — on the other is that <a href="#eq-goodseqm" class="quarto-xref">Equation&nbsp;<span>5.1</span></a> has a theoretical justification, whereas <a href="natincome.html#eq-ni-identity" class="quarto-xref">Equation&nbsp;<span>2.5</span></a> and <a href="natincome.html#eq-nii-ca" class="quarto-xref">Equation&nbsp;<span>2.8</span></a> are true by virtue of how the variables in them are defined by statisticians. The theory that says that <a href="#eq-goodseqm" class="quarto-xref">Equation&nbsp;<span>5.1</span></a> is true may be false. But the national income identity is necessarily true by virtue of the definitions of the variables in it.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>Readers may recall a parallel discussion of the national income identity in <a href="natincome.html#sec-ni-identity" class="quarto-xref"><span>Section 2.5</span></a>.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>Note that <span class="math inline">\(Y\)</span> is defined as the supply of goods planned by domestic producers. If the producers’ desires are fulfilled, <span class="math inline">\(Y\)</span> would also be the actual sales of domestic producers. Therefore, <span class="math inline">\(Y\)</span> would also be the total income of households because the total sales of final goods must also be equal to total earnings. After all, if ten trillion dollars worth of “Made in USA” goods were produced and sold last year, how did the ten trillion dollars that buyers paid for those goods end up? As the incomes of all the people involved in their production, of course.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn4"><p>Note that <span class="math inline">\(0&lt;\hbox{MPC},\hbox{MPS}&lt;1\)</span> and that <span class="math inline">\(\hbox{MPC}+\hbox{MPS}=1\)</span>, by definition.<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn5"><p>For a full discussion, see pages 163-5 of <em>Macroeconomics: A Modern Approach</em> by Robert J. Barro, Thomson South-Western, Mason, OH, 2008.<a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn6"><p>The government could take out a new loan to repay an old loan. But there are limits to how far this could be continued. Lenders may eventually balk.<a href="#fnref6" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn7"><p>Indeed, in a later chapter I will assume that real investment spending, <span class="math inline">\(I\)</span>, is inversely related to the real interest rate, <span class="math inline">\(r\)</span>.<a href="#fnref7" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn8"><p>See chapter 17 of <em>Macroeconomics</em>, sixth edition, by N. Gregory Mankiw, Worth Publishers, New York, NY, 2007, ISBN:978–0–7167–6213–3, for more on the theory of business investment.<a href="#fnref8" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn9"><p>I should not, however, give the impression that factors that influence the level of government spending are not discussed in economic research. See <span class="citation" data-cites="mueller2003public">Mueller (<a href="references.html#ref-mueller2003public" role="doc-biblioref">2003</a>)</span>, <span class="citation" data-cites="persson2002political">Persson and Tabellini (<a href="references.html#ref-persson2002political" role="doc-biblioref">2002</a>)</span>, and <span class="citation" data-cites="drazen2002political">Drazen (<a href="references.html#ref-drazen2002political" role="doc-biblioref">2002</a>)</span>.<a href="#fnref9" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn10"><p>See <a href="long_nominal.html#sec-rppp" class="quarto-xref"><span>Section 10.4</span></a> of <a href="long_nominal.html" class="quarto-xref"><span>Chapter 10</span></a>. <a href="#fnref10" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn11"><p>See <a href="bop.html#sec-finacc" class="quarto-xref"><span>Section 3.3</span></a>.<a href="#fnref11" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn12"><p>Recall from <a href="exchange_rates.html#sec-notnfornvar" class="quarto-xref"><span>Section 4.2.1</span></a> that the variables that describe a foreign country have an asterisk (*) attached as a superscript.<a href="#fnref12" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn13"><p>The factor <span class="math inline">\(L\)</span> is the reciprocal of what is called the <strong>velocity of money</strong> or the income velocity of money, <span class="math inline">\(V\)</span>. That is, <span class="math inline">\(L=1/V\)</span>. The velocity is defined as the average number of times per period that a unit of currency is used in the purchase of a final good or service. For example, if the average dollar bill changes hands 10 times per month, then <span class="math inline">\(V=10\)</span>.<a href="#fnref13" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn14"><p>During the recession of 2008–09, many people who had borrowed money to buy homes, defaulted on their loans when home prices, which they had thought would keep rising, fell instead. This shocking rise in loan defaults made lenders afraid to lend money. The sudden decline in the availability of loans made it hard for businesses to borrow money to expand. The sales of new homes and cars fell sharply because consumer loans dried up. All this led to sharp declines in real GDP and sharp rises in unemployment in the US. These troubles in the US had serious negative effects on other countries as well.<a href="#fnref14" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn15"><p>In the business press, uncovered interest arbitrage is also referred to as the “carry trade.” See, for example, “Why the ‘Carry Trade’ Is Back,” by Neil Shah, The Wall Street Journal, August 18, 2009, <a href="https://www.wsj.com/articles/SB125053694840237795" class="uri">https://www.wsj.com/articles/SB125053694840237795</a>. <a href="#fnref15" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn16"><p>Note that, I have quietly assumed that everybody has the same expectation for the future value of the foreign currency; no differences of opinion are allowed. Also, you may recall that <span class="math inline">\(E_f^e\)</span> was introduced earlier in <a href="exchange_rates.html#sec-forwardexrates" class="quarto-xref"><span>Section 4.4</span></a>.<a href="#fnref16" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn17"><p>Similarly, <span class="math inline">\(100\times[(E^e_f-E)/E]\)</span> is the expected percentage rate of increase of the exchange value of the foreign currency. Note that when <span class="math inline">\(E^e_f&lt;E\)</span>, we have a <em>negative</em> expected increase, which is the same as a decrease.<a href="#fnref17" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn18"><p>The long-run average return of an asset is also called the mathematical expectation of the returns of the asset.<a href="#fnref18" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+          // target, if specified
+          link.setAttribute("target", "_blank");
+          if (link.getAttribute("rel") === null) {
+            link.setAttribute("rel", "noopener");
+          }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./exchange_rates.html" class="pagination-link" aria-label="Exchange Rates">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Exchange Rates</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./theories_equations_variables.html" class="pagination-link" aria-label="Theories, Equations and Variables">
+        <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Theories, Equations and Variables</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/UdayanRoy62/internationalmacro/edit/main/markets_equilibrium.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/UdayanRoy62/internationalmacro/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="nav-footer-right">
+<p>This book was built with <a href="https://quarto.org/">Quarto</a>.</p>
+</div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

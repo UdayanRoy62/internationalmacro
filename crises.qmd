@@ -1,0 +1,84 @@
+<!--
+sec-crises
+sec-lowreserves
+sec-currboard
+sec-cure
+sec-preven
+-->
+
+# Special Topic: Currency Crises {#sec-crises}
+
+My earlier discussion of the short-run macroeconomic behavior of an open economy under fixed exchange rates sidestepped the issue of currency crises. A currency crisis\index{currency crisis} is quite possibly one of the most dramatic, headline grabbing events in economics. In this lecture I will discuss why currency crises happen and what can be done about them.
+
+## Inadequate Foreign Currency Reserves {#sec-lowreserves}
+
+In a fixed exchange rate system, the nation's central bank stands ready to buy and/or sell any amount of the domestic currency at a specified rate called the peg. For example, the U.S. Federal Reserve may announce that it will buy and sell U.S. dollars at the pegged rate of 1.50 British pounds per dollar. If such an announcement is in fact made, the market value of the U.S. dollar would immediately become 1.50 pounds per dollar.^[See @sec-fixexrates for a refresher.]
+
+If, following such an announcement, people turn up at the Fed's offices to buy dollars with the pounds they are carrying, the Fed will simply (i) add those pounds to its reserves of foreign currencies and (ii) print new dollar bills to pay the people. So, two things happen: the Fed's **foreign currency reserves** \index{foreign currency reserves}, $R$, increase and the U.S. money supply, $M$, increases. 
+
+When people appear at the Fed to *sell* dollars for pounds, the opposite happens: the Fed's pound reserves and the U.S. money supply both decrease.
+
+So, if exchange rates are fixed, a country's reserves of foreign currencies, $R$, and its money supply, $M$, will either increase together or decrease together or stay unchanged.
+
+Now, under fixed exchange rates, what are the circumstances in which $M$ might decrease? If you look at my earlier discussion of the short-run behavior of a fixed exchange rate system---especially @tbl-short_fixed, which summarizes the main results---you will notice that $M$ will decrease if:
+
+1. Either $i^*$, $e$ or $t$ increases
+2. Or if $P^*$, $Y^p$, $\pi^e$, $e_g^e$, $G$, $c$ or $\theta$ decreases.
+
+When any of these events occur, $M$ will decline and, as was just explained, the decline in $M$ will be accompanied by a decline in $R$. (By the way, you can check that many of these effects are also true in the long run; see @tbl-nominal_long_fix.)
+
+Let's say that one of the events listed above actually happens raising the possibility of a decline in $M$---and, therefore, in $R$. In other words, people are expected to start arriving at the Fed to buy some of the Fed's stash of British pounds. Specifically, let's say that the people are expected to line up at the Fed's door---not all at once but, say, over a two month period---to spend one trillion dollars to buy pounds at the Fed's announced rate of 1.50 pounds per dollar. So, if the process reaches its expected completion, one trillion dollars will  disappear from people's wallets into the Fed's vaults---meaning that $M$ will decline by one trillion dollars---and $R$, the Fed's pound reserves, will decline by 1.50 trillion pounds.
+
+But what if the Fed had only 1.00 trillion pounds to begin with? Clearly, the Fed would run out of pounds before all those who wanted to buy pounds could do so. Therefore, the Fed will ultimately have to take back its promise to buy pounds at \$1.50 per pound and, therefore, abandon its fixed exchange rate system altogether. That is, the Fed will be forced to switch to a flexible exchange rate system, which entails no promises of any kind.
+
+The question then is, will the dollar's value increase or decrease when the fixed exchange rate system ends and the flexible exchange rate system begins? The answer is simple: the dollar's value will have to fall when the Fed stops buying dollars with its pound reserves. When the Fed buys dollars it props up the dollar's value. So when the Fed stops buying dollars, the demand for and, therefore, the value of the dollar will decline.
+
+To summarize,  
+
+1. if an economy has a fixed exchange rate system and
+2. if something happens today that is likely to reduce $M$ and, therefore, $R$ and is also likely to be hard to reverse and
+3. if it is known that the central bank's foreign currency reserves are inadequate,
+
+then an abrupt collapse of the fixed exchange rate system sometime ahead in the future followed by a sharp decline in the value of the home country's currency will be widely anticipated.
+
+But if people fear a decline in the dollar's value in two months time, what would they do?
+
+Fearing a fall in the value of the dollar, people will try to sell the dollar for pounds while the dollar is still (temporarily) high. But this will only accelerate the emptying of the central bank's reserves and hasten the abandonment of the peg. In short, if something happens that would cause people to sell dollars, then that itself would cause more people to want to sell dollars.
+
+Let's say that initially people believe that the fixed exchange rate system would have to be abandoned by the Fed in two months (i.e., *eight* weeks) and that the dollar's value would fall at that time. It would then be rational to want to sell dollars for pounds *seven* weeks from today. But people will quickly realize that, therefore, the Fed would run out of pounds not eight weeks from today but seven weeks from today. In other words, people would expect the dollar's value to fall seven weeks from today. Realizing this, individuals would now want to sell their dollars one week earlier, i.e., *six* weeks from today. But then people would quickly realize that since it is advantageous for everybody to do that, the dollar's value will fall not eight weeks from today but just six weeks from today. And so on and on. Continuing in this way, we realize that the first whiff of a *future* currency crisis would cause an *immediate* currency crisis. There would be a mad dash for the exits as people try, all at the same time, to sell their dollars to the Fed for pounds. The Fed would lose all its pounds before it even realized what had happened.
+
+Let's look at the whole process in a slightly different way. Saying that a sharp decline in $e$ will be widely anticipated is like saying that $e_g^e$  will decrease. And as was discussed earlier, this will add to the downward pressure on $M$ and hasten the demise of the fixed exchange rate system because the added downward pressure on $M$ implies an added downward pressure on $R$, which would lead people to expect an even quicker exhaustion of the central bank's foreign currency reserves. But if people accordingly revise their prediction of the likely date of the death of the fixed exchange rate system, it would mean a further decline in $e_g^e$  which would further hasten the demise of the fixed exchange rate system, and so on. 
+
+In short, a currency crisis occurs in two stages. First, something happens---either $i^*$, $e$ or $t$ increases or $P^*$, $Y^p$, $\pi^e$, $e_g^e$ , $G$, $c$ or $\theta$ decreases---that reduces $M$ and $R$. Second, there is a series of declines in $e_g^e$  that finish the job off. What is scary is that even the first stage, in which the currency crisis is born, may consist of a decline in  $e_g^e$. So, the whole crisis, from beginning to end, may occur simply because of a possibly baseless fear that the currency's value would fall. That initially baseless fear could set in motion a self-fulfilling prophecy that would end up confirming the fear.
+
+## Currency Boards {#sec-currboard}
+
+What is even scarier is that a currency crisis can occur even if the central bank has adequate foreign currency reserves, in which case the fixed exchange rate system is called a **currency board** \index{currency board}. To see why, let us return briefly to @tbl-short_fixed, the table that summarizes the results for an economy in the short-run under fixed exchange rates. Note that the columns for $M$ and $Y$ are virtually identical. So, $M$ and $Y$ usually move in the same direction; if something happens that makes $M$ decrease it will very likely also make $Y$ decrease. Now, when $Y$ decreases, the country's government, fearful of becoming unpopular, will be tempted to devalue the currency (that is, it will be tempted to reduce the pegged value of $e$) in order to reverse the decline in $Y$. And if a sudden sharp decline in $e$ is widely anticipated, a currency crisis will develop just as before:  $e_g^e$ will go down making a bad situation worse and, as we saw earlier, this itself might precipitate a currency crisis.
+
+So, the possibility that the central bank will abandon fixed exchange rates either because it has inadequate reserves or because it will have to do something about the declining $Y$, could precipitate a currency crisis.
+
+## Dealing with a Currency Crisis {#sec-cure}
+
+@tbl-short_fixed suggests several ways of dealing with an unfolding currency crisis: increase government spending, $G$, cut taxes, $t$, or raise tariffs, $\theta$, on imported goods. As the table shows, if any or all of these things are done, $M$ and, therefore, $R$ will increase, thereby reversing the initial decrease in $M$ that precipitated the crisis.
+
+The problem with this strategy is that the crisis is likely to happen much too quickly for $G$, $t$ and $\theta$ to have any timely effect. Besides, if the government is to cut taxes and increase spending at the same time, it would have to borrow money from private citizens and such borrowing may be prohibitively expensive, particularly since it is being done in the middle of a currency crisis. And as for tariffs, the effect on $M$ is likely to be weak.
+
+So, what's to be done?
+
+One way out is to get wealthy foreign governments or the International Monetary Fund\index{International Monetary Fund} to come to the crisis country's aid with a generous line of credit. Suppose people have begun arriving at the Fed to buy British pounds. If it transpires that the Fed has an inadequate stock of pounds, the orderly process of people lining up to buy pounds could quickly turn into a full-fledged currency crisis, as we saw earlier. But if some wealthy foreign government or the IMF steps in with a large loan of British pounds for the Fed, the fear that the fed will run out of pounds will go away and, therefore, the currency crisis itself will go away.
+
+Of course, the Fed will have to pay those borrowed British pounds back eventually. Therefore, if nothing is done between now and 'eventually', the crisis will return. Consequently, all that foreign loans can do is buy the U.S. some time. If the breathing space thus obtained is used to reverse the decline in $M$---by increasing $G$ and reducing $t$, as was discussed in the first paragraph of this section---then the crisis will truly end. Emergency infusions of foreign currency reserves combined with necessary changes in domestic policy can effectively bring a currency crisis to an end.
+
+However, all this, while fine in theory, is very tricky to pull off right in the middle of an actual currency crisis. Therefore, we need to focus on prevention.
+
+## Preventing a Currency Crisis {#sec-preven}
+
+What can be done to prevent a currency crisis? There are three possibilities.
+
+1. Don't have a fixed exchange rate system in the first place. Have flexible exchange rates instead. However, the downside of a flexible exchange rate system is that the uncertainty associated with the exchange rate fluctuations that might follow would reduce trade and, therefore, hurt the country's economic health.
+
+2. Make sure the central bank piles up enough foreign exchange reserves so that it will never run out---that is, adopt the currency board system. For example, suppose 2 trillion dollars have been printed so far. If the Fed announces a peg of 1.50 pounds per dollar and if the Fed has 3 trillion British pounds in its reserves, then it will never run out of pounds: Not even if every single dollar out there is sold to the Fed for pounds. However, this system---the currency board---is not foolproof. As was pointed out in @sec-currboard, a currency crisis can occur even when there are enough reserves.
+
+3. Join up with other countries with which you wanted to have fixed exchange rates and jointly decide to adopt a single currency for all countries. This system---called a **currency union** \index{currency union}---would allow all the advantages of a fixed exchange rate system without the fear of periodic currency crises.
+
+The most important example of the currency union solution to the problem of currency crises is the European Monetary Union\index{European Monetary Union} and the birth of the Euro and that's our next topic.

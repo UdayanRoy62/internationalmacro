@@ -1,0 +1,2120 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.4.554">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>International Macroeconomics: Lecture Notes - 2&nbsp; National Income Accounts, Prices, and Inflation</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./bop.html" rel="next">
+<link href="./preliminaries.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./natincome.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">National Income Accounts, Prices, and Inflation</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">International Macroeconomics: Lecture Notes</a> 
+        <div class="sidebar-tools-main">
+    <a href="https://github.com/UdayanRoy62/internationalmacro" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./preliminaries.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Preliminaries</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./natincome.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">National Income Accounts, Prices, and Inflation</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./bop.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Balance of Payments Accounts</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./exchange_rates.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Exchange Rates</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./markets_equilibrium.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Markets and Equilibrium</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./theories_equations_variables.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Theories, Equations and Variables</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./long_run_short_run.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">The Long Run and the Short Run</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./exchange_rate_systems.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Exchange Rate Systems: Fixed and Flexible</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./long_real.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Long-Run Predictions: The Real World</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./long_nominal.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Long-Run Predictions: The Nominal World</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./short_fixed.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Short-Run Predictions: Fixed Exchange Rates</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./short_flex.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Short-Run Predictions: Flexible Exchange Rates</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./short_flex_permanent.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Short-Run Predictions: Expectations and Flexible Exchange Rates</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./crises.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Special Topic: Currency Crises</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./summary.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">International Macroeconomics: Summary</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#sec-nia" id="toc-sec-nia" class="nav-link active" data-scroll-target="#sec-nia"><span class="header-section-number">2.1</span> National Income Accounts</a></li>
+  <li><a href="#sec-nGDP" id="toc-sec-nGDP" class="nav-link" data-scroll-target="#sec-nGDP"><span class="header-section-number">2.2</span> Nominal Gross Domestic Product</a>
+  <ul class="collapse">
+  <li><a href="#sec-gdp-value-added" id="toc-sec-gdp-value-added" class="nav-link" data-scroll-target="#sec-gdp-value-added"><span class="header-section-number">2.2.1</span> GDP: The Value-Added Approach</a></li>
+  <li><a href="#sec-gdp-income" id="toc-sec-gdp-income" class="nav-link" data-scroll-target="#sec-gdp-income"><span class="header-section-number">2.2.2</span> GDP: The Income Approach</a></li>
+  <li><a href="#sec-gdp-expenditure" id="toc-sec-gdp-expenditure" class="nav-link" data-scroll-target="#sec-gdp-expenditure"><span class="header-section-number">2.2.3</span> GDP: The Expenditure Approach</a></li>
+  <li><a href="#sec-gdp-overview" id="toc-sec-gdp-overview" class="nav-link" data-scroll-target="#sec-gdp-overview"><span class="header-section-number">2.2.4</span> GDP: Overview</a></li>
+  </ul></li>
+  <li><a href="#sec-rGDP" id="toc-sec-rGDP" class="nav-link" data-scroll-target="#sec-rGDP"><span class="header-section-number">2.3</span> Real Gross Domestic Product</a>
+  <ul class="collapse">
+  <li><a href="#sec-notngrowth" id="toc-sec-notngrowth" class="nav-link" data-scroll-target="#sec-notngrowth"><span class="header-section-number">2.3.1</span> Notation: Growth Rates</a></li>
+  </ul></li>
+  <li><a href="#sec-gdp-components" id="toc-sec-gdp-components" class="nav-link" data-scroll-target="#sec-gdp-components"><span class="header-section-number">2.4</span> The Components of GDP</a>
+  <ul class="collapse">
+  <li><a href="#sec-consumption-nia" id="toc-sec-consumption-nia" class="nav-link" data-scroll-target="#sec-consumption-nia"><span class="header-section-number">2.4.1</span> Consumption</a></li>
+  <li><a href="#sec-investment-nia" id="toc-sec-investment-nia" class="nav-link" data-scroll-target="#sec-investment-nia"><span class="header-section-number">2.4.2</span> Investment</a></li>
+  <li><a href="#sec-government-spending-nia" id="toc-sec-government-spending-nia" class="nav-link" data-scroll-target="#sec-government-spending-nia"><span class="header-section-number">2.4.3</span> Government Spending</a></li>
+  <li><a href="#sec-netexports-nia" id="toc-sec-netexports-nia" class="nav-link" data-scroll-target="#sec-netexports-nia"><span class="header-section-number">2.4.4</span> Net Exports</a></li>
+  </ul></li>
+  <li><a href="#sec-ni-identity" id="toc-sec-ni-identity" class="nav-link" data-scroll-target="#sec-ni-identity"><span class="header-section-number">2.5</span> The National Income Identity</a>
+  <ul class="collapse">
+  <li><a href="#sec-beyond-gdp" id="toc-sec-beyond-gdp" class="nav-link" data-scroll-target="#sec-beyond-gdp"><span class="header-section-number">2.5.1</span> Beyond GDP: Other Measures of Total Production</a></li>
+  </ul></li>
+  <li><a href="#sec-p-pi" id="toc-sec-p-pi" class="nav-link" data-scroll-target="#sec-p-pi"><span class="header-section-number">2.6</span> Prices and Inflation</a>
+  <ul class="collapse">
+  <li><a href="#sec-IPDGDP" id="toc-sec-IPDGDP" class="nav-link" data-scroll-target="#sec-IPDGDP"><span class="header-section-number">2.6.1</span> The Implicit Price Deflator for GDP</a></li>
+  <li><a href="#sec-cpi" id="toc-sec-cpi" class="nav-link" data-scroll-target="#sec-cpi"><span class="header-section-number">2.6.2</span> The Consumer Price Index</a></li>
+  <li><a href="#sec-inflation" id="toc-sec-inflation" class="nav-link" data-scroll-target="#sec-inflation"><span class="header-section-number">2.6.3</span> Inflation</a></li>
+  </ul></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/UdayanRoy62/internationalmacro/edit/main/natincome.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/UdayanRoy62/internationalmacro/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span id="sec-niaccounts" class="quarto-section-identifier"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">National Income Accounts, Prices, and Inflation</span></span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>Recall from sections <a href="preliminaries.html#sec-economics" class="quarto-xref"><span>Section 1.1</span></a> – <a href="preliminaries.html#sec-intmac" class="quarto-xref"><span>Section 1.3</span></a> that international macroeconomics consists of explanations for the observed up-and-down movements of important macroeconomic variables in a globalized (or, open) economy. This chapter begins the task of defining some of those important macroeconomic variables. This chapter also discusses certain accounting rules that describe how certain important macroeconomic variables are related to each other, simply by virtue of the way they are defined.</p>
+<section id="sec-nia" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="sec-nia"><span class="header-section-number">2.1</span> National Income Accounts</h2>
+<p>The national income accounts of a country consist of data on variables that tell us about the country’s total production of goods and services, and what those goods and services are being used for. An important measure of the total production of goods and services is the gross domestic product (GDP). If you look up a country’s GDP data in a book or on the Internet, you’ll see that GDP data comes in two flavors, nominal and real. Nominal GDP is discussed in the next section, and real GDP is discussed in the section after that.</p>
+</section>
+<section id="sec-nGDP" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="sec-nGDP"><span class="header-section-number">2.2</span> Nominal Gross Domestic Product</h2>
+<p></p>
+<p>There are three equivalent ways of understanding nominal gross domestic product: the value-added approach, the income approach, and the expenditure approach.</p>
+<section id="sec-gdp-value-added" class="level3" data-number="2.2.1">
+<h3 data-number="2.2.1" class="anchored" data-anchor-id="sec-gdp-value-added"><span class="header-section-number">2.2.1</span> GDP: The Value-Added Approach</h3>
+<p>The <strong>value added</strong> by a firm is the monetary market value of the goods and services produced by the firm <em>minus</em> the monetary market value of the goods and services that the firm purchases from other firms (for use in its own production, obviously). A country’s gross domestic product is then the total value added—during a specified time period, such as a year—by all producers of for-sale goods located within the country.</p>
+<p>Consider a university. Let’s say that the market value of the educational services provided by this university was $20 m during 2008, as measured by the tuition paid by its students. It would be incorrect, however, to say that the market value of the work done in the university was $20 m. The university used a lot of electricity that was produced by some other firm. The university bought massive amounts of paper, computer printer cartridges, and other stationery from other firms. The university’s capital equipment (which includes its buildings, its computers, its fleet of cars and trucks, etc.) needed costly replacements that had to be bought from other firms. Suppose the monetary market value of these and all other goods and services that were purchased from other firms and used by the university’s employees during 2008 was $16 m. Then the value added by the university was only $20 m – $16 m = $4 m.</p>
+<p>And, as we saw two paragraphs back, <em>the total value added by all producers of for-sale goods and services located within a country’s borders is that country’s gross domestic product</em>.</p>
+</section>
+<section id="sec-gdp-income" class="level3" data-number="2.2.2">
+<h3 data-number="2.2.2" class="anchored" data-anchor-id="sec-gdp-income"><span class="header-section-number">2.2.2</span> GDP: The Income Approach</h3>
+<p>Now, returning to our hypothetical university, a question arises: What happens to the $4 m that the university has left of its $20 m tuition revenues after paying $16 m to other firms for its various purchases? Where will this $4 m go?</p>
+<p>A big chunk will go to pay <strong>wages</strong> to the university’s employees. The university will have to pay <strong>rent</strong> on some property that it had leased from others. It will have to pay <strong>interest</strong> to its banks for the loans it had taken. It will have to pay what are called <strong>indirect business taxes</strong> to the government. And whatever remains will be the university’s <strong>profits</strong>, which belong to the university’s owners or shareholders. In other words, the university’s value added ends up as the income of the owners of the resources employed by the university.</p>
+<p>What’s true for this university is true for all firms in the country. Therefore, as a country’s gross domestic product is its total value added, one can say that <em>a country’s gross domestic product is the total income earned by the owners of all the resources employed by producers located within the country’s borders</em>.</p>
+</section>
+<section id="sec-gdp-expenditure" class="level3" data-number="2.2.3">
+<h3 data-number="2.2.3" class="anchored" data-anchor-id="sec-gdp-expenditure"><span class="header-section-number">2.2.3</span> GDP: The Expenditure Approach</h3>
+<p>Let us consider our hypothetical university one more time. The education it provides its students is an example of a <strong>final good</strong>.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> A good is called a final good when it is sold to its final user; a final user is someone who will not use the purchased good to produce something else for sale.</p>
+<p>The electricity, paper, other stationery, etc., that the university buys for the purpose of producing educational services are called <strong>intermediate goods</strong>. When goods are bought by businesses from other businesses, used as inputs in the production of other for-sale goods, and, in the process, end up disappearing completely inside those other goods, they are called intermediate goods. (Think of all the milk produced by U.S. dairy farmers that disappear into the ice cream made by U.S. firms such as Ben &amp; Jerry’s.)</p>
+<p>In my example, students paid $20 m for education, the final good produced by the university. As we saw in section <a href="#sec-gdp-income" class="quarto-xref"><span>Section 2.2.2</span></a> above, this money ends up as the incomes of all the resources—employed by the university and by the firms from which the university bought electricity, paper, and all sorts of other intermediate goods—that were used to produce the final good, education.</p>
+<p>Extrapolating from this example, we can say that the total expenditure on all final goods produced domestically and sold to domestic final users—let’s call these goods category <span class="math inline">\(a\)</span> goods—is equal to the income earned by all resources employed in the production of these final goods and the intermediate goods used in the production of these final goods.</p>
+<p>Moreover, what’s true for education must also be true for the domestic production of all exported goods—let’s call these category <span class="math inline">\(b\)</span> goods. The total expenditure on these goods must end up as the total income of all resources used to make these goods and the intermediate goods bought by the producers of these goods.</p>
+<p>Therefore, the total expenditure on the goods in categories <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> <em>minus</em> the value of the intermediate goods imported by the producers of category <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> goods is the total income of all resources that were used to make category <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> goods and the <em>domestically produced</em> intermediate goods bought by their producers.</p>
+<p>But this income must be the total income of all resources employed in domestic production. After all, any domestic producer would have to produce either final goods sold to domestic buyers (category <span class="math inline">\(a\)</span>), or exported goods (category <span class="math inline">\(b\)</span>), or the domestically produced intermediate goods bought by category <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> producers.</p>
+<p>Therefore, going by the definition of GDP in <a href="#sec-gdp-income" class="quarto-xref"><span>Section 2.2.2</span></a>, the total expenditure on category <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> goods <em>minus</em> imports of intermediate goods equals gross domestic product.</p>
+<p>In publications of government statistics, the total expenditure by households residing within a country is called <strong>personal consumption expenditure</strong> or, simply, consumption. The total spending on final goods by domestic businesses is called <strong>gross private domestic investment</strong> or, simply, investment. Total spending by domestic government entities is called <strong>government expenditure</strong>. Therefore, total expenditure on <em>all</em> final goods by domestic residents is consumption <span class="math inline">\(+\)</span> investment <span class="math inline">\(+\)</span> government spending. Consequently, total expenditure on final goods produced domestically and sold to domestic residents—category <span class="math inline">\(a\)</span>—is consumption <span class="math inline">\(+\)</span> investment <span class="math inline">\(+\)</span> government spending <span class="math inline">\(-\)</span> imports of final goods. Therefore, the total expenditure on goods in categories <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> equals consumption <span class="math inline">\(+\)</span> investment <span class="math inline">\(+\)</span> government spending <span class="math inline">\(+\)</span> exports <span class="math inline">\(-\)</span> imports of final goods. Therefore, recalling the last sentence of the previous paragraph, gross domestic product equals consumption <span class="math inline">\(+\)</span> investment <span class="math inline">\(+\)</span> government spending <span class="math inline">\(+\)</span> exports <span class="math inline">\(-\)</span> imports of final goods <span class="math inline">\(-\)</span> imports of intermediate goods. Consequently, we get:</p>
+<p><span id="eq-gdp1"><span class="math display">\[
+\text{GDP}=\text{Consumption}+\text{Investment}+\text{Government Purchases}+\text{Exports}-\text{Imports}.
+\tag{2.1}\]</span></span></p>
+<p>This is easily the most important equation in this book. It is called the <strong>national income identity</strong> and will be central to our discussion right up to the very end of this book.</p>
+<p>Note that it is not terribly meaningful to distinguish between exports of final goods and exports of intermediate goods. And the same can be said about imports too. Nevertheless, if we simplify a bit and assume that all exports and imports are of final goods, <a href="#eq-gdp1" class="quarto-xref">Equation&nbsp;<span>2.1</span></a> can be interpreted as follows: a country’s gross domestic product is the market value of all final goods and services produced within the country in a given period of time (usually a year). This is a very popular definition that you will see in many textbooks. I will use this definition in this book too, as a convenient shorthand.</p>
+</section>
+<section id="sec-gdp-overview" class="level3" data-number="2.2.4">
+<h3 data-number="2.2.4" class="anchored" data-anchor-id="sec-gdp-overview"><span class="header-section-number">2.2.4</span> GDP: Overview</h3>
+<div class="cell">
+<div id="tbl-gdp-n-deflator" class="cell quarto-float anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-gdp-n-deflator-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;2.1: <code>Nominal GDP</code> is from <a href="https://fred.stlouisfed.org/series/GDPA">https://fred.stlouisfed.org/series/GDPA</a>, in billions of current dollars. <code>Real GDP</code> is from <a href="https://fred.stlouisfed.org/series/GDPCA">https://fred.stlouisfed.org/series/GDPCA</a>, in billions of 2017 dollars. And <code>GDP Deflator</code> is from <a href="https://fred.stlouisfed.org/series/A191RD3A086NBEA">https://fred.stlouisfed.org/series/A191RD3A086NBEA</a>, with 2017 as the base year.
+</figcaption>
+<div aria-describedby="tbl-gdp-n-deflator-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="cell-output-display">
+<div>
+<div id="uhzoanbhld" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#uhzoanbhld table {
+  font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#uhzoanbhld thead, #uhzoanbhld tbody, #uhzoanbhld tfoot, #uhzoanbhld tr, #uhzoanbhld td, #uhzoanbhld th {
+  border-style: none;
+}
+
+#uhzoanbhld p {
+  margin: 0;
+  padding: 0;
+}
+
+#uhzoanbhld .gt_table {
+  display: table;
+  border-collapse: collapse;
+  line-height: normal;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#uhzoanbhld .gt_caption {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+#uhzoanbhld .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#uhzoanbhld .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#uhzoanbhld .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#uhzoanbhld .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#uhzoanbhld .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#uhzoanbhld .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#uhzoanbhld .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#uhzoanbhld .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#uhzoanbhld .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#uhzoanbhld .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#uhzoanbhld .gt_spanner_row {
+  border-bottom-style: hidden;
+}
+
+#uhzoanbhld .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  text-align: left;
+}
+
+#uhzoanbhld .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#uhzoanbhld .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#uhzoanbhld .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#uhzoanbhld .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#uhzoanbhld .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#uhzoanbhld .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#uhzoanbhld .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#uhzoanbhld .gt_row_group_first th {
+  border-top-width: 2px;
+}
+
+#uhzoanbhld .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#uhzoanbhld .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+#uhzoanbhld .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#uhzoanbhld .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#uhzoanbhld .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#uhzoanbhld .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#uhzoanbhld .gt_last_grand_summary_row_top {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: double;
+  border-bottom-width: 6px;
+  border-bottom-color: #D3D3D3;
+}
+
+#uhzoanbhld .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#uhzoanbhld .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#uhzoanbhld .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#uhzoanbhld .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#uhzoanbhld .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#uhzoanbhld .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#uhzoanbhld .gt_left {
+  text-align: left;
+}
+
+#uhzoanbhld .gt_center {
+  text-align: center;
+}
+
+#uhzoanbhld .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#uhzoanbhld .gt_font_normal {
+  font-weight: normal;
+}
+
+#uhzoanbhld .gt_font_bold {
+  font-weight: bold;
+}
+
+#uhzoanbhld .gt_font_italic {
+  font-style: italic;
+}
+
+#uhzoanbhld .gt_super {
+  font-size: 65%;
+}
+
+#uhzoanbhld .gt_footnote_marks {
+  font-size: 75%;
+  vertical-align: 0.4em;
+  position: initial;
+}
+
+#uhzoanbhld .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#uhzoanbhld .gt_indent_1 {
+  text-indent: 5px;
+}
+
+#uhzoanbhld .gt_indent_2 {
+  text-indent: 10px;
+}
+
+#uhzoanbhld .gt_indent_3 {
+  text-indent: 15px;
+}
+
+#uhzoanbhld .gt_indent_4 {
+  text-indent: 20px;
+}
+
+#uhzoanbhld .gt_indent_5 {
+  text-indent: 25px;
+}
+</style>
+
+<table class="gt_table do-not-create-environment cell table table-sm table-striped small" data-quarto-postprocess="true" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+<thead>
+<tr class="header gt_heading">
+<th colspan="4" class="gt_heading gt_title gt_font_normal gt_bottom_border">USA, 2014 -- 2023</th>
+</tr>
+<tr class="odd gt_col_headings">
+<th id="Year" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col">Year</th>
+<th id="Nominal GDP" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col">Nominal GDP</th>
+<th id="Real GDP" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col">Real GDP</th>
+<th id="GDP Deflator" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col">GDP Deflator</th>
+</tr>
+</thead>
+<tbody class="gt_table_body">
+<tr class="odd">
+<td class="gt_row gt_center" headers="date">2014</td>
+<td class="gt_row gt_center" headers="GDPA">17608.14</td>
+<td class="gt_row gt_center" headers="GDPCA">18261.71</td>
+<td class="gt_row gt_center" headers="A191RD3A086NBEA">96.421</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_center" headers="date">2015</td>
+<td class="gt_row gt_center" headers="GDPA">18295.02</td>
+<td class="gt_row gt_center" headers="GDPCA">18799.62</td>
+<td class="gt_row gt_center" headers="A191RD3A086NBEA">97.316</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_center" headers="date">2016</td>
+<td class="gt_row gt_center" headers="GDPA">18804.91</td>
+<td class="gt_row gt_center" headers="GDPCA">19141.67</td>
+<td class="gt_row gt_center" headers="A191RD3A086NBEA">98.241</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_center" headers="date">2017</td>
+<td class="gt_row gt_center" headers="GDPA">19612.10</td>
+<td class="gt_row gt_center" headers="GDPCA">19612.10</td>
+<td class="gt_row gt_center" headers="A191RD3A086NBEA">100.000</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_center" headers="date">2018</td>
+<td class="gt_row gt_center" headers="GDPA">20656.52</td>
+<td class="gt_row gt_center" headers="GDPCA">20193.90</td>
+<td class="gt_row gt_center" headers="A191RD3A086NBEA">102.291</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_center" headers="date">2019</td>
+<td class="gt_row gt_center" headers="GDPA">21521.40</td>
+<td class="gt_row gt_center" headers="GDPCA">20692.09</td>
+<td class="gt_row gt_center" headers="A191RD3A086NBEA">104.008</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_center" headers="date">2020</td>
+<td class="gt_row gt_center" headers="GDPA">21322.95</td>
+<td class="gt_row gt_center" headers="GDPCA">20234.07</td>
+<td class="gt_row gt_center" headers="A191RD3A086NBEA">105.381</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_center" headers="date">2021</td>
+<td class="gt_row gt_center" headers="GDPA">23594.03</td>
+<td class="gt_row gt_center" headers="GDPCA">21407.69</td>
+<td class="gt_row gt_center" headers="A191RD3A086NBEA">110.213</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_center" headers="date">2022</td>
+<td class="gt_row gt_center" headers="GDPA">25744.11</td>
+<td class="gt_row gt_center" headers="GDPCA">21822.04</td>
+<td class="gt_row gt_center" headers="A191RD3A086NBEA">117.973</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_center" headers="date">2023</td>
+<td class="gt_row gt_center" headers="GDPA">27360.94</td>
+<td class="gt_row gt_center" headers="GDPCA">22376.91</td>
+<td class="gt_row gt_center" headers="A191RD3A086NBEA">122.273</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+</div>
+</figure>
+</div>
+</div>
+<p>According to the Bureau of Economic Analysis of the U.S. Department of Commerce, the nominal GDP of the United States for 2014 was $17608.14 billion. This means that spending by US residents on the final goods and services that were “Made in USA” in 2014 plus net exports of “Made in USA” goods and services were together equal to a grand total of $17608.14 billion. This number is also the total value added by all producers located in the USA. And—perhaps most meaningfully—this number is the total income earned by all productive resources employed by producers located in the USA.</p>
+<!--
+![Nominal GDP, Real GDP, and Implicit Price Deflator for GDP, U.S.A., 2002--2011](images/table_2_1.png){#fig-gdp-n-deflator}
+-->
+</section>
+</section>
+<section id="sec-rGDP" class="level2" data-number="2.3">
+<h2 data-number="2.3" class="anchored" data-anchor-id="sec-rGDP"><span class="header-section-number">2.3</span> Real Gross Domestic Product</h2>
+<p></p>
+<p>Looking at the second column in <a href="#tbl-gdp-n-deflator" class="quarto-xref">Table&nbsp;<span>2.1</span></a>, we see that the nominal gross domestic product of the United States increased from $17608.14 billion in 2014 to $18295.02 billion in 2015 and to $18804.91 billion in 2016. If one assumes that our quality of life depends crucially on the goods and services we produce, these ever increasing dollar figures seem like good news.</p>
+<p>But are they?</p>
+<p>As nominal gross domestic product is the monetary market value of all final goods produced, it could increase from one year to the next either as a result of:</p>
+<ul>
+<li>increases in the production of various goods, or</li>
+<li>increases in the market prices of those goods, or</li>
+<li>increases in both production and prices.</li>
+</ul>
+<p>Consequently, increases in nominal gross domestic product do not necessarily imply increases in production. Mere inflation could make the numbers go up and up.</p>
+<p>Now if, by sheer luck, all prices remained unchanged during 2014 – 2016, then, yes, the increases in nominal GDP during that period would indeed strongly indicate rising overall levels of production.<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></p>
+<p>Of course, in real life, prices do not stay unchanged year after year. But even if prices moved around a lot during 2014 – 2016, we could still ask a hypothetical question: What would nominal GDP have been during 2014 – 2016 if prices had remained unchanged at 2014 levels? This is not an unanswerable question. We know the 2014 prices of all final goods, and we know the quantities produced, of all final goods, during the years 2014, 2015 and 2016. (Otherwise, we would not have been able to calculate the nominal GDP figures in <a href="#tbl-gdp-n-deflator" class="quarto-xref">Table&nbsp;<span>2.1</span></a>.) Therefore, we can easily calculate what America’s nominal GDP would have been in those years, had the prices of 2014 prevailed in all years.</p>
+<p>Indeed, data on this hypothetical measure—formally called <strong>real gross domestic product</strong> or <strong>constant-prices gross domestic product</strong> or <strong>inflation-adjusted gross domestic product</strong>—is available for virtually every country in the world. The third column of <a href="#tbl-gdp-n-deflator" class="quarto-xref">Table&nbsp;<span>2.1</span></a> shows America’s real gross domestic product, calculated on the assumption that the prices of the year 2017 prevailed in all years, for the decade 2014– 2023.<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a></p>
+<p>As you can see, not only did America’s nominal GDP increase throughout 2014– 2023, so did <em>real</em> GDP. This is clear evidence of actual increases in production. To repeat, the dollar figures in the third column of <a href="#tbl-gdp-n-deflator" class="quarto-xref">Table&nbsp;<span>2.1</span></a> were all calculated on the hypothetical assumption that 2017’s prices prevailed in every year. As the same prices were used for every year’s real GDP calculations, the increases in real GDP strongly indicate overall increases in production.</p>
+<p>The year whose prices are being assumed hypothetically to prevail in all years—the year 2017 in this case—is called the <strong>base year</strong>. There is nothing sacrosanct about the year 2017—any other year could have served just as well. As long as every year’s GDP is calculated using the same set of prices, we will get a measure of GDP that is not affected by fluctuations in the overall level of prices.</p>
+<p>In the rest of this book, all references to gross domestic product are references to <em>real</em> gross domestic product. Also, I will use the symbol <span class="math inline">\(Y\)</span> to denote real gross domestic product.</p>
+<section id="sec-notngrowth" class="level3" data-number="2.3.1">
+<h3 data-number="2.3.1" class="anchored" data-anchor-id="sec-notngrowth"><span class="header-section-number">2.3.1</span> Notation: Growth Rates</h3>
+<p>Consider a variable <span class="math inline">\(x\)</span>. I will denote its <em>current value</em> as simply <span class="math inline">\(x\)</span> and its <em>past value</em> as <span class="math inline">\(x_{-1}\)</span>. Then, the <em>growth rate</em> of <span class="math inline">\(x\)</span>, which I will denote <span class="math inline">\(x_g\)</span>, can be defined as follows: <span id="eq-growthrate"><span class="math display">\[
+x_g\equiv\frac{x-x_{-1}}{x_{-1}}.
+\tag{2.2}\]</span></span></p>
+<p>Here, <span class="math inline">\(x-x_{-1}\)</span> represents the increase in the value of <span class="math inline">\(x\)</span>. Therefore, <span class="math inline">\((x-x_{-1})/x_{-1}\)</span> is the proportionate increase in the value of <span class="math inline">\(x\)</span> or, simply, the growth rate of <span class="math inline">\(x\)</span>. If <span class="math inline">\(x_{-1}=50\)</span> and <span class="math inline">\(x=60\)</span>, the increase is <span class="math inline">\(x-x_{-1}=60-50=10\)</span>. But the rate of growth is <span class="math inline">\(x_g\equiv(x-x_{-1})/x_{-1}=(60-50)/50=0.20\)</span>.</p>
+<p>If you want the growth rate <em>as a percentage</em>, simply multiply <span class="math inline">\(x_g\)</span> by 100 to get <span class="math inline">\(0.20\times100=20\)</span> percent.</p>
+<div class="cell">
+<div id="tbl-growth-inflation" class="cell quarto-float anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-growth-inflation-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;2.2: The base year is 2017
+</figcaption>
+<div aria-describedby="tbl-growth-inflation-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="cell-output-display">
+<div>
+<div id="rfvdqmthol" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#rfvdqmthol table {
+  font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#rfvdqmthol thead, #rfvdqmthol tbody, #rfvdqmthol tfoot, #rfvdqmthol tr, #rfvdqmthol td, #rfvdqmthol th {
+  border-style: none;
+}
+
+#rfvdqmthol p {
+  margin: 0;
+  padding: 0;
+}
+
+#rfvdqmthol .gt_table {
+  display: table;
+  border-collapse: collapse;
+  line-height: normal;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#rfvdqmthol .gt_caption {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+#rfvdqmthol .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#rfvdqmthol .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#rfvdqmthol .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#rfvdqmthol .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#rfvdqmthol .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#rfvdqmthol .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#rfvdqmthol .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#rfvdqmthol .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#rfvdqmthol .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#rfvdqmthol .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#rfvdqmthol .gt_spanner_row {
+  border-bottom-style: hidden;
+}
+
+#rfvdqmthol .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  text-align: left;
+}
+
+#rfvdqmthol .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#rfvdqmthol .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#rfvdqmthol .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#rfvdqmthol .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#rfvdqmthol .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#rfvdqmthol .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#rfvdqmthol .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#rfvdqmthol .gt_row_group_first th {
+  border-top-width: 2px;
+}
+
+#rfvdqmthol .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#rfvdqmthol .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+#rfvdqmthol .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#rfvdqmthol .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#rfvdqmthol .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#rfvdqmthol .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#rfvdqmthol .gt_last_grand_summary_row_top {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: double;
+  border-bottom-width: 6px;
+  border-bottom-color: #D3D3D3;
+}
+
+#rfvdqmthol .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#rfvdqmthol .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#rfvdqmthol .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#rfvdqmthol .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#rfvdqmthol .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#rfvdqmthol .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#rfvdqmthol .gt_left {
+  text-align: left;
+}
+
+#rfvdqmthol .gt_center {
+  text-align: center;
+}
+
+#rfvdqmthol .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#rfvdqmthol .gt_font_normal {
+  font-weight: normal;
+}
+
+#rfvdqmthol .gt_font_bold {
+  font-weight: bold;
+}
+
+#rfvdqmthol .gt_font_italic {
+  font-style: italic;
+}
+
+#rfvdqmthol .gt_super {
+  font-size: 65%;
+}
+
+#rfvdqmthol .gt_footnote_marks {
+  font-size: 75%;
+  vertical-align: 0.4em;
+  position: initial;
+}
+
+#rfvdqmthol .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#rfvdqmthol .gt_indent_1 {
+  text-indent: 5px;
+}
+
+#rfvdqmthol .gt_indent_2 {
+  text-indent: 10px;
+}
+
+#rfvdqmthol .gt_indent_3 {
+  text-indent: 15px;
+}
+
+#rfvdqmthol .gt_indent_4 {
+  text-indent: 20px;
+}
+
+#rfvdqmthol .gt_indent_5 {
+  text-indent: 25px;
+}
+</style>
+
+<table class="gt_table do-not-create-environment cell table table-sm table-striped small" data-quarto-postprocess="true" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+<thead>
+<tr class="header gt_heading">
+<th colspan="4" class="gt_heading gt_title gt_font_normal gt_bottom_border">USA, 2014 -- 2023</th>
+</tr>
+<tr class="odd gt_col_headings">
+<th id="Year" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col">Year</th>
+<th id="Growth, Nominal GDP (%)" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col">Growth, Nominal GDP (%)</th>
+<th id="Growth, Real GDP (%)" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col">Growth, Real GDP (%)</th>
+<th id="Inflation (%)" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col">Inflation (%)</th>
+</tr>
+</thead>
+<tbody class="gt_table_body">
+<tr class="odd">
+<td class="gt_row gt_center" headers="date">2014</td>
+<td class="gt_row gt_center" headers="GDPA_growth">4.31</td>
+<td class="gt_row gt_center" headers="GDPCA_growth">2.52</td>
+<td class="gt_row gt_center" headers="Inflation">1.74</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_center" headers="date">2015</td>
+<td class="gt_row gt_center" headers="GDPA_growth">3.90</td>
+<td class="gt_row gt_center" headers="GDPCA_growth">2.95</td>
+<td class="gt_row gt_center" headers="Inflation">0.93</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_center" headers="date">2016</td>
+<td class="gt_row gt_center" headers="GDPA_growth">2.79</td>
+<td class="gt_row gt_center" headers="GDPCA_growth">1.82</td>
+<td class="gt_row gt_center" headers="Inflation">0.95</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_center" headers="date">2017</td>
+<td class="gt_row gt_center" headers="GDPA_growth">4.29</td>
+<td class="gt_row gt_center" headers="GDPCA_growth">2.46</td>
+<td class="gt_row gt_center" headers="Inflation">1.79</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_center" headers="date">2018</td>
+<td class="gt_row gt_center" headers="GDPA_growth">5.33</td>
+<td class="gt_row gt_center" headers="GDPCA_growth">2.97</td>
+<td class="gt_row gt_center" headers="Inflation">2.29</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_center" headers="date">2019</td>
+<td class="gt_row gt_center" headers="GDPA_growth">4.19</td>
+<td class="gt_row gt_center" headers="GDPCA_growth">2.47</td>
+<td class="gt_row gt_center" headers="Inflation">1.68</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_center" headers="date">2020</td>
+<td class="gt_row gt_center" headers="GDPA_growth">−0.92</td>
+<td class="gt_row gt_center" headers="GDPCA_growth">−2.21</td>
+<td class="gt_row gt_center" headers="Inflation">1.32</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_center" headers="date">2021</td>
+<td class="gt_row gt_center" headers="GDPA_growth">10.65</td>
+<td class="gt_row gt_center" headers="GDPCA_growth">5.80</td>
+<td class="gt_row gt_center" headers="Inflation">4.59</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_center" headers="date">2022</td>
+<td class="gt_row gt_center" headers="GDPA_growth">9.11</td>
+<td class="gt_row gt_center" headers="GDPCA_growth">1.94</td>
+<td class="gt_row gt_center" headers="Inflation">7.04</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_center" headers="date">2023</td>
+<td class="gt_row gt_center" headers="GDPA_growth">6.28</td>
+<td class="gt_row gt_center" headers="GDPCA_growth">2.54</td>
+<td class="gt_row gt_center" headers="Inflation">3.64</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+</div>
+</figure>
+</div>
+</div>
+<p>To take a more concrete example, consider real gross domestic product (<span class="math inline">\(Y\)</span>) and its growth rate (<span class="math inline">\(Y_g\)</span>). <a href="#tbl-gdp-n-deflator" class="quarto-xref">Table&nbsp;<span>2.1</span></a> tells us that real GDP of the U.S. (in billions of chained 2017 dollars), was $18261.71 in 2014 and $18799.62 in 2015. Therefore, the growth rate of America’s real GDP in 2015 was <span class="math display">\[
+Y_{g,2015}=\frac{Y_{2015}-Y_{2014}}{Y_{2014}} = \frac{18799.62-18261.71}{18261.71}\times 100 = 2.95
+\]</span> percent. The real GDP growth rates for the decade 2014–2023 are given in <a href="#tbl-growth-inflation" class="quarto-xref">Table&nbsp;<span>2.2</span></a>.</p>
+<!--
+![Real GDP, GDP Growth, Implicit Price Deflator for GDP, and Inflation, U.S.A., 2002--2011. Source: Bureau of Economic Analysis, U.S. Department of Commerce, National Income and Product Accounts, Tables 1.1.1, 1.1.6, and 1.1.9. Real GDP is discussed in @sec-rGDP, the growth rate of real GDP in  @sec-notngrowth, the implicit price deflator in @sec-IPDGDP, and inflation in @sec-inflation.](images/table_2_2.png){#fig-growth-inflation}
+-->
+<div id="fig-gdp-components" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-gdp-components-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/table_2_3.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-gdp-components-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2.1: Real GDP and its Components, U.S.A., 2008–2011, in billions of chained 2005 dollars. Source: Bureau of Economic Analysis, U.S. Department of Commerce, National Income and Product Accounts, Table 1.1.6.
+</figcaption>
+</figure>
+</div>
+<div id="fig-gdp-components-percent" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-gdp-components-percent-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/table_2_4.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-gdp-components-percent-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2.2: Real GDP and its Components, U.S.A., 2008–2011, as percent of Real GDP. Source: Bureau of Economic Analysis, U.S. Department of Commerce, National Income and Product Accounts, Table 1.1.6.
+</figcaption>
+</figure>
+</div>
+<p>For my discussion of the theory of international macroeconomics, I will also use a <em>forward-looking</em> definition of the growth rate of a variable. Specifically, the <strong>forward-looking growth rate</strong> of <span class="math inline">\(x\)</span> is defined as follows: <span id="eq-f-growthrate"><span class="math display">\[
+x_g\equiv\frac{x_f-x}{x}.
+\tag{2.3}\]</span></span></p>
+<p>Here, <span class="math inline">\(x_f\)</span> represents the value of <span class="math inline">\(x\)</span> in the future. Therefore, <span class="math inline">\(x_f-x\)</span> represents the increase in the value of <span class="math inline">\(x\)</span>. Therefore, <span class="math inline">\((x_f-x)/x\)</span> is the proportionate increase in the value of <span class="math inline">\(x\)</span> or, simply, the growth rate of <span class="math inline">\(x\)</span>.</p>
+</section>
+</section>
+<section id="sec-gdp-components" class="level2" data-number="2.4">
+<h2 data-number="2.4" class="anchored" data-anchor-id="sec-gdp-components"><span class="header-section-number">2.4</span> The Components of GDP</h2>
+<p>Now that we have discussed the measurement of a country’s total production, let us look at what happens to it. Government statisticians typically publish data not only on a country’s output of final goods and services (that is, its GDP) but also on who bought those final goods and services. As in <a href="#fig-gdp-components" class="quarto-xref">Figure&nbsp;<span>2.1</span></a>, national income data usually breaks down the big GDP number into four smaller numbers that represent the final-goods purchases made by four major categories of buyers:</p>
+<ul>
+<li>personal consumption expenditures (<span class="math inline">\(C\)</span>),</li>
+<li>gross private domestic investment (<span class="math inline">\(I\)</span>),</li>
+<li>government purchases (<span class="math inline">\(G\)</span>), and</li>
+<li>net exports of goods and services (<span class="math inline">\(NX\)</span>).</li>
+</ul>
+<p>In other words, <a href="#eq-gdp1" class="quarto-xref">Equation&nbsp;<span>2.1</span></a>, which is called the national income identity and breaks down <em>nominal</em> gross domestic product into its components, is equally true for <em>real</em> gross domestic product: <span id="eq-nii"><span class="math display">\[
+Y=C+I+G+NX.
+\tag{2.4}\]</span></span></p>
+<section id="sec-consumption-nia" class="level3" data-number="2.4.1">
+<h3 data-number="2.4.1" class="anchored" data-anchor-id="sec-consumption-nia"><span class="header-section-number">2.4.1</span> Consumption</h3>
+<p></p>
+<p>The real (i.e., inflation-adjusted) <strong>personal consumption expenditures</strong> of the residents of a country in a given year is denoted by the symbol <span class="math inline">\(C\)</span>. In U.S. data, <span class="math inline">\(C\)</span> consists of <em>spending by households</em> on all final goods except newly built homes. As you can see from the U.S. data in <a href="#fig-gdp-components-percent" class="quarto-xref">Figure&nbsp;<span>2.2</span></a>, <span class="math inline">\(C\)</span> is a very large part—more than two-thirds—of GDP.</p>
+</section>
+<section id="sec-investment-nia" class="level3" data-number="2.4.2">
+<h3 data-number="2.4.2" class="anchored" data-anchor-id="sec-investment-nia"><span class="header-section-number">2.4.2</span> Investment</h3>
+<p></p>
+<p>The real <strong>gross private domestic investment</strong> (or, simply, investment) of a country is denoted by the symbol <span class="math inline">\(I\)</span>. In U.S. data, <span class="math inline">\(I\)</span> consists of:</p>
+<ul>
+<li>the purchases of fixed assets (equipment, software, and buildings) by businesses for use in production,</li>
+<li>the purchases of new homes by households,<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a> and</li>
+<li>increases in inventories of unsold goods held by businesses.</li>
+</ul>
+<p>Note that the inclusion of these three categories of final goods under investment is not random. There is an underlying theme here: machines, new buildings, stocks of as-yet-unsold goods, etc., all contribute to our <em>future</em> welfare.<a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a> The money we spend on pizzas and backrubs, by contrast, are all about the here and now and are included under consumption, <span class="math inline">\(C\)</span>.</p>
+<p>As you can see from the U.S. data in <a href="#fig-gdp-components-percent" class="quarto-xref">Figure&nbsp;<span>2.2</span></a>, <span class="math inline">\(I\)</span>, at less than 15% of GDP, is a lot less important than <span class="math inline">\(C\)</span>. And yet, because of its tendency to fluctuate wildly, investment spending is an important cause of the ups and downs of the overall economy.</p>
+<section id="sec-inventories" class="level4" data-number="2.4.2.1">
+<h4 data-number="2.4.2.1" class="anchored" data-anchor-id="sec-inventories"><span class="header-section-number">2.4.2.1</span> Inventories</h4>
+<p></p>
+<p>The inclusion of increases in businesses’ stocks of unsold goods in <span class="math inline">\(I\)</span> needs some justification. What’s the point of including this in <span class="math inline">\(I\)</span>?</p>
+<p>Keep in mind that to get an accurate picture of the health of an economy in a given year we need to count the market value of all goods and services produced during the year, whether or not they are sold by December 31st of that year. Those unsold goods would not be counted in <span class="math inline">\(C\)</span>, <span class="math inline">\(I\)</span>, <span class="math inline">\(G\)</span>, and <span class="math inline">\(NX\)</span>, if these four variables included only the actual <em>purchases</em> of final goods by households, businesses, the government, and foreign buyers. To make sure that all goods produced in 2008 get counted in that year’s GDP—even if they are not sold in 2008—statisticians include the additions of unsold goods to businesses’ inventories (or, warehouse stocks) in <span class="math inline">\(I\)</span>.</p>
+<p>Note that I did not say that additions to businesses’ inventories of unsold <em>final</em> goods are included in <span class="math inline">\(I\)</span>; even the intermediate goods that were produced in 2008 but not sold by the end of that year need to be counted in that year’s GDP.</p>
+<p>Sure, as the ice cream made by Ben &amp; Jerry’s is counted in GDP, one should not separately count the milk that went into it because the monetary market value of the ice cream already includes the monetary market value of the milk. But let’s complicate the story a little. Suppose Ben &amp; Jerry’s buys $10 million of freshly produced milk some time in 2008, but does not turn it into ice cream by December 31, 2008. Instead, the milk is sitting in their freezer on that last day of 2008, waiting to be turned into Cherry Garcia some time in 2009. This $10 million worth of milk was produced in 2008 and, therefore, should be included in 2008’s GDP. To ensure this, the rules of GDP accounting require that any goods that have been added to the inventories (or, warehouse stocks of goods) of private businesses during 2008 are <em>final</em> goods and their value must be counted in the GDP for 2008.</p>
+</section>
+</section>
+<section id="sec-government-spending-nia" class="level3" data-number="2.4.3">
+<h3 data-number="2.4.3" class="anchored" data-anchor-id="sec-government-spending-nia"><span class="header-section-number">2.4.3</span> Government Spending</h3>
+<p></p>
+<p>Real <strong>government expenditures</strong> (<span class="math inline">\(G\)</span>) is pretty much what it sounds like; it is the inflation-adjusted monetary value of all final goods and services bought by government entities.</p>
+<p>Typically, governments also spend huge amounts of money on <strong>transfer payments</strong> or, loosely speaking, gifts (usually to needy people). But <span class="math inline">\(G\)</span> includes only the money spent on the purchase of final goods and does not include transfer payments.</p>
+</section>
+<section id="sec-netexports-nia" class="level3" data-number="2.4.4">
+<h3 data-number="2.4.4" class="anchored" data-anchor-id="sec-netexports-nia"><span class="header-section-number">2.4.4</span> Net Exports</h3>
+<p></p>
+<p>Real <strong>exports of goods and services</strong> (<span class="math inline">\(EX\)</span>) is the inflation-adjusted value of all domestically produced goods that are bought by foreigners.</p>
+<p>Real <strong>imports of goods and services</strong> (<span class="math inline">\(IM\)</span>) is the inflation-adjusted value of all foreign-made goods that are bought by domestic residents.</p>
+<p>Real <strong>net exports</strong> (<span class="math inline">\(NX\)</span>) is then defined as <span class="math inline">\(NX\equiv EX-IM\)</span>. This also goes by other names, such as <strong>trade surplus</strong>, <strong>balance on goods and services</strong>, and, somewhat loosely, <strong>balance on the current account</strong>—see <a href="bop.html#eq-balancedef" class="quarto-xref">Equation&nbsp;<span>3.1</span></a>. Note, therefore, that <span class="math inline">\(NX\)</span> could be positive, zero or negative. When <span class="math inline">\(NX\)</span> is positive/zero/negative, the country is said to have a <strong>Trade Surplus/Balanced Trade/a Trade Deficit</strong>.</p>
+<section id="sec-exp-imp-final" class="level4" data-number="2.4.4.1">
+<h4 data-number="2.4.4.1" class="anchored" data-anchor-id="sec-exp-imp-final"><span class="header-section-number">2.4.4.1</span> All exports and imports are final!</h4>
+<p>There’s one more loose end in my definition of GDP that I need to tie up. Note that in <a href="#sec-netexports-nia" class="quarto-xref"><span>Section 2.4.4</span></a> above I defined exports as “all domestically produced goods that are bought by foreigners”, not all domestically produced <em>final</em> goods”. Similarly, note that I defined imports as “all foreign-made goods that are bought by domestic residents”, not all foreign-made <em>final</em> goods”. Why am I including exports and imports of intermediate goods? Suppose that American dairy farmers produce $10 million of milk in 2008 and sell it to a Canadian ice cream company that turns the milk into ice cream in its plant in Vancouver, also in 2008. The monetary value of the ice cream would not be counted in America’s GDP because the ice cream was made in Canada. So, if the $10 million of milk is regarded as an intermediate good, it would not be counted at all in America’s GDP. When the milk is turned into ice cream by Ben &amp; Jerry’s, the ice cream is counted in America’s GDP and, therefore, so is the milk, although indirectly. But as for the milk that is sold to a Canadian ice cream company, the only way to have it counted in America’s GDP is to require that <em>anything</em> sold to foreigners is counted in <span class="math inline">\(EX\)</span>. Similarly, it is straightforward to show that imports of intermediate goods should be counted in the importing country’s <span class="math inline">\(IM\)</span>.</p>
+<p>So, here’s the final corrected version—fingers crossed!—of the definition of gross domestic product: <em>GDP is the monetary market value of all final goods and services produced within a country in a given year plus the increase in its inventories of intermediate goods plus its net exports of intermediate goods</em>.</p>
+</section>
+</section>
+</section>
+<section id="sec-ni-identity" class="level2" data-number="2.5">
+<h2 data-number="2.5" class="anchored" data-anchor-id="sec-ni-identity"><span class="header-section-number">2.5</span> The National Income Identity</h2>
+<p>To recap, we have so far defined real gross domestic product (<span class="math inline">\(Y\)</span>), real personal consumption expenditure (<span class="math inline">\(C\)</span>), real gross private domestic investment (<span class="math inline">\(I\)</span>), real government spending (<span class="math inline">\(G\)</span>), and real exports (<span class="math inline">\(EX\)</span>). It is tempting to argue that <span class="math inline">\(Y\)</span> must be equal to <span class="math inline">\(C+I+G+EX\)</span>. After all, <span class="math inline">\(Y\)</span> represents all final goods that are “Made in USA” and any such good would have to be bought either by American households (<span class="math inline">\(C\)</span>), or by American businesses (<span class="math inline">\(I\)</span>), or by America’s government (<span class="math inline">\(G\)</span>), or by foreigners (<span class="math inline">\(EX\)</span>). Therefore, <span class="math inline">\(Y\)</span> should be equal to <span class="math inline">\(C+I+G+EX\)</span>, right?</p>
+<p>Well, not exactly. Although <span class="math inline">\(C+I+G\)</span>, which incidentally is referred to as <strong>gross domestic purchases</strong>, does represent the total purchases by domestic households, businesses, and government entities, it includes purchases of imported goods as well as domestically produced goods. Therefore, only if we subtract the inflation-adjusted monetary value of all imported goods (denoted by the symbol <span class="math inline">\(IM\)</span>) from <span class="math inline">\(C+I+G+EX\)</span> would we get <span class="math inline">\(Y\)</span>. That is, <span class="math inline">\(Y=C+I+G+EX-IM\)</span>.</p>
+<p>As we saw in <a href="#sec-netexports-nia" class="quarto-xref"><span>Section 2.4.4</span></a>, the terms <strong>net exports</strong>, <strong>trade surplus</strong>, and <strong>balance on goods and services</strong> all refer to <span class="math inline">\(NX\equiv EX-IM\)</span>, the excess of exports over imports. Therefore, we get the <strong>national income identity</strong>: <span id="eq-ni-identity"><span class="math display">\[
+Y=C+I+G+NX.
+\tag{2.5}\]</span></span></p>
+<p>This is a reappearance of <a href="#eq-gdp1" class="quarto-xref">Equation&nbsp;<span>2.1</span></a> and <a href="#eq-nii" class="quarto-xref">Equation&nbsp;<span>2.4</span></a>.</p>
+<p><a href="#fig-gdp-components" class="quarto-xref">Figure&nbsp;<span>2.1</span></a> shows data on real gross domestic product and its components for the United States for the years 2005–8. You can check that <span class="math inline">\(C+I+G+NX\)</span> is indeed equal to real GDP.</p>
+<p>A theoretically equivalent measure is <strong>gross domestic income</strong>. When government statisticians measure the total value added by domestic producers, they measure the gross domestic product (GDP). When they measure the total income of all resources employed by domestic producers, they measure gross domestic income (GDI). As we have seen above, if measured with perfect accuracy, these two magnitudes should be the same, as they are theoretically equivalent. In practice, however, errors do creep in, and the GDP and GDI numbers tend to differ. This difference is called the <strong>statistical discrepancy</strong>: <span class="math inline">\(GDP=GDI+\text{statistical discrepancy}\)</span>.</p>
+<section id="sec-beyond-gdp" class="level3" data-number="2.5.1">
+<h3 data-number="2.5.1" class="anchored" data-anchor-id="sec-beyond-gdp"><span class="header-section-number">2.5.1</span> Beyond GDP: Other Measures of Total Production</h3>
+<p>Gross domestic product is not the only measure of a country’s total production, there are others.</p>
+<section id="sec-gnp" class="level4" data-number="2.5.1.1">
+<h4 data-number="2.5.1.1" class="anchored" data-anchor-id="sec-gnp"><span class="header-section-number">2.5.1.1</span> Gross National Product</h4>
+<p></p>
+<p>Recall that a country’s gross domestic product is not only the total value added by all producers located within the country, it is also equal to gross domestic income, which is the total income earned by the factors of production (or, in plain language, resources) employed by all producers located within the country.<a href="#fn6" class="footnote-ref" id="fnref6" role="doc-noteref"><sup>6</sup></a></p>
+<p>Some of the resources employed by producers located within the country may be owned by foreign residents, and the income paid to these resources goes, necessarily, to their foreign owners. Conversely, some residents of the domestic country may earn income for work done for producers located in foreign countries. A country’s <strong>net factor income earned from foreign residents</strong> (<span class="math inline">\(NIF\)</span>) <em>equals</em> total income earned by domestic residents from foreign residents <em>minus</em> total income paid by domestic residents to foreign residents.</p>
+<p>As, in some cases, it is important to know the total income earned by the factors of production owned by a country’s residents, we often pay attention to a country’s gross national product (GNP): <span id="eq-gnp"><span class="math display">\[
+\text{GNP}=\text{GDP}+\text{NIF}.
+\tag{2.6}\]</span></span></p>
+<p>A theoretically equivalent measure is gross national income: <span class="math inline">\(GNI=GDI+NIF\)</span>. Recall from <a href="#sec-ni-identity" class="quarto-xref"><span>Section 2.5</span></a> that although GDP and GDI are theoretically the same, and would be equal if accurately measure, in practice the measured magnitudes differ slightly: <span class="math inline">\(GDP=GDI+\text{statistical discrepancy}\)</span>. The same distinction needs to be made between GNP and GNI as well; they’d be equal if measured accurately, but in practice <span class="math inline">\(GNP=GNI+\text{statistical discrepancy}\)</span>.</p>
+</section>
+<section id="sec-gndi" class="level4" data-number="2.5.1.2">
+<h4 data-number="2.5.1.2" class="anchored" data-anchor-id="sec-gndi"><span class="header-section-number">2.5.1.2</span> Gross National Disposable Income</h4>
+<p></p>
+<p>The residents of a country may send gifts to—and receive gifts from—the residents of other countries. A country’s <strong>net unilateral transfers of income from foreign residents</strong> (NUT) is defined as gifts received <em>minus</em> gifts given. Gross national disposable income (GNDI) is then defined as <span id="eq-gndi"><span class="math display">\[
+\text{GNDI}=\text{GNI}+\text{NUT}.
+\tag{2.7}\]</span></span></p>
+<p>Recall that gross domestic product is denoted by the symbol <span class="math inline">\(Y\)</span>. In practice, the statistical discrepancy between GDP and GDI (or between GNP and GNI) is small. Moreover, net factor income earned from foreign residents (NIF) and net unilateral transfers of income from foreign residents (NUT) tend to be small too. As a result, the differences between GDP, GDI, GNP, GNI, and GNDI are, for most practical purposes, small enough to be ignored. Consequently, to keep the discussion simple, I will use the symbol <span class="math inline">\(Y\)</span> to refer to <em>all</em> these different ways of measuring a country’s total value added, total income, and total expenditure.</p>
+</section>
+<section id="sec-nii-2" class="level4" data-number="2.5.1.3">
+<h4 data-number="2.5.1.3" class="anchored" data-anchor-id="sec-nii-2"><span class="header-section-number">2.5.1.3</span> National Income Identity, Revisited</h4>
+<p></p>
+<p>Recall from <a href="#eq-ni-identity" class="quarto-xref">Equation&nbsp;<span>2.5</span></a> that <span class="math display">\[ Y=C+I+G+NX.\]</span> Therefore, <span class="math display">\[Y+\text{NIF}+\text{NUT}=C+I+G+NX+\text{NIF}+\text{NUT}.\]</span> It is clear from equations <a href="#eq-gnp" class="quarto-xref">Equation&nbsp;<span>2.6</span></a> and <a href="#eq-gndi" class="quarto-xref">Equation&nbsp;<span>2.7</span></a>, the last equation can be re-written as <span class="math display">\[
+\text{GNDI}=C+I+G+(NX+\text{NIF}+\text{NUT}).
+\]</span></p>
+<p>As we will see in the next chapter’s discussion of balance of payments accounting, the expression within parentheses in the last equation is called the <strong>balance on the current account</strong> or, simply the current account (CA). The equation above then yields a slightly updated version of the national income identity: <span id="eq-nii-ca"><span class="math display">\[
+\text{GNDI}=C+I+G+CA.
+\tag{2.8}\]</span></span></p>
+<p>The reader should be warned, however, that I will use the terms net exports (<span class="math inline">\(NX\)</span>) and current account balance (<span class="math inline">\(CA=NX+NIF+NUT\)</span>) interchangeably throughout this book, because—as was pointed out a short while back in <a href="#sec-gndi" class="quarto-xref"><span>Section 2.5.1.2</span></a>—both <span class="math inline">\(NIF\)</span> and <span class="math inline">\(NUT\)</span> tend to be small in magnitude.</p>
+</section>
+</section>
+</section>
+<section id="sec-p-pi" class="level2" data-number="2.6">
+<h2 data-number="2.6" class="anchored" data-anchor-id="sec-p-pi"><span class="header-section-number">2.6</span> Prices and Inflation</h2>
+<p>Inflation is a topic of major concern in economics as well as in our daily lives. Therefore, it is important to understand what causes it and how it can be controlled. But before we can get to that, we need to discuss how inflation is measured.</p>
+<p>The measurement of inflation can be quite tricky. While the prices of some goods may rise from one year to the next, the prices of other goods may fall. In such cases, one needs to come up with <em>one</em> number that summarizes the <em>overall</em> change in prices.</p>
+<section id="sec-IPDGDP" class="level3" data-number="2.6.1">
+<h3 data-number="2.6.1" class="anchored" data-anchor-id="sec-IPDGDP"><span class="header-section-number">2.6.1</span> The Implicit Price Deflator for GDP</h3>
+<p></p>
+<p>Suppose you recently spent a day in Boston followed by a day in San Antonio. You ate the same meals in both cities, bought the same newspaper, rented the same type of car, and stayed in identical hotels. Nevertheless, you ended up spending 10% more in Boston. Why? You did not buy more stuff in Boston; in fact, you bought exactly the same things in both cities. Therefore, the only explanation is that prices were higher overall in Boston. Some things may be cheaper in Boston and some other things may be cheaper in San Antonio. But it is reasonable to conclude—from your own limited experience in the two cities—that the overall level of prices was 10% higher in Boston relative to San Antonio.</p>
+<p>Now consider another hypothetical example. Suppose you spent both October 1, 2005 and October 1, 2006 in Boston and during both visits you bought the exact same things, used the same transportation, and stayed in identical hotel rooms. And yet, you ended up spending 4% more in 2006 than in 2005. Using the same logic as in the last paragraph, we can conclude that although individual items’ prices may have changed at different rates, the overall level of prices in Boston rose 4% in 2006 relative to 2005.</p>
+<p>In fact, you don’t even have to visit Boston on two different dates. After your October 1, 2006 visit, you could dig up data on the prices that you would have paid if you had visited Boston a year earlier and bought the same goods and services that you bought during your October 1, 2006 visit, and you would have again reached the conclusion that the overall level of prices rose 4% in Boston in 2006. And that, by and large, is what government statisticians do to measure the rates of change of the overall level of prices in the US and other countries.</p>
+<p>One way to measure the overall level of prices is to compare the nominal GDP and the real GDP for a particular year. We see in <a href="#tbl-gdp-n-deflator" class="quarto-xref">Table&nbsp;<span>2.1</span></a> that in 1999 America’s nominal GDP was $9,353.5 billion and America’s real GDP, with base year 2005, was $10,779.8 billion. Stated differently, in 1999 America’s nominal GDP was 86.8% of America’s real GDP: <span class="math display">\[
+\begin{eqnarray*}
+\frac{\text{Nominal GDP in 1999}}{\text{Real GDP in 1999 with base year 2005}}\times 100&amp;=&amp;\frac{9,353.5}{10,779.8}\times 100\\
+&amp;=&amp; 86.8.
+\end{eqnarray*}
+\]</span> So, at 1999 prices, the dollar value of all final goods produced in the U.S. in 1999 was $9,353.5 billion, whereas, at 2005 prices, the dollar value of the exact same goods was $10,779.8 billion.</p>
+<p>Now, how could one dollar value of the final goods made in 1999 be different from the other dollar value of the exact same goods? As the quantities used in the nominal GDP calculation are the same as the quantities used in the real GDP calculation, these two dollar values must be different because they use different <em>prices</em>.</p>
+<p>More precisely, the only possible reason why America’s nominal GDP in 1999 is 86.8% of America’s real GDP in 1999 must be that the prices that prevailed in 1999, which are the ones that were used in the calculation of nominal GDP, were, in an overall sense, 86.8% as high as the prices that had prevailed in 2005, which are the ones that were used in the calculation of real GDP.</p>
+<p>It would be incorrect to conclude that <em>all</em> final goods were 86.8% as pricey in 1999 as in 2005. For apples, the 1999 price may have been 80% of the 2005 price. For haircuts, the 1999 price may have been 130% of the 2005 price. For gas at the pump, the 1999 price may have been 99% of the 2005 price. But it is reasonable to say that in an overall sense the 1999 prices were 86.8% as high as the 2005 prices because the final goods that were produced in America in 1999 were only 86.8% as valuable at 1999 prices than at 2005 prices.</p>
+<p>Thus, by comparing the nominal and real GDP values for a particular year we are able to measure how that year’s prices as a whole measure up relative to the base year’s prices. Formally, the</p>
+<p><span id="eq-IPDGDP"><span class="math display">\[
+\text{Implicit Price Deflator for GDP in year $n$ with base year $m$} = \frac{\text{Nominal GDP in year $n$}}{\text{Real GDP in year $n$ with base year $m$}}\times 100
+\tag{2.9}\]</span></span> shows what the overall level of final goods’ prices in year <span class="math inline">\(n\)</span> was as a percentage of the base year’s overall price level. More compactly, <span id="eq-IPDGDP_compact"><span class="math display">\[
+\text{Implicit Price Deflator}=
+\frac{\text{Nominal GDP}}{\text{Real GDP}}\times 100.
+\tag{2.10}\]</span></span></p>
+<p>The fourth column in <a href="#tbl-gdp-n-deflator" class="quarto-xref">Table&nbsp;<span>2.1</span></a> shows America’s implicit price deflator for GDP (IPDGDP) for the 1999–2008 decade. Specifically, it shows that the overall level of prices in 1999 was 86.8% of the overall level of prices in 2005. Similarly, the overall level of prices in 2005 was 100% of the overall level of prices in 2005—what a shocker!—and the overall price level in 2007 was 106.2% of the overall level of prices in 2005.<a href="#fn7" class="footnote-ref" id="fnref7" role="doc-noteref"><sup>7</sup></a></p>
+<p>In the remainder of these lectures, I will represent the overall price level for a particular year not by the implicit price deflator for GDP but by a very slightly different version of it: <span id="eq-P"><span class="math display">\[
+\begin{eqnarray}
+P&amp;=&amp;\frac{\text{Implicit Price Deflator for GDP}}{100}\nonumber \\
+&amp;=&amp;\frac{\text{Nominal GDP}}{\text{Real GDP}}\times\frac{100}{100}\nonumber \\
+&amp;=&amp;\frac{\text{Nominal GDP}}{Y}.
+\end{eqnarray}
+\tag{2.11}\]</span></span> Note that <a href="#eq-P" class="quarto-xref">Equation&nbsp;<span>2.11</span></a> comes from equation <a href="#eq-IPDGDP" class="quarto-xref">Equation&nbsp;<span>2.9</span></a>.</p>
+<p>In other words, while real GDP is represented by the symbol <span class="math inline">\(Y\)</span>, the overall level of prices is denoted by the symbol <span class="math inline">\(P\)</span>, and nominal GDP is given by <span id="eq-nomGDP"><span class="math display">\[
+\text{Nominal GDP}=P\times Y.
+\tag{2.12}\]</span></span></p>
+</section>
+<section id="sec-cpi" class="level3" data-number="2.6.2">
+<h3 data-number="2.6.2" class="anchored" data-anchor-id="sec-cpi"><span class="header-section-number">2.6.2</span> The Consumer Price Index</h3>
+<p></p>
+<p>The implicit price deflator for GDP is not the only one-number representation of the overall level of the prices of the innumerable goods that are bought and sold in a modern economy. Indeed, it may not even be the most popular method: a frequently cited alternative measure of the overall level of prices is the <strong>consumer price index</strong>.</p>
+<p>Whereas the implicit price deflator for GDP is (100 times) the value of the current year’s output of final goods at the current year’s prices divided by the value of the same set of goods at the base year’s prices, the consumer price index is (100 times) the value of <em>a fixed bundle of goods that represents the purchases of a </em>typical consumer* at the current year’s prices divided by the value of that same bundle of goods at the base year’s prices.</p>
+<p>Although <a href="#eq-P" class="quarto-xref">Equation&nbsp;<span>2.11</span></a> sees the overall price level, <span class="math inline">\(P\)</span>, as the implicit deflator for GDP divided by 100, you may, if you wish, think of <span class="math inline">\(P\)</span> as the consumer price index divided by 100. In practical terms, these two measures of the overall price level tend to move in sync most of the time.<a href="#fn8" class="footnote-ref" id="fnref8" role="doc-noteref"><sup>8</sup></a></p>
+</section>
+<section id="sec-inflation" class="level3" data-number="2.6.3">
+<h3 data-number="2.6.3" class="anchored" data-anchor-id="sec-inflation"><span class="header-section-number">2.6.3</span> Inflation</h3>
+<p></p>
+<p>Finally, how do we measure inflation? Inflation is defined simply as the growth rate of the overall level of prices, where the term ‘growth rate’ is as it is defined in <a href="#sec-notngrowth" class="quarto-xref"><span>Section 2.3.1</span></a>. I will denote inflation by the symbol <span class="math inline">\(\pi\)</span>, which is the lower-case Greek letter ‘pi’. Denoting the past value of the overall price level by the symbol <span class="math inline">\(P_{-1}\)</span>, we can use equation <a href="#eq-growthrate" class="quarto-xref">Equation&nbsp;<span>2.2</span></a> to express inflation as follows: <span id="eq-inflation"><span class="math display">\[
+\pi\equiv\frac{P-P_{-1}}{P_{-1}}\equiv\frac{P}{P_{-1}}-1.
+\tag{2.13}\]</span></span> The increase in the overall price level is <span class="math inline">\(P-P_{-1}\)</span>. But the proportionate increase in <span class="math inline">\(P\)</span> is <span class="math inline">\((P-P_{-1})/P_{-1}\)</span>. And to express inflation as a <em>percentage</em>, one has to multiply <span class="math inline">\(\pi\)</span> by 100.</p>
+<p>For example, the annual inflation rate for, say, 2004 is <span id="eq-inflation2004"><span class="math display">\[
+\begin{eqnarray}
+{\text{Inflation during 2004}}\nonumber \\
+&amp;=&amp;\frac{P_{2004}-P_{2003}}{P_{2003}}\times 100\\
+&amp;=&amp;\frac{\text{IPDGDP}_{2004}-\text{IPDGDP}_{2003}}{\text{IPDGDP}_{2003}}\times 100\\
+&amp;=&amp;\frac{96.77-94.1}{94.1}\times 100\nonumber \\
+&amp;=&amp;2.8 \text{ percent}.\nonumber
+\end{eqnarray}
+\tag{2.14}\]</span></span></p>
+<p>America’s annual inflation rates, as defined above, are shown in <a href="#tbl-growth-inflation" class="quarto-xref">Table&nbsp;<span>2.2</span></a> for 1999–2008. Although these inflation numbers are calculated based on the implicit price deflator for GDP as the price level, one could also think of inflation as the annual percentage increase in the consumer price index, which has been discussed above in <a href="#sec-cpi" class="quarto-xref"><span>Section 2.6.2</span></a>. In practical terms, this does not make much difference to inflation data, especially over longer periods, as you can see in <a href="#fig-inflation" class="quarto-xref">Figure&nbsp;<span>2.3</span></a>. Over short periods of time, however, inflation measures based on the consumer price index are more volatile, as can be seen in <a href="#fig-cpi-volatile" class="quarto-xref">Figure&nbsp;<span>2.4</span></a>}.</p>
+<div id="fig-inflation" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-inflation-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/cpiaucsl-gdpdef-fredgraph.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-inflation-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2.3: Inflation: Two Measures The red graph represents US inflation measured by the year-on-year percentage change in the implicit price deflator for GDP. The blue graph uses the consumer price index (for all urban consumers) instead. Source: Data on the implicit price deflator for GDP was downloaded from <a href="http://research.stlouisfed.org/fred2/series/GDPDEF" class="uri">http://research.stlouisfed.org/fred2/series/GDPDEF</a> and data on the consumer price index was downloaded from <a href="http://research.stlouisfed.org/fred2/series/CPIAUCSL" class="uri">http://research.stlouisfed.org/fred2/series/CPIAUCSL</a>, both on November 25, 2012.
+</figcaption>
+</figure>
+</div>
+<div id="fig-cpi-volatile" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-cpi-volatile-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/cpiaucsl-gdpdef-fredgraph-b.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-cpi-volatile-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2.4: <strong>Inflation: CPI Is More Volatile</strong> The red graph represents US inflation measured by the year-on-year percentage change in the implicit price deflator for GDP. The blue graph uses the consumer price index (for all urban consumers) instead. This chart focuses on the 21st century and highlights the volatility of the CPI. Source: Data on the implicit price deflator for GDP was downloaded from <a href="http://research.stlouisfed.org/fred2/series/GDPDEF" class="uri">http://research.stlouisfed.org/fred2/series/GDPDEF</a> and data on the consumer price index was downloaded from <a href="http://research.stlouisfed.org/fred2/series/CPIAUCSL" class="uri">http://research.stlouisfed.org/fred2/series/CPIAUCSL</a>, both on November 25, 2012.
+</figcaption>
+</figure>
+</div>
+
+
+</section>
+</section>
+<section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn1"><p>When I say “good”, I mean “good or service”.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>Even in this case, production might rise for some goods and fall for others. But it is straightforward to show that if nominal GDP rises and prices stay unchanged, a country would be able to buy increasing amounts of <em>every</em> good through international trade.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>Formally, these numbers are in “chained 2017 dollars”. The subtleties of this particular method of adjusting nominal values for inflation will not concern us here.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn4"><p>As we saw in the previous paragraph, this is the only category of household spending that is <em>not</em> included in <span class="math inline">\(C\)</span>.<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn5"><p>The first two categories—fixed assets and new homes—are combined into the <em>fixed investment</em> category in <a href="#fig-gdp-components" class="quarto-xref">Figure&nbsp;<span>2.1</span></a>.<a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn6"><p>In other words, if measured accurately, GDP <span class="math inline">\(=\)</span> GDI.<a href="#fnref6" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn7"><p>If you saw <a href="#tbl-gdp-n-deflator" class="quarto-xref">Table&nbsp;<span>2.1</span></a>, but without any information about 2005 being the base year in the heading of the third column, would you still be able to figure out that 2005 is the base year?<a href="#fnref7" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn8"><p>However, an increase in the price of M16 rifles, which are usually bought by a country’s armed forces but not by its typical consumer—not yet anyway!—would raise the value of the GDP deflator but not the CPI.<a href="#fnref8" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+          // target, if specified
+          link.setAttribute("target", "_blank");
+          if (link.getAttribute("rel") === null) {
+            link.setAttribute("rel", "noopener");
+          }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./preliminaries.html" class="pagination-link" aria-label="Preliminaries">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Preliminaries</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./bop.html" class="pagination-link" aria-label="Balance of Payments Accounts">
+        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Balance of Payments Accounts</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/UdayanRoy62/internationalmacro/edit/main/natincome.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/UdayanRoy62/internationalmacro/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="nav-footer-right">
+<p>This book was built with <a href="https://quarto.org/">Quarto</a>.</p>
+</div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

@@ -7,8 +7,7 @@ execute:
 
 book:
   title: "International Macroeconomics: Lecture Notes"
-  author:
-    - Udayan Roy
+  author: "Udayan Roy"
   repo-url: https://github.com/UdayanRoy62/internationalmacro
   date: today
   page-footer:
@@ -17,14 +16,38 @@ book:
   repo-actions: [edit, issue]
   chapters:
     - index.qmd
-    - data.qmd
-    - results.qmd
-    - d3graph.qmd
-    - conclusion.qmd
+    - preliminaries.qmd
+    - natincome.qmd
+    - bop.qmd
+    - exchange_rates.qmd
+    - markets_equilibrium.qmd
+    - theories_equations_variables.qmd
+    - long_run_short_run.qmd
+    - exchange_rate_systems.qmd
+    - long_real.qmd
+    - long_nominal.qmd
+    - short_fixed.qmd
+    - short_flex.qmd
+    - short_flex_permanent.qmd
+    - crises.qmd
+    - summary.qmd
+    - references.qmd
+
+bibliography: references.bib
 
 format:
   html:
     theme: cosmo
     code-fold: true
-
-
+    number-depth: 4
+    link-external-newwindow: true
+  pdf:
+    documentclass: book
+    cite-method: biblatex
+    include-in-header: 
+      text: |
+        \usepackage{makeidx}
+        \makeindex
+    include-after-body: 
+      text: |
+        \printindex

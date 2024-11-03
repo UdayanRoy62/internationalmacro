@@ -1,0 +1,969 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.4.554">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>International Macroeconomics: Lecture Notes - 9&nbsp; Long-Run Predictions: The Real World</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./long_nominal.html" rel="next">
+<link href="./exchange_rate_systems.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./long_real.html"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Long-Run Predictions: The Real World</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">International Macroeconomics: Lecture Notes</a> 
+        <div class="sidebar-tools-main">
+    <a href="https://github.com/UdayanRoy62/internationalmacro" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./preliminaries.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Preliminaries</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./natincome.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">National Income Accounts, Prices, and Inflation</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./bop.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Balance of Payments Accounts</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./exchange_rates.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Exchange Rates</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./markets_equilibrium.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Markets and Equilibrium</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./theories_equations_variables.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Theories, Equations and Variables</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./long_run_short_run.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">The Long Run and the Short Run</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./exchange_rate_systems.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Exchange Rate Systems: Fixed and Flexible</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./long_real.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Long-Run Predictions: The Real World</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./long_nominal.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Long-Run Predictions: The Nominal World</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./short_fixed.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Short-Run Predictions: Fixed Exchange Rates</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./short_flex.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Short-Run Predictions: Flexible Exchange Rates</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./short_flex_permanent.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Short-Run Predictions: Expectations and Flexible Exchange Rates</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./crises.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Special Topic: Currency Crises</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./summary.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">International Macroeconomics: Summary</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#sec-longy" id="toc-sec-longy" class="nav-link active" data-scroll-target="#sec-longy"><span class="header-section-number">9.1</span> Gross Domestic Product</a></li>
+  <li><a href="#sec-longc" id="toc-sec-longc" class="nav-link" data-scroll-target="#sec-longc"><span class="header-section-number">9.2</span> Consumption</a></li>
+  <li><a href="#sec-longnx" id="toc-sec-longnx" class="nav-link" data-scroll-target="#sec-longnx"><span class="header-section-number">9.3</span> Net Exports</a>
+  <ul class="collapse">
+  <li><a href="#sec-boost-nx" id="toc-sec-boost-nx" class="nav-link" data-scroll-target="#sec-boost-nx"><span class="header-section-number">9.3.1</span> Policies to raise net exports</a></li>
+  </ul></li>
+  <li><a href="#sec-longq" id="toc-sec-longq" class="nav-link" data-scroll-target="#sec-longq"><span class="header-section-number">9.4</span> Real Exchange Rate</a>
+  <ul class="collapse">
+  <li><a href="#sec-q-long-appp" id="toc-sec-q-long-appp" class="nav-link" data-scroll-target="#sec-q-long-appp"><span class="header-section-number">9.4.1</span> Under absolute purchasing power parity</a></li>
+  <li><a href="#sec-q-long-no-appp" id="toc-sec-q-long-no-appp" class="nav-link" data-scroll-target="#sec-q-long-no-appp"><span class="header-section-number">9.4.2</span> Without absolute purchasing power parity</a></li>
+  </ul></li>
+  <li><a href="#sec-longexp" id="toc-sec-longexp" class="nav-link" data-scroll-target="#sec-longexp"><span class="header-section-number">9.5</span> Exports</a></li>
+  <li><a href="#sec-longimp" id="toc-sec-longimp" class="nav-link" data-scroll-target="#sec-longimp"><span class="header-section-number">9.6</span> Imports</a></li>
+  <li><a href="#sec-longrealconclusions" id="toc-sec-longrealconclusions" class="nav-link" data-scroll-target="#sec-longrealconclusions"><span class="header-section-number">9.7</span> Macroeconomic Behavior of Real Variables in the Long Run: Conclusions</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/UdayanRoy62/internationalmacro/edit/main/long_real.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/UdayanRoy62/internationalmacro/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span id="sec-longreal" class="quarto-section-identifier"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Long-Run Predictions: The Real World</span></span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<!--
+sec-longreal
+sec-longy
+sec-longc
+eq-longc
+sec-longnx
+eq-longnx
+sec-boost-nx
+sec-longq
+sec-q-long-appp
+fig-NX_real_exch_rate_LR_eqm
+sec-q-long-no-appp
+sec-nx-curves
+sec-eqm-no-appp
+sec-real-ex-rates-summary
+tbl-real_long
+sec-longexp
+sec-longimp
+sec-longrealconclusions
+-->
+<p>What would be the long-run (or, eventual) consequence of an increase in taxes? This and similar other questions are discussed in this chapter and the next. These questions will all have the same format: If there is a permanent increase in [insert the name of an exogenous variable], what will happen in the long run to [insert the name of an endogenous variable]? Notice that the focus will always be on prediction, because only when a theory takes a stand by making a prediction can it be tested with actual data.</p>
+<p>We have seen the distinctions between nominal and real gross domestic product— in <a href="natincome.html" class="quarto-xref"><span>Chapter 2</span></a> — and nominal and real exchange rates—in <a href="exchange_rates.html" class="quarto-xref"><span>Chapter 4</span></a>. Nominal variables are not adjusted for inflation, whereas real variables are. Real variables could meaningfully describe even a barter economy in which money does not exist. Nominal variables, on the other hand, would make sense only in monetary economies. This chapter focuses on the long-run effects of exogenous variables on <em>real</em> endogenous variables. The next chapter takes on nominal endogenous variables, such as the price level, the inflation rate, and the nominal exchange rate.</p>
+<p>As I said in <a href="long_run_short_run.html#sec-longana" class="quarto-xref"><span>Section 7.2</span></a>, for long-run analysis I will assume:</p>
+<ul>
+<li>Full Employment—i.e., <span class="math inline">\(Y = Y^p\)</span>—and</li>
+<li>Perfect Foresight—i.e., <span class="math inline">\(E^e_f=E_f\)</span>.</li>
+</ul>
+<section id="sec-longy" class="level2" data-number="9.1">
+<h2 data-number="9.1" class="anchored" data-anchor-id="sec-longy"><span class="header-section-number">9.1</span> Gross Domestic Product</h2>
+<p>Recall from <a href="long_run_short_run.html#sec-exoendo" class="quarto-xref"><span>Section 7.1</span></a> that <span class="math inline">\(Y^p\)</span>, potential GDP, is, for us, an exogenous variable. Therefore, the full-employment assumption, <span class="math inline">\(Y=Y^p\)</span>, says all that can be said about the long-run behavior of GDP: <em><span class="math inline">\(Y\)</span> is equal to <span class="math inline">\(Y^p\)</span> and unaffected by all other exogenous variables.</em> This is shown in the <span class="math inline">\(Y\)</span>-column of <a href="#tbl-real_long" class="quarto-xref">Table&nbsp;<span>9.1</span></a>, which shows the ceteris paribus effects of each exogenous variable on all endogenous variables.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
+</section>
+<section id="sec-longc" class="level2" data-number="9.2">
+<h2 data-number="9.2" class="anchored" data-anchor-id="sec-longc"><span class="header-section-number">9.2</span> Consumption</h2>
+<p>Recall from <a href="markets_equilibrium.html#eq-consfn" class="quarto-xref">Equation&nbsp;<span>5.2</span></a> in <a href="markets_equilibrium.html#sec-consumption" class="quarto-xref"><span>Section 5.3</span></a> that consumption (<span class="math inline">\(C\)</span>) is directly related to disposable income (<span class="math inline">\(Y-T\)</span>) as in the consumption function, <span class="math inline">\(C=C(Y-T)\)</span>. The full-employment assumption that we just saw then implies</p>
+<p><span id="eq-longc"><span class="math display">\[
+C=C(Y^p-T).
+\tag{9.1}\]</span></span> As <span class="math inline">\(T\)</span> and <span class="math inline">\(Y^p\)</span> are assumed exogenous for our purposes—see <a href="long_run_short_run.html#sec-exoendo" class="quarto-xref"><span>Section 7.1</span></a> —we can say right here all that can be said about the long-run behavior of consumption: <em><span class="math inline">\(C\)</span> is directly affected by <span class="math inline">\(Y^p\)</span>, inversely affected by <span class="math inline">\(T\)</span>, and unaffected by all other exogenous variables</em>. These are ceteris paribus effects, and they are shown in the <span class="math inline">\(C\)</span>-column of <a href="#tbl-real_long" class="quarto-xref">Table&nbsp;<span>9.1</span></a>.</p>
+<p>As consumption is an endogenous variable, we need to be able to explain the ups and downs of <span class="math inline">\(C\)</span>. Once we have succeeded in expressing an endogenous variable in terms of exogenous variables alone—as we have done in <a href="#eq-longc" class="quarto-xref">Equation&nbsp;<span>9.1</span></a> —we can’t go any further because, by definition, exogenous variables are variables we know nothing about (except that they may help explain the up and down movements of our endogenous variables). We don’t know what makes <span class="math inline">\(Y^p\)</span> and <span class="math inline">\(T\)</span> fluctuate. Therefore, once we have expressed <span class="math inline">\(C\)</span> entirely in terms of <span class="math inline">\(Y^p\)</span> and <span class="math inline">\(T\)</span>, we cannot say anything more about <span class="math inline">\(C\)</span>.</p>
+</section>
+<section id="sec-longnx" class="level2" data-number="9.3">
+<h2 data-number="9.3" class="anchored" data-anchor-id="sec-longnx"><span class="header-section-number">9.3</span> Net Exports</h2>
+<p>Recall from <a href="markets_equilibrium.html#eq-IS" class="quarto-xref">Equation&nbsp;<span>5.8</span></a> that <span class="math inline">\(Y=C+I+G+NX\)</span> is the condition that must be satisfied for the goods market to be in equilibrium. Therefore, <span id="eq-longnx"><span class="math display">\[
+\begin{eqnarray}
+NX&amp;=&amp;Y-C(Y-T)-I-G\nonumber \\
+&amp;=&amp;Y^p-C(Y^p-T)-I-G
+\end{eqnarray}
+\tag{9.2}\]</span></span> in long-run equilibrium.</p>
+<p>Notice that all the variables on the right hand side of this equation are exogenous. Therefore this equation tells us all that can be said about the long run behavior of <span class="math inline">\(NX\)</span>.</p>
+<p>For example, what if there is a permanent increase in either <span class="math inline">\(I\)</span> or <span class="math inline">\(G\)</span> or both? It follows directly from <a href="#eq-longnx" class="quarto-xref">Equation&nbsp;<span>9.2</span></a> that <span class="math inline">\(NX\)</span> will decrease.</p>
+<p>If, however, you are persuaded by the logic of Ricardian equivalence, which we saw in <a href="markets_equilibrium.html#sec-mpc" class="quarto-xref"><span>Section 5.3.1</span></a>, then the analysis would be a lot more subtle. Suppose <span class="math inline">\(G\)</span> has permanently increased by $100 a year. <a href="markets_equilibrium.html#sec-mpc" class="quarto-xref"><span>Section 5.3.1</span></a> implies that even though the government in this case has not raised taxes to pay for the increased spending, people may behave as if taxes have gone up by the same $100. In that case, <span class="math inline">\(C\)</span> would fall. For a $100 increase in government spending that is perceived to be permanent, <span class="math inline">\(C\)</span> would also fall by $100, the full extent of the perceived/feared increase in <span class="math inline">\(T\)</span> and the actual increase in <span class="math inline">\(G\)</span>. And, therefore, the decline in <span class="math inline">\(C\)</span> would cancel out the increase in <span class="math inline">\(G\)</span> in <a href="#eq-longnx" class="quarto-xref">Equation&nbsp;<span>9.2</span></a>, leaving <span class="math inline">\(NX\)</span> unchanged.</p>
+<!--
+% So, what is one to believe? In the paragraph before last, an increase in $G$ reduces $NX$. In the last paragraph, on the other hand, an increase in $G$ does not affect $NX$. Both answers make sense; both answers have a logical basis, given the assumptions that underlie them. So it is probably best, in the absence of clinching evidence one way or the other, to split the difference: When $G$ increases, $NX$ will decrease, not as much as the non-Ricardian analysis suggests but not as little as the Ricardian analysis says.
+-->
+<p>The effect of an increase in taxes is equally easy to figure out. When <span class="math inline">\(T\)</span> increases, <span class="math inline">\(C\)</span> decreases, as we saw in <a href="#sec-longc" class="quarto-xref"><span>Section 9.2</span></a> above. Therefore, by <a href="#eq-longnx" class="quarto-xref">Equation&nbsp;<span>9.2</span></a>, <span class="math inline">\(NX\)</span> will increase.</p>
+<!--
+% But, as was the case with my discussion of the effect of $G$ on $NX$, the notion of Ricardian Equivalence introduces a layer of complexity. If there is a tax *increase* today without there being an accompanying increase in government spending, farsighted individuals will anticipate a tax *cut* in the future. If we pursue the line of thinking that was developed two paragraphs back, we would conclude that a tax increase will affect neither $C$ nor $NX$.
+
+% With non-Ricardian analysis arguing that a tax increase will lead to lower consumption and higher net exports, and Ricardian analysis arguing that a tax increase will affect neither $C$ nor $NX$, it makes sense to split the difference and conclude that a tax increase does lead to lower consumption and higher net exports, but not as much as the non-Ricardians may think.
+-->
+<p>Finally, what if there is a permanent increase in the domestic country’s potential real GDP (<span class="math inline">\(Y^p\)</span>) by, say, $1.00? Consumption spending will increase—as we saw in <a href="markets_equilibrium.html#sec-consumption" class="quarto-xref"><span>Section 5.3</span></a> above—by the magnitude of the marginal propensity to consume (MPC). And, as we saw in <a href="markets_equilibrium.html#sec-mpc" class="quarto-xref"><span>Section 5.3.1</span></a>, the size of the MPC depends on whether the change in income is perceived to be permanent or temporary. Specifically, if the one-dollar increase in income is perceived to be permanent, <span class="math inline">\(C\)</span> will also rise by one dollar and therefore, by <a href="#eq-longnx" class="quarto-xref">Equation&nbsp;<span>9.2</span></a>, <span class="math inline">\(NX\)</span> will be <em>unchanged</em>. But when the one-dollar increase in income is perceived to be less than permanent, <span class="math inline">\(C\)</span> will rise by a fraction of one dollar. So, <span class="math inline">\(Y^p-C(Y^p-T)\)</span> will increase. Therefore, by <a href="#eq-longnx" class="quarto-xref">Equation&nbsp;<span>9.2</span></a>, <span class="math inline">\(NX\)</span> will be <em>increase</em>.</p>
+<p>So, what’s one to believe? If the permanent increase in <span class="math inline">\(Y^p\)</span> is perceived to be permanent, <span class="math inline">\(NX\)</span> is unaffected by the increase in <span class="math inline">\(Y^p\)</span>. But if people doubt the permanence of this increase in <span class="math inline">\(Y^p\)</span>, <span class="math inline">\(NX\)</span> increases. It makes sense to split the difference and say that when potential real GDP increases, so does net exports, because in actual cases there may be no increase in potential real GDP that is perceived to be entirely permanent.</p>
+<p>To sum up, what does our analysis say about the long-run behavior of a country’s trade balance or net exports? <em>A country’s net exports is directly affected by its potential real GDP and its tax revenues; inversely affected by government spending and investment spending; and unaffected by all other exogenous variables</em>. These are ceteris paribus effects, and they are shown in the <span class="math inline">\(NX\)</span>-column of <a href="#tbl-real_long" class="quarto-xref">Table&nbsp;<span>9.1</span></a>.</p>
+<section id="sec-boost-nx" class="level3" data-number="9.3.1">
+<h3 data-number="9.3.1" class="anchored" data-anchor-id="sec-boost-nx"><span class="header-section-number">9.3.1</span> Policies to raise net exports</h3>
+<p>The important lesson of our analysis is that the only dependable way to achieve a long-run increase in net exports is through ‘fiscal austerity’ or ‘belt tightening’ by the country’s government. When government spending is reduced (<span class="math inline">\(G\downarrow\)</span>) and/or taxes are raised (<span class="math inline">\(T\uparrow\)</span>), net exports increases (<span class="math inline">\(NX\uparrow\)</span>).</p>
+<p>A surprising related point in that <strong>tariffs</strong>, which are taxes imposed only on imported goods and services, and other protectionist policies cannot affect a country’s net exports. It would be hard to make a cogent argument that tariffs would lead to an increase in <span class="math inline">\(Y^p\)</span> or in <span class="math inline">\(Y^p-C(Y^p-T)\)</span>, or to a decrease in <span class="math inline">\(I\)</span> or in <span class="math inline">\(G\)</span>. Therefore, it would be hard to make a persuasive argument that <span class="math inline">\(NX=Y^p-C(Y^p-T)-I-G\)</span> would increase in the long run if tariffs or other protectionist measures are implemented.</p>
+</section>
+</section>
+<section id="sec-longq" class="level2" data-number="9.4">
+<h2 data-number="9.4" class="anchored" data-anchor-id="sec-longq"><span class="header-section-number">9.4</span> Real Exchange Rate</h2>
+<p>The analysis of the long-run behavior of the real exchange rate (<span class="math inline">\(q\)</span>) depends on whether or not the law of one price is assumed to be true.<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></p>
+<section id="sec-q-long-appp" class="level3" data-number="9.4.1">
+<h3 data-number="9.4.1" class="anchored" data-anchor-id="sec-q-long-appp"><span class="header-section-number">9.4.1</span> Under absolute purchasing power parity</h3>
+<p></p>
+<p>Recall from <a href="markets_equilibrium.html#sec-appp" class="quarto-xref"><span>Section 5.6.4</span></a> that under the law of one price—also called absolute purchasing power parity—the real exchange rate must always be <span class="math inline">\(q=1\)</span> and the relation between net exports and the real exchange rate is represented by a horizontal net exports curve such as the one shown in the right panel of <a href="markets_equilibrium.html#fig-net_exports_general" class="quarto-xref">Figure&nbsp;<span>5.2</span></a>. In this case, the analysis of the long-run behavior of the real exchange rate is trivial: it will always stay at <span class="math inline">\(q=1\)</span>, nothing can make it budge.</p>
+<p>Let us, therefore, move on to the less restrictive case shown by the rising net exports curve in the left panel of <a href="markets_equilibrium.html#fig-net_exports_general" class="quarto-xref">Figure&nbsp;<span>5.2</span></a>.</p>
+<div id="fig-NX_real_exch_rate_LR_eqm" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-NX_real_exch_rate_LR_eqm-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/NX_real_exch_rate_LR_eqm.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-NX_real_exch_rate_LR_eqm-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;9.1: This diagram shows how real exchange rates can change. In long-run equilibrium, both <span class="math inline">\(NX=NX(q,Y^p-T)\)</span> and <span class="math inline">\(NX=Y^p-C(Y^p-T)-I-G\)</span> must be true. Therefore, for the initial values <span class="math inline">\(Y^p=Y^p_0\)</span> and <span class="math inline">\(T=T_0\)</span>, the equilibrium is at point <span class="math inline">\(A\)</span>. When either <span class="math inline">\(T\)</span> increases or <span class="math inline">\(Y^p\)</span> decreases, the upward-sloping net exports curve shifts right, as shown. When <span class="math inline">\(T\)</span> increases, the vertical net exports curve also shifts right, but by more than the upward-sloping net exports curve does. As a result, the long run equilibrium moves from <span class="math inline">\(A\)</span> to <span class="math inline">\(C\)</span>. This implies a direct effect of <span class="math inline">\(T\)</span> on <span class="math inline">\(q\)</span>. When <span class="math inline">\(Y^p\)</span> decreases, the vertical net exports curve shifts left. As a result, the long run equilibrium moves from <span class="math inline">\(A\)</span> to <span class="math inline">\(E\)</span>. This implies a direct effect of <span class="math inline">\(Y^p\)</span> on <span class="math inline">\(q\)</span>; they both move in the same direction. When either <span class="math inline">\(I\)</span> or <span class="math inline">\(G\)</span> increases, the upward-sloping net exports curve is unaffected and the vertical net exports curve shifts left, taking the equilibrium from <span class="math inline">\(A\)</span> to <span class="math inline">\(D\)</span>. This shows that <span class="math inline">\(I\)</span> and <span class="math inline">\(G\)</span> have inverse effects on <span class="math inline">\(q\)</span>. No other exogenous variable affects <span class="math inline">\(q\)</span>. (Note that absolute purchasing power parity has <em>not</em> been assumed.)
+</figcaption>
+</figure>
+</div>
+<!--
+\begin{figure}
+\begin{picture}(8,9)
+\put(2,1){\vector(1,0){9}}  %x axis
+\put(4,1){\vector(0,1){6}}  %y axis
+\put(6.1,5){\vector(1,0){0.8}}  %
+\put(2.5,2.5){\vector(1,-1){0.4}}   %
+\put(5.5,7.5){\vector(1,-1){0.4}}   %
+%\linethickness{1.5mm}
+\put(2.5,1.5){\line(1,1){6}}    %The NX Curve
+\put(5,1){\line(0,1){6}}    %
+%\put(6,1){\line(0,1){6}}   %
+\multiput(7,1)(0,0.1){60}{\circle*{0.05}}   %dots 
+\put(8,1){\line(0,1){6}}    %
+
+\thicklines
+\put(3.5,1.5){\line(1,1){6}}    %The lower NX Curve
+\put(6,1){\line(0,1){6}}    %initial Y-C-I-G curve
+
+\put(3.75,0.5){$O$}     %origin
+\put(11,0.5){$NX$}
+\put(3.5,6.5){$q$}
+
+\put(5,3){\circle*{0.1}}    %At 
+\put(5,4){\circle*{0.1}}    %At 
+\put(6,5){\circle*{0.1}}    %At 
+\put(7,5){\circle*{0.1}}    %At 
+\put(4,1){\circle*{0.1}}    %At origin
+\put(8,6){\circle*{0.1}}    %At 
+\put(5.5,5){$A$}
+\put(7.1,4.7){$B$}
+\put(8.1,5.7){$C$}
+\put(5.1,3.7){$D$}
+\put(5.1,2.7){$E$}
+\put(1,7.75){\footnotesize{$NX=Y^p_0-C(Y^p_0-T_0)-I-G$}}
+\put(0,2.75){\footnotesize{$NX=NX(q,Y^p_0-T_0)$}}
+
+%\put(2,2){\line(1,1){3}}   %The dotted NX Curve
+%\multiput(2,2)(0.1,0.1){30}{\circle*{0.05}}    %The dotted NX Curve
+%\multiput(4.5,4.5)(0,-0.1){35}{\circle*{0.05}} %dots dropping down from point to the right of A
+%\multiput(4.5,4.5)(-0.1,0){15}{\circle*{0.05}} %dots going left from A
+%\put(2.5,2.95){$q_B$}
+%\put(2.5,4.45){$q_A$}
+%\put(3.5,0.5){$NX_A$}
+%\put(9.5,2.5){\shortstack{\footnotesize{Absolute Purchasing} \\ \footnotesize{Power Parity}}}
+
+\end{picture}
+\caption[The Real Exchange Rate]{This diagram shows why real exchange rates can change. In long-run equilibrium, both $NX=NX(q,Y^p-T)$ and $NX=Y^p-C(Y^p-T)-I-G$ must be true. Therefore, for the initial values $Y^p=Y^p_0$ and $T=T_0$, the equilibrium is at point $A$. When either $T$ increases or $Y^p$ decreases, the upward-sloping net exports curve shifts right, as shown. When $T$ increases, the vertical net exports curve also shifts right, but by more than the upward-sloping net exports curve does. As a result, the long run equilibrium moves from $A$ to $C$. This implies a direct effect of $T$ on $q$. When $Y^p$ decreases, the vertical net exports curve shifts left. As a result, the long run equilibrium moves from $A$ to $E$. This implies a direct effect of $Y^p$ on $q$; they both move in the same direction. When either $I$ or $G$ increases, the upward-sloping net exports curve is unaffected and the vertical net exports curve shifts left, taking the equilibrium from $A$ to $D$. This shows that $I$ and $G$ have inverse effects on $q$. No other exogenous variable affects $q$. (Note that absolute purchasing power parity has *not* been assumed.)}
+\label{fig:qlong}
+\end{figure}
+-->
+</section>
+<section id="sec-q-long-no-appp" class="level3" data-number="9.4.2">
+<h3 data-number="9.4.2" class="anchored" data-anchor-id="sec-q-long-no-appp"><span class="header-section-number">9.4.2</span> Without absolute purchasing power parity</h3>
+<section id="sec-nx-curves" class="level4" data-number="9.4.2.1">
+<h4 data-number="9.4.2.1" class="anchored" data-anchor-id="sec-nx-curves"><span class="header-section-number">9.4.2.1</span> Two net exports curves: one upward-sloping, the other vertical</h4>
+<p>Recall from <a href="markets_equilibrium.html#eq-netexports" class="quarto-xref">Equation&nbsp;<span>5.6</span></a> that <span class="math inline">\(NX=NX(q,Y-T)\)</span> is directly related to <span class="math inline">\(q\)</span> and inversely related to <span class="math inline">\(Y-T\)</span>. For some given value of <span class="math inline">\(Y-T\)</span>, the direct effect of <span class="math inline">\(q\)</span> on <span class="math inline">\(NX\)</span> is shown as an <em>upward-sloping net exports curve</em> in the left panels of <a href="markets_equilibrium.html#fig-net_exports_general" class="quarto-xref">Figure&nbsp;<span>5.2</span></a> and <a href="markets_equilibrium.html#fig-net_exports_real_exchange_rate" class="quarto-xref">Figure&nbsp;<span>5.3</span></a> and yet again in <a href="#fig-NX_real_exch_rate_LR_eqm" class="quarto-xref">Figure&nbsp;<span>9.1</span></a> in this chapter.<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a></p>
+<p>These figures also show that a decrease in <span class="math inline">\(Y^p\)</span> or an increase in <span class="math inline">\(T\)</span> or, generally, <em>a decrease in <span class="math inline">\(Y-T=Y^p-T\)</span> shifts the upward-sloping net exports curve downward or to the right</em>. A poorer country imports less and, therefore, sees its net exports increase at any given value of the real exchange rate.</p>
+<p>In fact, we can be more specific about the size of this shift. Recall from <a href="markets_equilibrium.html#sec-imports" class="quarto-xref"><span>Section 5.6.2</span></a> that if <span class="math inline">\(Y-T\)</span> decreases by a dollar, both consumption (<span class="math inline">\(C\)</span>) and imports (<span class="math inline">\(IM\)</span>) will decrease, but the latter will decrease less than the former. In particular, <span class="math inline">\(C\)</span> decreases by the marginal propensity to consume (MPC) and <span class="math inline">\(IM\)</span> decreases by less than the MPC. It therefore follows that when <span class="math inline">\(Y^p-T\)</span> decreases by a dollar, <span class="math inline">\(NX\)</span> will increase by less than the MPC, at any given value of the real exchange rate. In other words, <em>when <span class="math inline">\(Y^p-T\)</span> decreases by a dollar, the vertical net exports curve shifts right by a length smaller than the MPC</em>.</p>
+<p>Now, as we saw in <a href="#sec-longnx" class="quarto-xref"><span>Section 9.3</span></a> above, the goods market’s equilibrium condition, <span class="math inline">\(Y=C+I+G+NX\)</span>, also tells us something about a country’s net exports. Specifically, <span class="math inline">\(NX=Y-C(Y-T)-I-G\)</span> or, in long-run equilibrium, <span class="math inline">\(NX=Y^p-C(Y^p-T)-I-G\)</span>. As this equation expresses <span class="math inline">\(NX\)</span> as entirely independent of <span class="math inline">\(q\)</span>, it can be graphically shown as the <em>vertical net exports curve</em> in <a href="#fig-NX_real_exch_rate_LR_eqm" class="quarto-xref">Figure&nbsp;<span>9.1</span></a>. It is vertical because changes in <span class="math inline">\(q\)</span> have no effect on <span class="math inline">\(NX=Y^p-C(Y^p-T)-I-G\)</span>. Of course, if <span class="math inline">\(Y^p\)</span> or <span class="math inline">\(T\)</span> or <span class="math inline">\(I\)</span> or <span class="math inline">\(G\)</span> changes in value, so will <span class="math inline">\(NX\)</span> and the vertical net exports curve will shift.</p>
+<p>For example, <em>if either <span class="math inline">\(I\)</span> or <span class="math inline">\(G\)</span> increases by a dollar, <span class="math inline">\(NX=Y^p-C(Y^p-T)-I-G\)</span> will decrease by a dollar and the vertical net exports curve will shift left by a dollar</em>. If <span class="math inline">\(T\)</span> increases by a dollar, <span class="math inline">\(C\)</span> will decrease, not by the entire dollar’s increase in taxes but by a fraction—a fraction that was called the marginal propensity to consume (MPC) in <a href="markets_equilibrium.html#sec-mpc" class="quarto-xref"><span>Section 5.3.1</span></a>. As a result, <span class="math inline">\(NX=Y^p-C(Y^p-T)-I-G\)</span> will increase by that same amount (the MPC). Therefore, <em>when <span class="math inline">\(T\)</span> increases by a dollar, the vertical net exports curve shifts right by a length equal to the MPC</em>.</p>
+<p>Finally, if <span class="math inline">\(Y^p\)</span> increases by a dollar, then <span class="math inline">\(C(Y^p-T)\)</span> increases by the MPC. Therefore, <span class="math inline">\(Y^p-C(Y^p-T)\)</span>, which is simply the part of total income that is saved, will increase by <span class="math inline">\(1-\text{MPC}\)</span> dollars, which is equivalent to MPS dollars, where MPS stands for the marginal propensity to save—see <a href="markets_equilibrium.html#sec-mpc" class="quarto-xref"><span>Section 5.3.1</span></a>. In short, <em>when <span class="math inline">\(Y^p\)</span> increases by a dollar, the vertical net exports curve shifts right by MPS dollars</em>.</p>
+</section>
+<section id="sec-eqm-no-appp" class="level4" data-number="9.4.2.2">
+<h4 data-number="9.4.2.2" class="anchored" data-anchor-id="sec-eqm-no-appp"><span class="header-section-number">9.4.2.2</span> Equilibrium</h4>
+<p>Now, in long-run equilibrium, what we know about the factors that influence net exports (<span class="math inline">\(NX=NX(q,Y^p-T)\)</span>, the upward-sloping net exports curve) must be consistent with what the goods market’s equilibrium condition tells us about net exports (<span class="math inline">\(NX=Y^p-C(Y^p-T)-I-G\)</span>, the vertical net exports curve). Therefore, in <a href="#fig-NX_real_exch_rate_LR_eqm" class="quarto-xref">Figure&nbsp;<span>9.1</span></a>, the long-run equilibrium must be at <span class="math inline">\(A\)</span>, where the two net exports curves intersect. This pinpoints the long-run equilibrium level of the real exchange rate.</p>
+<p>And, as we know how the two net exports curve shift when there are changes in the magnitudes of the exogenous variables <span class="math inline">\(Y^p\)</span>, <span class="math inline">\(T\)</span>, <span class="math inline">\(I\)</span>, and <span class="math inline">\(G\)</span>, we will be able to predict how the real exchange rate is affected by these changes.</p>
+<p>For example, as we saw in the previous section, if either <span class="math inline">\(I\)</span> or <span class="math inline">\(G\)</span> increases, the upward-sloping net exports curve is unaffected and the vertical net exports curve shifts left. Therefore, the long-run equilibrium in <a href="#fig-NX_real_exch_rate_LR_eqm" class="quarto-xref">Figure&nbsp;<span>9.1</span></a> moves from <span class="math inline">\(A\)</span> to <span class="math inline">\(D\)</span>, implying a decrease in <span class="math inline">\(q\)</span>. That is, <em>increases in domestic spending either by businesses (<span class="math inline">\(I\uparrow\)</span>) or the government (<span class="math inline">\(G\uparrow\)</span>) boosts the relative demand for the domestic country’s products and thereby raises the relative price of those products or, equivalently, reduces the relative price of foreign goods (<span class="math inline">\(q\downarrow\)</span>)</em>.</p>
+<p>We have also seen that if <span class="math inline">\(T\)</span> increases by a dollar, the upward-sloping net exports curve shifts right by <em>less than</em> the MPC. On the other hand, we have also seen that the vertical net exports curve shifts right by a length <em>equal to</em> the MPC. Therefore, the long-run equilibrium in <a href="#fig-NX_real_exch_rate_LR_eqm" class="quarto-xref">Figure&nbsp;<span>9.1</span></a> will move from <span class="math inline">\(A\)</span> to <span class="math inline">\(C\)</span>, implying an increase in <span class="math inline">\(q\)</span>. That is, <em>an increase in taxes (<span class="math inline">\(T\uparrow\)</span>) leads to a higher real exchange rate (<span class="math inline">\(q\uparrow\)</span>)</em>. This is intuitive: A rise in taxes squeezes domestic consumption, which reduces demand in the domestic economy. This reduces the relative price of domestic goods or, equivalently, raises the relative price of foreign-made goods, which is the real exchange rate.</p>
+<p>Finally, we have seen in the previous section that if <span class="math inline">\(Y^p\)</span> decreases by a dollar, the upward-sloping net exports curve shifts right and the vertical net exports curve shifts left. Therefore, the long-run equilibrium in <a href="#fig-NX_real_exch_rate_LR_eqm" class="quarto-xref">Figure&nbsp;<span>9.1</span></a> moves from <span class="math inline">\(A\)</span> to <span class="math inline">\(E\)</span>, implying a decrease in <span class="math inline">\(q\)</span>. That is, as in the case of <span class="math inline">\(T\)</span>, <em>a change in <span class="math inline">\(Y^p\)</span> brings about a change in <span class="math inline">\(q\)</span> in the same direction</em>.</p>
+<p>And, again, this is intuitive. If a country becomes more productive (<span class="math inline">\(Y^p\uparrow\)</span>) its goods become relatively more plentiful in the world economy. This drives down the relative price of domestic goods or, equivalently, makes foreign-made goods relatively more expensive (<span class="math inline">\(q\uparrow\)</span>).</p>
+<!--
+% Under the full employment assumption of long run analysis, this becomes $NX=NX(q,Y^p-T)$. We have seen in @sec-longnx above that the long-run equilibrium level of $NX$ increases when $Y^p-T$ increases. Intriguingly, however, we saw in @sec-summary-nxp that, as long as all other factors that affect $NX(q,Y^p-T)$ are unchanged, $NX$ *decreases* when $Y^p$ increases. The only way both these ideas can be true---and they have to be true!---is if the real exchange rate ($q$) increases. Therefore, $Y^p$ and $q$ are directly related in the long run.
+
+% We have seen that if either $G$ or $I$ or both decrease, the long run equilibrium magnitude of $NX$ must increase. But then so must $NX(q,Y^p-T)$. As $Y^p-T$ has not changed, the only way $NX(q,Y^p-T)$ can increase is if $q$ rises. Therefore, both $I$ and $G$ have an inverse effect on $q$ in the long run.
+
+% We have seen that an increase in taxes causes an increase in the long run equilibrium magnitude of a country's net exports. Let's say $T$ increases by \$1.00 and that, as a result, $C$ decreases by \$0.80. Then, the long-run equilibrium level of $NX=Y^p-C(Y^p-T)-I-G$ must increase by \$0.80. Now, recall from @eq-exp that, if the real exchange rate is unchanged, exports are unaffected by a tax increase. Yes, imports will decrease, but if total consumption spending decreases by \$0.80, total spending on imports will decrease by only a part of that---say, by \$0.35. So, although the long-run level of $NX$ must increase by \$0.80, we see that, if $q$ is unchanged, $NX(q,Y^p-T)$ would increase by only \$0.35 or at any rate by less than \$0.80. So, as both $NX(q,Y^p-T)$ and $NX=Y^p-C(Y^p-T)-I-G$ must increase by the same magnitude, $q$ must increase. This implies that $T$ has a direct effect on $q$ in the long run.
+-->
+</section>
+<section id="sec-real-ex-rates-summary" class="level4" data-number="9.4.2.3">
+<h4 data-number="9.4.2.3" class="anchored" data-anchor-id="sec-real-ex-rates-summary"><span class="header-section-number">9.4.2.3</span> Real Exchange Rate: Summary</h4>
+<p>To summarize, under absolute purchasing power parity, <span class="math inline">\(q=1\)</span> in all situations and is, therefore, unaffected by changes in our exogenous variables. When absolute purchasing power parity is not applicable, <em>in long run equilibrium, the real exchange rate (<span class="math inline">\(q\)</span>) is inversely affected by government spending (<span class="math inline">\(G\)</span>) and business investment (<span class="math inline">\(I\)</span>); directly affected by taxes (<span class="math inline">\(T\)</span>) and potential output (<span class="math inline">\(Y^p\)</span>); and unaffected by all other exogenous variables</em>. These ceteris paribus effects are shown in the <span class="math inline">\(q\)</span>-column of <a href="#tbl-real_long" class="quarto-xref">Table&nbsp;<span>9.1</span></a>.</p>
+<p>In <a href="long_nominal.html" class="quarto-xref"><span>Chapter 10</span></a>, a less stringent version of absolute purchasing power parity—called <em>relative</em> purchasing power parity—is assumed. Relative purchasing power parity is the assumption that the real exchange rate is <em>constant</em> over time, though not necessarily equal to one—see <a href="long_nominal.html#sec-rppp" class="quarto-xref"><span>Section 10.4</span></a>. Given the results summarized in the previous paragraph, for the real exchange rate to be constant, either <span class="math inline">\(I\)</span>, <span class="math inline">\(G\)</span>, <span class="math inline">\(T\)</span>, and <span class="math inline">\(Y^p\)</span> would have to be constant or—and this is an unlikely possibility—they would have to change in concert in such a way that they cancel each others’ effects on <span class="math inline">\(q\)</span> and, therefore, leave the real exchange rate constant.</p>
+<div id="tbl-real_long" class="quarto-float anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-real_long-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;9.1: <strong>Macroeconomic Behavior of Real Variables in the Long Run</strong>. All variables named in the first column are exogenous and all variables listed in the first row are endogenous. Each cell in the table shows the relation between the exogenous variable and the endogenous variable aligned with the cell. The +/?/- symbols denote a direct/ambiguous/inverse relation. A blank cell denotes that there is no relation. Note that absolute purchasing power parity has *not been assumed. Under APPP, the last three columns would be gone and the rest of the table would be unaffected. Recall that <span class="math inline">\(q\)</span> is constant at <span class="math inline">\(q=1\)</span> under APPP. Moreover, the <span class="math inline">\(EX\)</span> and <span class="math inline">\(IM\)</span> columns would be gone too, as they would no longer make sense, being infinitely elastic at <span class="math inline">\(q=1\)</span>.
+</figcaption>
+<div aria-describedby="tbl-real_long-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/real_long.png" class="img-fluid figure-img">
+</div>
+</figure>
+</div>
+<!--
+\begin{table}
+\begin{tabular}
+{*{9}{|c}|}
+\hline
+
+    &$Y$    &$C$        &$NX$   &$EX$   &$IM$       &$q$\\ \hline
+$G,I$   &   &       &-  &-  &+      &-  \\ \hline
+$T$ &   &-      &+  &+  &-      &+  \\ \hline
+$Y^p$   &+  &+      &+  &+  &?      &+  \\ \hline
+\end{tabular}
+\caption[Macroeconomic Behavior of Real Variables in the Long Run]{**Macroeconomic Behavior of Real Variables in the Long Run**. All variables named in the first column are exogenous and all variables listed in the first row are endogenous. Each cell in the table shows the relation between the exogenous variable and the endogenous variable aligned with the cell. The +/?/- symbols denote a direct/ambiguous/inverse relation. A blank cell denotes that there is no relation. 
+
+Note that absolute purchasing power parity has *not been assumed. Under APPP, the last three columns would be gone and the rest of the table would be unaffected. Recall that $q$ is constant at $q=1$ under APPP. Moreover, the $EX$ and $IM$ columns would be gone too, as they would no longer make sense, being infinitely elastic at $q=1$.}
+\label{table:longreal}
+\end{table}
+-->
+</section>
+</section>
+</section>
+<section id="sec-longexp" class="level2" data-number="9.5">
+<h2 data-number="9.5" class="anchored" data-anchor-id="sec-longexp"><span class="header-section-number">9.5</span> Exports</h2>
+<p>Recall from <a href="markets_equilibrium.html#eq-exp" class="quarto-xref">Equation&nbsp;<span>5.4</span></a> in <a href="markets_equilibrium.html#sec-exports" class="quarto-xref"><span>Section 5.6.1</span></a> that the amount of domestically produced goods that is exported (<span class="math inline">\(EX=EX(q)\)</span>), is directly related to the real exchange rate (<span class="math inline">\(q\)</span>).<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a></p>
+<p>Therefore, if an exogenous variable has a direct/non-existent/inverse effect on <span class="math inline">\(q\)</span> it will have an identical effect on <span class="math inline">\(EX\)</span>. In <a href="#tbl-real_long" class="quarto-xref">Table&nbsp;<span>9.1</span></a>, therefore, the <span class="math inline">\(EX\)</span>-column must necessarily be the same as the <span class="math inline">\(q\)</span>-column that was discussed in <a href="#sec-longq" class="quarto-xref"><span>Section 9.4</span></a> above.</p>
+</section>
+<section id="sec-longimp" class="level2" data-number="9.6">
+<h2 data-number="9.6" class="anchored" data-anchor-id="sec-longimp"><span class="header-section-number">9.6</span> Imports</h2>
+<p>Recall from <a href="markets_equilibrium.html#eq-imports" class="quarto-xref">Equation&nbsp;<span>5.5</span></a> in <a href="markets_equilibrium.html#sec-imports" class="quarto-xref"><span>Section 5.6.2</span></a> that the amount imported by a country in the long run (<span class="math inline">\(IM=IM(q,Y^p-T)\)</span>) is inversely related to the real exchange rate (<span class="math inline">\(q\)</span>) and directly related to the disposable potential real GDP (<span class="math inline">\(Y^p-T\)</span>).</p>
+<p>According to <a href="#sec-longq" class="quarto-xref"><span>Section 9.4</span></a>, a ceteris paribus increase in <span class="math inline">\(G\)</span> or <span class="math inline">\(I\)</span> causes a decrease <span class="math inline">\(q\)</span>. This, in turn, would increase <span class="math inline">\(IM\)</span>.</p>
+<p>An increase in <span class="math inline">\(Y^p\)</span> leads to a higher <span class="math inline">\(q\)</span>, which reduces imports, and a higher <span class="math inline">\(Y^p-T\)</span>, which increases imports. Therefore, the overall effect of <span class="math inline">\(Y^p\)</span> on <span class="math inline">\(IM\)</span> is ambiguous.</p>
+<p>An increase in <span class="math inline">\(T\)</span> leads to an increase in <span class="math inline">\(q\)</span> and a decrease in <span class="math inline">\(Y^p-T\)</span>. Both lead to reduced imports.</p>
+<p>To summarize, <em>imports are directly affected by <span class="math inline">\(G\)</span> and <span class="math inline">\(I\)</span>; inversely affected by <span class="math inline">\(T\)</span>; ambiguously affected by <span class="math inline">\(Y^p\)</span>; and unaffected by all other exogenous variables</em>.</p>
+</section>
+<section id="sec-longrealconclusions" class="level2" data-number="9.7">
+<h2 data-number="9.7" class="anchored" data-anchor-id="sec-longrealconclusions"><span class="header-section-number">9.7</span> Macroeconomic Behavior of Real Variables in the Long Run: Conclusions</h2>
+<p>We have been discussing the long-run effects of our exogenous variables on our real endogenous variables. The results are summarized in <a href="#tbl-real_long" class="quarto-xref">Table&nbsp;<span>9.1</span></a>.</p>
+<p>Note that only fiscal policy can affect net exports; tariffs, for example, are useless. Contractionary fiscal policy—i.e., either a cut in government spending, <span class="math inline">\(G\)</span>, or an increase in taxes, <span class="math inline">\(T\)</span>, or both—can reliably increase net exports.</p>
+<p>Note also that neither monetary variables—such as <span class="math inline">\(M\)</span>, <span class="math inline">\(P\)</span>, and <span class="math inline">\(E\)</span>—nor the money market equilibrium condition—that is <span class="math inline">\(M=L(R)\cdot P\cdot Y\)</span> in <a href="markets_equilibrium.html#sec-summary-moneyeqm" class="quarto-xref"><span>Section 5.8.5</span></a> —played any role in this chapter’s discussion of the long run behavior of real variables. In fact, I did not even mention any monetary variables before this paragraph. This is an instance of an idea with a long pedigree in economics called <em>monetary neutrality</em>: any change in the quantity of money in circulation (<span class="math inline">\(M\)</span>) will not affect a real variable.</p>
+<p>While monetary neutrality is thought to be a good description of an economy in the long run, we will see that things are different in the short run. In the short run, <span class="math inline">\(M\)</span> can be an important determinant of real variables such as <span class="math inline">\(Y\)</span>, <span class="math inline">\(C\)</span>, <span class="math inline">\(I\)</span>, <span class="math inline">\(q\)</span>, and <span class="math inline">\(NX\)</span>.</p>
+<p>Note, finally, that in this chapter I did not bring up the issue of whether the country has a flexible exchange rate system or a fixed exchange rate system. In other words, the exchange rate system has nothing to do with the long run behavior of real variables. Put yet another way, the long run analysis of real variables will have nothing useful to say if a country is debating what kind of exchange rate system to adopt: both systems have the same real consequences.</p>
+
+
+</section>
+<section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn1"><p>See <a href="theories_equations_variables.html#sec-whytheory" class="quarto-xref"><span>Section 6.2</span></a> for the definition of ceteris paribus effects.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>See <a href="exchange_rates.html#sec-realexrates" class="quarto-xref"><span>Section 4.2</span></a> for more on the real exchange rate, and <a href="markets_equilibrium.html#sec-summary-nxp" class="quarto-xref"><span>Section 5.6.3</span></a> and <a href="markets_equilibrium.html#sec-appp" class="quarto-xref"><span>Section 5.6.4</span></a> for more on the law of one price.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p><a href="#fig-NX_real_exch_rate_LR_eqm" class="quarto-xref">Figure&nbsp;<span>9.1</span></a> also makes use of the long-run assumption of <span class="math inline">\(Y=Y^p\)</span>. The upward-rising net exports curve marked with a label and an arrow assumes that the magnitude of potential output is <span class="math inline">\(Y^p=Y^p_0\)</span> and the magnitude of taxes is <span class="math inline">\(T=T_0\)</span>.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn4"><p>For a recap on real exchange rates, see <a href="exchange_rates.html#sec-realexrates" class="quarto-xref"><span>Section 4.2</span></a>.<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+          // target, if specified
+          link.setAttribute("target", "_blank");
+          if (link.getAttribute("rel") === null) {
+            link.setAttribute("rel", "noopener");
+          }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./exchange_rate_systems.html" class="pagination-link" aria-label="Exchange Rate Systems: Fixed and Flexible">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Exchange Rate Systems: Fixed and Flexible</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./long_nominal.html" class="pagination-link" aria-label="Long-Run Predictions: The Nominal World">
+        <span class="nav-page-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Long-Run Predictions: The Nominal World</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/UdayanRoy62/internationalmacro/edit/main/long_real.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/UdayanRoy62/internationalmacro/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="nav-footer-right">
+<p>This book was built with <a href="https://quarto.org/">Quarto</a>.</p>
+</div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

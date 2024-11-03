@@ -6,10 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Udayan Roy">
-<meta name="dcterms.date" content="2024-07-22">
 
-<title>International Macroeconomics: Lecture Notes</title>
+<title>International Macroeconomics: Lecture Notes - 3&nbsp; Balance of Payments Accounts</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -52,7 +50,8 @@ div.csl-indent {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./preliminaries.html" rel="next">
+<link href="./exchange_rates.html" rel="next">
+<link href="./natincome.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -90,6 +89,35 @@ div.csl-indent {
   }
 }</script>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -102,7 +130,7 @@ div.csl-indent {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Preface</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./bop.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Balance of Payments Accounts</span></a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -132,7 +160,7 @@ div.csl-indent {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Preface</span></a>
   </div>
 </li>
@@ -150,7 +178,7 @@ div.csl-indent {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./bop.html" class="sidebar-item-text sidebar-link">
+  <a href="./bop.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Balance of Payments Accounts</span></span></a>
   </div>
 </li>
@@ -242,35 +270,35 @@ div.csl-indent {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#preface" id="toc-preface" class="nav-link active" data-scroll-target="#preface">Preface</a></li>
+  <li><a href="#sec-curacc" id="toc-sec-curacc" class="nav-link active" data-scroll-target="#sec-curacc"><span class="header-section-number">3.1</span> The Current Account</a></li>
+  <li><a href="#sec-capacc" id="toc-sec-capacc" class="nav-link" data-scroll-target="#sec-capacc"><span class="header-section-number">3.2</span> The Capital Account</a></li>
+  <li><a href="#sec-finacc" id="toc-sec-finacc" class="nav-link" data-scroll-target="#sec-finacc"><span class="header-section-number">3.3</span> The Financial Account</a></li>
+  <li><a href="#sec-credits-debits-balances" id="toc-sec-credits-debits-balances" class="nav-link" data-scroll-target="#sec-credits-debits-balances"><span class="header-section-number">3.4</span> Credits, Debits, and Balances</a>
+  <ul class="collapse">
+  <li><a href="#sec-credits" id="toc-sec-credits" class="nav-link" data-scroll-target="#sec-credits"><span class="header-section-number">3.4.1</span> Which Transactions Are Recorded as Credits?</a></li>
+  <li><a href="#sec-debits" id="toc-sec-debits" class="nav-link" data-scroll-target="#sec-debits"><span class="header-section-number">3.4.2</span> Which Transactions Are Recorded as Debits?</a></li>
+  </ul></li>
+  <li><a href="#sec-accex" id="toc-sec-accex" class="nav-link" data-scroll-target="#sec-accex"><span class="header-section-number">3.5</span> Accounting Rules: Examples</a>
+  <ul class="collapse">
+  <li><a href="#sec-balance" id="toc-sec-balance" class="nav-link" data-scroll-target="#sec-balance"><span class="header-section-number">3.5.1</span> What Is the <em>Balance</em> on an Account?</a></li>
+  </ul></li>
+  <li><a href="#sec-curcap" id="toc-sec-curcap" class="nav-link" data-scroll-target="#sec-curcap"><span class="header-section-number">3.6</span> Balance of Payments Identity</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/UdayanRoy62/internationalmacro/edit/main/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/UdayanRoy62/internationalmacro/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/UdayanRoy62/internationalmacro/edit/main/bop.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/UdayanRoy62/internationalmacro/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">International Macroeconomics: Lecture Notes</h1>
+<h1 class="title"><span id="sec-bopacc" class="quarto-section-identifier"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Balance of Payments Accounts</span></span></h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Udayan Roy </p>
-          </div>
-  </div>
     
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">July 22, 2024</p>
-    </div>
-  </div>
   
     
   </div>
@@ -280,35 +308,102 @@ div.csl-indent {
 </header>
 
 
-<section id="preface" class="level1 unnumbered">
-<h1 class="unnumbered">Preface</h1>
-<p>These lecture notes are for a very short course—roughly twelve 75-minute lectures—on international macroeconomics that I have taught to junior and senior undergraduates. Although no prior knowledge of economics is assumed, students typically come to the course after completing courses on introductory microeconomics and macroeconomics.</p>
-<p>This course is the second half of a one-semester course on international economics, with the first half on international trade. The course’s textbook is <span class="citation" data-cites="krugman2022international">Krugman, Obstfeld, and Melitz (<a href="references.html#ref-krugman2022international" role="doc-biblioref">2022</a>)</span>. My goal here is simply to present a concise version of chapters 13 through 18 of that book.</p>
-<p>I had to grapple with some tough trade-offs because of the severe time constraint. The core of the course is the theoretical framework originally proposed by Robert A. Mundell and J. Marcus Fleming. I assume perfect capital mobility throughout and, thereby, avoid all discussion of wealth effects and portfolio theory.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> I also assume a “small” country and, thereby, avoid the complex interactions of two-country models. The perfect capital mobility and small country assumptions keep this course very similar to the undergraduate macroeconomics course that most of my students would have also taken. This simplicity, I think, allows students to focus on the special aspects of <em>international</em> macroeconomics without having to learn a new kind of macroeconomics.</p>
-<p>However, the discussion of expectations here may surprise even students who have taken intermediate macroeconomics courses. I have broken up the discussion of short-run analysis into separate chapters on permanent and temporary changes in exogenous variables. Expectations are assumed to be anchored to the long-run equilibrium outcome. This assumption is at the root of the need to distinguish between temporary and permanent changes in, say, fiscal policy. A temporary change affects neither the long-run equilibrium outcome nor people’s expectations, which are, after all, assumed to be tied to the long-run equilibrium outcome. On the other hand, a permanent change in, say, government spending affects the long-run equilibrium level of the future value of the exchange rate and, consequently, people’s expectations about the future value of the exchange rate. This change in expectations has short-run ramifications that are absent in the analysis of temporary changes in government spending.</p>
-<p>These notions are present in <span class="citation" data-cites="krugman2022international">Krugman, Obstfeld, and Melitz (<a href="references.html#ref-krugman2022international" role="doc-biblioref">2022</a>)</span>, but are not developed in a way that is clear enough and leisurely enough for most students to grasp.<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> Other international macroeconomics textbooks are no better in this respect, and usually a lot worse.<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a></p>
-<p>The role of the long-run outcome in anchoring expectations is also my reason to discuss the long run before the short run. It would be essentially impossible to do short-run analysis without some notion of how expectations are formed, and the formation of expectations would be impossible to explain without a discussion of long-run equilibrium.</p>
-<p>These lecture notes are a work in progress. Please let me know if you see any errors or if you see a way to make the book better. My mailing address is Udayan Roy, College of Management, Long Island University, Brookville, NY 11548, USA. My email address is <a href="mailto:udayan.roy@liu.edu" class="email">udayan.roy@liu.edu</a>.</p>
+<p>A country’s balance of payments account for, say, 2003 summarizes all economic transactions that took place between its residents and foreign residents during 2003.</p>
+<p>The balance of payments accounts consist of the <strong>current account</strong>, the <strong>capital account</strong>, and the <strong>financial account</strong>.</p>
+<section id="sec-curacc" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="sec-curacc"><span class="header-section-number">3.1</span> The Current Account</h2>
+<p>To keep things simple, let’s assume that in every transaction there is one person who hands over some goods, services or assets and another person who pays (for those goods, services or assets) with cash.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
+<p>Transactions in which <em>goods or services</em> are traded between <em>residents</em> of America and <em>residents</em> of other countries are summarized in America’s current account.</p>
+</section>
+<section id="sec-capacc" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="sec-capacc"><span class="header-section-number">3.2</span> The Capital Account</h2>
+<p>The balance of payments accounts also includes the capital account. But I will ignore it because it usually involves small sums of money and is not important for my purposes. According to <span class="citation" data-cites="gerber2002">Gerber (<a href="references.html#ref-gerber2002" role="doc-biblioref">2002</a>)</span>, page 176, “The capital account includes transfers of specific types of capital, such as debt forgiveness, the personal assets that migrants take with them when they cross international boundaries, and the transfer of real estate and other fixed assets, such as the transfer of ownership of a military base or an embassy.”</p>
+<p>Prior to 1996 what we now call the financial account used to be called the capital account and used to include what we now call the capital account.</p>
+<p>To repeat, I will ignore the capital account. That is, unless I make an explicit statement to the contrary, I will assume that none of the types of international transactions that are formally classified under the capital account are actually taking place.</p>
+</section>
+<section id="sec-finacc" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="sec-finacc"><span class="header-section-number">3.3</span> The Financial Account</h2>
+<p>Transactions in which <em>assets</em> are traded between residents of America and residents of other countries are summarized in America’s financial account.</p>
+<p>An <strong>asset</strong> is pretty much anything that you can buy today (if you have some surplus cash) and sell later (if you need some extra cash). If your asset provides some service to someone while you are its owner, you can earn an <em>income</em> from your asset. For example, if an American buys a house in Germany, she would be buying an <em>asset</em>. And the rental income she earns by renting out the house is her <em>asset income</em>. If an American buys a German company’s stock, she would be buying an <em>asset</em>. And the dividend income she earns (as long as she owns the stock) is her <em>asset income</em>. If an American puts money in a German bank, that bank account is an <em>asset</em> that will periodically yield interest <em>income</em>.</p>
+<p>Interestingly, while <em>international asset trades are recorded in the financial account</em> of a nation’s balance of payments, the <em>income earned from those assets are considered to be payments for services rendered by the assets and are, therefore, recorded in the current account</em>. So, an American’s purchase of a house in Germany will be recorded in the financial account and any subsequent rental income from that house will be recorded in the current account.</p>
+<p>The financial account includes the <strong>Official Reserve Transactions Account</strong>. Most countries have <strong>central banks</strong> that design and carry out their monetary policies. For example, America’s central bank is the Federal Reserve (or, simply, the Fed). Central banks often buy and/or sell assets. For example, the Bank of Japan (i.e., Japan’s central bank) may buy U.S. Treasury bonds. It may then sell those bonds at a later date if it needs dollars. The assets that central banks typically buy and sell are called <strong>reserve assets</strong>. <em>International trade in reserve assets conducted by central banks is recorded in the official reserve transactions account</em>.</p>
+</section>
+<section id="sec-credits-debits-balances" class="level2" data-number="3.4">
+<h2 data-number="3.4" class="anchored" data-anchor-id="sec-credits-debits-balances"><span class="header-section-number">3.4</span> Credits, Debits, and Balances</h2>
+<p>Recall that all economic transactions that take place between a country’s residents and the residents of other countries are recorded in the country’s current, capital, and financial accounts. The recording of these transactions follows strict rules. This section presents a simplified look at the rules of balance of payments accounting.</p>
+<section id="sec-credits" class="level3" data-number="3.4.1">
+<h3 data-number="3.4.1" class="anchored" data-anchor-id="sec-credits"><span class="header-section-number">3.4.1</span> Which Transactions Are Recorded as Credits?</h3>
+<p>Recall from <a href="#sec-curacc" class="quarto-xref"><span>Section 3.1</span></a> that I have assumed that in every transaction there is one person who hands over goods, services or non-cash assets (such as stocks and bonds) and another person who pays with cash or check (i.e., money; to economists, both currency and checks count as money). Any transaction resulting in a receipt of money from foreigners is entered in the balance of payments accounts as a credit and is given a positive (<span class="math inline">\(+\)</span>) sign. In other words, any transaction in which we sell (i.e., <em>export</em>) goods, services or assets to foreigners is recorded as a <em>credit</em>.</p>
+</section>
+<section id="sec-debits" class="level3" data-number="3.4.2">
+<h3 data-number="3.4.2" class="anchored" data-anchor-id="sec-debits"><span class="header-section-number">3.4.2</span> Which Transactions Are Recorded as Debits?</h3>
+<p>Any transaction in which we pay money to foreigners is entered in the balance of payments accounts as a debit and is given a negative (<span class="math inline">\(-\)</span>) sign. In other words, <em>imports</em> of goods, services and assets are recorded as <em>debits</em>.</p>
+</section>
+</section>
+<section id="sec-accex" class="level2" data-number="3.5">
+<h2 data-number="3.5" class="anchored" data-anchor-id="sec-accex"><span class="header-section-number">3.5</span> Accounting Rules: Examples</h2>
+<p>Here are some examples that illustrate the rules of balance of payments accounting that I have discussed above:</p>
+<ul>
+<li>The sale (i.e., export) of a U.S. car to Germany is a <em>credit</em> in the U.S. <em>current</em> account.</li>
+<li>An American’s purchase (i.e., import) of a house in Germany is a <em>debit</em> in America’s <em>capital</em> account.</li>
+<li>The rental income earned by an American from her house in Germany is seen as the <em>export</em> of housing services from America to Germany and is, therefore, a <em>credit</em> in America’s <em>current</em> account.</li>
+<li>When a German deposits some extra cash in his New York bank account, it is seen as the purchase by the German (and, therefore, an <em>export</em> by America) of an American asset (in this case, the increased value of the bank account) and is recorded as a <em>credit</em> in America’s <em>financial</em> account.</li>
+</ul>
+<p>Note again that <em>credits are always exports</em> of goods, services or assets and <em>debits are always imports</em>.</p>
+<section id="sec-balance" class="level3" data-number="3.5.1">
+<h3 data-number="3.5.1" class="anchored" data-anchor-id="sec-balance"><span class="header-section-number">3.5.1</span> What Is the <em>Balance</em> on an Account?</h3>
+<p><em>The total of all credits minus the total of all debits in an account or sub-account is called its balance</em>. The balance could be positive, zero, or negative.</p>
+<p>Since credits are exports and debits are imports, <span id="eq-balancedef"><span class="math display">\[
+\text{Balance} = \text{Credits} - \text{Debits} = \text{Exports} - \text{Imports} = \text{Net Exports}.
+\tag{3.1}\]</span></span> In particular, <em>our current account balance is our net export of goods and services</em> and <em>our financial account balance is our net export of assets</em>.</p>
+<p>Most internationally traded assets are paper assets such as stocks and bonds. Unlike the purchase of, say, a house, the purchase of a stock or a bond does not involve the exchange of some tangible commodity. The purchase of stocks and bonds simply entitle the buyer to future income. If you buy Microsoft stock, Microsoft will get your money <em>today</em> and you will receive a share of Microsoft’s <em>future</em> profits (as long as you keep the stock). If you buy a bond from AT&amp;T, AT&amp;T will get your money <em>today</em> and you will get regular <em>future</em> payments of some amount specified on the bond. Notice that in both of these last two cases, what you are really doing is <em>lending</em> some of your money to others <em>today</em> in the expectation that they will pay you in the <em>future</em>. When you buy Microsoft stock, you are lending money to Microsoft. When you buy AT&amp;T bonds, you are lending money to AT&amp;T. Similarly, the sale of stocks (by, say, Microsoft) and bonds (by, say, AT&amp;T) is simply a way for these companies to borrow money.</p>
+<p>Applying this idea to international asset trades, <em>America’s sale (or, export) of stocks and bonds to foreigners during 1999 is equal to the amount America borrowed from foreigners during 1999 and America’s purchase (or, import) of stocks and bonds from foreigners during 1999 is equal to the amount America loaned to foreigners during 1999. Therefore, our financial account balance for 1999 is equal to the increase in our net indebtedness to foreigners during 1999</em>.</p>
+<p><span id="eq-intdebt"><span class="math display">\[
+\begin{eqnarray}
+{\text{Financial Account Balance in 1999}}\\
+&amp;=&amp;\text{Financial Account Credits}-\text{Financial Account Debits}\nonumber\\
+&amp;=&amp;\text{Assets Exports}-\text{Assets Imports}\nonumber\\
+&amp;=&amp;\text{Borrowing from foreigners in 1999}-\text{Lending to foreigners in 1999}\nonumber\\
+&amp;=&amp;\text{Increase in our net indebtedness in 1999.}\nonumber
+\end{eqnarray}
+\tag{3.2}\]</span></span></p>
+<p>If, for example, our financial account balance during 1999 was +$100 billion, then we borrowed $100 billion more from foreigners than we lent them, and, so, our indebtedness to foreigners increased in 1999 by $100 billion.</p>
+<p>And, by the way, that increase of $100 billion in our foreign debt could have happened in several different ways: For example, the amount we owe them could have gone up from $500 billion to $600 billion or the amount they owe us could have gone down from $300 billion to $200 billion or their debt to us of $25 billion may have turned into our debt to them of $75 billion during 1999.</p>
+<p>If, on the other hand, our financial account balance was -$150 billion, then our net indebtedness to foreigners decreased by $150 billion. <em>Therefore, a positive financial account balance means an increase in our international indebtedness and a negative financial account balance means a decrease in our international indebtedness</em>.</p>
+</section>
+</section>
+<section id="sec-curcap" class="level2" data-number="3.6">
+<h2 data-number="3.6" class="anchored" data-anchor-id="sec-curcap"><span class="header-section-number">3.6</span> Balance of Payments Identity</h2>
+<p>Now that we have seen how the balances in the current, capital, and financial accounts are defined, it is necessary to see how the three balances are related. It turns out that <em>the balances of the current, capital, and financial accounts must always sum to zero</em>:</p>
+<p><span id="eq-balancedpayments"><span class="math display">\[
+\text{current account balance} + \text{capital account balance} + \text{financial account balance} \equiv 0.
+\tag{3.3}\]</span></span></p>
+<p>So, if we ignore the typically tiny capital account, if the current account balance is <span class="math inline">\(-\)</span>$5000, then the financial account balance would have to be +$5000, and vice versa.</p>
+<p>To see the logic behind <a href="#eq-balancedpayments" class="quarto-xref">Equation&nbsp;<span>3.3</span></a>, let the current account balance be <span class="math inline">\(-\)</span>$5000. In other words, our net export of goods and services is <span class="math inline">\(-\)</span>$5000. That is, we bought $5000 more goods and services from foreigners than we sold to them. This raises a question: How could it have happened? Are we living on the charity of foreigners? Why would they give us $5000 more stuff than we gave them? The answer is that the foreigners will let us have an additional $5000 worth of <em>goods and services</em> as long as we give them an additional $5000 of <em>assets</em>. That is, our net export of goods and services may be <span class="math inline">\(-\)</span>$5000 as long as our net export of assets is <span class="math inline">\(+\)</span>$5000. Therefore, recalling from <a href="#eq-balancedef" class="quarto-xref">Equation&nbsp;<span>3.1</span></a> that “net export” is also called “balance”, our current account balance can be <span class="math inline">\(-\)</span>$5000 as long as our financial account balance is <span class="math inline">\(+\)</span>$5000.</p>
+<p>We saw in <a href="#sec-balance" class="quarto-xref"><span>Section 3.5.1</span></a> that a positive financial account balance reflects an increase in our net indebtedness to foreigners. Therefore, <a href="#eq-balancedpayments" class="quarto-xref">Equation&nbsp;<span>3.3</span></a> means that we can import more goods and services than we export, as long as we understand that there will be an increase in our net indebtedness.</p>
+<p>Another way to see this is to recognize that every international transaction will necessarily involve a credit in one of the two accounts—i.e., in either the current account or the financial account—and a debit of equal size in the other account.</p>
+<p>Consider an example. Suppose a German buys an American car for $50,000. This is a credit in the current account and, therefore, our current account balance increases by $50,000. Now, where would the German buyer get those dollars? There are several possibilities:</p>
+<ul>
+<li>He has a bank account in New York from which he pays the $50,000. In this case, following example 4 in <a href="#sec-accex" class="quarto-xref"><span>Section 3.5</span></a> above, we can see that this is a debit of $50,000 in our financial account. So, our financial account balance decreases by $50,000.</li>
+<li>He sells some of his U.S. assets (such as real estate or stocks or bonds) and uses that money to buy his car. Again, a glance at examples 2 and 4 in <a href="#sec-accex" class="quarto-xref"><span>Section 3.5</span></a> will show you that this has the same effect as in the previous case: our financial account balance decreases by $50,000.</li>
+<li>He buys $50,000 from an American who needed Euros to open a bank account in Germany. As you can tell from example 4 in <a href="#sec-accex" class="quarto-xref"><span>Section 3.5</span></a>, this is a $50,000 debit in our financial account. So, again, our financial account balance decreases by $50,000.</li>
+</ul>
+<p>The point of these examples is that if a transaction causes our current account balance to <em>increase</em> by $50,000, then it must simultaneously involve another transaction that causes our financial account balance to <em>decrease</em> by the same amount, irrespective of the gory details of the transaction.</p>
+<p>Similarly, it can be shown that any transaction that <em>decreases</em> our current account balance by $40,000 will simultaneously be accompanied by other transactions that will <em>increase</em> our financial account balance by $40,000.</p>
+<p>More generally, any transaction that changes the balance on any of these two accounts will be accompanied by other transactions that change the balance on the other account by the same amount but in the opposite direction. Hence, the current account balance plus the financial account balance must always be zero.</p>
+<p>In other words—using the idea that the balance on an account is equal to the net exports on that account; see equation <a href="#eq-balancedef" class="quarto-xref">Equation&nbsp;<span>3.1</span></a> — the net exports of goods and services must equal the net imports of assets, and vice versa.</p>
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
-<div id="ref-feenstra2008international" class="csl-entry" role="listitem">
-Feenstra, Robert C, and Alan M Taylor. 2008. <em>International Trade</em>. Macmillan.
-</div>
-<div id="ref-krugman2022international" class="csl-entry" role="listitem">
-Krugman, Paul R, Maurice Obstfeld, and Marc Melitz. 2022. <em>International Economics: Theory and Policy</em>. Pearson Education.
-</div>
-<div id="ref-rodseth2000open" class="csl-entry" role="listitem">
-Rødseth, Asbjørn. 2000. <em>Open Economy Macroeconomics</em>. Cambridge University Press.
+<div id="ref-gerber2002" class="csl-entry" role="listitem">
+Gerber, James. 2002. <em>International Economics</em>. Boston, MA: Addison-Wesley.
 </div>
 </div>
 </section>
 <section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
 <hr>
 <ol>
-<li id="fn1"><p>On these issues, see <span class="citation" data-cites="rodseth2000open">Rødseth (<a href="references.html#ref-rodseth2000open" role="doc-biblioref">2000</a>)</span>. By perfect capital mobility I mean a world in which (a) people who buy assets care only about the expected returns of those assets, and (b) they all have the same expectations about future changes in exchange rates. See section XXX.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn2"><p>On page 442 of <span class="citation" data-cites="krugman2022international">Krugman, Obstfeld, and Melitz (<a href="references.html#ref-krugman2022international" role="doc-biblioref">2022</a>)</span> the authors address the issue as follows: “A permanent policy shift affects not only the current value of the government’s policy instrument (the money supply, government spending, or taxes) but also the <em>long-run</em> exchange rate. This in turn affects expectations about future exchange rates. Because these changes in expectations have a major influence on the exchange rate prevailing in the short run, the effects of permanent policy shifts differ from those of temporary shifts.”<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn3"><p>Consider <span class="citation" data-cites="feenstra2008international">Feenstra and Taylor (<a href="references.html#ref-feenstra2008international" role="doc-biblioref">2008</a>)</span>. On page 551 of their excellent textbook, the authors write, “[W]e can form expectations of the future exchange rate using the long-run monetary approach …” This easy-to-miss mention of the idea that expectations are based on the long-run equilibrium outcome is not adequately developed, as far as I am concerned. And the consequent need to distinguish between temporary and permanent policy changes is not as clearly developed as I would like.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn1"><p>By assets I mean <em>non-cash</em> assets. It is possible that a US resident might buy some Swedish kroner, which is a cash asset, and just hang on to it. But I will keep things simple by assuming that a US resident who buys some Swedish kroner would immediately spend it on some goods, services or non-cash assets (such as stocks, bonds, the title to a house, etc.) perhaps because she has no use for Swedish kroner in the US. As a result, it makes sense to assume that when cash is offered as payment, it is to buy some non-cash asset. Moreover, although it is possible for Alan to hand over some IBM shares to Betty and get some Google shares in return, not much realism is lost by assuming that Alan gets cash for his IBM shares and then uses the cash to buy Google shares from Betty.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section>
 
@@ -729,10 +824,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="./natincome.html" class="pagination-link" aria-label="National Income Accounts, Prices, and Inflation">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">National Income Accounts, Prices, and Inflation</span></span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./preliminaries.html" class="pagination-link" aria-label="Preliminaries">
-        <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Preliminaries</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./exchange_rates.html" class="pagination-link" aria-label="Exchange Rates">
+        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Exchange Rates</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -744,7 +842,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/UdayanRoy62/internationalmacro/edit/main/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/UdayanRoy62/internationalmacro/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/UdayanRoy62/internationalmacro/edit/main/bop.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/UdayanRoy62/internationalmacro/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>This book was built with <a href="https://quarto.org/">Quarto</a>.</p>
 </div>

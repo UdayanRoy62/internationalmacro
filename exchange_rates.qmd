@@ -1,0 +1,54 @@
+<!--sec-exrates, sec-nomexrates, sec-realexrates, eq-q, sec-notnfornvar, sec-spotexrates, sec-forwardexrates, sec-forward-exp,  
+-->
+# Exchange Rates {#sec-exrates}
+
+The currency of a country is valuable, even to residents of other countries. Non-Americans may wish to buy dollars (with their own respective currencies), in order to buy American goods, services or assets.^[By "non-Americans" I mean residents of countries other than the United States. Similarly, by "Americans" I mean residents of the United States, citizens or not.] Similarly, Americans may be willing to pay dollars to buy foreign currencies. The institutions that enable people to trade one currency for another are called **foreign exchange markets**\index{markets!foreign exchange}. The amount of currency $A$ (say, the US dollar) that will have to be paid as the price of one unit of currency $B$ (say, the euro) in the foreign exchange market is the **exchange rate**\index{exchange rate} of currency $B$ in terms of currency $A$. 
+
+##  Nominal Exchange Rates {#sec-nomexrates}
+
+The answer to the question "What are *nominal* exchange rates?" is actually the same as the answer to the question "What are exchange rates?".  The nominal exchange rate\index{exchange rate!nominal exchange rate} of the euro in terms of, say, the US dollar is the price of a euro in dollars. The word "nominal" is sometimes added simply to serve as a reminder that there exists another kind of exchange rate: the real exchange rate.
+
+In this lecture, I will typically consider two currencies: the *domestic* currency and the *foreign* currency. I will use the symbol $E$ to denote **the price of the foreign currency measured in units of the domestic currency**. So, if the domestic currency is the US dollar and the foreign currency is the British pound, and if one pound is worth \$2.00, then $E = 2.00$. If one US dollar is worth 100 Japanese yen, then $E=0.01$. (Why?)
+
+## Real Exchange Rates {#sec-realexrates}
+
+The real exchange rate\index{exchange rate!real exchange rate} is *the (average) price of foreign-made goods and services measured in units of domestically produced goods and services*. It is denoted by the symbol, $q$, of the lower case Greek letter "epsilon", and it is computed by the following equation:
+$$
+q=\frac{E\cdot P^*}{P}
+$$ {#eq-q}
+ 
+Here, $P$ (respectively, $P^*$) represents **the average level of prices** of goods and services made in the domestic (respectively, foreign) economy. By "average level of prices" I mean some sort of price index such as the implicit price deflator for GDP or the consumer price index\index{consumer price index}.^[These variables were discussed in @sec-p-pi. See in particular @eq-P.]
+
+To see why @eq-q does measure the relative price of foreign goods in units of domestic goods, consider a world in which wheat is the only traded good. Consider "Made in USA" wheat and "Made in France" wheat. Let the price of "Made in USA" wheat be \$2.00 per pound; that is, let $P=2$. Let the price of "Made in France" wheat be \EUR{6.00} per pound; that is, let $P^*=6$. Let the price of one euro be \$2.00; that is, let $E=2.00$. Note that the price of "Made in France" wheat is \EUR{6.00} which is worth \$12.00. Note also that \$12.00 would buy you six pounds of "Made in USA" wheat. Therefore, one pound of "Made in France" wheat has the same market value as six pounds of "Made in USA" wheat. That is, the real exchange rate of "Made in France" wheat is six pounds of "Made in USA" wheat. In symbols, $q=6$.
+
+Let us now see if the formula in @eq-q gives the same answer. If we substitute $P=2$, $P^*=6$ and $E=2.00$ in @eq-q, we get $q=(2.00\times 6)/2 =6$, which is exactly the real exchange rate we got in the last paragraph.
+
+Note that the real exchange rate, being the price of foreign-made goods (measured in units of domestically produced goods), is a measure of the foreign economy's competitiveness\index{exchange rate!real exchange rate!competitiveness}. The higher the value of $q$, the less attractive foreign-made goods would be (to domestic buyers) and the more attractive domestically produced goods would be (to foreign buyers).
+    
+### Notation: Foreign Country Variables {#sec-notnfornvar}
+
+As I did in the case of $P^*$ in @sec-realexrates, I will use an asterisk (*) as a superscript to mark all foreign variables; i.e., all variables describing the rest of the world.
+
+## What Are Spot Exchange Rates? {#sec-spotexrates}
+
+The spot exchange rate is just another way of refering to the exchange rate that I discussed earlier in @sec-exrates. Today's spot exchange rate\index{exchange rate!spot exchange rate} of, say, the Japanese yen in terms of the US dollar is the price---of a yen, in dollars---at which any dollar-yen exchange would take place today. This is, therefore, just another, fancier name for the $E$ that was defined earlier. The word "spot" is sometimes added simply to serve as a reminder that there exists another kind of exchange rate: the Forward Exchange Rate.
+
+## What Are Forward Exchange Rates? {#sec-forwardexrates}
+
+Today's "30-day forward exchange rate"\index{exchange rate!forward exchange rate} of the yen in terms of the US dollar is the price---of a yen, in dollars---that you would have to pay for any dollar-yen exchange you agree *today* to do *30 days later*. Only the agreement is signed today; the actual exchange of currencies takes place 30 days later. Let us denote the 30-day forward exchange rate of the foreign currency in terms of the domestic currency by $f_{30}$. So, if $f_{30} = 0.095$ US dollars today, you can sign an agreement today to sell \$9.50 thirty days later in exchange for 100 yen. 
+
+But why would anyone do such a thing? That is, why would one sign an agreement *today* to make a currency exchange *thirty days later?* Well, by trading currencies on the forward exchange market, one can *avoid exchange rate uncertainty*. Suppose you will have to pay someone 100 yen thirty days from today. If you sign a forward-market agreement today and if $f_{30}=0.095$, you'll know that you'll need exactly \$9.50 thirty days later to make your 100 yen payment. You could instead wait 30 days, go to the foreign exchange spot market and buy 100 yen at whatever spot-market exchange rate prevails at that date. But that would be a gamble: you could end up paying \$9.50 or more than \$9.50 or less than \$9.50 depending on what the spot rate is at that date.
+
+### Forward Exchange Rates and Expectations {#sec-forward-exp}
+
+It can be shown that the 30-day forward exchange rate of the yen is a proxy measure of what people currently expect the spot-market value of the yen will be 30 days in the future. That is, if $f_{30} = 0.095$ US dollars per yen today, then it is a safe bet that people today expect that one yen will be worth \$0.095 thirty days later in the spot market. Why? 
+
+Recall that the nominal exchange rate ($E$) is the current spot-market value of one unit of the foreign currency. Using the notational rule set out in @sec-notngrowth, let $E_f$ denote the *future* spot-market value of one unit of the foreign currency. And, finally, let $E_f^e$ denote the **current expectation of the future value of the nominal exchange rate**. My claim is that $f_{30}$ is a good estimate of $E_f^e$ when the future is 30 days ahead. 
+
+To see why this is, suppose, to the contrary, that $f_{30} = 0.095$ US dollars per yen today, but that people today think that thirty days later one yen will be worth $E_f^e =0.080$ US dollars in the spot market. Now, if people are more or less convinced that thirty days later they would be able to buy one yen in the spot market for \$0.080, why would they rush to the forward market today and pay \$0.095 for every yen that they must pledge to buy thirty days later? It doesn't make sense. If instead we had $f_{30} = 0.095$ and $E_f^e =0.099$, then people would indeed want to buy yen in the forward market. 
+
+But now nobody would want to *sell* yen in the forward market. To see why, suppose you are an American exporter and you are expecting a Japanese client to pay you in yen thirty days in the future. You could wait till you receive the yen payment and then sell your yen on the spot market to get dollars, or you could sell the expected receipt of yen on the forward market *today*. Which would you rather do? As the forward value of a yen is $f_{30} = 0.095$ and you expect that the spot-market value will be $E_f^e =0.099$, you will surely choose to avoid the forward market. 
+
+To summarize, I have established that if $f_{30} > E_f^e$ then nobody would want to buy the foreign currency in the forward market. I have also established that if $f_{30} < E_f^e$ then nobody would want to sell the foreign currency in the forward market. Therefore, the only reasonable outcome is $f_{30} = E_f^e$. That is, today's forward-market price of a currency is a good estimate of what people today expect that currency's spot-market value will be in the future.
+
+Typically, you can't tell what people expect the future to be. But in the case of foreign exchange rates at least, there is a way to do so!

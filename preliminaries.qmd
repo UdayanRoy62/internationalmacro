@@ -1,0 +1,47 @@
+# Preliminaries {#sec-preliminaries}
+
+## Economics {#sec-economics}
+
+Economics\index{economics} is the study of how we---as individuals and as societies---deal with the inescapable reality that "we can't always get what we want". This fact of life, which economists call *scarcity*, makes it important for us to know how the many economic variables that are important to us---such as the gross domestic product, the unemployment rate, the consumer price index, etc.---can be made to increase or decrease as needed. For example, scarcity makes it important to understand whether our gross domestic product would increase or decrease if we imposed tariffs on imported goods.
+
+Economics consists of:
+
+-   **theories**, which are explanations---not necessarily proven---for the observed up and down movements of the economic variables that matter to us, and of
+-   **statistical studies** that seek to test the reliability of economic theories.
+
+## Macroeconomics {#sec-macro}
+
+Macroeconomics\index{economics!macroeconomics} is the part of economics that deals with economic variables that describe a country. When describing the economy of the United States, an economist will probably mention the gross domestic product, the unemployment rate, the inflation rate, the trade deficit, etc., of the United States. These variables that describe an entire country are at the heart of macroeconomics. Macroeconomics consists of (a) theories that derive predictions about the likely changes in such economic variables and (b) statistical studies that scour history to check the predictive accuracy of the theories.
+
+## International Macroeconomics {#sec-intmac}
+
+The macroeconomic behavior of a country that is economically isolated from other countries---a **closed economy**, in the jargon of economics---will not necessarily be the same as the macroeconomic behavior of a highly globalized country---an **open economy**. International macroeconomics is the part of macroeconomics that deals with countries for which international economic links are important. Such links may include international trade in goods and services, cross-border migration of people, and cross-border borrowing and lending.
+
+## Why Study International Macroeconomics? {#sec-whyintmac}
+
+The point of studying international macroeconomics is to be able to *evaluate alternative macroeconomic policies* and choose the one that's best. If we have a reliable theory that explains the reasons why a certain variable goes up or down, we might be able to figure out policies that will move that variable in the desired direction. For example, if we can figure out the reasons for the up and down movements of a nation's trade deficit, we might be able to design economic policies that drive the trade deficit in the desired direction, be it up or down.
+
+In discussing macroeconomic policy\index{policy} I will focus on **fiscal policy** and **monetary policy**.
+
+### What Is Fiscal Policy? {#sec-fiscal}
+
+Fiscal policy\index{policy!fiscal policy} consists of all the methods of controlling an economy by making changes to the government's budget. A government's **budget**\index{budget, government's} is a description of its spending and revenue-raising plans. So, for my purposes, fiscal policy essentially consists of changes in total **government spending**\index{government spending}, $G$, and **total tax revenue**\index{tax revenue}, $T$.^[First, note that I have begun to introduce symbols to denote economic variables. As you will see, the good part of the use of symbols is that it speeds up the discussion considerably. The bad part is that you will need to remember which symbol denotes which variable.]
+
+Second, to be more precise, $T$ represents total *net* tax revenue, which equals the tax revenues of the government less **transfer payments** made by the government. Transfer payments are gifts, such as cash grants to the poor.
+
+Third, $G$ represents government *purchases* rather than government spending. The latter includes the former plus transfer payments, which, as I said in the previous paragraph, are gifts, not payments made for purchases. $G$ represents only what the government spends for its purchases of goods and services.
+
+### What Is Monetary Policy? {#sec-monetary}
+
+Monetary policy\index{policy!monetary policy} consists of all the methods of controlling an economy by making changes to the economic variables that are directly controlled by the country's monetary authorities, such as the Federal Reserve in the United States. For my purposes, monetary policy consists of changes in a country's **money supply**, $M$. A central bank may print money and lend it to financial institutions such as banks. If and when these financial institutions in turn lend the money to people or to businesses, the newly printed money begins to affect actual economic activity. This, of course, is why the central bank printed the money in the first place.
+<!--^[As we will see in chapter \ref{exchsys}, the list of the variables that are directly controlled by the monetary authorities depends on whether the country has a fixed or flexible exchange rate system.]-->
+
+### Monetary Unions {#sec-monetary-unions}
+
+In the case of the 24 European countries that all use the same currency, the euro, there is no monetary policy at all to conduct!^[As of October 2023, the eurozone consists of 20 members who are European Union (EU) members and use the euro. They are Austria, Belgium, Croatia, Cyprus, Estonia, Finland, France, Germany, Greece, Ireland, Italy, Latvia, Lithuania, Luxembourg, Malta, the Netherlands, Portugal, Slovakia, Slovenia and Spain. The non-EU countries that use the euro are Andorra, Vatican City, and Monaco and San Marino.] These countries have willingly given up their individual currencies and formed a **monetary union**\index{European Monetary Union}. The monetary policy of the entire eurozone is determined by the European Central Bank\index{central banks!European Central Bank} in Frankfurt.^[This lack of the ability to use monetary policy is also true of a handful of countries that have "dollarized"\index{dollarization}. These are countries that have decided to use another country's currency as their own currency. For example, East Timor, Ecuador, El Salvador, and Panama use the U.S. dollar as their currency.]
+
+It is important to understand the pros and cons of the formation of a monetary union so that countries considering joining a monetary union may make smart choices.
+
+Just as multiple countries may choose to use a common currency, they may also choose to adopt a common fiscal policy whereby a central budget sets expenditure and revenue-raising rules for all members of the club. For example, the USA may be thought of as a union of fifty states with a common currency and a unified fiscal policy decided in Washington, D.C. In fact, we will see that it may be difficult for a group of countries to share a common currency and retain independent national fiscal policies. During the economic crises that cascaded through several eurozone countries---such as Ireland, Greece, and Spain---during 2009--2012, some commentators argued that the eurozone countries needed to unify their budgets---and become something like a United States of Europe---if they were to have a stable monetary union.
+
+In any case, countries considering a monetary and/or fiscal union need to be able to make their choices with their eyes wide open. It is, therefore, necessary for international economics to have something useful to say on the issue.

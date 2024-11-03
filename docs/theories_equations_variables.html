@@ -6,10 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Udayan Roy">
-<meta name="dcterms.date" content="2024-07-22">
 
-<title>International Macroeconomics: Lecture Notes</title>
+<title>International Macroeconomics: Lecture Notes - 6&nbsp; Theories, Equations and Variables</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -22,27 +20,7 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for citations */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-  margin-bottom: 0em;
-}
-.hanging-indent div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}</style>
+</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -52,7 +30,8 @@ div.csl-indent {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./preliminaries.html" rel="next">
+<link href="./long_run_short_run.html" rel="next">
+<link href="./markets_equilibrium.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -90,6 +69,35 @@ div.csl-indent {
   }
 }</script>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -102,7 +110,7 @@ div.csl-indent {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Preface</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./theories_equations_variables.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Theories, Equations and Variables</span></a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -132,7 +140,7 @@ div.csl-indent {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Preface</span></a>
   </div>
 </li>
@@ -168,7 +176,7 @@ div.csl-indent {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./theories_equations_variables.html" class="sidebar-item-text sidebar-link">
+  <a href="./theories_equations_variables.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Theories, Equations and Variables</span></span></a>
   </div>
 </li>
@@ -242,35 +250,29 @@ div.csl-indent {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#preface" id="toc-preface" class="nav-link active" data-scroll-target="#preface">Preface</a></li>
+  <li><a href="#sec-theory" id="toc-sec-theory" class="nav-link active" data-scroll-target="#sec-theory"><span class="header-section-number">6.1</span> What Is a Theory?</a>
+  <ul class="collapse">
+  <li><a href="#sec-exovar" id="toc-sec-exovar" class="nav-link" data-scroll-target="#sec-exovar"><span class="header-section-number">6.1.1</span> What Are Exogenous Variables?</a></li>
+  <li><a href="#sec-endovar" id="toc-sec-endovar" class="nav-link" data-scroll-target="#sec-endovar"><span class="header-section-number">6.1.2</span> What Are Endogenous Variables?</a></li>
+  <li><a href="#sec-howmanyeq" id="toc-sec-howmanyeq" class="nav-link" data-scroll-target="#sec-howmanyeq"><span class="header-section-number">6.1.3</span> How Many Equations Are Enough?</a></li>
+  </ul></li>
+  <li><a href="#sec-whytheory" id="toc-sec-whytheory" class="nav-link" data-scroll-target="#sec-whytheory"><span class="header-section-number">6.2</span> What Can We Do With a Theory?</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/UdayanRoy62/internationalmacro/edit/main/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/UdayanRoy62/internationalmacro/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/UdayanRoy62/internationalmacro/edit/main/theories_equations_variables.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/UdayanRoy62/internationalmacro/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">International Macroeconomics: Lecture Notes</h1>
+<h1 class="title"><span id="sec-theqvar" class="quarto-section-identifier"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Theories, Equations and Variables</span></span></h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Udayan Roy </p>
-          </div>
-  </div>
     
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">July 22, 2024</p>
-    </div>
-  </div>
   
     
   </div>
@@ -280,35 +282,139 @@ div.csl-indent {
 </header>
 
 
-<section id="preface" class="level1 unnumbered">
-<h1 class="unnumbered">Preface</h1>
-<p>These lecture notes are for a very short course—roughly twelve 75-minute lectures—on international macroeconomics that I have taught to junior and senior undergraduates. Although no prior knowledge of economics is assumed, students typically come to the course after completing courses on introductory microeconomics and macroeconomics.</p>
-<p>This course is the second half of a one-semester course on international economics, with the first half on international trade. The course’s textbook is <span class="citation" data-cites="krugman2022international">Krugman, Obstfeld, and Melitz (<a href="references.html#ref-krugman2022international" role="doc-biblioref">2022</a>)</span>. My goal here is simply to present a concise version of chapters 13 through 18 of that book.</p>
-<p>I had to grapple with some tough trade-offs because of the severe time constraint. The core of the course is the theoretical framework originally proposed by Robert A. Mundell and J. Marcus Fleming. I assume perfect capital mobility throughout and, thereby, avoid all discussion of wealth effects and portfolio theory.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> I also assume a “small” country and, thereby, avoid the complex interactions of two-country models. The perfect capital mobility and small country assumptions keep this course very similar to the undergraduate macroeconomics course that most of my students would have also taken. This simplicity, I think, allows students to focus on the special aspects of <em>international</em> macroeconomics without having to learn a new kind of macroeconomics.</p>
-<p>However, the discussion of expectations here may surprise even students who have taken intermediate macroeconomics courses. I have broken up the discussion of short-run analysis into separate chapters on permanent and temporary changes in exogenous variables. Expectations are assumed to be anchored to the long-run equilibrium outcome. This assumption is at the root of the need to distinguish between temporary and permanent changes in, say, fiscal policy. A temporary change affects neither the long-run equilibrium outcome nor people’s expectations, which are, after all, assumed to be tied to the long-run equilibrium outcome. On the other hand, a permanent change in, say, government spending affects the long-run equilibrium level of the future value of the exchange rate and, consequently, people’s expectations about the future value of the exchange rate. This change in expectations has short-run ramifications that are absent in the analysis of temporary changes in government spending.</p>
-<p>These notions are present in <span class="citation" data-cites="krugman2022international">Krugman, Obstfeld, and Melitz (<a href="references.html#ref-krugman2022international" role="doc-biblioref">2022</a>)</span>, but are not developed in a way that is clear enough and leisurely enough for most students to grasp.<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> Other international macroeconomics textbooks are no better in this respect, and usually a lot worse.<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a></p>
-<p>The role of the long-run outcome in anchoring expectations is also my reason to discuss the long run before the short run. It would be essentially impossible to do short-run analysis without some notion of how expectations are formed, and the formation of expectations would be impossible to explain without a discussion of long-run equilibrium.</p>
-<p>These lecture notes are a work in progress. Please let me know if you see any errors or if you see a way to make the book better. My mailing address is Udayan Roy, College of Management, Long Island University, Brookville, NY 11548, USA. My email address is <a href="mailto:udayan.roy@liu.edu" class="email">udayan.roy@liu.edu</a>.</p>
+<section id="sec-theory" class="level2" data-number="6.1">
+<h2 data-number="6.1" class="anchored" data-anchor-id="sec-theory"><span class="header-section-number">6.1</span> What Is a Theory?</h2>
+<p>For my purposes, a theory is anything that consists of</p>
+<ul>
+<li>a list of exogenous variables,</li>
+<li>a list of endogenous variables, and</li>
+<li>a bunch of equations that show how the variables are related to each other.</li>
+</ul>
+<p>If a theory is to be useful, its equations will help us predict how the <strong>endogenous variables</strong> are affected by changes in the <strong>exogenous variables</strong> .</p>
+<section id="sec-exovar" class="level3" data-number="6.1.1">
+<h3 data-number="6.1.1" class="anchored" data-anchor-id="sec-exovar"><span class="header-section-number">6.1.1</span> What Are Exogenous Variables?</h3>
+<p><em>A variable is said to be exogenous to a theory if the theory does not seek to explain the ups and downs of the variable.</em></p>
+<p>Consider a theory of, say, the crime rate that says that a city’s crime rate goes up (respectively, down) when it has less (respectively, more) rain, but is totally silent about why the amount of rain itself might go up or down. For such a theory, the amount of rain is an exogenous variable.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
+<p>Exogenous variables are basically of two types: <strong>policy variables</strong> and <strong>shocks</strong> . Policy variables are those exogenous variables whose values can be raised or lowered by policy makers or administrators in the government. All other exogenous variables are called shocks.</p>
+</section>
+<section id="sec-endovar" class="level3" data-number="6.1.2">
+<h3 data-number="6.1.2" class="anchored" data-anchor-id="sec-endovar"><span class="header-section-number">6.1.2</span> What Are Endogenous Variables?</h3>
+<p><em>A variable is endogenous to a theory if the theory aims to explain why that variable might increase or decrease</em>.</p>
+<p>In the example that was just considered, the crime rate is the endogenous variable.</p>
+</section>
+<section id="sec-howmanyeq" class="level3" data-number="6.1.3">
+<h3 data-number="6.1.3" class="anchored" data-anchor-id="sec-howmanyeq"><span class="header-section-number">6.1.3</span> How Many Equations Are Enough?</h3>
+<p>Recall that a theory must have a set of equations that show how the various exogenous and endogenous variables are related to each other. The question now is: How many equations should a theory have? And the short answer is: as many equations as are necessary to enable the theory to do what it is supposed to do, which is to predict the up/down movements of the theory’s endogenous variables.</p>
+<p>To predict whether a particular endogenous variable would increase or decrease if some exogenous variable, say, increases from a low value to a high value, we would need to be able to pin down the values taken by the endogenous variable at the low and high values of the exogenous variable. Once that is done it would become clear whether the increase in the exogenous variable causes the endogenous variable to increase or decrease or stay unchanged. To illustrate with the theory of crime that we discussed earlier, if the equations in that theory of crime allow us to pin down the value of the crime rate both when the amount of rain is high and when the amount of rain is low, then we would know how an increase (or decrease) in the amount of rain would affect crime.</p>
+<div id="thm-eqnno" class="theorem">
+<p><span class="theorem-title"><strong>Theorem 6.1 (Solving Equations)</strong></span> To pin down the values of the various endogenous variables of a theory we in general need exactly as many equations as there are endogenous variables: not more, not less. If there are more endogenous variables than there are equations, we would generally get many possible solutions, and that would make it impossible to say anything definite. If there are fewer endogenous variables than there are equations we would generally get no solutions at all.</p>
+</div>
+<!--
+See @thm-eqnno.
+
+\begin{mathres} To pin down the values of the various endogenous variables of a theory we in general need exactly as many equations as there are endogenous variables: not more, not less. If there are more endogenous variables than there are equations, we would generally get many possible solutions, and that would make it impossible to say anything definite. If there are fewer endogenous variables than there are equations we would generally get no solutions at all. \label{math:eqnno}\end{mathres}
+-->
+<p>To see this idea in action, let us try some numbers. Let’s say a theory has</p>
+<ul>
+<li>two endogenous variables, <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span>, and</li>
+<li>three exogenous variables <span class="math inline">\(a\)</span>, <span class="math inline">\(b\)</span> and <span class="math inline">\(c\)</span>.</li>
+</ul>
+<p><strong>Case 1</strong> Let’s suppose that the theory consists of just <em>one</em> equation: <span id="eq-first"><span class="math display">\[
+x + y = a + \frac{b}{c}.
+\tag{6.1}\]</span></span> Assume that <span class="math inline">\(a = 3\)</span> and <span class="math inline">\(b = c = 6\)</span>. It should then be clear that it is impossible to pin down a unique set of values for <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span>. For example, (<span class="math inline">\(x = 2\)</span> and <span class="math inline">\(y = 2\)</span>), (<span class="math inline">\(x = 3\)</span> and <span class="math inline">\(y = 1\)</span>), and (<span class="math inline">\(x = 1\)</span> and <span class="math inline">\(y = 3\)</span>) are only three of infinitely many sets of values for <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span> that are solutions to <a href="#eq-first" class="quarto-xref">Equation&nbsp;<span>6.1</span></a> in this case.</p>
+<p>Now, the whole point of a theory is to predict how changes in the exogenous variables affect the endogenous variables. For example, one might ask what would happen to <span class="math inline">\(x\)</span> if <span class="math inline">\(b\)</span> increased from 6 to 12. Answering this question would be easy if there existed a unique value of <span class="math inline">\(x\)</span> when <span class="math inline">\(a=3\)</span>, <span class="math inline">\(b=6\)</span> and <span class="math inline">\(c=6\)</span> and a unique value of <span class="math inline">\(x\)</span> when <span class="math inline">\(a=3\)</span>, <span class="math inline">\(b=12\)</span> and <span class="math inline">\(c=6\)</span>. Unfortunately, <a href="#eq-first" class="quarto-xref">Equation&nbsp;<span>6.1</span></a> can’t tell us what <span class="math inline">\(x\)</span> is when <span class="math inline">\(a = 3\)</span>, <span class="math inline">\(b = 6\)</span> and <span class="math inline">\(c = 6\)</span> and or what <span class="math inline">\(x\)</span> is when <span class="math inline">\(a = 3\)</span>, <span class="math inline">\(b = 12\)</span> and <span class="math inline">\(c = 6\)</span>. We, therefore, see that if a theory’s equations can’t give us unique solutions for the theory’s endogenous variables, then that theory is useless.</p>
+<p><strong>Case 2</strong> Let’s now suppose that the theory consists of <em>three</em> equations—<a href="#eq-first" class="quarto-xref">Equation&nbsp;<span>6.1</span></a> above and the two equations below: <span id="eq-second"><span class="math display">\[
+x - y = a - \frac{b}{c}
+\tag{6.2}\]</span></span></p>
+<p><span id="eq-third"><span class="math display">\[
+x  = a -c
+\tag{6.3}\]</span></span></p>
+<p>It should be clear that it is impossible, in general, to find <em>any</em> values of the endogenous variables <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span> that would satisfy all three equations. For <span class="math inline">\(a=3\)</span> and <span class="math inline">\(b=c=6\)</span>, the equations become <span class="math display">\[
+\begin{eqnarray*}
+x + y &amp;=&amp; 4\\
+x - y &amp;=&amp; 2\\
+x &amp;=&amp; -3
+\end{eqnarray*}
+\]</span> respectively. If you try a few numbers, you will soon see that not all three equations can simultaneously be satisfied. If you substitute <span class="math inline">\(x = -3\)</span>, which is the third equation, into the first equation, you’ll get <span class="math inline">\(y = 7\)</span>. But in that case the second equation cannot be satisfied because <span class="math inline">\(x - y\)</span> would be -10, not 2, which is what the second equation requires.</p>
+<p><strong>Case 3</strong> If, however, the theory has two equations—the same number as the number of endogenous variables—a unique set of solutions for the endogenous variables can usually be found. Let’s say the theory’s equations are <a href="#eq-first" class="quarto-xref">Equation&nbsp;<span>6.1</span></a> and <a href="#eq-second" class="quarto-xref">Equation&nbsp;<span>6.2</span></a> above, but not <a href="#eq-third" class="quarto-xref">Equation&nbsp;<span>6.3</span></a>. Then it is clear that <span class="math inline">\(x = 3\)</span> and <span class="math inline">\(y =1\)</span> solve <a href="#eq-first" class="quarto-xref">Equation&nbsp;<span>6.1</span></a> and <a href="#eq-second" class="quarto-xref">Equation&nbsp;<span>6.2</span></a> when <span class="math inline">\(a=3\)</span>, and <span class="math inline">\(b=c=6\)</span>.<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></p>
+</section>
+</section>
+<section id="sec-whytheory" class="level2" data-number="6.2">
+<h2 data-number="6.2" class="anchored" data-anchor-id="sec-whytheory"><span class="header-section-number">6.2</span> What Can We Do With a Theory?</h2>
+<p>Let us consider further the theory that consists of <a href="#eq-first" class="quarto-xref">Equation&nbsp;<span>6.1</span></a> and <a href="#eq-second" class="quarto-xref">Equation&nbsp;<span>6.2</span></a>. I have shown that this theory can tell us the numerical values of its endogenous variables, <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span>, whenever the numerical values of its exogenous variables, <span class="math inline">\(a\)</span>, <span class="math inline">\(b\)</span>, and <span class="math inline">\(c\)</span>, are known. The question now is: What can we <em>do</em> with this theory?</p>
+<p>The short answer is that we can predict the <strong>ceteris paribus effects</strong> of the exogenous variables on the endogenous variables. A change in an exogenous variable is called a <strong>ceteris paribus change</strong> if all other exogenous variables are unchanged. A theory enables us to predict how a ceteris paribus change in an exogenous variable affects all the endogenous variables.</p>
+<p>It is straightforward to check that if <span class="math inline">\(b\)</span> increases from 6 to 12 and <span class="math inline">\(a\)</span> and <span class="math inline">\(c\)</span> remain unchanged at 3 and 6 respectively, <span class="math inline">\(x\)</span> would remain unchanged at 3 and <span class="math inline">\(y\)</span> would increase from 1 to 2. (As an exercise, work out the values of <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span> from <a href="#eq-first" class="quarto-xref">Equation&nbsp;<span>6.1</span></a> and <a href="#eq-second" class="quarto-xref">Equation&nbsp;<span>6.2</span></a> for <span class="math inline">\(a = 3\)</span>, <span class="math inline">\(b = 12\)</span> and <span class="math inline">\(c = 6\)</span>.) Thus, our theory is able to predict how the endogenous variables, <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span>, would behave if the exogenous variables—<span class="math inline">\(a\)</span>, <span class="math inline">\(b\)</span> and <span class="math inline">\(c\)</span>—change in some specified manner.</p>
+<p>To see this in another way, note that <a href="#eq-first" class="quarto-xref">Equation&nbsp;<span>6.1</span></a> and <a href="#eq-second" class="quarto-xref">Equation&nbsp;<span>6.2</span></a> can be solved in terms of <span class="math inline">\(a\)</span>, <span class="math inline">\(b\)</span> and <span class="math inline">\(c\)</span>. In other words, one can write down the values of <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span> that solve <a href="#eq-first" class="quarto-xref">Equation&nbsp;<span>6.1</span></a> and <a href="#eq-second" class="quarto-xref">Equation&nbsp;<span>6.2</span></a> as expressions involving <span class="math inline">\(a\)</span>, <span class="math inline">\(b\)</span> and <span class="math inline">\(c\)</span>. Specifically, it is straightforward to check that <a href="#eq-first" class="quarto-xref">Equation&nbsp;<span>6.1</span></a> and <a href="#eq-second" class="quarto-xref">Equation&nbsp;<span>6.2</span></a> imply: <span id="eq-y"><span class="math display">\[
+\begin{eqnarray}
+x &amp;=&amp; a \\
+y &amp;=&amp; \frac{b}{c}
+\end{eqnarray}
+\tag{6.4}\]</span></span></p>
+<p>As an exercise, substitute <span class="math inline">\(x=a\)</span> and <span class="math inline">\(y=b/c\)</span> in <a href="#eq-first" class="quarto-xref">Equation&nbsp;<span>6.1</span></a> and <a href="#eq-second" class="quarto-xref">Equation&nbsp;<span>6.2</span></a> and show that the two sides of each equation become the same. This would verify my claim that these values of <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span> do indeed solve <a href="#eq-first" class="quarto-xref">Equation&nbsp;<span>6.1</span></a> and <a href="#eq-second" class="quarto-xref">Equation&nbsp;<span>6.2</span></a>.</p>
+<p>We can now complete our discussion of the utility of theories by noting that the solutions <span class="math inline">\(x=a\)</span> and <span class="math inline">\(y=b/c\)</span> imply that:</p>
+<ul>
+<li><span class="math inline">\(x\)</span> is directly related to <span class="math inline">\(a\)</span> and unrelated to <span class="math inline">\(b\)</span> and <span class="math inline">\(c\)</span>, and<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a></li>
+<li><span class="math inline">\(y\)</span> is directly related to <span class="math inline">\(b\)</span>, inversely related to <span class="math inline">\(c\)</span>—that is, a ceteris paribus increase (respectively, decrease) in <span class="math inline">\(c\)</span> causes a decrease (respectively, an increase) in <span class="math inline">\(y\)</span>—and unrelated to <span class="math inline">\(a\)</span>.</li>
+</ul>
+<p><a href="#tbl-xyabc" class="quarto-xref">Table&nbsp;<span>6.1</span></a> reports these ceteris paribus effects in another format. This tabular format will be used frequently in future lectures.</p>
+<div id="tbl-xyabc" class="quarto-float anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-xyabc-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;6.1: <strong>Predictions of the theory consisting of</strong> <a href="#eq-first" class="quarto-xref">Equation&nbsp;<span>6.1</span></a> and <a href="#eq-second" class="quarto-xref">Equation&nbsp;<span>6.2</span></a>. All variables named in the first column are exogenous and all variables listed in the first row are endogenous. Each cell in the table shows the relation between the exogenous variable and the endogenous variable aligned with the cell. The +/- symbols denote a direct/inverse relation and a zero denotes that there is no relation.
+</figcaption>
+<div aria-describedby="tbl-xyabc-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="table">
+<thead>
+<tr class="header">
+<th style="text-align: center;"></th>
+<th style="text-align: center;"><span class="math inline">\(x\)</span></th>
+<th style="text-align: center;"><span class="math inline">\(y\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><span class="math inline">\(a\)</span></td>
+<td style="text-align: center;">+</td>
+<td style="text-align: center;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><span class="math inline">\(b\)</span></td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">+</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><span class="math inline">\(c\)</span></td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">-</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<!--
+\begin{table}
+\begin{tabular}{*{3}{|c}|}
+\hline
+    &$x$    &$y$    \\ \hline
+$a$ &+  &   \\ \hline
+$b$ &   &+  \\ \hline
+$c$ &   &-  \\ \hline
+\end{tabular}
+\caption[Predictions from a theory]{**Predictions of the theory consisting of equations (\ref{eq:first}) and (\ref{eq:second}).** All variables named in the first column are exogenous and all variables listed in the first row are endogenous. Each cell in the table shows the relation between the exogenous variable and the endogenous variable aligned with the cell. The +/- symbols denote a direct/inverse relation. A blank cell denotes that there is no relation.}
+\label{table:xyabc}
+\end{table}
+-->
+<p>We see that the theory we’ve been considering provides a full set of testable predictions about how its endogenous variables would behave for any given change in its exogenous variables. Once we have a theory that provides testable predictions, that’s when the hard work of actually testing those predictions begins. You’ll have to find historical data on <span class="math inline">\(x\)</span>, <span class="math inline">\(y\)</span>, <span class="math inline">\(a\)</span>, <span class="math inline">\(b\)</span> and <span class="math inline">\(c\)</span>—this may require long hours in the library!—and check whether the data support the predictions in <a href="#tbl-xyabc" class="quarto-xref">Table&nbsp;<span>6.1</span></a>. If they don’t, you need to get cracking on a new theory with new variables and/or equations. On the other hand, if the data support the predictions in <a href="#tbl-xyabc" class="quarto-xref">Table&nbsp;<span>6.1</span></a>, you may have a publishable paper. At that point, you would need to be careful not to let the associated fame and fortune go to your head.</p>
 
 
-<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
-<div id="ref-feenstra2008international" class="csl-entry" role="listitem">
-Feenstra, Robert C, and Alan M Taylor. 2008. <em>International Trade</em>. Macmillan.
-</div>
-<div id="ref-krugman2022international" class="csl-entry" role="listitem">
-Krugman, Paul R, Maurice Obstfeld, and Marc Melitz. 2022. <em>International Economics: Theory and Policy</em>. Pearson Education.
-</div>
-<div id="ref-rodseth2000open" class="csl-entry" role="listitem">
-Rødseth, Asbjørn. 2000. <em>Open Economy Macroeconomics</em>. Cambridge University Press.
-</div>
-</div>
 </section>
 <section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
 <hr>
 <ol>
-<li id="fn1"><p>On these issues, see <span class="citation" data-cites="rodseth2000open">Rødseth (<a href="references.html#ref-rodseth2000open" role="doc-biblioref">2000</a>)</span>. By perfect capital mobility I mean a world in which (a) people who buy assets care only about the expected returns of those assets, and (b) they all have the same expectations about future changes in exchange rates. See section XXX.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn2"><p>On page 442 of <span class="citation" data-cites="krugman2022international">Krugman, Obstfeld, and Melitz (<a href="references.html#ref-krugman2022international" role="doc-biblioref">2022</a>)</span> the authors address the issue as follows: “A permanent policy shift affects not only the current value of the government’s policy instrument (the money supply, government spending, or taxes) but also the <em>long-run</em> exchange rate. This in turn affects expectations about future exchange rates. Because these changes in expectations have a major influence on the exchange rate prevailing in the short run, the effects of permanent policy shifts differ from those of temporary shifts.”<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn3"><p>Consider <span class="citation" data-cites="feenstra2008international">Feenstra and Taylor (<a href="references.html#ref-feenstra2008international" role="doc-biblioref">2008</a>)</span>. On page 551 of their excellent textbook, the authors write, “[W]e can form expectations of the future exchange rate using the long-run monetary approach …” This easy-to-miss mention of the idea that expectations are based on the long-run equilibrium outcome is not adequately developed, as far as I am concerned. And the consequent need to distinguish between temporary and permanent policy changes is not as clearly developed as I would like.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn1"><p>Lest you think that such a theory is too far fetched, see “In New York City, Fewer Murders on Rainy Days,” by ANDREW W. LEHREN and CHRISTINE HAUSER, The New York Times, July 2, 2009, <a href="https://www.nytimes.com/2009/07/03/nyregion/03murder.html" class="uri">https://www.nytimes.com/2009/07/03/nyregion/03murder.html</a>.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>Those of you who have taken linear algebra may recall the distinction between dependent and independent sets of linear equations. For a set of linear equations to have unique solutions for its endogenous variables, the number of independent equations must equal the number of endogenous variables. Although I have not been explicit, <a href="#thm-eqnno" class="quarto-xref">Theorem&nbsp;<span>6.1</span></a> really holds when the equations that we are talking about are linear and independent of each other.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>There is a <strong>direct relation</strong> between an exogenous variable <span class="math inline">\(a\)</span> and an endogenous variable <span class="math inline">\(x\)</span> if a ceteris paribus increase (respectively, decrease) in <span class="math inline">\(a\)</span> causes an increase (respectively, a decrease) in <span class="math inline">\(x\)</span>. Conversely, there is an <strong>inverse relation</strong> between an exogenous variable <span class="math inline">\(a\)</span> and an endogenous variable <span class="math inline">\(x\)</span> if a ceteris paribus increase (respectively, decrease) in <span class="math inline">\(a\)</span> causes a decrease (respectively, an increase) in <span class="math inline">\(x\)</span>.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section>
 
@@ -729,10 +835,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="./markets_equilibrium.html" class="pagination-link" aria-label="Markets and Equilibrium">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Markets and Equilibrium</span></span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./preliminaries.html" class="pagination-link" aria-label="Preliminaries">
-        <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Preliminaries</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./long_run_short_run.html" class="pagination-link" aria-label="The Long Run and the  Short Run">
+        <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">The Long Run and the Short Run</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -744,7 +853,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/UdayanRoy62/internationalmacro/edit/main/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/UdayanRoy62/internationalmacro/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/UdayanRoy62/internationalmacro/edit/main/theories_equations_variables.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/UdayanRoy62/internationalmacro/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>This book was built with <a href="https://quarto.org/">Quarto</a>.</p>
 </div>
